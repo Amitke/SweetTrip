@@ -45,10 +45,18 @@ const BookingForm = () => {
         dropLocation: "",
       }); // Clear error message if input is valid
     } else {
-      setFormError({
-        pickupLocation: "Only alphabetic characters are allowed.",
-        dropLocation: "Only alphabetic characters are allowed.",
-      });
+      if (name === "pickupLocation") {
+        setFormError({
+          pickupLocation: "Only alphabetic characters are allowed.",
+          dropLocation: "",
+        });
+      }
+      if (name === "dropLocation") {
+        setFormError({
+          pickupLocation: "",
+          dropLocation: "Only alphabetic characters are allowed.",
+        });
+      }
     }
   };
   const handlePhone = (e) => {
@@ -209,9 +217,7 @@ const BookingForm = () => {
             value={selectedDate || "2025-01-31"}
             autocomplete="off"
           />
-          {dateError && (
-            <div className="error text-left">{dateError}</div>
-          )}
+          {dateError && <div className="error text-left">{dateError}</div>}
         </div>
         <div className={`${bookingFormStyles.formGroup}`}>
           <input
