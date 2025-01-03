@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "link":"/",
+        "linkText":"Home",
+        "icon":"faHome"
+    },
+    {
+        "id":2,
+        "link":"/about",
+        "linkText":"About Us",
+        "icon":"faInfo"
+    },
+    {
+        "id":3,
+        "link":"/cab-services",        
+        "linkText":"Car Rental",
+        "icon":"faCar"
+    },
+    {
+        "id":4,
+        "link":"/bus-rental",
+        "linkText":"Bus Rental",
+        "icon":"faBus"
+    },
+    {
+        "id":5,
+        "link":"/hotel-booking",
+        "linkText":"Hotel Booking",
+        "icon":"faHotel"
+    },
+    {
+        "id":6,
+        "link":"/contact",
+        "linkText":"Contact Us",
+        "icon":"faPhone"
+    }
+]

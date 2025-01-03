@@ -1,0 +1,31 @@
+@import "./../../../../styles/abstracts/themeSrc";
+
+.faq {
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: $borderColor;
+    @include borderRadius(8px);
+    padding: 10px 20px;
+    cursor: pointer;
+    svg{
+      float: right;
+      @include Margin(5px);
+    }
+  }
+  p {
+    font-size: inherit;
+    padding: 10px 12px 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease, visibility 0s linear 0.3s;
+    &.openAccordion {
+      opacity: 1;
+      visibility: visible;
+      height: auto; /* Or a specific height */
+      transition: opacity 0.3s ease, height 0.3s ease;
+    }
+  }
+}

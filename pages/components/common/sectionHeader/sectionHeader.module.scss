@@ -1,0 +1,98 @@
+@import "./../../../../styles/abstracts/themeSrc";
+
+.sectionHeader {
+  @include Position(relative);
+  background-image: url("./../../../../public/images/home-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include breakPoints(767px) {
+    background: $primaryColor;
+    padding-bottom: 15px;
+    &:after {
+      @include Display(none);
+    }
+  }
+  &.homeBanner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include breakPoints(767px) {
+      background-image: url("./../../../../public/images/home-banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      &:after {
+        @include Display(block);
+      }
+    }
+  }
+  &.carBanner{
+    background-image: url("./../../../../public/images/about-banner.png");
+    &:after {
+      opacity: 0.6;
+    }
+    @include breakPoints(767px) {
+      background: $primaryColor;
+      &:after {
+        @include Display(none);
+      }
+    }
+  }
+  &.busBanner {
+    background-image: url("./../../../../public/images/bus-banner.png");
+    &:after {
+      opacity: 0.4;
+    }
+    @include breakPoints(767px) {
+      background: $primaryColor;
+      &:after {
+        @include Display(none);
+      }
+    }
+  }
+  &.hotelBanner {
+    background-image: url("./../../../../public/images/hotel-booking.png");
+    @include breakPoints(767px) {
+      background: $primaryColor;
+      &:after {
+        @include Display(none);
+      }
+    }
+  }
+  &:after {
+    @include Position(absolute);
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    background-color: $blackColor;
+    @include Width(100%);
+    @include Height(100%);
+  }
+  .flexRow {
+    min-height: 300px;
+    @include breakPoints(767px) {
+      min-height: 150px;
+    }
+  }
+  h1,
+  p {
+    color: $whiteColor;
+    @include Position(relative);
+    z-index: 1;
+  }
+  p {
+    @include Width(50%);
+    @include breakPoints(1023px) {
+      @include Width(100%);
+    }
+  }
+  .fullWidth {
+    @include breakPoints(767px) {
+      @include Width(100%);
+    }
+  }
+}

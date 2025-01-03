@@ -1,0 +1,26 @@
+@import './../abstracts/themeSrc';
+
+.formGroup{
+    margin-bottom: 1rem;
+}
+
+.label{
+    margin-bottom: 0.5rem;
+}
+
+.formControl{
+    @include Width(100%);
+    box-sizing: border-box;
+    background-color: $whiteColor;
+    @include Border( 1px solid $borderColor);
+    @include Padding( 6px 12px);
+    -webkit-appearance: none;
+    @include borderRadius(5px);
+    @include Height(45px);
+}
+textarea.formControl{
+    @include Height(auto);
+}
+.formControl:focus{
+    outline: none;
+}

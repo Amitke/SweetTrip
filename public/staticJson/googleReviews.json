@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "para":"Excellent service during our days of travel in India. The driver was very friendly and adept at getting us to our destinations. The car was new and always clean.",
+        "firstLetter":"R",
+        "name":"Rudy Lim"
+    },
+    {
+        "id":2,
+        "para":"Very Nice Car and driver given",
+        "firstLetter":"P",
+        "name":"p d"
+    },
+    {
+        "id":3,
+        "para":"Sweet Trip in Varanasi has been an absolute delight for my travel needs! The car rental service they provided was exceptional - prompt, reliable, and efficient...",
+        "firstLetter":"A",
+        "name":"Avinash Anand"
+    },
+    {
+        "id":4,
+        "para":"They offered me super car with all my requirements..very good ,on time service",
+        "firstLetter":"P",
+        "name":"Partha Sarathi Dutta Gupta "
+    },
+    {
+        "id":5,
+        "para":"Excellent car service provided by sweet trip . Driver's behaviour was very good and supportive.",
+        "firstLetter":"R",
+        "name":"Ram Yadav"
+    },
+    {
+        "id":6,
+        "para":"I was not having any idea about this rental. I did the booking all by myself online. However the person from Sweet trip.Is extremely reliable, genuine price...",
+        "firstLetter":"G",
+        "name":"Goutami Sarkar"
+    }
+]

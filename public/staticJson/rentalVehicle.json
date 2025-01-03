@@ -1,0 +1,70 @@
+{
+  "home": [
+    {
+      "vehicleTitle": {
+        "heading": "Rental Cars for You",
+        "para": "An Extensive Fleet of Rental Cars at Your Service"
+      },
+      "vehicleInfo": [
+        {
+          "id": 1,
+          "carName": "Swift Dzire",
+          "image": "car2.png",
+          "alt": "Swift Dzire rental in varanasi",
+          "type": ["CNG", "AC Cabs", "Professional Driver"],
+          "desc": ""
+        },
+        {
+          "id": 2,
+          "carName": "Innova Crysta",
+          "image": "car5.png",
+          "alt": "Innova Crysta rental in varanasi",
+          "type": ["CNG", "AC Cabs", "Professional Driver"],
+          "desc": ""
+        },
+        {
+          "id": 3,
+          "carName": "Tempo Traveller",
+          "image": "car6.png",
+          "alt": "Tempo Traveller rental in varanasi",
+          "type": ["CNG", "AC Cabs", "Professional Driver"],
+          "desc": ""
+        }
+      ]
+    }
+  ],
+  "bus": [
+    {
+      "vehicleTitle": {
+        "heading": "Bus Hire in Varanasi",
+        "para": "We make sure that you always explore Varanasi in the way that you thought and planned. Reach your destination in the most luxurious bus."
+      },
+      "vehicleInfo": [
+        {
+          "id": 1,
+          "carName": "Luxury Bus",
+          "image": "luxury-bus.png",
+          "alt": "luxury bus hire in Varanasi",
+          "type": "",
+          "desc": "Get into the most luxurious buses ever with our <strong>luxury bus hire in Varanasi</strong>"
+        },
+        {
+          "id": 2,
+          "carName": "Mini Bus",
+          "image": "mini-bus.png",
+          "alt": "Mini Bus on rent in Varanasi",
+          "type": "",
+          "desc": "Our <strong>mini bus on rent in Varanasi</strong> allows you to find a comfortable family vehicle."
+        },
+        {
+          "id": 3,
+          "carName": "Deluxe Bus",
+          "image": "deluxe-bus.png",
+          "alt": "Deluxe Bus on rent in Varanasi",
+          "type": "",
+          "desc": "Book a deluxe bus if you want to get it at a reasonable price. "
+        }
+      ]
+    }
+  ]
+}

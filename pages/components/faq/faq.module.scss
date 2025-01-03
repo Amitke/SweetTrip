@@ -1,0 +1,32 @@
+@import "./../../../styles/abstracts/themeSrc";
+.faq{
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        @include Position(relative);
+        font-weight: $fontWeight700;
+        margin-top: 40px;
+        .icon{
+            margin-right:40px;
+            color: $whiteColor;
+            font-size: 16px;
+            padding-left: 9px;
+            vertical-align: 5px;
+            @include Display(inline-block);
+            &:after{
+                content: '';
+                @include Display(block);
+                @include Position(absolute);
+                top: 0;
+                left: 0;
+                @include Width(28px);
+                @include Height(28px);
+                background-color: $secondaryColor;
+                border-radius: 20px 20px 0 20px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                z-index: -1;
+            }
+        }
+    }
+}

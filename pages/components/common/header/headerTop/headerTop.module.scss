@@ -1,0 +1,47 @@
+@import "./../../../../../styles/abstracts/themeSrc";
+.headerTop {
+  background-color: $primaryColor;
+  @include Padding(7px 0);
+  color: $whiteColor;
+  transition: 1s all;
+  @include Display(none);
+  @include breakPoints(767px) {
+    @include Display(block);
+  }
+  .headerList {
+    @include breakPoints(640px) {
+      @include flexDirection(column);
+    }
+    li {
+      &:last-child {
+        @include breakPoints(640px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .headerContact {
+    @include breakPoints(767px) {
+      @include Width(100%);
+    }
+    ul {
+      @include breakPoints(767px) {
+        @include JustifyContent(center);
+        text-align: center;
+        @include flexDirection(row);
+      }
+      li {
+        &:first-child {
+          @include breakPoints(767px) {
+            @include Display(none);
+          }
+        }
+      }
+    }
+  }
+  .headerSocial {
+    @include breakPoints(767px) {
+      @include Display(none);
+    }
+  }
+}

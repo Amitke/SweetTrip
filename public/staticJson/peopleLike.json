@@ -1,0 +1,48 @@
+{
+  "heading": {
+    "heading": "Why People Like Us?",
+    "para":"We are overwhelmed with love and trust shown by our customers. Learn why"
+  },
+  "content": [
+    {
+      "id": 1,
+      "title": "Best Price Guarantee",
+      "para": "Get the best deals on rental cars in Varanasi. Book your car online and find guaranteed best price for your desired. Travel locally or outdoor with us anytime."
+    },
+    {
+      "id": 2,
+      "title": "No Cancellation Fees",
+      "para": "You want to cancel your booking? Do it without worrying as we take no cancellation fees for your bookings. We understand and appreciate our customer’s decision."
+    },
+    {
+      "id": 3,
+      "title": "Best Quality Cars",
+      "para": "Economic to luxurious cars, we have an extensive fleet of the best quality cars with us. Choose your desired car that will certainly match your expectation. Let us know your travel experience. "
+    },
+    {
+        "id": 4,
+        "title": "Fast & Easy Booking",
+        "para": "The best part of our rental car services is that you get fast and easy booking facilities. Book from our website in a few minutes and get the confirmation on your mobile."
+      },
+      {
+        "id": 5,
+        "title": "Personal Driver",
+        "para": "If you want personal driver, please send your query to us. We will get you the best and the most experienced cabbie in the town to make your trip safe and comfortable."
+      },
+      {
+        "id": 6,
+        "title": "Many Pickup Locations",
+        "para": "We have multiple pickup points across Varanasi, so book your desired freely and find it at your location in the next few minutes. We ensure a hassle-free pickup service."
+      },
+      {
+        "id": 7,
+        "title": "City to City",
+        "para": "You want to move from one city to another, book your outstation rental car with us. Get the kind of car you are looking for. Travel safely, and conveniently with us."
+      },
+      {
+        "id": 6,
+        "title": "24/7 Customer Support",
+        "para": "If you have any query or issue with booking, pickup or anything related to our cab services, our 24/7 Customer Support will entertain your request and will resolve it at the earliest."
+      }
+  ]
+}

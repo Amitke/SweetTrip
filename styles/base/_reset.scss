@@ -1,0 +1,267 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    @include Padding(0);
+    @include Margin(0);
+    @include Border(0);
+    outline:0;
+}
+
+a{
+    text-decoration: $textUnderlineNone;
+    transition: all 1s;
+    &:hover{
+        transition: all 1s;
+        color: $secondaryColor;    
+    }
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    @include Display(block);
+}
+ol,ul{
+    list-style: none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
+    content:'';
+    content:none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+audio,
+canvas,
+video {
+    @include Display(inline-block);
+    *zoom: 1;
+    max-width: 100%;
+}
+
+
+.form-control::-moz-placeholder {
+    color: $primaryColor;
+}
+  
+.form-control:-ms-input-placeholder {
+    color: $primaryColor;
+}
+
+.form-control::-ms-input-placeholder {
+    color: $primaryColor;
+}
+  
+.form-control::placeholder {
+    color: $primaryColor;
+}
+
+::-moz-selection {
+    background: $primaryColor;
+    color: $whiteColor;
+}
+
+::selection {
+    background: $primaryColor;
+    color: $whiteColor;
+}
+
+::-webkit-scrollbar {
+    @include Width(6px);
+    @include Height(10px);
+    background: $secondaryColor;
+}
+::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    @include borderRadius(5px)
+}
+#otpless-floating-button{
+	min-width: 130px !important;
+	overflow:visible !important;
+	background: #00d231 !important;
+	border:2px solid #201e53 !important;
+    top: 120px !important;
+    right: 5px !important;
+    @media(max-width:640px){
+        top: 20px !important;
+    }
+    &::before{
+        content: "\f023";
+        font-weight: 300;
+        font-family: "Font Awesome 5 Pro";
+        left: -25px;
+        top: -11px;
+        position: absolute;
+        background: #00d231;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 50%;
+        padding-left: 15px;
+        line-height: 50px;
+        border: 2px solid #201e53;
+        color: #fff;
+    }
+    iframe{
+        width: 100% !important;
+    }
+}
+.globalPhone,
+.globalWhatsapp{
+    right: 0;
+    border-radius:25px 0 0 25px;
+    transform: translate(70px, 0);
+    transition: all 0.8s;
+    bottom: 50%;
+    position: fixed;
+    background-color: #201e53;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 9999;
+    line-height: 1;
+    @media(max-width:767px){
+        left:0;
+        right: auto;
+        border-radius:0;
+        bottom: 0;
+        width: 50%;
+        transform: translate(0, 0);    
+        justify-content: center; 
+        z-index: 999999;
+    }
+    &:hover{
+        transform:translate(0px, 0px);
+        transition: all 0.8s;
+        a,button{
+            .icon{
+                transform: rotate(360deg);
+                transition: all 0.8s;
+            }
+        }
+    }
+    a,button{
+        font-size: 18px;
+        .icon{
+            background:#fff;
+            color: #201e53;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 15px;
+            transform: rotate(0);
+            display:inline-block;
+        }
+    }
+}
+.globalWhatsapp{
+    background-color: #00d231;
+    bottom: 60%;
+    right: -25px;
+    @media(max-width:767px){
+        left:auto;
+        right: 0;
+        bottom: 0;
+    }
+    .icon{
+        vertical-align:-10px;
+    }
+    &:hover{
+        right: 0;
+        a{
+            color: #fff;
+        }
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        margin:4px auto 0;
+    }
+}
+@media(min-width:767px){
+    .stuck{
+        @include Position(fixed);
+        background-color: $whiteColor;
+        box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 8%);
+        transition: 1s all;
+        z-index: 999;
+        @include Width(100%);
+        top: 0;
+    }
+}
+.slick-slider{
+    @include Width(100%);
+}
+.slick-slide{
+    padding: 0 10px;
+}
+footer{
+    background-color: rgb(242, 242, 242);
+}
+.error{
+    color: red;
+}
+.successBg{
+    background-color: rgb(237,247,237);
+    color: rgb(30,70,32);
+}
+.errorBg{
+    background-color: rgb(253,236,234);
+    color: rgb(97,26,21);
+}
+@media(min-width:992px){
+    .container{
+        padding: 0 5%;
+    }    
+}

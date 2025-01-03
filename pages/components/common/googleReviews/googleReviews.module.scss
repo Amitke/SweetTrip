@@ -1,0 +1,56 @@
+@import "./../../../../styles/abstracts/themeSrc";
+
+.googleReview{    
+    .bgWhite{
+        background-color: rgb(242, 242, 242);
+        @include Padding(20px);
+        @include borderRadius(8px);
+        text-align: center;
+        min-height: 300px;
+        @include breakPoints(767px){
+            @include Padding(10px);
+        }
+        .testimonialStar{
+            @include Display(flex);
+            @include flexDirection(row);
+            @include JustifyContent(center);
+            li{
+                color: rgb(252, 191, 2);
+            }
+        }
+        .customerName{
+            @include Width(40px);
+            @include Height(40px);
+            margin: 10px auto;
+            line-height: 40px;
+            @include borderRadius(50%);
+            color: $whiteColor;
+            font-size: 20px;
+            &.blue{                
+                background-color: $primaryColor;
+            }
+            &.green{                
+                background-color: $secondaryColor;
+            }
+            &.gray{
+                background-color: $borderColor;
+                color: $primaryColor;
+            }
+        }
+        p{
+            color: $blackColor;
+        }
+        h4{
+            color: $primaryColor;
+            img{
+                @include Width(15px);
+                @include Display(inline-block);
+                margin-left:10px;
+            }
+        }
+        .googleImage{
+            @include Width(75px);
+            margin: 10px auto 0;
+        }
+    }
+}

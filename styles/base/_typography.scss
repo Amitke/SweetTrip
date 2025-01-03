@@ -1,0 +1,74 @@
+html, 
+body{
+  @include Height(100%);
+}
+body {
+  @include Padding(0);
+  @include Margin(0);
+  font-family: 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:$whiteColor;
+  color: $textColor;
+  font-size: 14px;
+  line-height: 1.65;
+  letter-spacing:0.5px;
+  font-weight: $fontWeight400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.openMenu{
+    overflow: hidden;
+  }
+}
+
+strong,
+b {
+	font-weight: $fontWeight700;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.4;
+  color: $primaryColor;
+}
+h1{
+  font-size:4rem;
+  font-weight: $fontWeight700;
+  @include breakPoints(1023px){
+      font-size: 2.7rem;
+  }
+  @include breakPoints(767px){
+      font-size: 2.1rem;
+  }
+}
+h2{
+  font-size:2rem;
+  font-weight: $fontWeight700;
+  color: $transparent;
+  background: linear-gradient(90deg,#05b9f8 24.32%,#201e53 84.3%);
+  background-clip: text;
+  @include breakPoints(1023px){
+    font-size: 1.7rem;
+  }
+}
+h3{
+  font-size:1.1rem;
+  @include breakPoints(1023px){
+    font-size: 1rem;
+  }
+}
+h4{
+  font-size:1rem;
+  font-weight: $fontWeight700;
+}
+h5{
+  font-size:0.9rem;
+}

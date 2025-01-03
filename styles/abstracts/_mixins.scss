@@ -1,0 +1,88 @@
+// Border radius
+  @mixin borderRadius($radius){
+    border-radius: $radius;
+  }
+
+  // border
+  @mixin Border($border) {
+    border: $border;
+  }
+
+  // Padding Common
+  @mixin Padding($Padding) {
+    padding: $Padding;
+  }
+
+  // Margin
+  @mixin Margin($Margin) {
+    margin: $Margin;
+  }
+
+  // Display
+  @mixin Display($value){
+      display:$value;
+  }
+
+  // Justify content
+  @mixin JustifyContent($value){
+    justify-content:$value;
+  }
+
+   // Justify item
+   @mixin JustifyItem($value){
+    justify-items:$value;
+  }
+
+  // Align items
+  @mixin alignItem($value){
+    align-items:$value;
+  }
+
+  // Align content
+  @mixin alignContent($value){
+    align-content:$value;
+  }
+
+    // flex direction
+  @mixin flexDirection($value){
+    flex-direction:$value;
+  }
+
+// height
+@mixin Height($value){
+  height: $value;
+}
+
+// width
+@mixin Width($value){
+  width: $value;
+}
+
+  // Breakpoints
+  @mixin breakPoints($value){
+    @if($value >= 1199){
+      @media(max-width:1199px){
+        @content;
+      }
+    }
+    @else if($value >= 991){
+      @media(max-width:991px){
+        @content;
+      }
+    }
+    @else if($value >= 767){
+      @media(max-width:767px){
+        @content;
+      }
+    }
+    @else{
+      @media(max-width:640px){
+        @content;
+      }
+    }
+  }
+
+  // Position
+  @mixin Position($value){
+    position: $value;
+  }

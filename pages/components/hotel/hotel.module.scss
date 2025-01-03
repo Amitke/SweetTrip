@@ -1,0 +1,100 @@
+@import "./../../../styles/abstracts/themeSrc";
+@import "./../../../styles/components/buttons";
+.hotelBooking {
+  .hotelBookingContainer {
+    @include Position(relative);
+    @include borderRadius(7px);
+    .frontPart {
+      @include borderRadius(7px);
+      background: linear-gradient(90deg, #05b9f8 24.32%, #201e53 84.3%);
+      transform: rotateY(0deg);
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+      transition-duration: 500ms;
+      transition-property: all;
+      transition-timing-function: ease;
+      @include Display(flex);
+      @include JustifyContent(center);
+      @include flexDirection(row);
+      min-height: 480px;
+      @include breakPoints(767px) {
+        @include Display(none);
+      }
+      .content {
+        padding: 100px 30px;
+        @include Width(50%);
+        h3 {
+          font-weight: $fontWeight700;
+          margin-bottom: 5px;
+        }
+        p {
+          color: $whiteColor;
+          margin-bottom: 10px;
+        }
+        a {
+          opacity: 0;
+        }
+      }
+      .hotelImage {
+        @include Width(50%);
+        img {
+          @include Height(100%);
+          @include borderRadius(7px);
+          @include breakPoints(767px) {
+            @include Height(auto);
+          }
+        }
+      }
+    }
+    .backPart {
+      @extend .frontPart;
+      @include Position(absolute);
+      top: 0;
+      left: 0;
+      transform: rotateY(180deg);
+      @include breakPoints(767px) {
+        transform: rotateY(0deg);
+        @include Position(relative);
+        @include Display(block);
+      }
+      .content {
+        @include breakPoints(767px) {
+          @include Width(100%);
+          @include Padding(20px);
+        }
+        a {
+          opacity: 1;
+        }
+      }
+      .hotelImage {
+        @include breakPoints(767px) {
+          @include Width(100%);
+          padding: 20px 20px 0;
+        }
+        img {
+          @include breakPoints(767px) {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    &:hover {
+      .frontPart {
+        transform: rotateY(-180deg);
+      }
+      .backPart {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+  .flexRow {
+    @include breakPoints(767px) {
+      @include flexDirection(column);
+    }
+    .mobileWidth {
+      @include breakPoints(767px) {
+        @include Width(100%);
+      }
+    }
+  }
+}

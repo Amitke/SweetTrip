@@ -1,0 +1,31 @@
+@import "./../../../../styles/abstracts/themeSrc";
+
+.aboutUsRecord{ 
+    .customContainer{
+       
+    }   
+    h2{
+        color: $primaryColor;
+        font-size: 3rem;
+        @include breakPoints(767px){
+            font-size: 2rem;
+        }
+    }
+    p{
+        font-weight: $fontWeight700;
+        color: #05b9f8;
+        font-size:18px;
+        @include breakPoints(767px){
+            font-size: 15px;
+        }
+    }
+    .flexRow{
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 16px 0px;
+        @include borderRadius(16px);
+        background: linear-gradient(127deg, #e5eaff, #e6fcfc 39.23%, #e6fcf7 74.34%, #f5fce6 99.12%);
+        @include Position(relative);
+        @include breakPoints(767px){
+            margin: 45px auto 0;
+        }
+    }
+}

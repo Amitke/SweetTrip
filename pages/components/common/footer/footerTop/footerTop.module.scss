@@ -1,0 +1,49 @@
+@import "./../../../../../styles/abstracts/themeSrc";
+.footerTop {
+  padding: 20px 0;
+  background: linear-gradient(
+    127deg,
+    #e5eaff,
+    #e6fcfc 39.23%,
+    #e6fcf7 74.34%,
+    #f5fce6 99.12%
+  );
+  p{
+    font-size: inherit;
+  }
+  .flexRow {
+    @include breakPoints(640px) {
+      @include flexDirection(column);
+    }
+  }
+  img {
+    @include Width(250px);
+  }
+  h3 {
+    font-weight: $fontWeight700;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    @include breakPoints(767px) {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+  }
+  ul {
+    li {
+      & + li {
+        margin-top: 10px;
+      }
+      svg {
+        margin-right: 10px;
+        font-size: 16px;
+        vertical-align: -2px;
+      }
+    }
+  }
+  @include breakPoints(640px) {
+    .mobileFullWidth {
+      @include Width(100%);
+    }
+  }
+}

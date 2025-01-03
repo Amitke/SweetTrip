@@ -1,0 +1,25 @@
+@import "./../../../../styles/abstracts/themeSrc";
+
+.popularRoutes {
+  background-color: $secondaryColor;
+  h2 {
+    color: $primaryColor;
+  }
+  ul{
+    @include Display(flex);
+    flex-wrap:wrap;
+    li{
+      @include Width(25%);
+      color: $whiteColor;
+      font-size:15px;
+      margin-top: 10px;
+      font-weight: $fontWeight500;
+      @media(min-width:577px) and (max-width:1100px){
+        @include Width(50%);
+      }
+      @include breakPoints(576px) {
+        @include Width(100%);
+      }
+    }
+  }  
+}

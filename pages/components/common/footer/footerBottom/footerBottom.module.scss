@@ -1,0 +1,16 @@
+@import "./../../../../../styles/abstracts/themeSrc";
+.footerBottom {
+  background-color: $primaryColor;
+  text-align: $textCenter;
+  color: $whiteColor;
+  @include breakPoints(767px) {
+    padding-bottom: 60px;
+  }
+  p {
+    font-size: inherit;
+  }
+  .flexRow {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

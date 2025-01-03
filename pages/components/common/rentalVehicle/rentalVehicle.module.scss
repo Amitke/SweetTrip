@@ -1,0 +1,63 @@
+@import "./../../../../styles/abstracts/themeSrc";
+@import "./../../../../styles/components/buttons";
+
+.rentalVehicle {
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  .flex {
+    @include breakPoints(640px) {
+      @include flexDirection(column);
+    }
+  }
+  .mobileFullWidth {
+    @include breakPoints(640px) {
+      @include Width(100%);
+    }
+  }
+  .bgWhite {
+    @include borderRadius(4px);
+    box-shadow: 3px 4px 30px rgb(0 0 0 / 8%);
+    @include Position(relative);
+    overflow: hidden;
+    img {
+      transition: all 1s;
+      @include Width(100%);
+      min-height: 294px;
+      @include breakPoints(1199px) {
+        min-height: auto;
+      }
+      &:hover {
+        transform: scale(1.1);
+        transition: all 1s;
+        filter: grayscale(1);
+      }
+    }
+    h3 {
+      font-weight: $fontWeight700;
+    }
+    h3,
+    p {
+      @include Padding(15px);
+    }
+    ul {
+      @include JustifyContent(center);
+      @include Padding(15px);
+      list-style: disc;
+      @include breakPoints(767px) {
+        @include flexDirection(column);
+      }
+      @include breakPoints(640px) {
+        @include flexDirection(row);
+      }
+      li {
+        margin: 0 10px;
+      }
+    }
+    a {
+      margin: 0px auto 15px;
+      @include Width(100px);
+      @include Display(block);
+    }
+  }
+}

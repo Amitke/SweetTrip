@@ -1,0 +1,19 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "heading": "Lorem Lorem Lorem",
+      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+    },
+    {
+      "id": 2,
+      "heading": "Lorem Lorem Lorem",
+      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+    },
+    {
+      "id": 3,
+      "heading": "Lorem Lorem Lorem",
+      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+    }
+  ]
+}

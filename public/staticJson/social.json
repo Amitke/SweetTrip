@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "link":"https://twitter.com/_sweettrip",
+        "icon":"faTwitter"
+    },
+    {
+        "id":2,
+        "link":"https://in.pinterest.com/sweet_trip/",
+        "icon":"faPinterest"
+    },
+    {
+        "id":3,
+        "link":"https://www.facebook.com/sweettrip.inn",
+        "icon":"faFacebook"
+    },
+    {
+        "id":4,
+        "link":"https://www.instagram.com/sweettrip.in/",
+        "icon":"faInstagram"
+    }
+]

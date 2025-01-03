@@ -1,0 +1,151 @@
+@import "./../../../../../styles/abstracts/themeSrc";
+@import "./../../../../../styles/components/buttons";
+.headerBottom {
+  background-color: $whiteColor;
+  transition: 1s all;
+  padding: 5px 0;
+  @include Position(relative);
+  .mobileLogo {
+    @include breakPoints(767px) {
+      @include Width(200px);
+    }
+  }
+  .headerLogo {
+    @include breakPoints(767px) {
+      @include Width(65%);
+    }
+  }
+  .headerGroup {
+    @include Display(flex);
+    @include JustifyContent(end);
+    @include alignItem(center);
+    margin-top: 10px;
+    @include breakPoints(1200px) {
+      margin-top: 5px;
+    }
+    .tourPackage {
+      min-width: 170px;
+      @include borderRadius(4px);
+      background-color: $primaryColor;
+      @include breakPoints(767px) {
+        @include Display(none);
+      }
+    }
+    .headerPhone {
+      min-width: 170px;
+      @include borderRadius(4px);
+      border-color: $primaryColor;
+      color: $primaryColor;
+      margin: 0 30px;
+      @include Padding(4px);
+      @include breakPoints(767px) {
+        @include Display(none);
+      }
+      &:hover {
+        border-color: $primaryColor;
+        color: $whiteColor;
+      }
+    }
+  }
+  .headerMenuGroup {
+    @include flexDirection(column);
+    .headerMenu {
+      @include Position(fixed);
+      background: $whiteColor;
+      z-index: 99999;
+      left: -100%;
+      transform: rotateY(90deg);
+      top: 0;
+      @include flexDirection(column);
+      @include JustifyContent(flex-start);
+      transition: all 1s;
+      @include Width(300px);
+      @include alignItem(flex-start);
+      @include Height(100%);
+      .logo {
+        padding: 30px 20px 0;
+        @include Width(250px);
+      }
+      li {
+        @include Width(100%);
+        &:first-of-type {
+          margin-top: 30px;
+        }
+        a {
+          padding: 7px 35px;
+          color: $blackColor;
+          font-weight: $fontWeight600;
+          font-size: 15px;
+          @include Position(relative);
+          @media (min-width: 641px) and (max-width: 1023px) {
+            @include Padding(6px);
+            font-size: 13px;
+          }
+          color: $primaryColor;
+          @include Display(block);
+          @include borderRadius(0);
+          svg {
+            color: $secondaryColor;
+            min-width: 30px;
+            margin-right: 10px;
+            text-align: $textCenter;
+          }
+        }
+      }
+      .headerMenuGroup {
+        .tourPackage {
+          margin: 20px 0;
+          @include breakPoints(767px) {
+            @include Display(block);
+          }
+        }
+        .headerPhone{
+          @include breakPoints(767px) {
+            @include Display(block);
+          }
+        }
+      }
+    }
+    &.openMenu {
+      .headerMenu {
+        transform: rotateY(0deg);
+        transition: all 1s;
+        left: 0;
+      }
+    }
+  }
+  .toggle {
+    @include Width(28px);
+    @include Height(30px);
+    cursor: $cursorPointer;
+    div {
+      @include Width(100%);
+      @include Height(5px);
+      background-color: $primaryColor;
+      margin: 4px auto;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+    }
+    &.on {
+      .one {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .two {
+        opacity: 0;
+      }
+      .three {
+        transform: rotate(-45deg) translate(7px, -8px);
+      }
+    }
+  }
+  .dropShadow {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+  }
+}

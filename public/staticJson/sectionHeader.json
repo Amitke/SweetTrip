@@ -1,0 +1,42 @@
+[
+    {
+        "home":{
+            "title":"Enjoy Varanasi Never Like Before",
+            "para":"Tour This Holy City with Our Comfortable, Safe, and Affordable Car Rental Services that will Make Your Trip Memorable"
+        },
+        "about":{
+            "title":"About Us"
+        },
+        "carService":{
+            "title":"LOREM LOREM LOREM LOREM",
+            "para":"LOREM, and Affordable Car Rental Services that will Make Your Trip Memorable"
+        },
+        "busRental":{
+            "title":"Bus Rental"
+        },
+        "hireDriver":{
+            "title":"Hire Driver"
+        },
+        "hotelBooking":{
+            "title":"Hotel Booking"
+        },
+        "contact":{
+            "title":"Contact Us"
+        },
+        "termsConditions":{
+            "title":"Terms & Conditions"
+        },
+        "policy":{
+            "title":"Privacy & Policy"
+        },
+        "refundPolicy":{
+            "title":"Refund & Cancellation Policy"
+        },
+        "faq":{
+            "title":"Faq"
+        },
+        "error":{
+            "title":"Page not found"
+        }
+    }
+]

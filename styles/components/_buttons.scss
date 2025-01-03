@@ -1,0 +1,43 @@
+@import './../abstracts/themeSrc';
+
+
+.btn{
+    color: $whiteColor;
+    font-size: 14px;
+    font-weight: $fontWeight500;
+    text-transform: $capitalize;
+    @include borderRadius(40px);
+    @include Border(0);
+    cursor: $cursorPointer;
+    @include Padding(6px);
+    text-align: $textCenter;
+    transition: all 1s;
+    background-color: $secondaryColor;
+    min-width: 120px;
+    @include Display(inline-block);
+    @include breakPoints(1023px){
+        min-width: 100px;
+    }
+    &:disabled{
+        cursor: $cursorDefault;
+        pointer-events: $pointeEvent;
+    }
+}
+.primaryButton,
+.secondaryButton{
+    @extend .btn;
+}
+.primaryButton:hover,
+.secondaryButton:hover{
+    color: $whiteColor;
+    background-color: $primaryColor;
+    transition: all 1s;
+}
+.secondaryButton:hover{
+    border-color: $secondaryColor;
+}
+.secondaryButton{
+    background-color: $transparent;
+    @include Border(2px solid $whiteColor);
+    color: $whiteColor;
+}
