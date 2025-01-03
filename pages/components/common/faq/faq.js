@@ -28,7 +28,7 @@ const Faq = ({ faqsData }) => {
                   </p>
                 </div>
               );
-            }):<p>{faqsData.error}</p>}
+            }):<p>{faqsData?.error}</p>}
         </div>
       </div>
     </section>
