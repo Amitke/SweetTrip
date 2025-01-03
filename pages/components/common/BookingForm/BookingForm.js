@@ -20,7 +20,7 @@ const BookingForm = () => {
     dropLocation: "",
   });
   const [phoneError, setPhoneError] = useState("");
-  const [selectedDate, setSelectedDate] = useState();
+  const [selectedDate, setSelectedDate] = useState("");
   const [dateError, setDateError] = useState("");
 
   useEffect(() => {
