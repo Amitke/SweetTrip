@@ -179,6 +179,7 @@ const BookingForm = () => {
             placeholder="Enter pick up location*"
             onChange={(e) => handleChange(e)}
             value={formData.pickupLocation}
+            autocomplete="off"
           />
           {formError.pickupLocation && (
             <div className="error text-left">{formError.pickupLocation}</div>
@@ -192,6 +193,7 @@ const BookingForm = () => {
             placeholder="Enter drop location*"
             onChange={(e) => handleChange(e)}
             value={formData.dropLocation}
+            autocomplete="off"
           />
           {formError.dropLocation && (
             <div className="error text-left">{formError.dropLocation}</div>
@@ -205,6 +207,7 @@ const BookingForm = () => {
             placeholder="dd-mm-yyyy"
             onChange={(e) => handleDate(e)}
             value={selectedDate || "2025-01-31"}
+            autocomplete="off"
           />
           {dateError && (
             <div className="error text-left">{dateError}</div>
@@ -218,6 +221,7 @@ const BookingForm = () => {
             placeholder="Enter mobile number*"
             onChange={(e) => handlePhone(e)}
             value={mobileData}
+            autocomplete="off"
           />
           {phoneError && <div className="error text-left">{phoneError}</div>}
         </div>
