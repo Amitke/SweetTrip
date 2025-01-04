@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import faqStyles from "./faq.module.scss";
 
-const Faq = ({ faqsData }) => {
+const Faq = ({ faqsData,faqsError,faqsStatus }) => {
   const [open, setOpen] = useState(1);
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -16,8 +16,8 @@ const Faq = ({ faqsData }) => {
         </div>
         <div className={`flex-col flex`}>
           {faqsData &&
-            faqsData.faq.faq.length > 0 ?
-            faqsData.faq.faq.map((item) => {
+            faqsData.length > 0 ?
+            faqsData.map((item) => {
               return (
                 <div className="w-full pl-4 pr-4 mt-5">
                   <h3 onClick={() => handleOpen(item.id)}>
@@ -28,7 +28,7 @@ const Faq = ({ faqsData }) => {
                   </p>
                 </div>
               );
-            }):<p>{faqsData?.error}</p>}
+            }):<p>{faqsError}</p>}
         </div>
       </div>
     </section>

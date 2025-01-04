@@ -37,7 +37,9 @@ export default function HotelBooking() {
       ? getSectionHeader.sectionHeader[0].hotelBooking
       : getSectionHeader?.error;
 
-  const faqsData = getFaq && getFaq.status ? getFaq : getFaq?.error;
+  const faqsData =
+    getFaq && getFaq.status ? getFaq?.faq?.hotelBooking : getFaq?.error;
+  const faqsError = getFaq?.error;
 
   return (
     <>
@@ -74,7 +76,7 @@ export default function HotelBooking() {
         <HotelContent />
         <RentalCommunity />
         <HotelPeopleLike />
-        <Faq faqsData={faqsData} />
+        <Faq faqsData={faqsData} faqsError={faqsError} />
       </>
     </>
   );

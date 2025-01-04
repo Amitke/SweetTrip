@@ -42,7 +42,8 @@ export default function cabServices() {
       ? getPromo.promo.home
       : getPromo?.error;
 
-  const faqsData = getFaq && getFaq.status ? getFaq : getFaq?.error;
+  const faqsData = getFaq && getFaq.status ? getFaq?.faq?.cabServices : getFaq?.error;
+  const faqsError = getFaq?.error;
   return (
     <>
       <Head>
@@ -81,8 +82,11 @@ export default function cabServices() {
         </div>
         <ServicesContent />
         <Promo promoData={promoData} />
-        <Faq faqsData={faqsData} />
-        <PopularRoutes/>
+        <Faq
+          faqsData={faqsData}
+          faqsError={faqsError}
+        />
+        <PopularRoutes />
       </>
     </>
   );

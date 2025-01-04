@@ -1,19 +1,53 @@
 {
-  "faq": [
+  "cabServices": [
     {
       "id": 1,
-      "heading": "Lorem Lorem Lorem",
-      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+      "heading": "How to book a car rental in Varanasi?",
+      "para": "You can book a car rental in Varanasi through our website or by calling us on the number mentioned on the site. We suggest planning your booking in advance to avoid any inconvenience."
     },
     {
       "id": 2,
-      "heading": "Lorem Lorem Lorem",
-      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+      "heading": "Will my travel charges change after booking?",
+      "para": "No, once your booking is done, there will be no change in the booking amount. However, the car rental price in Varanasi remains competitive and varies every time. So, we provide you charges details as per the ongoing rate."
     },
     {
       "id": 3,
-      "heading": "Lorem Lorem Lorem",
-      "para": "Hems, grommets, and pole pockets can all be added to a banner so"
+      "heading": "What types of cabs can be booked?",
+      "para": "You can book hatchbacks, sedans, and SUVs with us. Swift, Alto, and Wagon R are hatchback cars in India, whereas Verna and Swift Dzire are sedan cars. Safari and Xylo are SUVs cars. "
+    }
+  ],
+  "busBooking": [
+    {
+      "id": 1,
+      "heading": "Is there a 20 seater bus?",
+      "para": "Yes, you can book a 20 seater bus with us. You can do it through our website or by calling us. "
+    },
+    {
+      "id": 2,
+      "heading": "What are the advantages of purchasing a bus ticket with Sweet Trip?",
+      "para": "With Sweet Trip, you can book your bus tickets online or by phone. You also have options to choose from buses based on boarding points, timing and bus type."
+    },
+    {
+      "id": 3,
+      "heading": "Does booking online cost me more?",
+      "para": "Not at all! The price of the bus ticket remains the same as what you would get from the bus operator."
+    }
+  ],
+  "hotelBooking": [
+    {
+      "id": 1,
+      "heading": "Can I book a family hotel with Sweet Trip?",
+      "para": "Yes, you can book the best family hotels in Varanasi with us. You can do it through our website or by calling us. "
+    },
+    {
+      "id": 2,
+      "heading": "Are there any hotels for couples on Sweet Trip?",
+      "para": "Yes, there are hotels for couples on Sweet Trip, too. Book your hotel of choice with us."
+    },
+    {
+      "id": 3,
+      "heading": "Does Sweet Trip provide safe hotels for families and couples?",
+      "para": "Yes, we ensure safety and a family environment to our customers in every hotel associated with us."
     }
   ]
 }

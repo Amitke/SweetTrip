@@ -57,7 +57,9 @@ export default function BusRental() {
       ? getRentalVehicle.rentalVehicle?.bus[0].vehicleTitle
       : getRentalVehicle?.error;
 
-  const faqsData = getFaq && getFaq.status ? getFaq : getFaq?.error;
+  const faqsData =
+    getFaq && getFaq.status ? getFaq?.faq?.busBooking : getFaq?.error;
+  const faqsError = getFaq?.error;
   return (
     <>
       <Head>
@@ -102,8 +104,8 @@ export default function BusRental() {
         <BusContent />
         <Promo promoData={promoData} />
         <BusBenefit />
-        <Faq faqsData={faqsData} />
-        <PopularRoutes/>
+        <Faq faqsData={faqsData} faqsError={faqsError} />
+        <PopularRoutes />
       </>
     </>
   );
