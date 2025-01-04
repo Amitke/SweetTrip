@@ -140,7 +140,7 @@ const BookingForm = () => {
   };
   return (
     <form className={bookingFormStyles.bookingForm} onSubmit={handleSubmit}>
-      <h2 className="mb-3">Book Your Car Now!</h2>
+      <h2 className="mb-3">Book Your Vehicles Now!</h2>
       {getBookCarData.bookData && isVisibleAlert ? (
         <div
           className={`text-left p-4 mb-4 text-sm text-red-800 rounded-lg dark:bg-gray-800 dark:text-red-400 ${
