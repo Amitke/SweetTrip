@@ -30,7 +30,7 @@ jobs:
           username: root
           key: 147.93.30.71
           script: |
-            cd /path/to/your/project
+            cd /path/to/your/project/SweetTrip
             git pull origin main  # Pull latest code from GitHub
             npm install  # Install dependencies
             npm run build  # Build the application
