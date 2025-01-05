@@ -68,17 +68,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Car Rental in Varanasi - Cab Booking & Taxi Rental Services in
-          Varanasi
-        </title>
+        <title>Sweet Trip- Book Hotel, Bus & Car Rental in Varanasi</title>
         <meta
           name="description"
-          content="Sweet trip is the best car rental company in Varanasi. We offer affordable, Luxury, reliable car rental services, cab booking & taxi rental services in Varanasi"
+          content="Sweet Trip is a platform where you can make cab booking in Varanasi, get Varanasi cab booking, bus hire in Varanasi, and book the best places to stay in Varanasi."
         />
         <meta
           name="keywords"
-          content="taxi services in varanasi, car rental in varanasi, car rental service in varanasi, cab booking in varanasi, cab service in varanasi, Corporate Taxi Service, Airport Cab, Luxury Car on Rent, Wedding Car Rental, best one way taxi service in Varanasi, one way taxi service in Varanasi contact number"
+          content="Best Cab Service in Varanasi, Varanasi local cab, Varanasi airport cab booking, one-way taxi service in Varanasi contact number, luxury bus on rental, bus booking for marriage, private bus booking, tourist bus booking, mini bus on rent, best places to stay in Varanasi, best hotel in Varanasi for family, hotels for couples in Varanasi, hotels in Ayodhya near Ram Mandir, and hotels near Ram Mandir Ayodhya."
         />
       </Head>
       <>
@@ -109,7 +106,7 @@ export default function Home() {
         <Promo promoData={promoData} />
         <PeopleLike getPeopleLike={getPeopleLike} />
         <RentalCommunity />
-        <PopularRoutes/>
+        <PopularRoutes />
       </>
     </>
   );

@@ -42,15 +42,18 @@ export default function cabServices() {
       ? getPromo.promo.home
       : getPromo?.error;
 
-  const faqsData = getFaq && getFaq.status ? getFaq?.faq?.cabServices : getFaq?.error;
+  const faqsData =
+    getFaq && getFaq.status ? getFaq?.faq?.cabServices : getFaq?.error;
   const faqsError = getFaq?.error;
   return (
     <>
       <Head>
-        <title>Sweet Trip - Best Cab Service in Varanasi</title>
+        <title>
+          Sweet Trip- Cab Booking & Taxi Rental Services in Varanasi
+        </title>
         <meta
           name="description"
-          content="Sweet trip online booking of cab rental Varanasi. Provides clean and well maintained cars | Easy booking | Affordable prices | Transparent Billing."
+          content="Swee Trip brings online booking for the best cab service in Varanasi, hygienic and spacious Varanasi local cabs, Varanasi airport cab booking, and one-way cabs for you."
         />
         <meta
           name="keywords"
@@ -82,10 +85,7 @@ export default function cabServices() {
         </div>
         <ServicesContent />
         <Promo promoData={promoData} />
-        <Faq
-          faqsData={faqsData}
-          faqsError={faqsError}
-        />
+        <Faq faqsData={faqsData} faqsError={faqsError} />
         <PopularRoutes />
       </>
     </>

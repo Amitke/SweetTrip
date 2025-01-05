@@ -64,12 +64,11 @@ export default function BusRental() {
     <>
       <Head>
         <title>
-          Hire Bus on rent in Varanasi booking for Corporate event, or special
-          occasion
+          Sweet Trip- Hire buses on rent for all occasions in Varanasi
         </title>
         <meta
           name="description"
-          content="Explore hassle-free travel with our reliable bus rental services in Varanasi. Book your ideal bus on rent today for a memorable and convenient transportation experience."
+          content="Sweet Trip is a one-stop destination for bus booking for marriage, tourist bus booking, private bus booking, minibus booking and bus hire in Varanasi. "
         />
         <meta
           name="keywords"

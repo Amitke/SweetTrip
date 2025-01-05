@@ -44,12 +44,10 @@ export default function HotelBooking() {
   return (
     <>
       <Head>
-        <title>
-          Sweet Trip- Book Family Hotels in Varanasi and Ayodhya Online
-        </title>
+        <title>Sweet Trip- Best Places to Stay in Varanasi & Ayodhya</title>
         <meta
           name="description"
-          content="Sweet Trip brings family hotels in Varanasi, hotels in Ayodhya near Ram Mandir, cheap hotels in Ayodhya, and hotels for couples in Varanasi at competitive price."
+          content="Want the best places to stay in Varanasi and Ayodhya or looking for family hotels in Varanasi, look no further! Book hotels at both places with Sweet Trip."
         />
         <meta
           name="keywords"
