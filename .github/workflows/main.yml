@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Adjust to the version you want
+          node-version: '18' # Adjust to the version you want
 
       - name: Install dependencies
         run: npm install
@@ -26,11 +26,11 @@ jobs:
       - name: Deploy to Hostinger using SSH
         uses: appleboy/ssh-action@v0.1.5
         with:
-          host: ${{ secrets.147.93.30.71 }}
-          username: ${{ secrets.root }}
-          key: ${{ secrets.147.93.30.71 }}
+          host: 147.93.30.71
+          username: root
+          key: 147.93.30.71
           script: |
-            cd /path/to/your/project
+            cd /path/to/your/project/SweetTrip
             git pull origin main  # Pull latest code from GitHub
             npm install  # Install dependencies
             npm run build  # Build the application
