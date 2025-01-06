@@ -58,6 +58,15 @@ export default function Contact() {
                 />
               </div>
               <div className={`${contactStyles.formGroup} flex flex-col md:w-1/2 w-full`}>
+                <label className={contactStyles.label}>Your Phone*</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  className={contactStyles.formControl}
+                />
+              </div>
+              <div className={`${contactStyles.formGroup} flex flex-col md:w-1/2 w-full`}>
                 <label className={contactStyles.label}>Subject*</label>
                 <input
                   type="text"
