@@ -29,7 +29,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
+          port: 22
           privateKey: ${{ secrets.PRIVATE_KEY}}
           script: |
             cd /path/to/your/project/SweetTrip
