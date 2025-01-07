@@ -26,9 +26,11 @@ jobs:
       - name: Deploy to Hostinger using SSH
         uses: appleboy/ssh-action@v0.1.5
         with:
-          host: 147.93.30.71
-          username: root
-          key: 147.93.30.71
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          privateKey: ${{ secrets.PRIVATE_KEY}}
           script: |
             cd /path/to/your/project/SweetTrip
             git pull origin main  # Pull latest code from GitHub
