@@ -4,7 +4,7 @@ import {
   getBookDataFailure,
 } from "@/redux/actions/bookACar";
 
-const url = "https://formspree.io/f/xjkkoave";
+const url = "https://formspree.io/f/mzzzkndb";
 
 export const postBookingDetails = (customerDetails) => {
   return async (dispatch) => {
