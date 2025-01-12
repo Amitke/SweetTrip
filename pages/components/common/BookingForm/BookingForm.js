@@ -7,6 +7,7 @@ import bookingFormStyles from "./bookingForm.module.scss";
 
 const BookingForm = () => {
   const dispatch = useDispatch();
+  const today = new Date().toISOString().split("T")[0];
   const getBookCarData = useSelector((state) => state.bookCarData);
 
   const [formData, setFormData] = useState({
@@ -20,8 +21,7 @@ const BookingForm = () => {
     dropLocation: "",
   });
   const [phoneError, setPhoneError] = useState("");
-  const [selectedDate, setSelectedDate] = useState("");
-  const [dateError, setDateError] = useState("");
+  const [selectedDate, setSelectedDate] = useState(today);
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -73,13 +73,6 @@ const BookingForm = () => {
   const handleDate = (e) => {
     const value = e.target.value;
     setSelectedDate(value);
-    const currentDate = new Date();
-    const inputDate = new Date(value);
-    if (inputDate < currentDate) {
-      setDateError("The selected date cannot be in the past.");
-    } else {
-      setDateError(""); // Clear the error message if valid
-    }
   };
   const handleAlertBox = () => {
     setIsVisibleAlert(false);
@@ -92,7 +85,6 @@ const BookingForm = () => {
         pickupLocation: "This is a required field",
         dropLocation: "",
       });
-      setDateError("");
       setPhoneError("");
       setIsVisibleAlert(true);
     } else if (formData.dropLocation === "") {
@@ -100,13 +92,9 @@ const BookingForm = () => {
         pickupLocation: "",
         dropLocation: "This is a required field",
       });
-      setDateError("");
       setPhoneError("");
       setIsVisibleAlert(true);
-    } else if (selectedDate === "") {
-      setDateError("This is a required field");
-      setIsVisibleAlert(true);
-    } else if (mobileData === "") {
+    }  else if (mobileData === "") {
       setPhoneError("This is a required field");
       setIsVisibleAlert(true);
     } else if (
@@ -119,7 +107,6 @@ const BookingForm = () => {
         pickupLocation: "",
         dropLocation: "",
       });
-      setDateError("");
       setPhoneError("");
       dispatch(
         postBookingDetails({
@@ -133,7 +120,7 @@ const BookingForm = () => {
         pickupLocation: "",
         dropLocation: "",
       });
-      setSelectedDate("");
+      setSelectedDate(today);
       setMobileData("");
       setIsVisibleAlert(true);
     }
@@ -214,10 +201,10 @@ const BookingForm = () => {
             className={bookingFormStyles.formControl}
             placeholder="dd-mm-yyyy"
             onChange={(e) => handleDate(e)}
-            value={selectedDate || "2025-01-31"}
+            value={selectedDate}
             autocomplete="off"
+            min={today}
           />
-          {dateError && <div className="error text-left">{dateError}</div>}
         </div>
         <div className={`${bookingFormStyles.formGroup}`}>
           <input
