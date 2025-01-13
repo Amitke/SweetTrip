@@ -28,6 +28,9 @@
     animation-iteration-count: infinite;
     animation-name: animationH2;
     opacity: 0;
+    @include breakPoints(767px) {
+      font-size:1.5rem;
+    }
   }
   .formWrapper {
     @include Display(flex);
