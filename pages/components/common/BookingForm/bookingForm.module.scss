@@ -1,37 +1,55 @@
 @import "./../../../../styles/abstracts/themeSrc";
-@import './../../../../styles/components/buttons';
-@import './../../../../styles/components/textField';
+@import "./../../../../styles/components/buttons";
+@import "./../../../../styles/components/textField";
 
-.bookingForm{
+@keyframes animationH2 {
+  0% {
+    left: -20px;
+    opacity: 0.5;
+  }
+  100%{
+    left:40px;
+    opacity: 1;
+  }
+}
+.bookingForm {
+  @include Position(relative);
+  z-index: 1;
+  background-color: $primaryColor;
+  @include Padding(20px);
+  @include borderRadius(20px);
+  @include breakPoints(767px) {
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: $secondaryColor;
     @include Position(relative);
-    z-index: 1;
-    background-color: $primaryColor;
-    @include Padding(20px);
-    @include borderRadius(20px);
-    @include breakPoints(767px){
-        margin-bottom:20px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: animationH2;
+    opacity: 0;
+  }
+  .formWrapper {
+    @include Display(flex);
+    @include flexDirection(row);
+    @include JustifyContent(space-between);
+    @include alignItem(baseline);
+    @include breakPoints(767px) {
+      @include flexDirection(column);
+      @include alignItem(center);
     }
-    .formWrapper {
-        @include Display(flex);
-        @include flexDirection(row);
-        @include JustifyContent(space-between);
-        @include alignItem(baseline);
-        @include breakPoints(767px){
-            @include flexDirection(column);
-            @include alignItem(center);
-        }
-        .formGroup{
-            @include Width(20%);
-            @include breakPoints(767px){
-                @include Width(100%);
-            }
-        }
+    .formGroup {
+      @include Width(20%);
+      @include breakPoints(767px) {
+        @include Width(100%);
+      }
     }
-    .primaryButton{
-        @include borderRadius(5px);
-        min-height:45px;
-        &:hover{
-            background-color: $secondaryColor;
-        }
+  }
+  .primaryButton {
+    @include borderRadius(5px);
+    min-height: 45px;
+    &:hover {
+      background-color: $secondaryColor;
     }
+  }
 }
