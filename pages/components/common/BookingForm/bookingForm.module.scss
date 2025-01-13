@@ -2,16 +2,6 @@
 @import "./../../../../styles/components/buttons";
 @import "./../../../../styles/components/textField";
 
-@keyframes animationH2 {
-  0% {
-    left: -20px;
-    opacity: 0.5;
-  }
-  100%{
-    left:40px;
-    opacity: 1;
-  }
-}
 .bookingForm {
   @include Position(relative);
   z-index: 1;
@@ -21,6 +11,16 @@
   @include breakPoints(767px) {
     margin-bottom: 20px;
   }
+  @keyframes animationH2 {
+    0% {
+      left: -20px;
+      opacity: 0.5;
+    }
+    100% {
+      left: 40px;
+      opacity: 1;
+    }
+  }
   h2 {
     color: $secondaryColor;
     @include Position(relative);
@@ -29,7 +29,7 @@
     animation-name: animationH2;
     opacity: 0;
     @include breakPoints(767px) {
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
   }
   .formWrapper {
