@@ -23,27 +23,20 @@ const RentalVehicle = ({ vehicleInfo, vehicleTitle }) => {
                   key={item.id}
                 >
                   <div className={rentalVehicleStyles.bgWhite}>
-                    <h3>{item.carName}</h3>
+                    <h4>{item.heading}</h4>
+                    <h3>{item.type}</h3>
+                    <a
+                      href={item.link}
+                      className={rentalVehicleStyles.primaryButton}
+                    >
+                      Book Now
+                    </a>
                     <Image
                       width={360}
                       height={260}
                       src={`/images/${item.image}`}
                       alt={item.alt}
                     />
-                    {item.type && (
-                      <ul className="list-none flex">
-                        {item.type.map((item, index) => {
-                          return <li key={index}>{item}</li>;
-                        })}
-                      </ul>
-                    )}
-                    {item.desc && <p dangerouslySetInnerHTML={{__html: item.desc}}/>}
-                    <a
-                      href="tel:+91 7488736844"
-                      className={rentalVehicleStyles.primaryButton}
-                    >
-                      Book Now
-                    </a>
                   </div>
                 </div>
               );

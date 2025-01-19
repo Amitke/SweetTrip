@@ -20,6 +20,9 @@
         "hotelBooking":{
             "title":"Hotel Booking"
         },
+        "tourPackage":{
+            "title":"Tour Package"
+        },
         "contact":{
             "title":"Contact Us"
         },

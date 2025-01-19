@@ -16,7 +16,7 @@ const RentalCommunity = () => {
               Join Our Socials for Excellent Tips and Guidance
             </p>
             <div className={rentalCommunityStyles.communityBoxWrap}>
-              <a href="https://www.instagram.com/sweettrip.in/" target="_blank">
+              <a href="https://www.instagram.com/sweettrip.in/" target="_blank" rel="noopener noreferrer">
                 <div className={rentalCommunityStyles.icon}>
                   <i className={rentalCommunityStyles.faInstagram}>
                     <FontAwesomeIcon
@@ -37,7 +37,7 @@ const RentalCommunity = () => {
                   alt="arrow"
                 />
               </a>
-              <a href="https://www.facebook.com/sweettrip.inn" target="_blank">
+              <a href="https://www.facebook.com/sweettrip.inn" target="_blank" rel="noopener noreferrer">
                 <div className={rentalCommunityStyles.icon}>
                   <i className={rentalCommunityStyles.faFacebook}>
                     <FontAwesomeIcon
@@ -58,7 +58,7 @@ const RentalCommunity = () => {
                   alt="arrow"
                 />
               </a>
-              <a href="https://twitter.com/_sweettrip" target="_blank">
+              <a href="https://twitter.com/_sweettrip" target="_blank" rel="noopener noreferrer">
                 <div className={rentalCommunityStyles.icon}>
                   <i className={rentalCommunityStyles.faTwitter}>
                     <FontAwesomeIcon

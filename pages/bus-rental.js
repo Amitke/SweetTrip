@@ -4,14 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
 import { getGoogleReviewsData } from "./api/common/googleReviews";
 import { getPromoData } from "./api/common/promo";
-import { getRentalVehicleData } from "./api/common/rentalVehicle";
 import { getAboutUsRecordData } from "@/pages/api/common/aboutUsRecord";
 import { getFaqData } from "./api/common/faq";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import GoogleReviews from "@/pages/components/common/googleReviews/googleReviews";
 import BusContent from "./components/bus/busContent";
+import BusHireContent from "./components/bus/busHireContent";
 import Promo from "./components/common/promo/promo";
-import RentalVehicle from "@/pages/components/common/rentalVehicle/rentalVehicle";
 import BusBenefit from "./components/bus/busBenefit";
 import BookingForm from "./components/common/BookingForm/BookingForm";
 import AboutUsRecord from "@/pages/components/common/aboutUsRecord/aboutUsRecord";
@@ -23,7 +22,6 @@ export default function BusRental() {
   const getSectionHeader = useSelector((state) => state.sectionHeader);
   const getGoogleReviews = useSelector((state) => state.googleReviews);
   const getPromo = useSelector((state) => state.promo);
-  const getRentalVehicle = useSelector((state) => state.rentalVehicle);
   const getAboutUsRecord = useSelector((state) => state.aboutUsRecord);
   const getFaq = useSelector((state) => state.faq);
 
@@ -31,7 +29,6 @@ export default function BusRental() {
     dispatch(getSectionHeaderData());
     dispatch(getGoogleReviewsData());
     dispatch(getPromoData());
-    dispatch(getRentalVehicleData());
     dispatch(getAboutUsRecordData());
     dispatch(getFaqData());
   }, []);
@@ -46,16 +43,6 @@ export default function BusRental() {
     getPromo && getPromo.status && getPromo.promo.home
       ? getPromo.promo.home
       : getPromo?.error;
-
-  const vehicleInfo =
-    getRentalVehicle && getRentalVehicle.status
-      ? getRentalVehicle.rentalVehicle?.bus[0].vehicleInfo
-      : getRentalVehicle?.error;
-
-  const vehicleTitle =
-    getRentalVehicle && getRentalVehicle.status
-      ? getRentalVehicle.rentalVehicle?.bus[0].vehicleTitle
-      : getRentalVehicle?.error;
 
   const faqsData =
     getFaq && getFaq.status ? getFaq?.faq?.busBooking : getFaq?.error;
@@ -89,7 +76,7 @@ export default function BusRental() {
             </div>
           </div>
         </div>
-        <RentalVehicle vehicleInfo={vehicleInfo} vehicleTitle={vehicleTitle} />
+        <BusHireContent />
         <div className="container mx-auto">
           <div className="md:flex-row flex-col justify-center items-center flex">
             <div className="md:w-1/2 w-full pl-4 pr-4">

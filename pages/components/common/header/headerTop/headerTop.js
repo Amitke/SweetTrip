@@ -12,43 +12,55 @@ import headerTopStyles from "./headerTop.module.scss";
 const HeaderTop = () => {
   return (
     <section className={headerTopStyles.headerTop}>
-        <div className="container mx-auto">
-          <div className="flex-row flex">
+      <div className="container mx-auto">
+        <div className="flex-row flex">
           <div className={`w-1/5 pl-4 pr-4 ${headerTopStyles.headerSocial}`}>
-          <ul className={`flex flex-row ${headerTopStyles.headerList}`}>
-          <li className="mr-3">
-          <a target="_blank" href="https://twitter.com/_sweettrip">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-        </li>
-        <li className="mr-3">
-          <a target="_blank" href="https://in.pinterest.com/sweet_trip/">
-            <FontAwesomeIcon icon={faPinterest} />
-          </a>
-        </li>
-        <li className="mr-3">
-          <a
-            target="_blank"
-            href="https://www.facebook.com/sweettrip.inn"
-          >
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-        </li>
-        <li className="mr-3">
-          <a
-            target="_blank"
-            href="https://www.instagram.com/sweettrip.in/"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </li>
-              </ul>
-            </div>
-            <div className={`w-5/6 pl-4 pr-4 ${headerTopStyles.headerContact}`}>
-            <ul className={`list-none flex flex-row justify-end ${headerTopStyles.headerList}`}>
+            <ul className={`flex flex-row ${headerTopStyles.headerList}`}>
+              <li className="mr-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/_sweettrip"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </li>
+              <li className="mr-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://in.pinterest.com/sweet_trip/"
+                >
+                  <FontAwesomeIcon icon={faPinterest} />
+                </a>
+              </li>
+              <li className="mr-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/sweettrip.inn"
+                >
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+              </li>
+              <li className="mr-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/sweettrip.in/"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className={`w-5/6 pl-4 pr-4 ${headerTopStyles.headerContact}`}>
+            <ul
+              className={`list-none flex flex-row justify-end ${headerTopStyles.headerList}`}
+            >
               <li className="mr-4">Need Help ?</li>
               <li className="mr-5">
-                <a href="mailto:info@sweettrip.com">
+                <a href="mailto:info@sweettrip.in">
                   <FontAwesomeIcon className="mr-1" icon={faEnvelope} />
                   info@sweettrip.in
                 </a>
@@ -61,9 +73,9 @@ const HeaderTop = () => {
               </li>
             </ul>
           </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
   );
 };
 

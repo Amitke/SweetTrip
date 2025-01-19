@@ -10,54 +10,57 @@
       @include flexDirection(column);
     }
   }
-  .mobileFullWidth {
-    @include breakPoints(640px) {
-      @include Width(100%);
-    }
-  }
   .bgWhite {
-    @include borderRadius(4px);
-    box-shadow: 3px 4px 30px rgb(0 0 0 / 8%);
+    @include borderRadius(45px);
+    background: linear-gradient(225deg, rgb(240, 240, 255) 0%, rgb(227, 210, 255) 99%);
     @include Position(relative);
     overflow: hidden;
+    @include Padding(40px);
+    text-align: $textCenter;
+    @include breakPoints(992px) {
+      @include Padding(20px);
+    }
     img {
       transition: all 1s;
       @include Width(100%);
-      min-height: 294px;
-      @include breakPoints(1199px) {
-        min-height: auto;
-      }
+      object-fit:contain;
+      @include Height(200px);
       &:hover {
         transform: scale(1.1);
         transition: all 1s;
         filter: grayscale(1);
       }
     }
-    h3 {
+    h3{
+      @include Padding(15px);
+      padding-top: 0;
+      font-size: 35px;
       font-weight: $fontWeight700;
     }
-    h3,
-    p {
-      @include Padding(15px);
-    }
-    ul {
-      @include JustifyContent(center);
-      @include Padding(15px);
-      list-style: disc;
-      @include breakPoints(767px) {
-        @include flexDirection(column);
-      }
-      @include breakPoints(640px) {
-        @include flexDirection(row);
-      }
-      li {
-        margin: 0 10px;
-      }
+    h4{
+      font-size: 25px;
+      font-weight: $fontWeight500;
     }
     a {
       margin: 0px auto 15px;
-      @include Width(100px);
+      @include Width(150px);
       @include Display(block);
+      @include borderRadius(4px);
+    }
+  }
+  .mobileFullWidth {
+    @include breakPoints(640px) {
+      @include Width(100%);
+    }
+    &:nth-child(2){
+      .bgWhite{
+        background: linear-gradient(225deg, rgb(255, 237, 254) 0%, rgb(255, 210, 210) 99%);
+      }
+    }
+    &:nth-child(3){
+      .bgWhite{
+        background: linear-gradient(135deg, rgb(253, 252, 251) 0%, rgb(226, 209, 195) 100%);
+      }
     }
   }
 }

@@ -72,7 +72,7 @@ const HeaderBottom = () => {
           >
             <div className={headerBottomStyles.headerGroup}>
               <Link
-                href="tel:+91 7488736844"
+                href="/tour-package"
                 className={`${headerBottomStyles.primaryButton} ${headerBottomStyles.tourPackage}`}
               >
                 Book Tour Package

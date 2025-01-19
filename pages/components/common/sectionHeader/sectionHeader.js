@@ -8,6 +8,7 @@ const SectionHeader = ({
   homeData,
   hotelBannerClass,
   carBannerClass,
+  tourPackageClass,
 }) => {
   let busBannerClassName = busBannerClass ? sectionHeaderStyles.busBanner : "";
   let hotelBannerClassName = hotelBannerClass
@@ -15,9 +16,10 @@ const SectionHeader = ({
     : "";
   let homeBannerClassName = homeData && sectionHeaderStyles.homeBanner;
   let carBannerClassName = carBannerClass && sectionHeaderStyles.carBanner;
+  let tourPackageClassName = tourPackageClass && sectionHeaderStyles.tourPackageBanner;
   return (
     <section
-      className={`${sectionHeaderStyles.sectionHeader} ${busBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName}`}
+      className={`${sectionHeaderStyles.sectionHeader} ${busBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName} ${tourPackageClassName}`}
     >
       <div className="container mx-auto">
         <div

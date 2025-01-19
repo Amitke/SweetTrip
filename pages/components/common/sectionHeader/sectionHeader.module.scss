@@ -61,6 +61,15 @@
       }
     }
   }
+  &.tourPackageBanner {
+    background-image: url("./../../../../public/images/tour-package-banner.png");
+    @include breakPoints(767px) {
+      background: $primaryColor;
+      &:after {
+        @include Display(none);
+      }
+    }
+  }
   &:after {
     @include Position(absolute);
     content: "";
