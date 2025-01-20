@@ -1,0 +1,43 @@
+@import "./../../../styles/abstracts/themeSrc";
+@import "./../../../styles/components/buttons";
+.topSightSeeing {
+  background-color: #f2f2f2;
+  .flex{
+    @include breakPoints(640px) {
+      @include flexDirection(column);
+    }
+  }
+  .mobileFullWidth{
+    @include breakPoints(640px) {
+      @include Width(100%);
+      text-align: $textCenter;
+    }
+  }
+  .imageContainer{
+    @include Display(flex);
+    @include breakPoints(1200px) {
+      @include flexDirection(column);
+    }
+    h4{
+      @include breakPoints(1200px) {
+        margin-top:15px;
+      }
+    }
+    img{
+      @include borderRadius(5px);
+      box-shadow: rgba(0, 0, 0, 0.29) 1px 3px 10px;
+      object-fit:cover;
+      @include breakPoints(640px) {
+        margin: 0 auto;
+      }
+    }
+    .imageRightContainer{
+      h3{
+        text-transform: $upperCase;
+      }
+      p{
+        font-size:14px;
+      }
+    }
+  }
+}

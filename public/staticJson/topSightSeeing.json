@@ -1,0 +1,44 @@
+{
+  "topSightSeeing": [
+    {
+      "topSightSeeingTitle": {
+        "heading": "Top Sight Seeing in this month",
+        "para": "World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience"
+      },
+      "topSightSeeingInfo": [
+        {
+          "id": 1,
+          "heading": "Varanasi Package",
+          "image": "varanasi.png",
+          "alt": "varanasi",
+          "type": "2 Days / 4 Nights",
+          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+        },
+        {
+          "id": 2,
+          "heading": "Ayodhya Package",
+          "image": "ayodhya.png",
+          "alt": "ayodhya",
+          "type": "2 Days / 4 Nights",
+          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+        },
+        {
+          "id": 3,
+          "heading": "Prayagraj Package",
+          "image": "prayagraj.png",
+          "alt": "prayagraj",
+          "type": "2 Days / 4 Nights",
+          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+        },
+        {
+          "id": 4,
+          "heading": "Bodhgaya Package",
+          "image": "bodhgaya.png",
+          "alt": "bodhgaya",
+          "type": "2 Days / 4 Nights",
+          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
 import { getRentalVehicleData } from "./api/common/rentalVehicle";
 import { getGoogleReviewsData } from "./api/common/googleReviews";
+import { getTopSightSeeingData } from "./api/common/topSightSeeing";
 import { getFaqData } from "./api/common/faq";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import { getAboutUsRecordData } from "@/pages/api/common/aboutUsRecord";
 import RentalVehicle from "@/pages/components/common/rentalVehicle/rentalVehicle";
+import TourPackageContent from "@/pages/components/tourPackage/TourPackageContent";
+import TopSightSeeing from "@/pages/components/tourPackage/TopSightSeeing";
 import Faq from "./components/common/faq/faq";
 const RentalCommunity = dynamic(
   () => import("./components/common/rentalCommunity/rentalCommunity"),
@@ -18,14 +21,16 @@ const RentalCommunity = dynamic(
 export default function HotelBooking() {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
-    const getRentalVehicle = useSelector((state) => state.rentalVehicle);
+  const getRentalVehicle = useSelector((state) => state.rentalVehicle);
+  const getTopSightSeeing = useSelector((state) => state.topSightSeeing);
   const getFaq = useSelector((state) => state.faq);
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
     dispatch(getGoogleReviewsData());
     dispatch(getAboutUsRecordData());
-        dispatch(getRentalVehicleData());
+    dispatch(getRentalVehicleData());
+    dispatch(getTopSightSeeingData());
     dispatch(getFaqData());
   }, []);
   const sectionHeader =
@@ -48,6 +53,16 @@ export default function HotelBooking() {
     getRentalVehicle && getRentalVehicle.status
       ? getRentalVehicle.rentalVehicle?.home[0].vehicleTitle
       : getRentalVehicle?.error;
+
+  const topSightSeeingInfo =
+    getTopSightSeeing && getTopSightSeeing.status
+      ? getTopSightSeeing.topSightSeeing?.topSightSeeing[0].topSightSeeingInfo
+      : getTopSightSeeing?.error;
+
+  const topSightSeeingTitle =
+    getTopSightSeeing && getTopSightSeeing.status
+      ? getTopSightSeeing.topSightSeeing?.topSightSeeing[0].topSightSeeingTitle
+      : getTopSightSeeing?.error;
   return (
     <>
       <Head>
@@ -69,6 +84,8 @@ export default function HotelBooking() {
           tourPackageClass={sectionHeader}
         />
         <RentalVehicle vehicleInfo={vehicleInfo} vehicleTitle={vehicleTitle} />
+        <TopSightSeeing topSightSeeingInfo={topSightSeeingInfo} topSightSeeingTitle={topSightSeeingTitle}/>
+        <TourPackageContent />
         <RentalCommunity />
         <Faq faqsData={faqsData} faqsError={faqsError} />
       </>
