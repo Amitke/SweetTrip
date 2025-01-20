@@ -30,7 +30,7 @@ const HotelContent = () => {
               get a platform that streamlines your hotel hunt.
             </p>
             <p className="mt-5">
-              Whether you are looking for
+              Whether you are looking for 
               <strong>
                 family hotels in Varanasi or hotels for couples in Varanasi
               </strong>
