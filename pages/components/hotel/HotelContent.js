@@ -30,9 +30,7 @@ const HotelContent = () => {
               get a platform that streamlines your hotel hunt.
             </p>
             <p className="mt-5">
-              Whether you are looking for 
-              <strong>
-                family hotels in Varanasi or hotels for couples in Varanasi
+              Whether you are looking for <strong> family hotels in Varanasi or hotels for couples in Varanasi
               </strong>
               , we get you both. Our hotels in Varanasi provide a family
               environment and make visitors feel safe and warm inside the
