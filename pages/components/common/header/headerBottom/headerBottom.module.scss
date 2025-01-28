@@ -10,6 +10,9 @@
     color: $primaryColor;
     font-size: 20px;
     font-weight: $fontWeight700;
+    span{
+      color: $whiteColor;
+    }
   }
   .mobileLogo {
     @include breakPoints(767px) {

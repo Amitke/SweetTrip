@@ -21,7 +21,8 @@
             "title":"Hotel Booking"
         },
         "tourPackage":{
-            "title":"Tour Package"
+            "title":"Tour Package",
+            "para":"Get Upto 1000 Off in 4 Packages"
         },
         "contact":{
             "title":"Contact Us"

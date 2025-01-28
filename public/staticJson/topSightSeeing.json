@@ -2,41 +2,41 @@
   "topSightSeeing": [
     {
       "topSightSeeingTitle": {
-        "heading": "Top Sight Seeing in this month",
-        "para": "World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience"
+        "heading": "Unlock Exclusive Varanasi, Ayodhya, Prayagraj, and Bodhgaya Tour Packages",
+        "para": "Rental Cars, Hotels, Boat Ride in One Package "
       },
       "topSightSeeingInfo": [
         {
           "id": 1,
-          "heading": "Varanasi Package",
+          "heading": "Varanasi Package- Get Up to Rs. 1000 Off!",
           "image": "varanasi.png",
           "alt": "varanasi",
           "type": "2 Days / 4 Nights",
-          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+          "para": "Here are the two-day tour package details"
         },
         {
           "id": 2,
-          "heading": "Ayodhya Package",
+          "heading": "Ayodhya Tour Package- Get Rs.1000 Off!",
           "image": "ayodhya.png",
           "alt": "ayodhya",
           "type": "2 Days / 4 Nights",
-          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+          "para": "Here are the two-day tour package details"
         },
         {
           "id": 3,
-          "heading": "Prayagraj Package",
+          "heading": "Prayagraj Tour Package- Get Rs. 1000 Off!",
           "image": "prayagraj.png",
           "alt": "prayagraj",
           "type": "2 Days / 4 Nights",
-          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+          "para": "Here are the two-day tour package details"
         },
         {
           "id": 4,
-          "heading": "Bodhgaya Package",
+          "heading": "Bodhgaya Tour Package- Get Rs. 1000 Off!",
           "image": "bodhgaya.png",
           "alt": "bodhgaya",
           "type": "2 Days / 4 Nights",
-          "para": "lorem ipsum simplelorem ipsum simplelorem ipsum simplelorem ipsum simple"
+          "para": "Here are the two-day tour package details"
         }
       ]
     }
