@@ -11,9 +11,9 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
             <h2 className="mb-5">
               {topSightSeeingTitle && topSightSeeingTitle?.heading}
             </h2>
-            <p>{topSightSeeingTitle && topSightSeeingTitle?.para}</p>
-            <p className="mt-5">Travel across Varanasi, Ayodhya, Prayagraj and Bodhgaya comfortably with our tour packages. Embark on an unforgettable spiritual and cultural journey with one of the best travel agents in Varanasi. Whether you want a Varanasi to Ayodhya one-day tour package or a Varanasi Bodhgaya tour package or want to customise your package, Sweet Trip delivers it perfectly. </p>
-            <p className="mt-5">Our meticulously crafted packages for Varanasi, Ayodhya, Bodhgaya and Prayagraj cater to discerning travellers seeking a captivating experience in all these ancient cities. Travelling to Parayagraj, Ayodhya and Bodhgaya board from Varanasi only. </p>
+            <p>{topSightSeeingTitle && topSightSeeingTitle?.paraOne}</p>
+            <p className="mt-5">{topSightSeeingTitle && topSightSeeingTitle?.paraSecond}</p>
+            <p className="mt-5">{topSightSeeingTitle && topSightSeeingTitle?.paraThird}</p>
           </div>
           <div className={`flex-row flex-wrap flex pl-4 pr-4 ${tourPackageStyles.flex}`}>
             {topSightSeeingInfo &&
