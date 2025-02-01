@@ -1,7 +1,7 @@
 import React from "react";
 import whyChooseStyles from "@/pages/components/about/whyChoose/whyChoose.module.scss";
 
-const TourPackageContent = () => {
+const TourPackageContent = ({tourPackage}) => {
   return (
     <>
       <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
@@ -9,8 +9,8 @@ const TourPackageContent = () => {
           <div
             className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
           >
-            <h2 className="mb-2">
-              Varanasi Package: <br />
+            <h2 className="mb-2" ref={tourPackage}>
+              Varanasi Tour Package: <br />
               Day 1: Spiritual and Cultural Immersion
             </h2>
             <h3 className="mb-2">Morning</h3>
@@ -161,8 +161,8 @@ const TourPackageContent = () => {
                 (winter delicacy), and tamatar chaat at local eateries.
               </li>
             </ul>
-            <h2 className="mb-2 mt-5">
-              Ayodhya Package: <br />
+            <h2 className="mb-2 mt-5" ref={tourPackage}>
+              Ayodhya Tour Package: <br />
               Day 1: Spiritual Landmarks and Ramayana History
             </h2>
             <h3 className="mb-2">Morning</h3>

@@ -10,7 +10,6 @@ import { getFaqData } from "./api/common/faq";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import { getAboutUsRecordData } from "@/pages/api/common/aboutUsRecord";
 import RentalVehicle from "@/pages/components/common/rentalVehicle/rentalVehicle";
-import TourPackageContent from "@/pages/components/tourPackage/TourPackageContent";
 import TopSightSeeing from "@/pages/components/tourPackage/TopSightSeeing";
 import Faq from "./components/common/faq/faq";
 const RentalCommunity = dynamic(
@@ -41,7 +40,7 @@ export default function HotelBooking() {
       : getSectionHeader?.error;
 
   const faqsData =
-    getFaq && getFaq.status ? getFaq?.faq?.hotelBooking : getFaq?.error;
+    getFaq && getFaq.status ? getFaq?.faq?.tourPackage : getFaq?.error;
   const faqsError = getFaq?.error;
 
   const vehicleInfo =
@@ -66,16 +65,16 @@ export default function HotelBooking() {
   return (
     <>
       <Head>
-        <title>Sweet Trip- Best Places to Stay in Varanasi & Ayodhya</title>
+        <title>Sweet Trip- Tour Packages from Varanasi with 1000 Off!</title>
         <meta
           name="description"
-          content="Want the best places to stay in Varanasi and Ayodhya or looking for family hotels in Varanasi, look no further! Book hotels at both places with Sweet Trip."
+          content="Explore the best deals on Varanasi to Ayodhya tour packages, Varanasi Ayodhya Allahabad tour packages and Varanasi to Bodhgaya tour packages. Get 1000 off on all packages."
         />
         <meta
           name="keywords"
-          content="family hotels in varanasi, low budget hotels in Varanasi, best places to stay in varanasi, best hotel in varanasi for family, hotels for couples in varanasi, hotels in ayodhya near ram mandir, hotels near ram mandir ayodhya, hotels near ayodhya ram mandir,hotel booking in ayodhya,    cheap hotels in ayodhya, best hotel in varanasi for family"
+          content="Varanasi to Ayodhya tour package, Varanasi Ayodhya tour package, Varanasi Ayodhya Allahabad tour package, Varanasi Ayodhya Gaya tour package, Varanasi Allahabad Ayodhya tour package, Varanasi Ayodhya Prayagraj, Varanasi Ayodhya Prayagraj tour, Varanasi Ayodhya tour"
         />
-        <link rel="canonical" href="https://sweettrip.in/hotel-booking" />
+        <link rel="canonical" href="https://sweettrip.in/tour-package" />
       </Head>
       <>
         <SectionHeader
@@ -85,7 +84,6 @@ export default function HotelBooking() {
         />
         <RentalVehicle vehicleInfo={vehicleInfo} vehicleTitle={vehicleTitle} />
         <TopSightSeeing topSightSeeingInfo={topSightSeeingInfo} topSightSeeingTitle={topSightSeeingTitle}/>
-        <TourPackageContent />
         <RentalCommunity />
         <Faq faqsData={faqsData} faqsError={faqsError} />
       </>

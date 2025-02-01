@@ -49,5 +49,32 @@
       "heading": "Does Sweet Trip provide safe hotels for families and couples?",
       "para": "Yes, we ensure safety and a family environment to our customers in every hotel associated with us."
     }
+  ],
+  "tourPackage": [
+    {
+      "id": 1,
+      "heading": "How long does the trip take? ",
+      "para": "A tour of Varanasi and Ayodhya typically takes at least two days. "
+    },
+    {
+      "id": 2,
+      "heading": "When is the best time to visit? ",
+      "para": "The best time to visit is from October to March when the weather is pleasant. However, crowds may be larger during peak season. "
+    },
+    {
+      "id": 3,
+      "heading": "How can I travel between the cities?",
+      "para": "You can travel between Varanasi and Ayodhya in Sweet Trip rental cars. "
+    },
+    {
+      "id": 4,
+      "heading": "How much time does it take from Varanasi to other destinations?",
+      "para": "It takes approximately 3 to 4 hours for one side trip from Varanasi to Ayodhya and Prayagraj. However, if you book Varanasi to Gaya tour package, it may take 6-8 hours. "
+    },
+    {
+      "id": 5,
+      "heading": "What's included in the tour package?",
+      "para": "The Varanasi to Ayodhya tour package typically includes transportation, accommodation, and guided tours. Some packages may also include airport or railway station pickup and drop. "
+    }
   ]
 }
