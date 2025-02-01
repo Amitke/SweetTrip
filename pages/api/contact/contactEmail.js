@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         port: process.env.EMAIL_PORT,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: process.env.EMAIL_USER,
+          user: process.env.SENDER_EMAIL_USER,
           pass: process.env.EMAIL_PASSWORD,
         },
         tls: {
@@ -21,11 +21,11 @@ export default async function handler(req, res) {
         logger: true,
       });
       await transporter.sendMail({
-        from: email,
-        to: process.env.EMAIL_USER, // Your email address
+        from: process.env.SENDER_EMAIL_USER, // 2FA email address (Sender mail id)
+        to: process.env.RECEIVER_EMAIL_USER, // Your email address (receiver mail id)
         subject: subject,
-        text: `Name: ${name} \n Mobile: ${phone}`,
-        html: `<p>${message}</p>`,
+        text: '',
+        html: `<p>Name: ${name} <br/> Email: ${email} <br/> Mobile: ${phone} <br/> Message: ${message}</p>`,
       });
 
       res.status(200).json({ success: true, message: "Form has been successfully submitted" });
