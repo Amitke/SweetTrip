@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Link } from "react-scroll";
-import TourPackageContent from "@/pages/components/tourPackage/TourPackageContent";
+import Link from "next/link";
 import tourPackageStyles from "./tourPackage.module.scss";
 
 const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
@@ -47,9 +46,7 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
                         <h3 className="mb-2">{item.type}</h3>
                         <p className="mb-5">{item.para}</p>
                         <Link
-                          to={item.alt}
-                          smooth={true}
-                          duration={500}
+                          href={item.link}
                           rel="nofollow"
                           className={tourPackageStyles.primaryButton}
                         >
@@ -63,7 +60,6 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
           </div>
         </div>
       </section>
-      <TourPackageContent />
     </>
   );
 };

@@ -14,7 +14,8 @@
           "image": "varanasi.png",
           "alt": "varanasi",
           "type": "2 Days / 4 Nights",
-          "para": "Here are the two-day tour package details"
+          "para": "Here are the two-day tour package details",
+          "link": "varanasi-tour-package"
         },
         {
           "id": 2,
@@ -22,7 +23,8 @@
           "image": "ayodhya.png",
           "alt": "ayodhya",
           "type": "2 Days / 4 Nights",
-          "para": "Here are the two-day tour package details"
+          "para": "Here are the two-day tour package details",
+          "link": "ayodhya-tour-package"
         },
         {
           "id": 3,
@@ -30,7 +32,8 @@
           "image": "prayagraj.png",
           "alt": "prayagraj",
           "type": "2 Days / 4 Nights",
-          "para": "Here are the two-day tour package details"
+          "para": "Here are the two-day tour package details",
+          "link": "prayagraj-tour-package"
         },
         {
           "id": 4,
@@ -38,7 +41,8 @@
           "image": "bodhgaya.png",
           "alt": "bodhgaya",
           "type": "2 Days / 4 Nights",
-          "para": "Here are the two-day tour package details"
+          "para": "Here are the two-day tour package details",
+          "link": "bodhgaya-tour-package"
         }
       ]
     }
