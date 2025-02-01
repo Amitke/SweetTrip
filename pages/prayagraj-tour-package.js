@@ -1,8 +1,22 @@
 import React from "react";
+import Head from "next/head";
 import whyChooseStyles from "@/pages/components/about/whyChoose/whyChoose.module.scss";
 
 const PrayagrajTourPackage = () => {
   return (
+    <>
+    <Head>
+        <title>Sweet Trip- Tour Packages from Varanasi with 1000 Off!</title>
+        <meta
+          name="description"
+          content="Explore the best deals on Varanasi to Ayodhya tour packages, Varanasi Ayodhya Allahabad tour packages and Varanasi to Bodhgaya tour packages. Get 1000 off on all packages."
+        />
+        <meta
+          name="keywords"
+          content="Varanasi to Ayodhya tour package, Varanasi Ayodhya tour package, Varanasi Ayodhya Allahabad tour package, Varanasi Ayodhya Gaya tour package, Varanasi Allahabad Ayodhya tour package, Varanasi Ayodhya Prayagraj, Varanasi Ayodhya Prayagraj tour, Varanasi Ayodhya tour"
+        />
+        <link rel="canonical" href="https://sweettrip.in/tour-package" />
+      </Head>
     <section
       className={`${whyChooseStyles.policy} pt-10 pb-10 border-solid border-t-2`}
     >
@@ -143,6 +157,7 @@ const PrayagrajTourPackage = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 export default PrayagrajTourPackage;
