@@ -1,7 +1,7 @@
 import React from "react";
 import whyChooseStyles from "@/pages/components/about/whyChoose/whyChoose.module.scss";
 
-const TourPackageContent = ({tourPackage}) => {
+const TourPackageContent = () => {
   return (
     <>
       <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
@@ -9,7 +9,7 @@ const TourPackageContent = ({tourPackage}) => {
           <div
             className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
           >
-            <h2 className="mb-2" ref={tourPackage}>
+            <h2 className="mb-2" id="varanasi">
               Varanasi Tour Package: <br />
               Day 1: Spiritual and Cultural Immersion
             </h2>
@@ -161,7 +161,7 @@ const TourPackageContent = ({tourPackage}) => {
                 (winter delicacy), and tamatar chaat at local eateries.
               </li>
             </ul>
-            <h2 className="mb-2 mt-5" ref={tourPackage}>
+            <h2 className="mb-2 mt-5" id="ayodhya">
               Ayodhya Tour Package: <br />
               Day 1: Spiritual Landmarks and Ramayana History
             </h2>
@@ -298,8 +298,8 @@ const TourPackageContent = ({tourPackage}) => {
                 along with regional sweets like pedas.
               </li>
             </ul>
-            <h2 className="mb-2 mt-5">
-              Prayagraj Tour Package <br />
+            <h2 className="mb-2 mt-5" id="prayagraj">
+              Prayagraj Tour Package: <br />
               Day 1: Explore Spirituality and Heritage
             </h2>
             <h3 className="mb-2">Morning</h3>
@@ -428,8 +428,8 @@ const TourPackageContent = ({tourPackage}) => {
                 food at Loknath or Civil Lines.
               </li>
             </ul>
-            <h2 className="mb-2 mt-5">
-              Bodhgaya Tour Package <br />
+            <h2 className="mb-2 mt-5" id="bodhgaya">
+              Bodhgaya Tour Package: <br />
               Day 1: Exploring the Heart of Spirituality
             </h2>
             <h3 className="mb-2">Morning</h3>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import faqStyles from "./faq.module.scss";
 
-const Faq = ({ faqsData,faqsError,faqsStatus }) => {
+const Faq = ({ faqsData,faqsError }) => {
   const [open, setOpen] = useState(1);
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
@@ -19,7 +19,7 @@ const Faq = ({ faqsData,faqsError,faqsStatus }) => {
             faqsData.length > 0 ?
             faqsData.map((item) => {
               return (
-                <div className="w-full pl-4 pr-4 mt-5">
+                <div className="w-full pl-4 pr-4 mt-5" key={item.id}>
                   <h3 onClick={() => handleOpen(item.id)}>
                     {item.heading} {open === item.id ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
                   </h3>

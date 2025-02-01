@@ -9,7 +9,7 @@
       },
       "topSightSeeingInfo": [
         {
-          "id": "varanasi",
+          "id": 1,
           "heading": "Varanasi Package- Get Up to Rs. 1000 Off!",
           "image": "varanasi.png",
           "alt": "varanasi",
@@ -17,7 +17,7 @@
           "para": "Here are the two-day tour package details"
         },
         {
-          "id": "ayodhya",
+          "id": 2,
           "heading": "Ayodhya Tour Package- Get Rs.1000 Off!",
           "image": "ayodhya.png",
           "alt": "ayodhya",
@@ -25,7 +25,7 @@
           "para": "Here are the two-day tour package details"
         },
         {
-          "id": "prayagraj",
+          "id": 3,
           "heading": "Prayagraj Tour Package- Get Rs. 1000 Off!",
           "image": "prayagraj.png",
           "alt": "prayagraj",
@@ -33,7 +33,7 @@
           "para": "Here are the two-day tour package details"
         },
         {
-          "id": "bodhgaya",
+          "id": 4,
           "heading": "Bodhgaya Tour Package- Get Rs. 1000 Off!",
           "image": "bodhgaya.png",
           "alt": "bodhgaya",

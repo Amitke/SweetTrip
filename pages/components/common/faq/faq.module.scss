@@ -8,6 +8,10 @@
     @include borderRadius(8px);
     padding: 10px 20px;
     cursor: pointer;
+    @include breakPoints(576px) {
+      @include Padding(10px);
+      font-size: 0.9rem;
+    }
     svg{
       float: right;
       @include Margin(5px);

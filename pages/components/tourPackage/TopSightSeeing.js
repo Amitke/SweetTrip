@@ -1,21 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import TourPackageContent from "@/pages/components/tourPackage/TourPackageContent";
 import tourPackageStyles from "./tourPackage.module.scss";
 
 const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
-  let tourPackage;
-  const varanasi = useRef(null);
-  const ayodhya = useRef(null);
-  const prayagraj = useRef(null);
-  const bodhgaya = useRef(null);
-
-  const scrollToPackageSection = (ref) => {
-    ref.current.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-  console.log(tourPackage,'tourPackage')
   return (
     <>
       <section className={`${tourPackageStyles.topSightSeeing} pt-10 pb-10`}>
@@ -38,17 +27,9 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
             {topSightSeeingInfo &&
               topSightSeeingInfo.length > 0 &&
               topSightSeeingInfo.map((item) => {
-                if (item.alt === "varanasi") {
-                  tourPackage = varanasi;
-                } else if (item.alt === "ayodhya") {
-                  tourPackage = prayagraj;
-                }else if (item.alt === "prayagraj") {
-                  tourPackage = ayodhya;
-                }else if (item.alt === "bodhgaya") {
-                  tourPackage = bodhgaya;
-                }
                 return (
                   <div
+                    key={item.id}
                     className={`w-1/2 pl-4 pr-4 mt-10 ${tourPackageStyles.mobileFullWidth}`}
                   >
                     <div className={`${tourPackageStyles.imageContainer}`}>
@@ -65,15 +46,15 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
                         <h4 className="mb-1">{item.heading}</h4>
                         <h3 className="mb-2">{item.type}</h3>
                         <p className="mb-5">{item.para}</p>
-                        <button
+                        <Link
+                          to={item.alt}
+                          smooth={true}
+                          duration={500}
                           rel="nofollow"
                           className={tourPackageStyles.primaryButton}
-                          onClick={() =>
-                            scrollToPackageSection(tourPackage)
-                          }
                         >
                           Enquiry Now
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -82,7 +63,7 @@ const TopSightSeeing = ({ topSightSeeingTitle, topSightSeeingInfo }) => {
           </div>
         </div>
       </section>
-      <TourPackageContent tourPackage={tourPackage} />
+      <TourPackageContent />
     </>
   );
 };
