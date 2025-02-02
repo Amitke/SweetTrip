@@ -10,7 +10,6 @@ import googleReviewsReducer from './googleReviews';
 import rentalVehicleReducer from './rentalVehicle';
 import promoReducer from './promo';
 import peopleLikeReducer from './peopleLike';
-import bookDataReducer from './bookACar';
 import faqReducer from "./faq";
 import popularRoutesReducer from "./popularRoutes";
 import topSightSeeingReducer from "./topSightSeeing";
@@ -26,7 +25,6 @@ const rootReducer = combineReducers({
   rentalVehicle: rentalVehicleReducer,
   promo: promoReducer,
   peopleLike: peopleLikeReducer,
-  bookCarData: bookDataReducer,
   faq:faqReducer,
   popularRoutes:popularRoutesReducer,
   topSightSeeing: topSightSeeingReducer,

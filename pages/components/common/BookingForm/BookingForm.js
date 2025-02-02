@@ -1,27 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { postBookingDetails } from "@/pages/api/common/bookACar";
 import { validatePhoneNumber } from "@/utils/validatePhoneNumber";
 import { validateAlphaNumeric } from "@/utils/validateAlphaNumeric";
 import bookingFormStyles from "./bookingForm.module.scss";
 
 const BookingForm = () => {
-  const dispatch = useDispatch();
   const today = new Date().toISOString().split("T")[0];
-  const getBookCarData = useSelector((state) => state.bookCarData);
 
   const [formData, setFormData] = useState({
     pickupLocation: "",
     dropLocation: "",
   });
   const [mobileData, setMobileData] = useState("");
-  const [isVisibleAlert, setIsVisibleAlert] = useState(true);
+  const [isVisibleAlert, setIsVisibleAlert] = useState(false);
   const [formError, setFormError] = useState({
     pickupLocation: "",
     dropLocation: "",
   });
   const [phoneError, setPhoneError] = useState("");
   const [selectedDate, setSelectedDate] = useState(today);
+  const [statusMessage, setStatusMessage] = useState("");
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -78,7 +75,7 @@ const BookingForm = () => {
     setIsVisibleAlert(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.pickupLocation === "") {
       setFormError({
@@ -94,7 +91,7 @@ const BookingForm = () => {
       });
       setPhoneError("");
       setIsVisibleAlert(true);
-    }  else if (mobileData === "") {
+    } else if (mobileData === "") {
       setPhoneError("This is a required field");
       setIsVisibleAlert(true);
     } else if (
@@ -108,37 +105,47 @@ const BookingForm = () => {
         dropLocation: "",
       });
       setPhoneError("");
-      dispatch(
-        postBookingDetails({
-          pickupLocation: formData.pickupLocation,
-          dropLocation: formData.dropLocation,
-          date: selectedDate,
-          mobile: mobileData,
-        })
-      );
-      setFormData({
-        pickupLocation: "",
-        dropLocation: "",
-      });
-      setSelectedDate(today);
-      setMobileData("");
-      setIsVisibleAlert(true);
+      const requestBody = {
+        pickupLocation: formData.pickupLocation,
+        dropLocation: formData.dropLocation,
+        date: selectedDate,
+        mobile: mobileData,
+      };
+      try {
+        const response = await fetch("./../../../api/bookACar/bookACarEmail", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(requestBody),
+        });
+        if (response.ok && response.status === 200) {
+          setStatusMessage("Form has been successfully submitted");
+          setIsVisibleAlert(true);
+          setFormData({
+            pickupLocation: "",
+            dropLocation: "",
+          });
+          setSelectedDate(today);
+          setMobileData("");
+        } else {
+          setStatusMessage(response.statusText);
+          setIsVisibleAlert(true);
+        }
+      } catch (error) {
+        setStatusMessage(response.statusText);
+        setIsVisibleAlert(true);
+      }
     }
   };
   return (
     <form className={bookingFormStyles.bookingForm} onSubmit={handleSubmit}>
       <h2 className="mb-3">Book Your Vehicles Now!</h2>
-      {getBookCarData.bookData && isVisibleAlert ? (
+      {isVisibleAlert ? (
         <div
           className={`text-left p-4 mb-4 text-sm text-red-800 rounded-lg dark:bg-gray-800 dark:text-red-400 ${
-            getBookCarData.bookData?.ok ? "successBg" : "errorBg"
+            isVisibleAlert ? "successBg" : "errorBg"
           }`}
         >
-          <span className="font-medium">
-            {getBookCarData.bookData?.ok
-              ? "Form has been successfully submitted"
-              : "Bad Request"}
-          </span>
+          <span className="font-medium">{isVisibleAlert && statusMessage}</span>
           <button
             onClick={handleAlertBox}
             type="button"

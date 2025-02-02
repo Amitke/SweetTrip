@@ -171,7 +171,6 @@ export default function Contact() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(requestBody),
         });
-        console.log(response,'response')
         if (response.ok && response.status === 200) {
           setStatusMessage("Form has been successfully submitted");
           setIsVisibleAlert(true);
