@@ -83,17 +83,17 @@ const BookingForm = () => {
         dropLocation: "",
       });
       setPhoneError("");
-      setIsVisibleAlert(true);
+      setIsVisibleAlert(false);
     } else if (formData.dropLocation === "") {
       setFormError({
         pickupLocation: "",
         dropLocation: "This is a required field",
       });
       setPhoneError("");
-      setIsVisibleAlert(true);
+      setIsVisibleAlert(false);
     } else if (mobileData === "") {
       setPhoneError("This is a required field");
-      setIsVisibleAlert(true);
+      setIsVisibleAlert(false);
     } else if (
       formData.pickupLocation !== "" &&
       formData.dropLocation !== "" &&
