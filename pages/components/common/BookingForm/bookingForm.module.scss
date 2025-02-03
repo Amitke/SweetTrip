@@ -8,6 +8,7 @@
   background-color: $primaryColor;
   @include Padding(20px);
   @include borderRadius(20px);
+  margin-top: 40px;
   @include breakPoints(767px) {
     margin-bottom: 20px;
   }
@@ -21,6 +22,33 @@
       opacity: 1;
     }
   }
+  .buttonGroupWrapper {
+    margin-top: -40px;
+    button {
+      background-color: $secondaryColor;
+      color: $whiteColor;
+      @include Padding(10px);
+      margin-right: 10px;
+      @include Display(inline-block);
+      @include borderRadius(4px);
+      cursor: pointer;
+      @include breakPoints(640px) {
+        font-size: 12px;
+        @include Padding(8px);
+        margin-right:5px; 
+      }
+    }
+    button.selected {
+      background: linear-gradient(
+        127deg,
+        #e5eaff,
+        #e6fcfc 39.23%,
+        #e6fcf7 74.34%,
+        #f5fce6 99.12%
+      );
+      color: $primaryColor;
+    }
+  }
   h2 {
     color: $secondaryColor;
     @include Position(relative);
@@ -30,6 +58,9 @@
     opacity: 0;
     @include breakPoints(767px) {
       font-size: 1.5rem;
+    }
+    span{
+      color: $whiteColor;
     }
   }
   .formWrapper {

@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { pickupLocation, dropLocation, date, mobile } = req.body;
+    const { rootHeading, pickupLocation, dropLocation, date, mobile } = req.body;
 
     try {
       const transporter = nodemailer.createTransport({
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         to: process.env.RECEIVER_EMAIL_USER, // Your email address (receiver mail id)
         subject: "Car Booking Customer Information",
         text: '',
-        html: `<p>Pickup Location: ${pickupLocation} <br/> Drop Location: ${dropLocation} <br/> Date: ${date} <br/> Mobile: ${mobile}</p>`,
+        html: `<p>Root: ${rootHeading} <br/> Pickup Location: ${pickupLocation} <br/> Drop Location: ${dropLocation} <br/> Date: ${date} <br/> Mobile: ${mobile}</p>`,
       });
 
       res.status(200).json({ success: true, message: "Form has been successfully submitted" });

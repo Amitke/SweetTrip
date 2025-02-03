@@ -19,6 +19,12 @@ const BookingForm = () => {
   const [phoneError, setPhoneError] = useState("");
   const [selectedDate, setSelectedDate] = useState(today);
   const [statusMessage, setStatusMessage] = useState("");
+  const [rootSelected, setRootSelected] = useState({
+    outstation: true,
+    local: false,
+    airport: false,
+  });
+  const [rootHeading, setRootHeading] = useState("Out Station");
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -106,6 +112,7 @@ const BookingForm = () => {
       });
       setPhoneError("");
       const requestBody = {
+        rootHeading: rootHeading,
         pickupLocation: formData.pickupLocation,
         dropLocation: formData.dropLocation,
         date: selectedDate,
@@ -136,9 +143,38 @@ const BookingForm = () => {
       }
     }
   };
+  const handleRoot = (event) => {
+    if (event === "outstation") {
+      setRootSelected({
+        outstation:true,
+        local:false,
+        airport:false
+      });
+      setRootHeading("Out Station");
+    } else if (event === "local") {
+      setRootSelected({
+        outstation:false,
+        local:true,
+        airport:false
+      });
+      setRootHeading("Local Taxi");
+    } else if (event === "airport") {
+      setRootSelected({
+        outstation:false,
+        local:false,
+        airport:true
+      });
+      setRootHeading("Airport");
+    }
+  };
   return (
     <form className={bookingFormStyles.bookingForm} onSubmit={handleSubmit}>
-      <h2 className="mb-3">Book Your Vehicles Now!</h2>
+      <div className={bookingFormStyles.buttonGroupWrapper}>
+        <button className={rootSelected.outstation && bookingFormStyles.selected} onClick={() => handleRoot("outstation")}>Outstation</button>
+        <button className={rootSelected.local && bookingFormStyles.selected}  onClick={() => handleRoot("local")}>Local Taxi</button>
+        <button className={rootSelected.airport && bookingFormStyles.selected} onClick={() => handleRoot("airport")}>Airport Rides</button>
+      </div>
+      <h2 className="mb-3">Book Your Vehicles for <span>{rootHeading}</span> Now!</h2>
       {isVisibleAlert ? (
         <div
           className={`text-left p-4 mb-4 text-sm text-red-800 rounded-lg dark:bg-gray-800 dark:text-red-400 ${
