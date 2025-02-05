@@ -50,21 +50,10 @@ export default function RefundPolicy() {
                 hours before the start of the trip.
               </p>
               <h3>
-                For booking modifications, the following rules will apply:
+              No Cancellation, No Refund
               </h3>
               <p>
-                Sweet Trip allows customers to cancel their trips. There is no
-                mandatory rule for cancellation as we understand that
-                cancellation is subject to conditions and sometimes has to be
-                done in a while. Sweet Trip allows customers to cancel 30
-                minutes before the scheduled trip time.
-              </p>
-              <p className="mt-5">
-                There is no cancellation charge for the trip; however, customers
-                will not receive a refund. Their token amount will remain with
-                Sweet Trip, and they will have no right to ask for a refund.
-                However, if customers complete their trip, the advance will be
-                managed in the final trip amount.
+              A booking is not subject to change or cancellation. Once a booking is made for a certain period, it will be considered final. We don't commit to any refund. You shall have to complete the trip.
               </p>
               <h3>
                 Remaining Payments after Advance or Payment at Trip Completion
