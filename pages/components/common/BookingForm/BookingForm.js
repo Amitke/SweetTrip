@@ -24,7 +24,7 @@ const BookingForm = () => {
     local: false,
     airport: false,
   });
-  const [rootHeading, setRootHeading] = useState("Out Station");
+  const [rootHeading, setRootHeading] = useState("Outstation");
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -150,7 +150,7 @@ const BookingForm = () => {
         local:false,
         airport:false
       });
-      setRootHeading("Out Station");
+      setRootHeading("Outstation");
     } else if (event === "local") {
       setRootSelected({
         outstation:false,
@@ -174,7 +174,7 @@ const BookingForm = () => {
         <button className={rootSelected.local && bookingFormStyles.selected}  onClick={() => handleRoot("local")}>Local Taxi</button>
         <button className={rootSelected.airport && bookingFormStyles.selected} onClick={() => handleRoot("airport")}>Airport Rides</button>
       </div>
-      <h2 className="mb-3">Book Your Vehicles for <span>{rootHeading}</span> Now!</h2>
+      <h2 className="mt-1 mb-1">Book Your Vehicles for <span>{rootHeading}</span> Now!</h2>
       {isVisibleAlert ? (
         <div
           className={`text-left p-4 mb-4 text-sm text-red-800 rounded-lg dark:bg-gray-800 dark:text-red-400 ${
