@@ -15,7 +15,6 @@ import RentalVehicle from "@/pages/components/common/rentalVehicle/rentalVehicle
 import HomeContent from "./components/home/homeContent";
 import Promo from "./components/common/promo/promo";
 import PeopleLike from "./components/home/peopleLike/peopleLike";
-import BookingForm from "./components/common/BookingForm/BookingForm";
 import PopularRoutes from "./components/common/popularRoutes/popularRoutes";
 const RentalCommunity = dynamic(
   () => import("./components/common/rentalCommunity/rentalCommunity"),
@@ -84,13 +83,6 @@ export default function Home() {
           para={sectionHeader.para}
           homeData={homeData}
         />
-        <div className="container mx-auto mt-10">
-          <div className="flex-row justify-center items-center flex">
-            <div className="w-full pl-4 pr-4">
-              <BookingForm />
-            </div>
-          </div>
-        </div>
         <RentalVehicle vehicleInfo={vehicleInfo} vehicleTitle={vehicleTitle} />
         <div className="container mx-auto">
           <div className="md:flex-row flex-col justify-center items-center flex">

@@ -8,7 +8,8 @@
   background-color: $primaryColor;
   @include Padding(20px);
   @include borderRadius(20px);
-  margin-top: 40px;
+  margin-top: 30px;
+  text-align: $textLeft;
   @include breakPoints(767px) {
     margin-bottom: 20px;
   }
@@ -56,9 +57,7 @@
     animation-iteration-count: infinite;
     animation-name: animationH2;
     opacity: 0;
-    @include breakPoints(767px) {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
     span{
       color: $whiteColor;
     }

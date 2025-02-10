@@ -1,4 +1,5 @@
 import React from "react";
+import BookingForm from "./../BookingForm/BookingForm";
 import sectionHeaderStyles from "./sectionHeader.module.scss";
 
 const SectionHeader = ({
@@ -28,6 +29,7 @@ const SectionHeader = ({
           <div className="w-full pl-4 pr-4">
             <h1>{title}</h1>
             {para ? <p className="m-auto">{para}</p> : ""}
+            {homeData && <BookingForm />}
           </div>
         </div>
       </div>
