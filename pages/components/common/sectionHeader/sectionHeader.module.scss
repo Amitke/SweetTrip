@@ -13,6 +13,9 @@
   &.homeBanner {
     .flexRow {
       min-height: 450px;
+      @include breakPoints(1200px) {
+        min-height: 350px;
+      }
     }
     @include breakPoints(767px) {
       background-image: url("./../../../../public/images/home-banner.png");
