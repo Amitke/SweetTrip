@@ -6,67 +6,38 @@ const HomeContent = () => {
     <section className={`${policyStyles.policy} pb-10`}>
       <div className="container mx-auto">
         <div className="flex-col flex pl-4 pr-4">
-          <h3>Tour Varanasi with the Best Taxi Service in Varanasi</h3>
+          <h3>Curated Tour Plans for You</h3>
           <p>
-            Varanasi or Banaras or Kashi or Benares, the city situated on the
-            holy banks of the Ganges has many names and many perceptions to
-            people at the same time. Some people want to take a dip in the holy
-            water of the Ganges, some come for Kashi Vishwanath temple and some
-            visit to see mesmerizing ghats located on the banks of the holy
-            river. The reasons could be many, but to visit these places, you
-            need a smooth transportation service to make your trip memorable.
-            Sweet Trip’s car rental services Varanasi ensures you will enjoy
-            Banaras never like before.
+          A tour gets comfortable and becomes memorable when you have hotels, cabs, and tour guides on your plate. 
           </p>
-          <p className="mt-5">
-            Located in the middle Ganges valley in the southeastern part of
-            Uttar Pradesh, Kashi lies on the left bank of the river. Millions of
-            devotees, tourists and pilgrims visit this city every year. It is
-            said that only those people visit Banaras who get a call from Lord
-            Shiva. If you are one of them, do visit the Kashi Vishwanath temple,
-            a sacred place for all Sanatanis. Book an online rental car in
-            Varanasi to visit this temple.
+          <p className="mt-1">
+          Explore Varanasi, Ayodhya, Prayagraj, and Bodhgaya like Never Before. Book our tour package to enjoy a hassle-free vacation. 
           </p>
-          <h3>Some Interesting Mythological Stories about Varanasi</h3>
+          <h3>Know about Sweet Trip</h3>
           <p>
-            Hindu mythology says, Shiva, one of the three principal deities,
-            founded this holy city. Once, Shiva and Brahma had a fight, and lord
-            Shiva tore off one of the five heads of lord Brahma. Since Brahma
-            was a brahmin religion, Shiva had committed a brahmahatya by tearing
-            one of his heads. As a result, the slain head of Brahma was stuck in
-            Shiva’s hands. Shiva tried to remove his head, but couldn’t.
-            Eventually, wandering around the world for eons, Shiva came to
-            Banaras, and the hanging head of Brahma dropped here and disappeared
-            into the ground.
+          Sweet Trip is a tour and travel agency based in Varanasi that offers rental cabs, hotel bookings, bus rentals, and tour packages. Discover Varanasi, Ayodhya, Prayagraj, and Bodhgaya’s marvels with us. We are your gateway to breathtaking destinations, unique experiences, and seamless travel planning. 
           </p>
-          <p className="mt-5">
-            Banaras or Varanasi is also regarded as one of the seven holy cities
-            (Sapta Puri), which can provide moksha to devotees. This city is
-            full of ethnicity and sacredness, and if you want to explore all of
-            them, our online cab booking in Varanasi is always there to help
-            you.
-          </p>
-          <h3>Ensure You Collect Great Varanasi Moments</h3>
+          <h3>Top Destinations</h3>
+          <h4>Varanasi</h4>
           <p>
-            Whether you are in Banaras for a day or two or even more, ensure you
-            collect great moments. You may visit this city with your family,
-            friends, colleagues or anyone, let Kashi entertain your visit
-            auspiciously. If you could devote yourself to the sacredness of this
-            ancient city, you might miss a lot in your life. You must spend some
-            time in every place you visit, and if you want to do it peacefully,
-            Sweet Trip brings its best taxi service in Varanasi with drivers
-            that will allow you to do everything your way.
+          Created by Lord Shiva and blessed by the Ganges, Varanasi owns a dedicated place in the hearts of pilgrims worldwide. The “Archives of the holy capital of India” have entertained millions of visitors with their sacredness, culture, and educational and historical brilliance. Similarly, Ayodhya is the birthplace of Ram Lalla and is regarded as the first of India's seven most important pilgrimage sites. 
           </p>
+          <h4 className="mt-5">Prayagraj</h4>
+          <p>Prayagraj, formerly known as Allahabad, lies close to Triveni Sangam and is one of the international tourism destinations, securing the second position regarding tourist arrivals in the state after Varanasi. You all know Bodh Gaya for Mahatma Budhha and the Mahabodhi Temple complex in Bihar. </p>
           <p className="mt-5">
-            We have a bunch of travelling privileges for you with our outstation
-            cabs, local taxi, and airport taxi. Move around or outside the city
-            as you have planned with your personal driver by having our online
-            cab booking for Varanasi services. For outstation, we have
-            round-trip car rental and one-way car rental. For the local
-            tour, a full-day car rental for 8 hours, a half-day car
-            rental for 4 hours and more. For airport travel, pick up and drop
-            off from Varanasi airport.
+          These places aren’t just recognised as popular destinations; they have a rich history that you may have never discovered. A trip becomes exciting and riveting when you learn more about the place's history, culture, and sacredness, isn’t it?
           </p>
+          <p className="mt-5">So, Sweet Trip allows you to discover these pilgrimages in never-before-seen avatars. Plan your trip and gather memorable and life-changing moments in Varanasi, Ayodhya, Prayagraj, and Bodh Gaya. </p>
+          <h3>Experiences & Activities</h3>
+          <p>Whether its Varanasi, Ayodhya, Prayagraj or Bodhagaya, we offer you memorable experiences through a series of activities planned for each city. </p>
+          <p className="mt-5">In Varanasi, you can explore Kashi Vishwanath Temple, Manikarnika Ghat, Dashwamedh Ghat, Sarnath and more places. You can also witness morning and evening aarti with a boat ride. </p>
+          <p className="mt-5">When you visit Ayodhya, your concierge will take you to Hanuman Mandir, Ram Janbhoomi, Lata Mangeshkar Chowk, and more places. We let you explore this iconic pilgrimage with our excellent transport service. </p>
+          <p className="mt-5">We provide car on rent in Varanasi, morning and evening boat ride services, and best places to stay in Varanasi and other cities to offer unforgettable moments on your trip.</p>
+          <h3>Tour Packages with Rs. 1000 Off</h3>
+          <p>We offer 2-day tour package to Ayodhya, Prayagraj, and Bodhgaya from Varanasi. Our packages include pick and drop, hotel booking, tour plan, boat ride (Varanasi), and more activities. </p>
+          <p className="mt-5">Our thoughtfully designed Varanasi 2 days tour package, Ayodhya trip package, Bodhgaya, and Prayagraj 2 day package offer an enriching experience for discerning travelers eager to explore these ancient cities. Travel to Prayagraj, Ayodhya, and Bodhgaya is available exclusively from Varanasi. Get </p>
+          <p className="mt-5">Whether you are in Varanasi or Ayodhya or Prayagraj, enjopy your time and capture some great moments which will become lifetime memory for you. You can visit these pilgrimage sites with your family and friends, and experience their vibes. To truly experience every place you visit, take your time and explore at your own pace. Sweet Trip offers the best taxi service in Varanasi, with expert drivers ensuring a smooth and personalized journey tailored to your preferences. </p>
+          <p className="mt-5">Allow us to make your trip memorable and enjoyable! Book our tour packages to explore these cities like never before.</p>
         </div>
       </div>
     </section>
