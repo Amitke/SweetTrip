@@ -38,7 +38,7 @@ export default function About() {
         <link rel="canonical" href="https://sweettrip.in/about" />
       </Head>
       <>
-        <SectionHeader title={sectionHeader.title} para={sectionHeader.para} />
+        <SectionHeader title={sectionHeader.title} para={sectionHeader.para} aboutClass={sectionHeader}/>
         <AboutContent />
         <Promo promoData={promoData} />
         <WhyChoose />

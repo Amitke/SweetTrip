@@ -66,13 +66,6 @@ export default function cabServices() {
           para={sectionHeader.para}
           carBannerClass={sectionHeader}
         />
-        <div className="container mx-auto mt-10">
-          <div className="flex-row justify-center items-center flex">
-            <div className="w-full pl-4 pr-4">
-              <BookingForm />
-            </div>
-          </div>
-        </div>
         <div className="container mx-auto">
           <div className="md:flex-row flex-col justify-center items-center flex">
             <div className="md:w-1/2 w-full pl-4 pr-4">

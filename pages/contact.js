@@ -192,7 +192,7 @@ export default function Contact() {
         <link rel="canonical" href="https://sweettrip.in/contact" />
       </Head>
       <>
-        <SectionHeader title={sectionHeader.title} para={sectionHeader.para} />
+        <SectionHeader title={sectionHeader.title} para={sectionHeader.para} contactClass={sectionHeader}/>
         <section className={`pt-10 pb-10 ${contactStyles.contactPage}`}>
           <div className="container mx-auto">
             <div className="flex-col justify-center items-center flex pl-4 pr-4">

@@ -10,6 +10,8 @@ const SectionHeader = ({
   hotelBannerClass,
   carBannerClass,
   tourPackageClass,
+  aboutClass,
+  contactClass,
 }) => {
   let busBannerClassName = busBannerClass ? sectionHeaderStyles.busBanner : "";
   let hotelBannerClassName = hotelBannerClass
@@ -18,9 +20,11 @@ const SectionHeader = ({
   let homeBannerClassName = homeData && sectionHeaderStyles.homeBanner;
   let carBannerClassName = carBannerClass && sectionHeaderStyles.carBanner;
   let tourPackageClassName = tourPackageClass && sectionHeaderStyles.tourPackageBanner;
+  let aboutClassName = aboutClass && sectionHeaderStyles.aboutBanner;
+  let contactClassName = contactClass && sectionHeaderStyles.contactBanner;
   return (
     <section
-      className={`${sectionHeaderStyles.sectionHeader} ${busBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName} ${tourPackageClassName}`}
+      className={`${sectionHeaderStyles.sectionHeader} ${busBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName} ${tourPackageClassName} ${aboutClassName} ${contactClassName}`}
     >
       <div className="container mx-auto">
         <div
@@ -30,6 +34,7 @@ const SectionHeader = ({
             <h1>{title}</h1>
             {para ? <p className="m-auto">{para}</p> : ""}
             {homeData && <BookingForm />}
+            {carBannerClass && <BookingForm />}
           </div>
         </div>
       </div>
