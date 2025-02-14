@@ -9,7 +9,7 @@
         {
           "id": 1,
           "heading": "Book Your",
-          "image": "hotel.png",
+          "image": "small-hotel.png",
           "alt": "Hotel",
           "type": "Hotel",
           "link": "/hotel-booking"
@@ -17,7 +17,7 @@
         {
           "id": 2,
           "heading": "Book Your",
-          "image": "car.png",
+          "image": "small-car.png",
           "alt": "Rental Car",
           "type": "Rental Car",
           "link": "/cab-services"
@@ -25,7 +25,7 @@
         {
           "id": 3,
           "heading": "Book Your",
-          "image": "boat.png",
+          "image": "small-boat.png",
           "alt": "Rental Boat",
           "type": "Rental Boat",
           "link": "/"
