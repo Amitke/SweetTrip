@@ -1,7 +1,6 @@
 @import "./../../../../styles/abstracts/themeSrc";
 
 .sectionHeader {
-  @include Position(relative);
   background-image: url("./../../../../public/images/home-banner.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -21,6 +20,7 @@
       background-image: url("./../../../../public/images/home-banner.png");
       padding-top: 30px;
       padding-bottom: 30px;
+      background-size: cover;
     }
   }
   &.aboutBanner {
@@ -37,6 +37,7 @@
     @include breakPoints(767px) {
       padding-top: 30px;
       padding-bottom: 30px;
+      background-size: cover;
     }
     .flexRow {
       min-height: 450px;
@@ -60,7 +61,7 @@
   .flexRow {
     min-height: 330px;
     @include breakPoints(767px) {
-      min-height: 150px;
+      min-height: 140px;
     }
   }
   h1 {
