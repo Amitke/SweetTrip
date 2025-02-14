@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom center;
+  @include breakPoints(767px) {
+    background-size: cover;
+  }
   h1,
   p {
     color: $primaryColor;
@@ -20,7 +23,6 @@
       background-image: url("./../../../../public/images/home-banner.png");
       padding-top: 30px;
       padding-bottom: 30px;
-      background-size: cover;
     }
   }
   &.aboutBanner {
@@ -37,7 +39,6 @@
     @include breakPoints(767px) {
       padding-top: 30px;
       padding-bottom: 30px;
-      background-size: cover;
     }
     .flexRow {
       min-height: 450px;
