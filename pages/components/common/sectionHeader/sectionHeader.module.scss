@@ -6,9 +6,9 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom center;
-  @include breakPoints(767px) {
-    background: $primaryColor;
-    padding-bottom: 15px;
+  h1,
+  p {
+    color: $primaryColor;
   }
   &.homeBanner {
     .flexRow {
@@ -23,16 +23,17 @@
       padding-bottom: 30px;
     }
   }
-  &.aboutBanner{
+  &.aboutBanner {
     background-image: url("./../../../../public/images/about-banner.png");
-    background-position:top center;
+    background-position: top center;
   }
-  &.contactBanner{
+  &.contactBanner {
     background-image: url("./../../../../public/images/contact-banner.png");
+    background-position: top center;
   }
   &.carBanner {
     background-image: url("./../../../../public/images/car-rental.png");
-    background-position:top center;
+    background-position: top center;
     @include breakPoints(767px) {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -46,21 +47,15 @@
   }
   &.busBanner {
     background-image: url("./../../../../public/images/bus-banner.png");
-    @include breakPoints(767px) {
-      background: $primaryColor;
-    }
+    background-position: top center;
   }
   &.hotelBanner {
     background-image: url("./../../../../public/images/hotel-booking.png");
-    @include breakPoints(767px) {
-      background: $primaryColor;
-    }
+    background-position: top center;
   }
   &.tourPackageBanner {
     background-image: url("./../../../../public/images/tour-package.png");
-    @include breakPoints(767px) {
-      background: $primaryColor;
-    }
+    background-position: top center;
   }
   .flexRow {
     min-height: 330px;
@@ -79,10 +74,6 @@
     @include breakPoints(1023px) {
       @include Width(100%);
     }
-  }
-  h1,
-  p {
-    color: $primaryColor;
   }
   .fullWidth {
     @include breakPoints(767px) {
