@@ -63,7 +63,7 @@
     }
   }
   .flexRow {
-    min-height: 300px;
+    min-height: 330px;
     @include breakPoints(767px) {
       min-height: 150px;
     }
