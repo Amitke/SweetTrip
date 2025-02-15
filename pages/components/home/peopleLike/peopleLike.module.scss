@@ -26,8 +26,11 @@
             left: 20px;
             top: 8px;
         }
-        h3{
+        h3,h4{
             margin-bottom: 0.5rem;
+        }
+        h4{
+            font-weight: $fontWeight400;
         }
         p{
             font-size: inherit;

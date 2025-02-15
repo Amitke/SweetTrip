@@ -30,7 +30,7 @@ const PeopleLike = ({ getPeopleLike }) => {
                   className={`w-1/4 pl-10 pr-4 mt-10 ${peopleLikeStyles.circle}`}
                   key={item.id}
                 >
-                  <h3>{item.title}</h3>
+                  <h4>{item.title}</h4>
                   <p dangerouslySetInnerHTML={{__html: item.para}}/>
                 </div>
               );
