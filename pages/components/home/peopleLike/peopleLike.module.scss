@@ -7,6 +7,9 @@
             @include flexDirection(column);
         }
     }
+    strong{
+        color: $primaryColor;
+    }
     .circle{
         @include Position(relative);
         @include breakPoints(767px){

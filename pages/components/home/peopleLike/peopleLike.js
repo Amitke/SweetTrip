@@ -31,7 +31,7 @@ const PeopleLike = ({ getPeopleLike }) => {
                   key={item.id}
                 >
                   <h3>{item.title}</h3>
-                  <p>{item.para}</p>
+                  <p dangerouslySetInnerHTML={{__html: item.para}}/>
                 </div>
               );
             })
