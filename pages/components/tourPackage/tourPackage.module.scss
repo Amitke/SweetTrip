@@ -2,42 +2,84 @@
 @import "./../../../styles/components/buttons";
 .topSightSeeing {
   background-color: #f2f2f2;
-  .flex{
+  .flex {
     @include breakPoints(640px) {
       @include flexDirection(column);
     }
   }
-  .mobileFullWidth{
+  .mobileFullWidth {
+    @include Border(1px solid $textColor);
     @include breakPoints(640px) {
       @include Width(100%);
       text-align: $textCenter;
     }
   }
-  .imageContainer{
+  .imageContainer {
     @include Display(flex);
-    @include breakPoints(1200px) {
+    @include breakPoints(767px) {
       @include flexDirection(column);
     }
-    h4{
-      @include breakPoints(1200px) {
-        margin-top:15px;
+    h4 {
+      @include breakPoints(767px) {
+        margin-top: 15px;
       }
     }
-    img{
-      @include borderRadius(5px);
+    img {
       box-shadow: rgba(0, 0, 0, 0.29) 1px 3px 10px;
-      object-fit:cover;
-      @include breakPoints(640px) {
+      object-fit: cover;
+      @include breakPoints(767px) {
         margin: 0 auto;
       }
     }
-    .imageRightContainer{
-      h3{
+    .imageRightContainer {
+      @include Width(60%);
+      @include Display(flex);
+      @include flexDirection(column);
+      margin-top: 10px;
+      @include breakPoints(767px) {
+        @include Width(100%);
+        text-align: $textCenter;
+      }
+      ul {
+        @include breakPoints(767px) {
+          @include JustifyContent(center);
+        }
+      }
+      h3 {
         text-transform: $upperCase;
       }
-      p{
-        font-size:14px;
+      p {
+        font-size: 14px;
       }
     }
+    .buttonWrapper {
+      @include Display(flex);
+      background-color: $borderColor;
+      @include flexDirection(column);
+      @include Padding(20px);
+      @include JustifyContent(center);
+      h3,
+      h5 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.tourIncludes {
+  background-color: $borderColor;
+  max-width: 250px;
+  overflow-x: auto;
+  @include Padding(10px);
+  @include borderRadius(4px);
+  margin-bottom: 30px;
+  @include breakPoints(767px) {
+    max-width: none;
+    margin-top: 30px;
+  }
+  h3 {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    @include Padding(10px);
+    margin: -10px -10px 20px;
   }
 }

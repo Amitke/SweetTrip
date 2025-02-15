@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom center;
-  @include breakPoints(767px) {
+  @include breakPoints(1200px) {
     background-size: cover;
   }
   h1,

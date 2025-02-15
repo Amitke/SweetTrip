@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
 import { getRentalVehicleData } from "./api/common/rentalVehicle";
@@ -9,18 +8,12 @@ import { getTopSightSeeingData } from "./api/common/topSightSeeing";
 import { getFaqData } from "./api/common/faq";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import { getAboutUsRecordData } from "@/pages/api/common/aboutUsRecord";
-import RentalVehicle from "@/pages/components/common/rentalVehicle/rentalVehicle";
 import TopSightSeeing from "@/pages/components/tourPackage/TopSightSeeing";
 import Faq from "./components/common/faq/faq";
-const RentalCommunity = dynamic(
-  () => import("./components/common/rentalCommunity/rentalCommunity"),
-  { ssr: false }
-);
 
 export default function HotelBooking() {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
-  const getRentalVehicle = useSelector((state) => state.rentalVehicle);
   const getTopSightSeeing = useSelector((state) => state.topSightSeeing);
   const getFaq = useSelector((state) => state.faq);
 
@@ -42,16 +35,6 @@ export default function HotelBooking() {
   const faqsData =
     getFaq && getFaq.status ? getFaq?.faq?.tourPackage : getFaq?.error;
   const faqsError = getFaq?.error;
-
-  const vehicleInfo =
-    getRentalVehicle && getRentalVehicle.status
-      ? getRentalVehicle.rentalVehicle?.home[0].vehicleInfo
-      : getRentalVehicle?.error;
-
-  const vehicleTitle =
-    getRentalVehicle && getRentalVehicle.status
-      ? getRentalVehicle.rentalVehicle?.home[0].vehicleTitle
-      : getRentalVehicle?.error;
 
   const topSightSeeingInfo =
     getTopSightSeeing && getTopSightSeeing.status
@@ -82,9 +65,7 @@ export default function HotelBooking() {
           para={sectionHeader.para}
           tourPackageClass={sectionHeader}
         />
-        <RentalVehicle vehicleInfo={vehicleInfo} vehicleTitle={vehicleTitle} />
         <TopSightSeeing topSightSeeingInfo={topSightSeeingInfo} topSightSeeingTitle={topSightSeeingTitle}/>
-        <RentalCommunity />
         <Faq faqsData={faqsData} faqsError={faqsError} />
       </>
     </>

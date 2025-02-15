@@ -33,35 +33,34 @@ export default function Faq() {
         <SectionHeader title={sectionHeader.title} para={sectionHeader.para} />
         <section className={`${faqStyles.faq} pb-10`}>
           <div className="container mx-auto">
-            <div className="flex-col flex pl-4 pr-4 md:w-1/2 w-full mx-auto">
+            <div className="flex-col flex pl-4 pr-4 md:w-3/4 w-full mx-auto">
               <h3>
-                <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> How to book rental car
-                services?
+                <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> What is included in the Varanasi 2-Day Tour Package?
               </h3>
               <p>
-                Book our rental car services through our website. Fill the
-                required details and get your request confirmed on your mobile.
+              The Varanasi 2-day tour package includes pick-up and drop-off service, hotel booking, sightseeing, local travel, and morning and evening boat rides. You can also customise your package, but a custom package is not subject to change. 
               </p>
               <h3>
-              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> Do you provide only local
-                cab services?
+              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> Do you provide rental cars in Varanasi and a one-way taxi service in Varanasi?
               </h3>
               <p>
-                No, we have an extensive fleet of rental cars for local as well
-                as outstation tours. You can book as per your requirement.
+              Yes, we provide a rental car and a one-way taxi service in Varanasi. Our fleet of cabs is available whenever and wherever you need them. You can also book outstation taxis with us. 
               </p>
               <h3>
-              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> Is there any cancellation
-                fees?
+              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div>Can we cancel a booking and get a refund for that?
               </h3>
-              <p>No, we don’t take any cancellation fees.</p>
+              <p>No, Sweet Trip doesn’t allow booking cancellations or provide refund services. Once you have booked your trip or package, ensure to complete it. </p>
               <h3>
-              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> How many cars can be
-                booked at a time?
+              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> How early can I book a trip or tour package?
               </h3>
               <p>
-                You can book as many cars you want. The prices will vary as per
-                the selection of rental car.
+              With Sweet Trip, you can book a trip or a tour package up to 90 days before the trip's start date. 
+              </p>
+              <h3>
+              <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> Where can I book a hotel?
+              </h3>
+              <p>
+             You can book hotels in Varanasi and Ayodhya with us. We offer boutique hotels to make your stay comfortable and enjoyable. 
               </p>
             </div>
           </div>
