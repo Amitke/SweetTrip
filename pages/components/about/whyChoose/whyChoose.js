@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import whyChooseStyles from "./whyChoose.module.scss";
 
 const WhyChoose = () => {
@@ -77,7 +78,7 @@ const WhyChoose = () => {
               <li>●	We aim to expand to more cities across India. 
               </li>
             </ul>
-            <p className="mt-5">At Sweet Trip, we don't just take you from one place to another; we bring your travel dreams to life. Whether you are searching for the best boat ride in Varanasi, exploring the best places to stay in Varanasi, or planning an unforgettable <strong>Varanasi 2-day tour package</strong>, we make sure every trip is a sweet and seamless experience.</p>
+            <p className="mt-5">At Sweet Trip, we don't just take you from one place to another; we bring your travel dreams to life. Whether you are searching for the best boat ride in Varanasi, exploring the best places to stay in Varanasi, or planning an unforgettable <strong><Link href="/varanasi-tour-package">Varanasi 2-day tour package</Link></strong>, we make sure every trip is a sweet and seamless experience.</p>
           </div>
         </div>
       </div>
