@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from 'next/dynamic';
 import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
-import { getGoogleReviewsData } from "./api/common/googleReviews";
 import { getPromoData } from "./api/common/promo";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import AboutContent from "./components/about/aboutContent";
@@ -14,12 +13,10 @@ const RentalCommunity = dynamic(() => import('./components/common/rentalCommunit
 export default function About() {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
-  const getGoogleReviews = useSelector((state) => state.googleReviews);
   const getPromo = useSelector((state) => state.promo);
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
-    dispatch(getGoogleReviewsData());
     dispatch(getPromoData());
   }, []);
   const sectionHeader =
@@ -33,8 +30,8 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About US - Sweet trip</title>
-        <meta name="description" content="About US" />
+        <title>About Us - Sweet Trip</title>
+        <meta name="description" content="About Us" />
         <link rel="canonical" href="https://sweettrip.in/about" />
       </Head>
       <>

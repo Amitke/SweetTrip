@@ -9,7 +9,7 @@ const FooterBottom = () => {
         <div className={`flex-row flex ${footerBottomStyles.flexRow}`}>
           <div className='w-full pl-4 pr-4'>
             <p>
-              Copyright © 2025. Sweettrip Car Rental. All Rights Reserved.
+              Copyright © 2025. Sweet Trip. All Rights Reserved.
             </p>
           </div>
         </div>

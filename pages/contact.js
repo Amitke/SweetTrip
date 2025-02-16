@@ -187,7 +187,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact US</title>
+        <title>Contact Us</title>
         <meta name="description" content="Sweet Trip Contact No. 7488736844" />
         <link rel="canonical" href="https://sweettrip.in/contact" />
       </Head>
