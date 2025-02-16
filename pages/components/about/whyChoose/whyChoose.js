@@ -7,102 +7,77 @@ const WhyChoose = () => {
     <section className={`${whyChooseStyles.whyChoose} pt-10 pb-10`}>
       <div className="container mx-auto text-center">
         <div className="flex-col justify-center items-center flex pl-4 pr-4">
-          <h2>Why should you choose us?</h2>
-          <p>Look why people want to travel with us</p>
+          <h2>Why Choose Sweet Trip?</h2>
+          <p>Choosing the right travel partner can make all the difference, and Sweet Trip is dedicated to offering an unparalleled travel experience.</p>
         </div>
         <div className="flex-row flex flex-wrap">
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
+          <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/about-icon1.png"
+              src="/images/reliable-icon.png"
               alt="Trusted Agency"
               width={70}
               height={70}
               className="mx-auto mb-5"
             />
-            <h3>Trusted Agency</h3>
-            <p>
-              We are a trusted agency, and we don’t say this, it’s our customers
-              who give their reviews this way. You can entrust on the
-              availability of the best affordable price across the city,
-              customer support and much more. Our customers are always 100%
-              satisfied.
+            <h3 className="font-bold">Reliable & Comfortable Travel </h3>
+            <p className="text-sm">
+            Well-maintained cars with experienced drivers
             </p>
           </div>
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
+          <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/about-icon2.png"
-              alt="Easier & Faster Booking"
-              width={70}
-              height={70}
-              className="mx-auto mb-5"
-            />
-            <h3>Easier & Faster Booking</h3>
-            <p>
-              Get the best deals by choosing our rental car services. We offer
-              easier and faster rental car booking services. You can book your
-              desired car online at the best available price across the city.
-              Our rental cars will easily accommodate in your trip budget.
-            </p>
-          </div>
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
-            <Image
-              src="/images/about-icon3.png"
+              src="/images/packages-icon.png"
               alt="Fleet of Rental Cars"
               width={70}
               height={70}
               className="mx-auto mb-5"
             />
-            <h3>Fleet of Rental Cars</h3>
-            <p>
-              Choose car/s as per your requirements from our fleet of rental
-              cars. We also provide personal driver for your entire tour. Visit
-              Varanasi with enthusiasm and devotion in our luxurious or economic
-              cars, whatever you choose. You also have your choice of pickup
-              location.
+            <h3 className="font-bold">Customised Packages </h3>
+            <p className="text-sm">
+            Tailored itineraries for an immersive experience.
             </p>
           </div>
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
+          <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/about-icon4.png"
+              src="/images/price-icon.png"
               alt="Well-Behaved Cabbies"
               width={70}
               height={70}
               className="mx-auto mb-5"
             />
-            <h3>Well-Behaved Cabbies</h3>
-            <p>
-              When you visit a pilgrimage city and book a rental car, the first
-              thing comes is the behaviour of the cabbie. Our drivers are true
-              professionals and very well behaved.
+            <h3 className="font-bold">Affordable & Transparent Pricing </h3>
+            <p className="text-sm">
+            No hidden costs, just great value.
             </p>
           </div>
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
+          <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/about-icon5.png"
+              src="/images/expertise-icon.png"
               alt="Vision"
               width={70}
               height={70}
               className="mx-auto mb-5"
             />
-            <h3>Vision</h3>
-            <p>
-              Through our rental car agency, we want to give the best travel
-              experience to our customers and make their trip memorable forever.
+            <h3 className="font-bold">Local Expertise </h3>
+            <p className="text-sm">
+            Deep knowledge of destinations for an enriched journey.
             </p>
           </div>
-          <div className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
-            <Image
-              src="/images/about-icon6.png"
-              alt="Mission"
-              width={70}
-              height={70}
-              className="mx-auto mb-5"
-            />
-            <h3>Mission</h3>
-            <p>
-              We want to stay ahead when it comes to provide the best customer
-              experience in terms of cars, customer support, and price.
-            </p>
+        </div>
+        <div className="flex-row flex flex-wrap text-left">
+          <div className='w-full pl-4 pr-4 mt-10'>
+            <p>Sweet Trip is a one-stop destination in Varanasi for successful tour experience. To ensure, we keep providing you with quality services, we are on a mission and envisioned our future as follows.</p>
+            <h3 className="mt-5 font-bold">Our Vision</h3>
+            <p>To be the most trusted and preferred travel service provider in Varanasi and beyond, offering reliable, comfortable, and customer-centric experiences that make every journey memorable.</p>
+            <h3 className="mt-5 font-bold">Our Mission</h3>
+            <ul>
+              <li>●	To simplify travel with seamless and high-quality services.</li>
+              <li>●	To provide safe, comfortable, and efficient transportation for all travellers.</li>
+              <li>●	To enhance the travel experience by offering personalised tour packages and local expertise.</li>
+              <li>●	We aim to expand to more cities across India. 
+              </li>
+            </ul>
+            <p className="mt-5">At Sweet Trip, we don't just take you from one place to another; we bring your travel dreams to life. Whether you are searching for the best boat ride in Varanasi, exploring the best places to stay in Varanasi, or planning an unforgettable <strong>Varanasi 2-day tour package</strong>, we make sure every trip is a sweet and seamless experience.</p>
           </div>
         </div>
       </div>
