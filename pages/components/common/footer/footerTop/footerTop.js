@@ -36,8 +36,7 @@ const FooterTop = () => {
               />
             </Link>
             <p>
-              Sweet Trip is car rental service in Varanasi. You can book luxury
-              to economic car for Varanasi tour as well as outstation trip.
+            Sweet Trip started as a car rental service in Varanasi and now provides tour packages, bus rental service, hotel booking and more from one destination.
             </p>
           </div>
           <div className={`w-1/3 pl-4 pr-4 ${footerTopStyles.mobileFullWidth}`}>
