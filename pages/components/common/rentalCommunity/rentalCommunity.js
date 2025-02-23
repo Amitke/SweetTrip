@@ -11,7 +11,7 @@ const RentalCommunity = () => {
           className={`flex-row items-center flex ${rentalCommunityStyles.flex}`}
         >
           <div className="w-full text-center pl-4 pr-4">
-            <h2 data-aos="fade-up">Join our car rental community</h2>
+            <h2 data-aos="fade-up">Join Our Tour & Travel Community</h2>
             <p data-aos="fade-up">
               Join Our Socials for Excellent Tips and Guidance
             </p>
