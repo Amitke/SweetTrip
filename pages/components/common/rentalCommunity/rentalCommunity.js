@@ -58,19 +58,19 @@ const RentalCommunity = () => {
                   alt="arrow"
                 />
               </a>
-              <a href="https://twitter.com/_sweettrip" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/sweettrip/" target="_blank" rel="noopener noreferrer">
                 <div className={rentalCommunityStyles.icon}>
                   <i className={rentalCommunityStyles.faTwitter}>
                     <FontAwesomeIcon
                       icon={[
                         "fab",
-                        "faTwitter".toLowerCase().replace("fa", ""),
+                        "faLinkedin".toLowerCase().replace("fa", ""),
                       ]}
                     />
                   </i>
                 </div>
                 <div className={rentalCommunityStyles.numbersWrap}>
-                  <h5>Twitter</h5>
+                  <h5>Linkedin</h5>
                 </div>
                 <Image
                   width={12}
