@@ -52,7 +52,6 @@ const HeaderBottom = () => {
   };
   return (
     <section className={headerBottomStyles.headerBottom} id="headerBottom">
-    <marquee>Stay & Explore <span>Mahakumbh</span> 2025 with Us</marquee>
       <div className="container mx-auto">
         <div className="flex-row flex">
           <div className={`w-1/5 pl-4 pr-4 ${headerBottomStyles.headerLogo}`}>

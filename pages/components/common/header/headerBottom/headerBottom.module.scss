@@ -3,17 +3,8 @@
 .headerBottom {
   background-color: $whiteColor;
   transition: 1s all;
-  padding: 0px 0 5px;
+  padding: 5px 0;
   @include Position(relative);
-  marquee{
-    background-color: $secondaryColor;
-    color: $primaryColor;
-    font-size: 20px;
-    font-weight: $fontWeight700;
-    span{
-      color: $whiteColor;
-    }
-  }
   .mobileLogo {
     @include breakPoints(767px) {
       @include Width(200px);

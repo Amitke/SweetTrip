@@ -14,7 +14,7 @@
   }
   &.homeBanner {
     .flexRow {
-      min-height: 450px;
+      min-height: 500px;
       @include breakPoints(1200px) {
         min-height: 350px;
       }
@@ -41,7 +41,7 @@
       padding-bottom: 30px;
     }
     .flexRow {
-      min-height: 450px;
+      min-height: 500px;
       @include breakPoints(1200px) {
         min-height: 350px;
       }
