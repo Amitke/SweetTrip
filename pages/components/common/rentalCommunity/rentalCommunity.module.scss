@@ -1,22 +1,7 @@
 @import "./../../../../styles/abstracts/themeSrc";
 
 .rentalCommunity {
-  background-image: url(./../../../../public/images/call-us.png);
-  background-repeat: no-repeat;
-  @include Position(relative);
-  background-size: cover;
-  background-attachment: fixed;
-  &::before {
-    content: "";
-    opacity: 0.6;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    background-color: $blackColor;
-    @include Width(100%);
-    @include Height(100%);
-    top: 0;
-    left: 0;
-    @include Position(absolute);
-  }
+  background-color: $primaryColor;
   h2,
   p,
   a,

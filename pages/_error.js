@@ -30,7 +30,7 @@ const Error = () => {
         <section className="about-content pb-10 mb-10">
           <div className="container mx-auto">
             <div className="flex-col justify-center items-center flex pl-4 pr-4">
-              <Image width={758} height={468} src="/images/404.png" alt="page not found" />
+              <Image width={758} height={468} src="/images/404.webp" alt="page not found" />
               <h2
                 className="text-center mt-5"
               >

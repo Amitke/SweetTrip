@@ -46,7 +46,7 @@ const VaranasiTourPackage = () => {
           <div className="md:flex-row flex-col flex">
             <div className={`md:w-3/4 w-full pl-4 pr-4 ${whyChooseStyles.flex}`}>
               <Image
-                src="/images/varanasi.png"
+                src="/images/varanasi.webp"
                 alt="varanasi"
                 width={850}
                 height={408}

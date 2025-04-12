@@ -77,7 +77,7 @@ const HotelContent = () => {
                   </div>
                   <div className="hotel-image">
                     <Image
-                      src="/images/hotel-1.png"
+                      src="/images/hotel-1.webp"
                       alt="hotel"
                       width={271}
                       height={481}
@@ -87,7 +87,7 @@ const HotelContent = () => {
                 <div className={hotelBookingStyles.backPart}>
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
-                      src="/images/hotel-1.png"
+                      src="/images/hotel-1.webp"
                       alt="hotel"
                       width={271}
                       height={481}
@@ -132,7 +132,7 @@ const HotelContent = () => {
                   </div>
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
-                      src="/images/hotel-2.png"
+                      src="/images/hotel-2.webp"
                       alt="hotel"
                       width={271}
                       height={481}
@@ -142,7 +142,7 @@ const HotelContent = () => {
                 <div className={hotelBookingStyles.backPart}>
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
-                      src="/images/hotel-2.png"
+                      src="/images/hotel-2.webp"
                       alt="hotel"
                       width={271}
                       height={481}

@@ -14,7 +14,7 @@ const WhyChoose = () => {
         <div className="flex-row flex flex-wrap">
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/reliable-icon.png"
+              src="/images/reliable-icon.webp"
               alt="Trusted Agency"
               width={70}
               height={70}
@@ -27,7 +27,7 @@ const WhyChoose = () => {
           </div>
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/packages-icon.png"
+              src="/images/packages-icon.webp"
               alt="Fleet of Rental Cars"
               width={70}
               height={70}
@@ -40,7 +40,7 @@ const WhyChoose = () => {
           </div>
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/price-icon.png"
+              src="/images/price-icon.webp"
               alt="Well-Behaved Cabbies"
               width={70}
               height={70}
@@ -53,7 +53,7 @@ const WhyChoose = () => {
           </div>
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
-              src="/images/expertise-icon.png"
+              src="/images/expertise-icon.webp"
               alt="Vision"
               width={70}
               height={70}

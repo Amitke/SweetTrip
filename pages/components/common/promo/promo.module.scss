@@ -17,7 +17,7 @@
   }
   .flex {
     @include JustifyContent(space-evenly);
-    background-image: url(./../../../../public/images/promo-banner.png);
+    background-image: url(./../../../../public/images/promo-banner.webp);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 600px;

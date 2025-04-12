@@ -46,7 +46,7 @@ const AyodhyaTourPackage = () => {
               className={`md:w-3/4 w-full pl-4 pr-4 ${whyChooseStyles.flex}`}
             >
               <Image
-                src="/images/ayodhya.png"
+                src="/images/ayodhya.webp"
                 alt="ayodhya"
                 width={850}
                 height={408}

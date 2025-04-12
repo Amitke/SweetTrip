@@ -46,7 +46,7 @@ const PrayagrajTourPackage = () => {
               className={`md:w-3/4 w-full pl-4 pr-4 ${whyChooseStyles.flex}`}
             >
               <Image
-                src="/images/prayagraj.png"
+                src="/images/prayagraj.webp"
                 alt="prayagraj"
                 width={850}
                 height={408}
