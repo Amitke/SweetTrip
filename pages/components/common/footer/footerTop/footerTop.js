@@ -30,7 +30,7 @@ const FooterTop = () => {
             <Link href="/">
               <Image
                 src="./images/logo.svg"
-                alt="logo"
+                alt="Sweet Trip logo"
                 width={500}
                 height={500}
               />

@@ -47,7 +47,7 @@ const PrayagrajTourPackage = () => {
             >
               <Image
                 src="/images/prayagraj.webp"
-                alt="prayagraj"
+                alt="A river called “Sangam” is shown in the background with the Peepa bridge."
                 width={850}
                 height={408}
                 className="mb-5"

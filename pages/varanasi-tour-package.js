@@ -47,7 +47,7 @@ const VaranasiTourPackage = () => {
             <div className={`md:w-3/4 w-full pl-4 pr-4 ${whyChooseStyles.flex}`}>
               <Image
                 src="/images/varanasi.webp"
-                alt="varanasi"
+                alt="The front side of the old Varanasi junction"
                 width={850}
                 height={408}
                 className="mb-5"

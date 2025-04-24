@@ -78,7 +78,7 @@ const HotelContent = () => {
                   <div className="hotel-image">
                     <Image
                       src="/images/hotel-1.webp"
-                      alt="hotel"
+                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
                       width={271}
                       height={481}
                     />
@@ -88,7 +88,7 @@ const HotelContent = () => {
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
                       src="/images/hotel-1.webp"
-                      alt="hotel"
+                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
                       width={271}
                       height={481}
                     />
@@ -133,7 +133,7 @@ const HotelContent = () => {
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
                       src="/images/hotel-2.webp"
-                      alt="hotel"
+                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
                       width={271}
                       height={481}
                     />
@@ -143,7 +143,7 @@ const HotelContent = () => {
                   <div className={hotelBookingStyles.hotelImage}>
                     <Image
                       src="/images/hotel-2.webp"
-                      alt="hotel"
+                     alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
                       width={271}
                       height={481}
                     />

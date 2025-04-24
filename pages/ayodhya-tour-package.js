@@ -47,7 +47,7 @@ const AyodhyaTourPackage = () => {
             >
               <Image
                 src="/images/ayodhya.webp"
-                alt="ayodhya"
+                alt="A heritage structure with two lions on the left and right sides of the entrance, respectively."
                 width={850}
                 height={408}
                 className="mb-5"

@@ -34,7 +34,7 @@ const RentalCommunity = () => {
                   width={12}
                   height={12}
                   src="/images/right-up.svg"
-                  alt="arrow"
+                  alt="A crowd on the bank of a river- The Ganges. Many people are on a boat in the river."
                 />
               </a>
               <a href="https://www.facebook.com/sweettrip.inn" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ const RentalCommunity = () => {
                   width={12}
                   height={12}
                   src="/images/right-up.svg"
-                  alt="arrow"
+                  alt="A crowd on the bank of a river- The Ganges. Many people are on a boat in the river."
                 />
               </a>
               <a href="https://www.linkedin.com/company/sweettrip/" target="_blank" rel="noopener noreferrer">
@@ -76,7 +76,7 @@ const RentalCommunity = () => {
                   width={12}
                   height={12}
                   src="/images/right-up.svg"
-                  alt="arrow"
+                  alt="A crowd on the bank of a river- The Ganges. Many people are on a boat in the river."
                 />
               </a>
             </div>

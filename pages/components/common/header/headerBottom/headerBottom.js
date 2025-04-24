@@ -59,7 +59,7 @@ const HeaderBottom = () => {
               <Image
                 src="./images/logo.svg"
                 className={headerBottomStyles.mobileLogo}
-                alt="logo"
+                alt="Sweet Trip logo"
                 width={500}
                 height={500}
               />
@@ -97,7 +97,7 @@ const HeaderBottom = () => {
                 <Image
                   src="./images/logo.svg"
                   className={headerBottomStyles.logo}
-                  alt="logo"
+                  alt="Sweet Trip logo"
                   width={500}
                   height={500}
                 />

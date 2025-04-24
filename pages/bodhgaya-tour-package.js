@@ -47,7 +47,7 @@ const BodhgayaTourPackage = () => {
             >
               <Image
                 src="/images/bodhgaya.webp"
-                alt="bodhgaya"
+                alt="A statue of Lord Buddha in sitting position is shown."
                 width={850}
                 height={408}
                 className="mb-5"

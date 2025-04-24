@@ -20,7 +20,7 @@
       }
     }
     @include breakPoints(767px) {
-      background-image: url("./../../../../public/images/home-banner.webp");
+      background:#ffc68e;
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -28,15 +28,22 @@
   &.aboutBanner {
     background-image: url("./../../../../public/images/about-banner.webp");
     background-position: top center;
+    @include breakPoints(767px) {
+      background:#ceecf4;
+    }
   }
   &.contactBanner {
     background-image: url("./../../../../public/images/contact-banner.webp");
     background-position: top center;
+    @include breakPoints(767px) {
+      background:#ceecf4;
+    }
   }
   &.carBanner {
     background-image: url("./../../../../public/images/car-rental.webp");
     background-position: top center;
     @include breakPoints(767px) {
+      background:#ffc68e;
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -50,14 +57,23 @@
   &.busBanner {
     background-image: url("./../../../../public/images/bus-banner.webp");
     background-position: top center;
+    @include breakPoints(767px) {
+      background:#ceecf4;
+    }
   }
   &.hotelBanner {
     background-image: url("./../../../../public/images/hotel-booking.webp");
     background-position: top center;
+    @include breakPoints(767px) {
+      background:#ceecf4;
+    }
   }
   &.tourPackageBanner {
     background-image: url("./../../../../public/images/tour-package.webp");
     background-position: top center;
+    @include breakPoints(767px) {
+      background:#ceecf4;
+    }
   }
   .flexRow {
     min-height: 330px;

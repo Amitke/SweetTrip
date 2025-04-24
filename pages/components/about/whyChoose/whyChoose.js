@@ -15,7 +15,7 @@ const WhyChoose = () => {
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
               src="/images/reliable-icon.webp"
-              alt="Trusted Agency"
+              alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
               width={70}
               height={70}
               className="mx-auto mb-5"
@@ -28,7 +28,7 @@ const WhyChoose = () => {
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
               src="/images/packages-icon.webp"
-              alt="Fleet of Rental Cars"
+              alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
               width={70}
               height={70}
               className="mx-auto mb-5"
@@ -41,7 +41,7 @@ const WhyChoose = () => {
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
               src="/images/price-icon.webp"
-              alt="Well-Behaved Cabbies"
+              alt="A bus with the logo of Sweet Trip is on the right side. In the background, there is a mountain and palm trees."
               width={70}
               height={70}
               className="mx-auto mb-5"
@@ -54,7 +54,7 @@ const WhyChoose = () => {
           <div className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}>
             <Image
               src="/images/expertise-icon.webp"
-              alt="Vision"
+              alt="On the left, A man is standing with his luggage. On the right, a car is waiting for that man. Behind the car, a mobile with a map sign is there."
               width={70}
               height={70}
               className="mx-auto mb-5"
