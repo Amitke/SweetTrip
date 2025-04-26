@@ -8,6 +8,9 @@
   @include breakPoints(1200px) {
     background-size: cover;
   }
+  @include breakPoints(767px) {
+    background:#ceecf4;
+  }
   h1,
   p {
     color: $primaryColor;
