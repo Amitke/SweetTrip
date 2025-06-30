@@ -70,6 +70,10 @@ export default function Document() {
           name="twitter:image"
           content="https://sweettrip.in/images/logo.svg"
         />
+        <meta
+          name="google-site-verification"
+          content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE"
+        />
 
         <link rel="shortcut icon" href="./../images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
