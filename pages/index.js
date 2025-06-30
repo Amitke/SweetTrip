@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
+<meta name="google-site-verification" content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
 import dynamic from "next/dynamic";
 import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
