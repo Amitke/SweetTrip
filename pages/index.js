@@ -68,8 +68,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name = "google-site-verification"
-        content = "fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
         <title>Sweet Trip- Book Hotel, Bus & Car Rental in Varanasi</title>
         <meta
           name="description"

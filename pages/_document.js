@@ -10,6 +10,8 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
         <link rel="canonical" href="https://sweettrip.in/" />
+                <meta name="google-site-verification" content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
+
         <meta name="robots" content="index,follow" />
         <meta name="robots" content="All" />
         <meta
