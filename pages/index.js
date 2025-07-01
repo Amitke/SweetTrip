@@ -68,6 +68,8 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name = "google-site-verification"
+        content = "fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
         <title>Sweet Trip- Book Hotel, Bus & Car Rental in Varanasi</title>
         <meta
           name="description"
@@ -77,6 +79,7 @@ export default function Home() {
           name="keywords"
           content="Best Cab Service in Varanasi, Varanasi local cab, Varanasi airport cab booking, one-way taxi service in Varanasi contact number, luxury bus on rental, bus booking for marriage, private bus booking, tourist bus booking, mini bus on rent, best places to stay in Varanasi, best hotel in Varanasi for family, hotels for couples in Varanasi, hotels in Ayodhya near Ram Mandir, and hotels near Ram Mandir Ayodhya."
         />
+
       </Head>
       <>
         <SectionHeader
