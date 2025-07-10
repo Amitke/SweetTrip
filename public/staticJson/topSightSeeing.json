@@ -1,18 +1,12 @@
 {
   "topSightSeeing": [
     {
-      "topSightSeeingTitle": {
-        "heading": "Unlock Exclusive Varanasi, Ayodhya, Prayagraj, and Bodhgaya Tour Packages",
-        "paraOne": "Rental Cars, Hotels, Boat Ride in One Package ",
-        "paraSecond": "Travel across Varanasi, Ayodhya, Prayagraj and Bodhgaya comfortably with our tour packages. Embark on an unforgettable spiritual and cultural journey with one of the best travel agents in Varanasi. Whether you want a Varanasi to Ayodhya one-day tour package or a Varanasi Bodhgaya tour package or want to customise your package, Sweet Trip delivers it perfectly.",
-        "paraThird": "Our meticulously crafted packages for Varanasi, Ayodhya, Bodhgaya and Prayagraj cater to discerning travellers seeking a captivating experience in all these ancient cities. Travelling to Parayagraj, Ayodhya and Bodhgaya board from Varanasi only. "
-      },
       "topSightSeeingInfo": [
         {
           "id": 1,
           "heading": "Varanasi Package- Get Up to Rs. 1000 Off!",
           "image": "varanasi.webp",
-          "alt": "varanasi",
+          "alt": "The front side of the old Varanasi junction",
           "type": "2 Days / 4 Nights",
           "para": "Here are the two-day tour package details",
           "link": "varanasi-tour-package"
@@ -21,7 +15,7 @@
           "id": 2,
           "heading": "Ayodhya Tour Package- Get Rs.1000 Off!",
           "image": "ayodhya.webp",
-          "alt": "ayodhya",
+          "alt": "A heritage structure with two lions on the left and right sides of the entrance, respectively.",
           "type": "2 Days / 4 Nights",
           "para": "Here are the two-day tour package details",
           "link": "ayodhya-tour-package"
@@ -30,7 +24,7 @@
           "id": 3,
           "heading": "Prayagraj Tour Package- Get Rs. 1000 Off!",
           "image": "prayagraj.webp",
-          "alt": "prayagraj",
+          "alt": "A river called “Sangam” is shown in the background with the Peepa bridge.",
           "type": "2 Days / 4 Nights",
           "para": "Here are the two-day tour package details",
           "link": "prayagraj-tour-package"
@@ -39,7 +33,7 @@
           "id": 4,
           "heading": "Bodhgaya Tour Package- Get Rs. 1000 Off!",
           "image": "bodhgaya.webp",
-          "alt": "bodhgaya",
+          "alt": "A statue of Lord Buddha in sitting position is shown.",
           "type": "2 Days / 4 Nights",
           "para": "Here are the two-day tour package details",
           "link": "bodhgaya-tour-package"
