@@ -11,9 +11,10 @@ import GoogleReviews from "@/pages/components/common/googleReviews/googleReviews
 import Faq from "./components/common/faq/faq";
 import Promo from "./components/common/promo/promo";
 import ServicesContent from "./components/services/ServicesContent";
-import BookingForm from "./components/common/BookingForm/BookingForm";
 import AboutUsRecord from "@/pages/components/common/aboutUsRecord/aboutUsRecord";
 import PopularRoutes from "./components/common/popularRoutes/popularRoutes";
+import CabServicesPeopleLike from "./components/services/CabServicesPeopleLike";
+import ServicesContentOther from "./components/services/ServicesContentOther";
 
 export default function cabServices() {
   const dispatch = useDispatch();
@@ -48,42 +49,18 @@ export default function cabServices() {
   return (
     <>
       <Head>
-       <title>Car Rental & Cab Hire in Varanasi | Sweet Trip</title>
-        <meta name="description" content="Book reliable cab hire in Varanasi with Sweet Trip.
-         Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time
-          service." />
-        <link rel="canonical" href="https://sweettrip.in/cab-services" />
-
+        <title>
+          Sweet Trip- Cab Booking & Taxi Rental Services in Varanasi
+        </title>
+        <meta
+          name="description"
+          content="Swee Trip brings online booking for the best cab service in Varanasi, hygienic and spacious Varanasi local cabs, Varanasi airport cab booking, and one-way cabs for you."
+        />
         <meta
           name="keywords"
           content="cab hire in varanasi, cab in varanasi, varanasi cab booking, Best Cab Service in Varanasi, varanasi local cab, varanasi airport cab booking, book cab varanasi, best one way taxi service in Varanasi, one way taxi service in Varanasi contact number"
         />
-        <meta property="og:title" content="Car Rental & Cab Hire in Varanasi | Sweet Trip" />
-          <meta property="og:description" content="Book reliable cab hire in Varanasi with Sweet Trip.
-          Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time
-          service." />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://sweettrip.in/cab-services" />
-          <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Car Rental & Cab Hire in Varanasi | Sweet Trip" />
-          <meta name="twitter:description" content="Book reliable cab hire in Varanasi with Sweet Trip.
-          Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time
-          service." />
-          <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "WebPage",
-                  "name": "Car Rental & Cab Hire in Varanasi | Sweet Trip",
-                  "url": "https://sweettrip.in/cab-services",
-                  "description": "Book reliable cab hire in Varanasi with Sweet Trip. Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time service."
-                }),
-            }}
-  />
-       </Head>
+      </Head>
       <>
         <SectionHeader
           title={sectionHeader.title}
@@ -101,7 +78,9 @@ export default function cabServices() {
           </div>
         </div>
         <ServicesContent />
+        <CabServicesPeopleLike />
         <Promo promoData={promoData} />
+        <ServicesContentOther/>
         <Faq faqsData={faqsData} faqsError={faqsError} />
         <PopularRoutes />
       </>
