@@ -28,7 +28,7 @@ const TopSightSeeing = ({ topSightSeeingInfo }) => {
              Whether it is a day tour package to travel from Varanasi to Ayodhya, or you want to explore the different sides of the Varanasi Bodhgaya tour, or have a customised tour plan between these sacred sites, Sweet Trip promises unbeatable quality and service. Sweet Trip tour packages for a Varanasi tour are designed to cater to pilgrims, spiritual travellers, families, and history enthusiasts to visit India's timelessness in its sacred cities.
             </p>
             <h3 className="mt-5 font-bold">Why Sweet Trip – Best Tour and Travel Agency in Varanasi?</h3>
-            <p className="mt-5">As a top tour and travel agency in Varanasi, Sweet Trip stands out from the crowd because we possess local knowledge, professional service, and an eye for detail. Here's why we've been relied on by thousands of tourists:</p>               
+            <p className="mt-5">As a <a href="https://sweettrip.in/tour-package">top tour and travel agency in Varanasi</a>, Sweet Trip stands out from the crowd because we possess local knowledge, professional service, and an eye for detail. Here's why we've been relied on by thousands of tourists:</p>               
           <p className="mt-5"><strong>One-Stop Travel Solution - </strong> Our tours can be planned entirely as per your travel dates, interests, and budget.</p>
           <p className="mt-2"><strong>Expert Travel Planners - </strong> With sound knowledge of Ayodhya, Prayagraj, Varanasi, and Bodhgaya, we take you to the unseen stories, cultural riches, and spiritual secrets of these cities.</p>
           <p className="mt-2"><strong>24/7 Support - </strong> Relax with our round-the-clock assistance during your journey.</p>

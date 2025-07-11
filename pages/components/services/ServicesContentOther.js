@@ -41,7 +41,7 @@ const ServicesContentOther = () => {
           </p>
           <h3>Conclusion</h3>
           <p>Whether you come to Varanasi for pilgrimage, vacations, or education, Sweet Trip is the Varanasi taxi hire agency on which you can rely to fulfil all your transportation needs. With our timely service, reasonable fares, skilled drivers, and insider knowledge, we are the most favoured agency for thousands of satisfied tourists.</p>
-          <p className="mt-5">Thus, if you are seeking a reliable and comfortable taxi booking in Varanasi, then you need look no further than Sweet Trip. We will assist you in discovering all corners and nooks of India's holy city with ease and bliss.</p>
+          <p className="mt-5">Thus, if you are seeking a reliable and comfortable taxi booking in Varanasi, then you need look no further than <a href="https://sweettrip.in/">Sweet Trip</a>. We will assist you in discovering all corners and nooks of India's holy city with ease and bliss.</p>
         </div>
       </div>
     </section>
