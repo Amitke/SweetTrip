@@ -29,16 +29,16 @@ export default function TourOperatorInVaranasi() {
   return (
     <>
       <Head>
-        <title>Sweet Trip- Tour Packages from Varanasi with 1000 Off!</title>
+        <title></title>
         <meta
           name="description"
-          content="Explore the best deals on Varanasi to Ayodhya tour packages, Varanasi Ayodhya Allahabad tour packages and Varanasi to Bodhgaya tour packages. Get 1000 off on all packages."
+          content=""
         />
         <meta
           name="keywords"
-          content="Varanasi to Ayodhya tour package, Varanasi Ayodhya tour package, Varanasi Ayodhya Allahabad tour package, Varanasi Ayodhya Gaya tour package, Varanasi Allahabad Ayodhya tour package, Varanasi Ayodhya Prayagraj, Varanasi Ayodhya Prayagraj tour, Varanasi Ayodhya tour"
+          content=""
         />
-        <link rel="canonical" href="https://sweettrip.in/tour-package" />
+        <link rel="canonical" href="https://sweettrip.in/tour-operator-in-varanasi" />
       </Head>
       <>
         <SectionHeader
@@ -65,7 +65,7 @@ export default function TourOperatorInVaranasi() {
               <h3 className="mt-5 font-bold">
                 Why Sweet Trip – Varanasi's Best Tour Operator?
               </h3>
-              <p className="mt-5">
+              <p>
                 Being a professional tour operator of Varanasi, Sweet Trip
                 utilizes its personalized services, insider information, and
                 quality focus to the highest extent. We organize and escort
@@ -76,7 +76,7 @@ export default function TourOperatorInVaranasi() {
               <h3 className="mt-5 font-bold">
                 Why are we the best Varanasi tour operator?
               </h3>
-              <p className="mt-5">
+              <p>
                 <strong>Professional Local Guides - </strong> We have
                 professional local guides who know their city and give you the
                 walkthrough for a good walk in the city streets, ghats, and
