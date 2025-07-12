@@ -29,7 +29,7 @@ const FooterTop = () => {
           <div className={`w-1/3 pl-4 pr-4 ${footerTopStyles.mobileFullWidth}`}>
             <Link href="/">
               <Image
-                src="./images/logo.svg"
+                src="https://sweettrip.in/images/logo.svg"
                 alt="Sweet Trip logo"
                 width={500}
                 height={500}

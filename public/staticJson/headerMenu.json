@@ -31,6 +31,12 @@
     },
     {
         "id":6,
+        "link":"/blog",
+        "linkText":"Blog",
+        "icon":"faBlog"
+    },
+    {
+        "id":7,
         "link":"/contact",
         "linkText":"Contact Us",
         "icon":"faPhone"

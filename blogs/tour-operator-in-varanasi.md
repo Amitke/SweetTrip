@@ -1,71 +1,24 @@
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { useDispatch, useSelector } from "react-redux";
-import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
-import { getFaqData } from "./api/common/faq";
-import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
-import Faq from "./components/common/faq/faq";
+---
+title: "tour operator"
+description: "tour operator"
+keywords: "tour operator"
+heading: "Best Tour Operator in Varanasi – Sweet Trip"
+date: "2025-07-01"
+para: "Your favourite Varanasi travel agency, SweetTrip , is waiting to give you the most memorable vacation experience in one of India's sacred cities. We began life as Challa Brothers Tour and Travel but are now your best value travel company for relaxing and bespoke travel in Varanasi."
+---
 
-export default function TourOperatorInVaranasi() {
-  const dispatch = useDispatch();
-  const getSectionHeader = useSelector((state) => state.sectionHeader);
-  const getFaq = useSelector((state) => state.faq);
-
-  useEffect(() => {
-    dispatch(getSectionHeaderData());
-    dispatch(getFaqData());
-  }, []);
-  const sectionHeader =
-    getSectionHeader.status &&
-    getSectionHeader.sectionHeader &&
-    getSectionHeader.sectionHeader[0].tourPackage
-      ? getSectionHeader.sectionHeader[0].tourPackage
-      : getSectionHeader?.error;
-
-  const faqsData =
-    getFaq && getFaq.status ? getFaq?.faq?.tourOperatorInVaranasi : getFaq?.error;
-  const faqsError = getFaq?.error;
-
-  return (
-    <>
-      <Head>
-        <title></title>
-        <meta
-          name="description"
-          content=""
-        />
-        <meta
-          name="keywords"
-          content=""
-        />
-        <link rel="canonical" href="https://sweettrip.in/tour-operator-in-varanasi" />
-      </Head>
-      <>
-        <SectionHeader
-          title={sectionHeader.title}
-          para={sectionHeader.para}
-          tourPackageClass={sectionHeader}
-        />
-        <section className="pt-10 pb-10">
-          <div className="container mx-auto">
-            <div className={`flex-col justify-center flex pl-4 pr-4`}>
-              <h2 className="mb-5 text-center">
-                Best Tour Operator in Varanasi – Sweet Trip
-              </h2>
-              <p>
-                Your favourite Varanasi travel agency,{" "}
-                <a href="https://sweettrip.in">SweetTrip</a>, is waiting to give
-                you the most memorable vacation experience in one of India's
-                sacred cities. We began life as Challa Brothers Tour and Travel
-                but are now your best value travel company for relaxing and
-                bespoke travel in Varanasi. If you seek spiritual enlightenment,
-                cultural immersion, or peaceful moments spent in the ambience of
-                the Ganges, we design experiences that are simply irrepressible.
-              </p>
-              <h3 className="mt-5 font-bold">
-                Why Sweet Trip – Varanasi's Best Tour Operator?
-              </h3>
-              <p>
+<p>Your favourite Varanasi travel agency, <a href="https://sweettrip.in">SweetTrip</a>, is waiting to give
+you the most memorable vacation experience in one of India's
+sacred cities. We began life as Challa Brothers Tour and Travel
+but are now your best value travel company for relaxing and
+bespoke travel in Varanasi. If you seek spiritual enlightenment,
+cultural immersion, or peaceful moments spent in the ambience of
+the Ganges, we design experiences that are simply irrepressible.
+</p>
+<h3 className="mt-5 font-bold">
+Why Sweet Trip – Varanasi's Best Tour Operator?
+</h3>
+<p>
                 Being a professional tour operator of Varanasi, Sweet Trip
                 utilizes its personalized services, insider information, and
                 quality focus to the highest extent. We organize and escort
@@ -170,7 +123,6 @@ export default function TourOperatorInVaranasi() {
                 provide:Tempo Travellers (9-seater to 26-seater) for family
                 holidays and group outings
               </p>
-
               <p className="mt-5">
                 ● Exclusive cabs for couples or solo traveller
               </p>
@@ -180,7 +132,6 @@ export default function TourOperatorInVaranasi() {
                 Book Sweet Trip with your Varanasi tour operator for
                 hassle-free, smooth, and safe travel experience.
               </p>
-
               <h4 className="mt-5 font-bold">
                 Guided Sightseeing & Cultural Tours
               </h4>
@@ -256,6 +207,7 @@ export default function TourOperatorInVaranasi() {
               <p>In order to enjoy a happy and safe travelling experience, some tips are given below:</p>
               <p className="mt-5">
               <strong>Best Time to Visit - </strong> October to March is the best time with pleasant weather and festival times like Diwali and Dev Deepawali. </p>
+
 <p>
               <strong>Local Transport - </strong> Auto-rickshaws, cycle rickshaws, and on foot are the local means of transport in fashion. </p>
 <p>
@@ -279,11 +231,3 @@ export default function TourOperatorInVaranasi() {
                 Website: <a href="https://sweettrip.in/">www.sweetTrip.in</a><br/>
                 Email: <a href="mailto:info@sweettrip.in">info@sweettrip.in</a>
               </p>
-            </div>
-          </div>
-        </section>
-        <Faq faqsData={faqsData} faqsError={faqsError} />
-      </>
-    </>
-  );
-}

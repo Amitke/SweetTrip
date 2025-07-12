@@ -39,6 +39,9 @@
         "faq":{
             "title":"Faq"
         },
+        "blog":{
+            "title":"Blog"
+        },
         "error":{
             "title":"Page not found"
         }

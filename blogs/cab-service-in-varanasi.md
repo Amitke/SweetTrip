@@ -1,50 +1,13 @@
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { useDispatch, useSelector } from "react-redux";
-import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
-import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
+---
+title: "Cab Service"
+description: "Cab Service"
+keywords: "Cab Service"
+heading: "The Ultimate Cab Service in Varanasi"
+date: "2025-07-07"
+para: "Varanasi, which is among the most ancient cities of the globe, has become a place that draws millions of visitors, as well as pilgrims and tourists from all over the world. If you're planning to visit the holy ghats that are part of the Ganges or take a stroll through the winding, narrow alleys and the enchanting Ganga Aarti in Dashashwamedh Ghat, having a safe and reliable transportation option is vital. The ultimate taxi service in Varanasi is available."
+---
 
-export default function CabServiceInVaranasi() {
-  const dispatch = useDispatch();
-  const getSectionHeader = useSelector((state) => state.sectionHeader);
-
-  useEffect(() => {
-    dispatch(getSectionHeaderData());
-  }, []);
-  const sectionHeader =
-    getSectionHeader.status &&
-    getSectionHeader.sectionHeader &&
-    getSectionHeader.sectionHeader[0].carService
-      ? getSectionHeader.sectionHeader[0].carService
-      : getSectionHeader?.error;
-
-  return (
-    <>
-      <Head>
-        <title></title>
-        <meta
-          name="description"
-          content=""
-        />
-        <meta
-          name="keywords"
-          content=""
-        />
-        <link rel="canonical" href="https://sweettrip.in/cab-service-in-varanasi" />
-      </Head>
-      <>
-        <SectionHeader
-          title={sectionHeader.title}
-          para={sectionHeader.para}
-          carBannerClass={sectionHeader}
-        />
-        <section className="pt-10 pb-10">
-          <div className="container mx-auto">
-            <div className={`flex-col justify-center flex pl-4 pr-4`}>
-              <h2 className="mb-5 text-center">
-                The Ultimate Cab Service in Varanasi
-              </h2>
-              <p>Varanasi, which is among the most ancient cities of the globe, has become a place that draws millions of visitors, as well as pilgrims and tourists from all over the world. If you're planning to visit the holy ghats that are part of the Ganges or take a stroll through the winding, narrow alleys and the enchanting Ganga Aarti in Dashashwamedh Ghat, having a safe and reliable transportation option is vital. The ultimate taxi service in Varanasi is available.</p>
+<p>Varanasi, which is among the most ancient cities of the globe, has become a place that draws millions of visitors, as well as pilgrims and tourists from all over the world. If you're planning to visit the holy ghats that are part of the Ganges or take a stroll through the winding, narrow alleys and the enchanting Ganga Aarti in Dashashwamedh Ghat, having a safe and reliable transportation option is vital. The ultimate taxi service in Varanasi is available.</p>
               <p className="mt-5">In a city that is as lively and lively as Varanasi, it can be difficult to navigate the streets that are crowded. With a reliable <a href="https://sweettrip.in">taxi service from Varanasi</a>, it is possible to travel easily and comfortably, regardless of whether you're headed towards a temple, airport, a hotel or heading out on a day journey to nearby destinations such as Sarnath as well as Vindhyachal.</p>
               <h3 className="mt-5 font-bold">
                 Why Choose a Cab Service in Varanasi?
@@ -113,7 +76,6 @@ export default function CabServiceInVaranasi() {
               </p>
               <p>●	Assistance for local as well as outstation travel</p>
               <p className="mt-5">Find a couple of companies to check their ratings, then pick the one that is best suited to your style of travel and budget.</p>
-
               <h4 className="mt-5 font-bold">
                 Conclusion
               </h4>
@@ -123,10 +85,3 @@ export default function CabServiceInVaranasi() {
               <p className="mt-5">
                 The next time you plan a trip to this city, which is so ancient, do not forget to reserve the cab service in Varanasi prior to your trip. Explore the city as an authentic local, with the ease and safety of a safe taxi.
               </p>
-            </div>
-          </div>
-        </section>
-      </>
-    </>
-  );
-}
