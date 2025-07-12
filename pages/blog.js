@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { getBlogSlugs, getBlogBySlug } from "./lib/blogs";
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
@@ -54,7 +56,20 @@ export default function Blog({ blogs }) {
   );
 }
 
-export async function getStaticProps() {
+function getBlogSlugs() {
+  const blogsDirectory = path.join(process.cwd(), 'blogs');
+  return fs.readdirSync(blogsDirectory);
+}
+function getBlogBySlug(slug) {
+  const blogsDirectory = path.join(process.cwd(), 'blogs');
+  const realSlug = slug.replace(/\.md$/, '');
+  const fullPath = path.join(blogsDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data, content } = matter(fileContents);
+  return { slug: realSlug, meta: data, content };
+}
+
+export function getStaticProps() {
   const slugs = getBlogSlugs();
   const blogs = slugs.map((slug) => getBlogBySlug(slug));
   return { props: { blogs } };

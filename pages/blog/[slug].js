@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { getBlogSlugs, getBlogBySlug } from "../lib/blogs";
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import { remark } from "remark";
 import html from "remark-html";
 import remarkParse from "remark-parse";
@@ -63,7 +65,19 @@ const faqsData =
     </>
   );
 }
-
+function getBlogSlugs() {
+  const blogsDirectory = path.join(process.cwd(), 'blogs');
+  return fs.readdirSync(blogsDirectory);
+}
+function getBlogBySlug(slug) {
+  const blogsDirectory = path.join(process.cwd(), 'blogs');
+  const realSlug = slug.replace(/\.md$/, '');
+  const fullPath = path.join(blogsDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data, content } = matter(fileContents);
+  return { slug: realSlug, meta: data, content };
+}
+  
 export async function getStaticPaths() {
   const slugs = getBlogSlugs().map((slug) => slug.replace(/\.md$/, ""));
   return {
