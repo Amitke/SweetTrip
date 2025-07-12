@@ -34,7 +34,7 @@ const TopSightSeeing = ({ topSightSeeingInfo }) => {
           <p className="mt-2"><strong>24/7 Support - </strong> Relax with our round-the-clock assistance during your journey.</p>
           <p className="mt-5">You are a new traveller or an experienced traveller looking for a more serious spiritual experience. Our Varanasi tour and travel packages render your journey easy and hassle-free.</p>
           <h3 className="mt-5 font-bold">Our Best Varanasi Tour and Travel Services</h3>
-          <p>We offer varied, well-balanced tour packages from Varanasi and including major religious and historical places like Ayodhya, Prayagraj, and Bodhgaya. Our most sought-after packages are as follows:</p>
+          <p>We offer varied, well-balanced <a href="https://sweettrip.in/tour-operator-in-varanasi">tour packages from Varanasi</a> and including major religious and historical places like Ayodhya, Prayagraj, and Bodhgaya. Our most sought-after packages are as follows:</p>
           <h4 className="mt-5 font-bold">One-Day Package Tour from Varanasi to Ayodhya</h4>
           <p>Ayodhya, the birthplace of Lord Rama, is a place to be visited by every devotee. Our one-day package tour offers:</p>
           <p className="mt-5">●	Early morning pick up from Varanasi</p>
