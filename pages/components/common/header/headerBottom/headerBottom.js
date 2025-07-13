@@ -10,6 +10,7 @@ import {
   faCar,
   faBus,
   faHotel,
+  faBlog,
 } from "@fortawesome/free-solid-svg-icons";
 import { getHeaderMenu } from "../../../../api/common/menu";
 import headerBottomStyles from "./headerBottom.module.scss";
@@ -21,6 +22,7 @@ const icons = {
   faBus,
   faHotel,
   faPhone,
+  faBlog,
 };
 
 const HeaderBottom = () => {
@@ -57,7 +59,7 @@ const HeaderBottom = () => {
           <div className={`w-1/5 pl-4 pr-4 ${headerBottomStyles.headerLogo}`}>
             <Link href="/">
               <Image
-                src="./images/logo.svg"
+                src="https://sweettrip.in/images/logo.svg"
                 className={headerBottomStyles.mobileLogo}
                 alt="Sweet Trip logo"
                 width={500}
@@ -95,7 +97,7 @@ const HeaderBottom = () => {
             >
               <Link href="/">
                 <Image
-                  src="./images/logo.svg"
+                  src="https://sweettrip.in/images/logo.svg"
                   className={headerBottomStyles.logo}
                   alt="Sweet Trip logo"
                   width={500}
