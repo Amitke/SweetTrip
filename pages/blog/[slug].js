@@ -56,10 +56,12 @@ const faqsData =
       />
       <section className="pt-10 pb-10">
         <div className="container mx-auto">
+        <div className="flex-col justify-center flex pl-4 pr-4">
           <h2 className="mb-2">{blog.meta.heading}</h2>
           <p className="mb-2">Posted on {blog.meta.date}</p>
           <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           {blog.meta.heading==="Best Tour Operator in Varanasi – Sweet Trip" && <Faq faqsData={faqsData} faqsError={faqsError} />}
+        </div>
         </div>
       </section>
     </>
