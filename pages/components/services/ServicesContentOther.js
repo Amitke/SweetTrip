@@ -33,7 +33,7 @@ const ServicesContentOther = () => {
           <p className="mt-5"><strong>Book and Pay - </strong>Secure booking and get confirmation in seconds.</p>
            <p className="mt-5"><strong>Relax and Enjoy - </strong>Just relax and enjoy the scenic and spiritual charm of Varanasi.</p>
            <h3>Travelling Tips for First Timers to Varanasi</h3>
-           <p>Make the most of your <a href="https://sweettrip.in/tour-operator-in-varanasi">tour of Varanasi</a> with these easy-to-follow tips:</p>
+           <p>Make the most of your <a href="https://sweettrip.in/blog/tour-operator-in-varanasi">tour of Varanasi</a> with these easy-to-follow tips:</p>
            <p>●	Visit temples early in the morning to escape the crowd.</p>
           <p>●	Adhere to the local customs and religious traditions.</p>
           <p>●	Wear comfortable shoes, as some of the heritage sites demand walking.</p>
