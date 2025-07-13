@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import remarkParse from "remark-parse";
@@ -23,7 +23,7 @@ export default function BlogPage({ blog }) {
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
-     dispatch(getFaqData());
+    dispatch(getFaqData());
   }, []);
 
   const sectionHeader =
@@ -33,21 +33,17 @@ export default function BlogPage({ blog }) {
       ? getSectionHeader.sectionHeader[0].blog
       : getSectionHeader?.error;
 
-const faqsData =
-    getFaq && getFaq.status ? getFaq?.faq?.tourOperatorInVaranasi : getFaq?.error;
+  const faqsData =
+    getFaq && getFaq.status
+      ? getFaq?.faq?.tourOperatorInVaranasi
+      : getFaq?.error;
   const faqsError = getFaq?.error;
   return (
     <>
-    <Head>
+      <Head>
         <title>{blog.meta.title}</title>
-        <meta
-          name="description"
-          content={blog.meta.description}
-        />
-        <meta
-          name="keywords"
-          content={blog.meta.keywords}
-        />
+        <meta name="description" content={blog.meta.description} />
+        <meta name="keywords" content={blog.meta.keywords} />
       </Head>
       <SectionHeader
         title={sectionHeader.title}
@@ -56,30 +52,33 @@ const faqsData =
       />
       <section className="pt-10 pb-10">
         <div className="container mx-auto">
-        <div className="flex-col justify-center flex pl-4 pr-4">
-          <h2 className="mb-2">{blog.meta.heading}</h2>
-          <p className="mb-2">Posted on {blog.meta.date}</p>
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-          {blog.meta.heading==="Best Tour Operator in Varanasi – Sweet Trip" && <Faq faqsData={faqsData} faqsError={faqsError} />}
+          <div className="flex-col justify-center flex pl-4 pr-4">
+            <h2 className="mb-2">{blog.meta.heading}</h2>
+            <p className="mb-2">Posted on {blog.meta.date}</p>
+            <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+          </div>
         </div>
-        </div>
+        {blog.meta.heading ===
+          "Best Tour Operator in Varanasi – Sweet Trip" && (
+          <Faq faqsData={faqsData} faqsError={faqsError} />
+        )}
       </section>
     </>
   );
 }
 function getBlogSlugs() {
-  const blogsDirectory = path.join(process.cwd(), 'blogs');
+  const blogsDirectory = path.join(process.cwd(), "blogs");
   return fs.readdirSync(blogsDirectory);
 }
 function getBlogBySlug(slug) {
-  const blogsDirectory = path.join(process.cwd(), 'blogs');
-  const realSlug = slug.replace(/\.md$/, '');
+  const blogsDirectory = path.join(process.cwd(), "blogs");
+  const realSlug = slug.replace(/\.md$/, "");
   const fullPath = path.join(blogsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
   return { slug: realSlug, meta: data, content };
 }
-  
+
 export async function getStaticPaths() {
   const slugs = getBlogSlugs().map((slug) => slug.replace(/\.md$/, ""));
   return {
