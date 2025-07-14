@@ -47,7 +47,7 @@ export default function BlogPage({ blog }) {
         {blog.meta.canonicalUrl && (
           <link
             rel="canonical"
-            href="https://sweettrip.in/tour-operator-in-varanasi"
+            href="https://sweettrip.in/blog/${blog.meta.url}"
           />
         )}
         {blog.meta.openGraphTags && (
