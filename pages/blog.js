@@ -25,14 +25,10 @@ export default function Blog({ blogs }) {
   return (
     <>
     <Head>
-        <title>Blog</title>
+        <title>Best Tour Operator in Varanasi | Affordable City Tours</title>
         <meta
           name="description"
-          content="Sweet trip blog"
-        />
-        <meta
-          name="keywords"
-           content="Sweet trip blog"
+          content="Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!"
         />
       </Head>
       <SectionHeader
