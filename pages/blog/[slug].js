@@ -52,14 +52,8 @@ export default function BlogPage({ blog }) {
         )}
         {blog.meta.openGraphTags && (
           <>
-            <meta
-              property="og:title"
-              content={blog.meta.title}
-            />
-            <meta
-              property="og:description"
-              content={blog.meta.description}
-            />
+            <meta property="og:title" content={blog.meta.title} />
+            <meta property="og:description" content={blog.meta.description} />
             <meta property="og:type" content="website" />
             <meta
               property="og:url"
@@ -74,19 +68,28 @@ export default function BlogPage({ blog }) {
         {blog.meta.twitterCard && (
           <>
             <meta name="twitter:card" content="summary_large_image" />
-            <meta
-              name="twitter:title"
-              content={blog.meta.title}
-            />
-            <meta
-              name="twitter:description"
-              content={blog.meta.description}
-            />
+            <meta name="twitter:title" content={blog.meta.title} />
+            <meta name="twitter:description" content={blog.meta.description} />
             <meta
               name="twitter:image"
               content="https://sweettrip.in/images/logo.svg"
             />
           </>
+        )}
+        {blog.meta.script && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                name: blog.meta.title,
+                url: `https://sweettrip.in/${blog.meta.parentUrl}`,
+                description:
+                  blog.meta.description
+              }),
+            }}
+          />
         )}
       </Head>
       <SectionHeader

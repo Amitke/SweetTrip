@@ -7,6 +7,8 @@ faq: true
 openGraphTags: true
 twitterCard: true
 url: "tour-operator-in-varanasi"
+script: true
+parentUrl: "tour-package"
 heading: "Best Tour Operator in Varanasi – Sweet Trip"
 date: "2025-07-01"
 para: "Your favourite Varanasi travel agency, SweetTrip , is waiting to give you the most memorable vacation experience in one of India's sacred cities. We began life as Challa Brothers Tour and Travel but are now your best value travel company for relaxing and bespoke travel in Varanasi."
