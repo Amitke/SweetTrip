@@ -8,7 +8,7 @@ const CabServicesPeopleLike = () => {
           <div className="flex-col justify-center items-center flex pl-4 pr-4 text-center">
             <h2>Why Choose Sweet Trip – Your Go-To Car Rental Agency in Varanasi?</h2>
             <p>
-              Sweet Trip is not an ordinary travel agency. We are a professional cab booking agency in Varanasi with a mission to provide authentic, clean, and comfortable cabs in the hands of skilled drivers. These are the reasons that make tourists from all around the globe book cabs with us for Varanasi cab booking:
+              Sweet Trip is not an ordinary travel agency. We are a professional <a href="https://sweettrip.in/blog/cab-service-in-varanasi">cab booking agency in Varanasi</a> with a mission to provide authentic, clean, and comfortable cabs in the hands of skilled drivers. These are the reasons that make tourists from all around the globe book cabs with us for Varanasi cab booking:
             </p>
           </div>
           <div className={`flex-row flex ${peopleLikeStyles.flex}`}>
