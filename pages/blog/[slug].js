@@ -57,7 +57,7 @@ export default function BlogPage({ blog }) {
             <meta property="og:type" content="website" />
             <meta
               property="og:url"
-              content={`https://sweettrip.in/${blog.meta.url}`}
+              content={`https://sweettrip.in/blog/${blog.meta.url}`}
             />
             <meta
               property="og:image"
