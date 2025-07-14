@@ -44,6 +44,50 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
+        {blog.meta.canonicalUrl && (
+          <link
+            rel="canonical"
+            href="https://sweettrip.in/tour-operator-in-varanasi"
+          />
+        )}
+        {blog.meta.openGraphTags && (
+          <>
+            <meta
+              property="og:title"
+              content={blog.meta.title}
+            />
+            <meta
+              property="og:description"
+              content={blog.meta.description}
+            />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:url"
+              content={`https://sweettrip.in/${blog.meta.url}`}
+            />
+            <meta
+              property="og:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
+          </>
+        )}
+        {blog.meta.twitterCard && (
+          <>
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:title"
+              content={blog.meta.title}
+            />
+            <meta
+              name="twitter:description"
+              content={blog.meta.description}
+            />
+            <meta
+              name="twitter:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
+          </>
+        )}
       </Head>
       <SectionHeader
         title={sectionHeader.title}
@@ -58,10 +102,7 @@ export default function BlogPage({ blog }) {
             <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           </div>
         </div>
-        {blog.meta.heading ===
-          "Best Tour Operator in Varanasi – Sweet Trip" && (
-          <Faq faqsData={faqsData} faqsError={faqsError} />
-        )}
+        {blog.meta.faq && <Faq faqsData={faqsData} faqsError={faqsError} />}
       </section>
     </>
   );
