@@ -93,14 +93,12 @@ export default function BlogPage({ blog }) {
         )}
       </Head>
       <SectionHeader
-        title={sectionHeader.title}
+        title={blog.meta.heading}
         para={sectionHeader.para}
-        tourPackageClass={sectionHeader}
       />
       <section className="pt-10 pb-10">
         <div className="container mx-auto">
           <div className="flex-col justify-center flex pl-4 pr-4">
-            <h2 className="mb-2">{blog.meta.heading}</h2>
             <p className="mb-2">Posted on {blog.meta.date}</p>
             <div dangerouslySetInnerHTML={{ __html: blog.content }} />
           </div>

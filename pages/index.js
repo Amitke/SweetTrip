@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-<meta name="google-site-verification" content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
 import dynamic from "next/dynamic";
 import { useDispatch, useSelector } from "react-redux";
 import { getSectionHeaderData } from "@/pages/api/common/sectionHeader";
@@ -9,6 +8,7 @@ import { getGoogleReviewsData } from "./api/common/googleReviews";
 import { getRentalVehicleData } from "./api/common/rentalVehicle";
 import { getPromoData } from "./api/common/promo";
 import { getPeopleLikeData } from "./api/home/peopleLike";
+import { getFaqData } from "./api/common/faq";
 import SectionHeader from "@/pages/components/common/sectionHeader/sectionHeader";
 import AboutUsRecord from "@/pages/components/common/aboutUsRecord/aboutUsRecord";
 import GoogleReviews from "@/pages/components/common/googleReviews/googleReviews";
@@ -17,6 +17,7 @@ import HomeContent from "./components/home/homeContent";
 import Promo from "./components/common/promo/promo";
 import PeopleLike from "./components/home/peopleLike/peopleLike";
 import PopularRoutes from "./components/common/popularRoutes/popularRoutes";
+import Faq from "./components/common/faq/faq";
 const RentalCommunity = dynamic(
   () => import("./components/common/rentalCommunity/rentalCommunity"),
   { ssr: false }
@@ -30,6 +31,7 @@ export default function Home() {
   const getRentalVehicle = useSelector((state) => state.rentalVehicle);
   const getPromo = useSelector((state) => state.promo);
   const getPeopleLike = useSelector((state) => state.peopleLike);
+  const getFaq = useSelector((state) => state.faq);
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
@@ -38,6 +40,7 @@ export default function Home() {
     dispatch(getRentalVehicleData());
     dispatch(getPromoData());
     dispatch(getPeopleLikeData());
+    dispatch(getFaqData());
   }, []);
   const sectionHeader =
     getSectionHeader.status &&
@@ -65,46 +68,22 @@ export default function Home() {
     getRentalVehicle && getRentalVehicle.status
       ? getRentalVehicle.rentalVehicle?.home[0].vehicleTitle
       : getRentalVehicle?.error;
+
+  const faqsData =
+    getFaq && getFaq.status ? getFaq?.faq?.home : getFaq?.error;
+  const faqsError = getFaq?.error;
   return (
     <>
       <Head>
-        <title>Top Tour Operator in Varanasi | Sweet Trip India</title>        
-        <meta name="description" content="Discover Varanasi with the best tour operator in Varanasi.
-        Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys. Book your trip
-        today!" />
-        <link rel="canonical" href="https://sweettrip.in/" />
-        <meta property="og:title" content="Top Tour Operator in Varanasi | Sweet Trip India" />
-        <meta property="og:description" content="Discover Varanasi with the best tour operator in
-        Varanasi. Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys.
-        Book your trip today!" />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sweettrip.in/" />
-        <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Tour Operator in Varanasi | Sweet Trip India" />
-        <meta name="twitter:description" content="Discover Varanasi with the best tour operator in
-        Varanasi. Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys.
-        Book your trip today!" />
-        <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+        <title>Sweet Trip- Book Hotel, Bus & Car Rental in Varanasi</title>
+        <meta
+          name="description"
+          content="Sweet Trip is a platform where you can make cab booking in Varanasi, get Varanasi cab booking, bus hire in Varanasi, and book the best places to stay in Varanasi."
+        />
         <meta
           name="keywords"
           content="Best Cab Service in Varanasi, Varanasi local cab, Varanasi airport cab booking, one-way taxi service in Varanasi contact number, luxury bus on rental, bus booking for marriage, private bus booking, tourist bus booking, mini bus on rent, best places to stay in Varanasi, best hotel in Varanasi for family, hotels for couples in Varanasi, hotels in Ayodhya near Ram Mandir, and hotels near Ram Mandir Ayodhya."
         />
-            <script
-            type = "application/ld+json"
-            dangerouslySetInnerHTML = {
-              {
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "WebPage",
-                  "name": "Top Tour Operator in Varanasi | Sweet Trip India",
-                  "url": "https://sweettrip.in/",
-                  "description": "Discover Varanasi with the best tour operator in Varanasi. Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys.Book your trip today!"
-                }),
-              }
-            } />
       </Head>
       <>
         <SectionHeader
@@ -127,6 +106,7 @@ export default function Home() {
         <Promo promoData={promoData} />
         <PeopleLike getPeopleLike={getPeopleLike} />
         <RentalCommunity />
+        <Faq faqsData={faqsData} faqsError={faqsError} />
         <PopularRoutes />
       </>
     </>

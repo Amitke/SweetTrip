@@ -178,5 +178,42 @@
       "heading": "What tourist safety features do you provide?",
       "para": "Sweet Trip offers secure travel in clean vehicles, skilled drivers, local emergency assistance, and frequent updates on surrounding regulations and laws. You are in safe hands with us as a certified tour operator in Varanasi."
     }
+  ],
+  "home": [
+     {
+      "id": 1,
+      "heading": "What does Sweet Trip offer?",
+      "para": "We provide car reservations, boat cruises, lodging reservations, and complete travel reservations for Ayodhya, Varanasi, Prayagraj, and Bodhgaya."
+    },
+     {
+      "id": 2,
+      "heading": "Is Sweet Trip a local tour operating company in Varanasi?",
+      "para": "Yes, we are a professionally managed, local travel and tour company with trained staff and licensed transport."
+    },
+     {
+      "id": 3,
+      "heading": "Can I have a customised package?",
+      "para": "Yes, we have customised packages as per your convenience, plan, and budget."
+    },
+     {
+      "id": 4,
+      "heading": "What does the 2-day package include?",
+      "para": "Our 2-day package includes Varanasi transport, hotel stay, local sightseeing, boat ride (if Varanasi), and other activities as per preference."
+    },
+     {
+      "id": 5,
+      "heading": "Is it possible to have a pickup from the airport or the railway station?",
+      "para": "Yes, we are arranging pickup and drop from Varanasi railway station, airport, or hotel."
+    },
+     {
+      "id": 6,
+      "heading": "Is it for senior citizens or single travellers?",
+      "para": "Yes. They are mannered and specially trained in safety, comfort, and service to all ages and categories of travel."
+    },
+     {
+      "id": 7,
+      "heading": "How to Book My Tour?",
+      "para": "Call us on the phone or WhatsApp directly, or fill out our website form to have a callback and a quoted price."
+    }
   ]
 }

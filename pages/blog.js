@@ -34,7 +34,6 @@ export default function Blog({ blogs }) {
       <SectionHeader
         title={sectionHeader.title}
         para={sectionHeader.para}
-        tourPackageClass={sectionHeader}
       />
       <section className="pt-10 pb-5">
         <div className="container mx-auto">

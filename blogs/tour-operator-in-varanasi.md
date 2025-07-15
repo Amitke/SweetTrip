@@ -22,9 +22,9 @@ bespoke travel in Varanasi. If you seek spiritual enlightenment,
 cultural immersion, or peaceful moments spent in the ambience of
 the Ganges, we design experiences that are simply irrepressible.
 </p>
-<h3 className="mt-5 font-bold">
+<h2 className="mt-5 font-bold">
 Why Sweet Trip – Varanasi's Best Tour Operator?
-</h3>
+</h2>
 <p>
                 Being a professional tour operator of Varanasi, Sweet Trip
                 utilizes its personalized services, insider information, and
@@ -33,9 +33,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 spiritual travelers, and international travellers, to experience
                 the charm of Varanasi in a meaningful and laid-back way.
               </p>
-              <h3 className="mt-5 font-bold">
+              <h2 className="mt-5 font-bold">
                 Why are we the best Varanasi tour operator?
-              </h3>
+              </h2>
               <p>
                 <strong>Professional Local Guides - </strong> We have
                 professional local guides who know their city and give you the
@@ -62,9 +62,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 tempo traveler, we provide reliable transport solutions to make
                 your travel a comfort ride.
               </p>
-              <h3 className="mt-5 font-bold">
+              <h2 className="mt-5 font-bold">
                 Feel the Timelessness of Varanasi
-              </h3>
+              </h2>
               <p>
                 It is also known as Kashi or Banaras. Varanasi is the world's
                 oldest continuously inhabited city. Varanasi is situated on the
@@ -98,9 +98,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 arrangements of your travel in the best possible way with local
                 experience.
               </p>
-              <h4 className="mt-5 font-bold">
+              <h3 className="mt-5 font-bold">
                 Hotel and Dharamshala bookings in Varanasi
-              </h4>
+              </h3>
               <p>
                 A sound sleep makes a wonderful holiday. Sweet Trip offers
                 different choices of accommodation from 5-star Ganges-facing
