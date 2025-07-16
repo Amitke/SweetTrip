@@ -54,18 +54,38 @@
   "busBooking": [
     {
       "id": 1,
-      "heading": "Is there a 20 seater bus?",
-      "para": "Yes, you can book a 20 seater bus with us. You can do it through our website or by calling us. "
+      "heading": "How can I reserve a bus in Varanasi with Sweet Trip?",
+      "para": "Book online or call our customer support. All you have to do is provide us with your travel details, date, time, passengers, and destination, and we'll respond with a customised quote."
     },
     {
       "id": 2,
-      "heading": "What are the advantages of purchasing a bus ticket with Sweet Trip?",
-      "para": "With Sweet Trip, you can book your bus tickets online or by phone. You also have options to choose from buses based on boarding points, timing and bus type."
+      "heading": "What are your different bus rental options in Varanasi?",
+      "para": "We provide an ample selection of luxury buses, deluxe coaches, mini buses, and 40-seaters for groups."
     },
     {
       "id": 3,
-      "heading": "Does booking online cost me more?",
-      "para": "Not at all! The price of the bus ticket remains the same as what you would get from the bus operator."
+      "heading": "Do you provide bus booking for a wedding in Varanasi?",
+      "para": "Yes, we provide wedding transport. Our buses can be booked and decorated as per your event schedules."
+    },
+    {
+      "id": 4,
+      "heading": "Are the buses convenient for senior citizens and children?",
+      "para": "Yes. Our vehicles are spacious, comfortable, and in the hands of experienced drivers who give a smooth and safe ride for all ages."
+    },
+    {
+      "id": 5,
+      "heading": "Am I able to pick up and drop off from different points?",
+      "para": "Yes, our system does permit you to specify more than one pickup and drop point, and we quote the final amount accordingly."
+    },
+    {
+      "id": 6,
+      "heading": "Is there a minimum distance or a minimum rental period?",
+      "para": "We mostly offer full-day hiring or packages by minimum kilometres. Quotes can be given on demand."
+    },
+    {
+      "id": 7,
+      "heading": "Are you offering outstation bus hiring service from Varanasi?",
+      "para": "Yes. We also offer local and outstation trips. Just inform us where you want to proceed, and we will arrange the most appropriate bus for you."
     }
   ],
   "hotelBooking": [
