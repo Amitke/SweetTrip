@@ -12,7 +12,7 @@ const Faq = ({ faqsData,faqsError }) => {
     <section className={`${faqStyles.faq} pt-10 pb-10`}>
       <div className="container mx-auto">
         <div className="flex-col justify-center items-center flex pl-4 pr-4">
-          <h2>Frequently Asked Questions</h2>
+          <h2>FAQs – Sweet Trip Tour Operator in Varanasi Asked Questions</h2>
         </div>
         <div className={`flex-col flex`}>
           {faqsData &&

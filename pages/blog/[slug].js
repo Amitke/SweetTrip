@@ -20,6 +20,8 @@ export default function BlogPage({ blog }) {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
   const getFaq = useSelector((state) => state.faq);
+  console.log("the blog returned is", blog)
+  console.log("the sectionheader is", blog.meta.url == 'cab-service-in-varanasi')
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
@@ -44,6 +46,69 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
+        
+        {blog?.meta?.url === "cab-service-in-varanasi" ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
+                },
+                "headline": "Best Tour Operator in Varanasi – Sweet Trip",
+                "image": "https://sweettrip.in/images/logo.svg",
+                "author": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "url": "https://sweettrip.in/"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
+                },
+                "datePublished": "2025-07-01"
+              }),
+            }}
+          />
+        ) : (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/cab-service-in-varanasi"
+                },
+                "headline": "The Ultimate Cab Service in Varanasi",
+                "image": "https://sweettrip.in/images/logo.svg",
+                "author": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "url": "https://sweettrip.in/"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
+                },
+                "datePublished": "2025-07-07"
+              }),
+            }}
+          />
+        )}
+
         {blog.meta.canonicalUrl && (
           <link
             rel="canonical"
@@ -91,6 +156,8 @@ export default function BlogPage({ blog }) {
             }}
           />
         )}
+
+
       </Head>
       <SectionHeader
         title={blog.meta.heading}
