@@ -1,12 +1,11 @@
 import React from "react";
-import policyStyles from "@/pages/components/policy/policy.module.scss";
 
 const HomeContent = () => {
   return (
-    <section className={`${policyStyles.policy} pb-10`}>
+    <section>
       <div className="container mx-auto">
         <div className="flex-col flex pl-4 pr-4">
-          <h3>Curated Tour Plans for Your Soulful Escape</h3>
+          <h2 className="mt-4">Curated Tour Plans for Your Soulful Escape</h2>
           <p>
             A journey never needs to be remembered if every minute detail is
             arranged carefully, from cabs and hotels to guided tours. Sweet
@@ -20,7 +19,7 @@ const HomeContent = () => {
             traveller eager to be introduced to the vibrant Indian heritage,
             Sweet Trip is your one-stop travel organiser.
           </p>
-          <h3>Who We Are – Read More About Sweet Trip</h3>
+          <h2 className="mt-4">Who We Are – Read More About Sweet Trip</h2>
           <p>
             We are one of the finest tour organisers of Varanasi, providing
             door-to-door travelling solutions such as:
@@ -38,8 +37,8 @@ const HomeContent = () => {
             family, or in groups, we guarantee you hassle-free and value-added
             experience.
           </p>
-          <h3>Find Our Best Places</h3>
-          <h4>Varanasi – The City of Light</h4>
+          <h2 className="mt-4">Find Our Best Places</h2>
+          <h3 className="font-bold">Varanasi – The City of Light</h3>
           <p>
             Having been constructed allegedly by Lord Shiva and blessed by the
             sacred River Ganges, Varanasi is the world's oldest living city. The
@@ -59,7 +58,7 @@ const HomeContent = () => {
             demystifying this ancient city in the form of guided tours and
             personalised services.
           </p>
-          <h4 className="mt-5">Ayodhya – Lord Ram's Birthplace</h4>
+          <h3 className="font-bold mt-5">Ayodhya – Lord Ram's Birthplace</h3>
           <p>
             India's revered city, Ayodhya, is comprised of the newly constructed
             Shri Ram Janmabhoomi Temple and a few other ancient temples.
@@ -76,7 +75,7 @@ const HomeContent = () => {
             religious, and well-arranged with a pre-researched itinerary and
             hassle-free travel.
           </p>
-          <h4 className="mt-5">Prayagraj – Triveni Sangam City</h4>
+          <h3 className="font-bold mt-5">Prayagraj – Triveni Sangam City</h3>
           <p>
             Prayagraj was formerly known as Allahabad, an extremely religiously
             significant city because it is the site for the confluence of Ganga,
@@ -94,7 +93,7 @@ const HomeContent = () => {
             Sweet Trip presents a perfectly planned Prayagraj tour with a
             hassle-free tour experience from Ayodhya and Varanasi.
           </p>
-          <h4 className="mt-5">Bodhgaya – Land of Enlightenment</h4>
+          <h3 className="font-bold mt-5">Bodhgaya – Land of Enlightenment</h3>
           <p>
             Bodhgaya is in the state of Bihar. It was where Lord Buddha attained
             enlightenment under the Bodhi Tree. It's a peaceful, reflective town
@@ -124,9 +123,9 @@ const HomeContent = () => {
             <li>● Cultural interaction and commentary</li>
             <li>● Tasting local cuisine (optional)</li>
           </ol>
-          <h4 className="mt-5">
+          <h2 className="mt-5">
             Why Book Sweet Trip as Your Travel Organiser in Varanasi
-          </h4>
+          </h2>
           <p className="mt-1">
             <strong>Local Know-How:</strong> We are local with in-depth local
             know-how.
@@ -147,7 +146,7 @@ const HomeContent = () => {
             <strong>Trusted by Travellers:</strong> Well-rated by pilgrims and
             travellers.
           </p>
-          <h4 className="mt-5">Tour Packages – Get ₹1000 Off on Bookings</h4>
+          <h2 className="mt-5">Tour Packages – Get ₹1000 Off on Bookings</h2>
           <p>
             We provide well-planned tour packages according to your time
             duration:
@@ -180,9 +179,9 @@ const HomeContent = () => {
             <li>● Day and night private Ganga boat cruise</li>
             <li>● Booking facility for hotels</li>
           </ol>
-          <h4 className="mt-5">Book Your Sweet Trip Now</h4>
+          <h2 className="mt-5">Book Your Sweet Trip Now</h2>
           <p>Your journey should be as sacred as your pilgrimage place. Explore retro pilgrimages, create memories for a lifetime, and feel India's holy energies with Sweet Trip, the authentic and trustworthy tour operator in Varanasi.</p>
-          <h4 className="mt-5">Make your next journey a Sweet Trip</h4>
+          <h2 className="mt-5">Make your next journey a Sweet Trip</h2>
           <p>Book now and start your unforgettable spiritual journey with the most trusted tour operator of Varanasi.</p>
         </div>
       </div>

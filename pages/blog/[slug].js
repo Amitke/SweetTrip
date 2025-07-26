@@ -55,25 +55,25 @@ export default function BlogPage({ blog }) {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "mainEntityOfPage": {
-                  "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
+                "@type": "WebPage",
+                "@id": "https://sweettrip.in/blog/cab-service-in-varanasi"
                 },
-                "headline": "Best Tour Operator in Varanasi – Sweet Trip",
+                "headline": "The Ultimate Cab Service in Varanasi",
                 "image": "https://sweettrip.in/images/logo.svg",
                 "author": {
-                  "@type": "Organization",
-                  "name": "sweettrip",
-                  "url": "https://sweettrip.in/"
+                "@type": "Organization",
+                "name": "sweettrip",
+                "url": "https://sweettrip.in/"
                 },
                 "publisher": {
-                  "@type": "Organization",
-                  "name": "sweettrip",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                "@type": "Organization",
+                "name": "sweettrip",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://sweettrip.in/images/logo.svg"
+                }
                 },
-                "datePublished": "2025-07-01"
+                "datePublished": "2025-07-07"
               }),
             }}
           />
@@ -85,25 +85,25 @@ export default function BlogPage({ blog }) {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "mainEntityOfPage": {
-                  "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/cab-service-in-varanasi"
+                "@type": "WebPage",
+                "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
                 },
-                "headline": "The Ultimate Cab Service in Varanasi",
+                "headline": "Best Tour Operator in Varanasi – Sweet Trip",
                 "image": "https://sweettrip.in/images/logo.svg",
                 "author": {
-                  "@type": "Organization",
-                  "name": "sweettrip",
-                  "url": "https://sweettrip.in/"
+                "@type": "Organization",
+                "name": "sweettrip",
+                "url": "https://sweettrip.in/"
                 },
                 "publisher": {
-                  "@type": "Organization",
-                  "name": "sweettrip",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                "@type": "Organization",
+                "name": "sweettrip",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://sweettrip.in/images/logo.svg"
+                }
                 },
-                "datePublished": "2025-07-07"
+                "datePublished": "2025-07-01"
               }),
             }}
           />

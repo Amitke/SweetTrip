@@ -98,9 +98,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 arrangements of your travel in the best possible way with local
                 experience.
               </p>
-              <h3 className="mt-5 font-bold">
+              <h2 className="mt-5 font-bold">
                 Hotel and Dharamshala bookings in Varanasi
-              </h3>
+              </h2>
               <p>
                 A sound sleep makes a wonderful holiday. Sweet Trip offers
                 different choices of accommodation from 5-star Ganges-facing
@@ -122,9 +122,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 As your authorized tour agent in Varanasi, we make sure you get
                 the best place to unwind after a long day of discovery.
               </p>
-              <h4 className="mt-5 font-bold">
+             <h2 className="mt-5 font-bold">
                 Secure Transport & Tempo Traveller Rentals
-              </h4>
+              </h2>
               <p>
                 Make your travel safe with Sweet Trip's transport services. We
                 provide:Tempo Travellers (9-seater to 26-seater) for family
@@ -139,7 +139,7 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 Book Sweet Trip with your Varanasi tour operator for
                 hassle-free, smooth, and safe travel experience.
               </p>
-              <h4 className="mt-5 font-bold">
+             <h2 className="mt-5 font-bold">
                 Guided Sightseeing & Cultural Tours
               </h4>
               <p>
@@ -174,9 +174,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 Our Sweet Trip guides introduce these places with impressive
                 stories, facts, and spirituality.
               </p>
-              <h4 className="mt-5 font-bold">
+             <h2 className="mt-5 font-bold">
                 Unmissable Ganga Aarti & Boat Ride Experience
-              </h4>
+              </h2>
               <p>
                 The most emotional experience in Varanasi is likely to be
                 witnessing the Ganga Aarti at Dashashwamedh Ghat. Your Varanasi
@@ -185,9 +185,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
                 boat tour to see the city wake up to golden light, a dream come
                 true.
               </p>
-              <h4 className="mt-5 font-bold">
+         <h2 className="mt-5 font-bold">
                 Day Tours & Excursions Around Varanasi
-              </h4>
+              </h2>
               <p>We also arrange day excursions to sites close by:</p>
               <p className="mt-5">
                 <strong>Sarnath - </strong> Buddhist sacred place of supreme
@@ -208,9 +208,9 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
               <p className="mt-5">
                 Make Sweet Trip your city guide and local guide in Varanasi for local excursions and city sightseeing.
               </p>
-              <h3 className="mt-5 font-bold">
+              <h2 className="mt-5 font-bold">
                 General Travel Tips for Tourists Visiting Varanasi
-              </h3>
+              </h2>
               <p>In order to enjoy a happy and safe travelling experience, some tips are given below:</p>
               <p className="mt-5">
               <strong>Best Time to Visit - </strong> October to March is the best time with pleasant weather and festival times like Diwali and Dev Deepawali. </p>
@@ -220,18 +220,18 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
 <p>
               <strong>Cultural Etiquette - </strong> Respect temple customs, take off shoes while going to temples, and be modest in attire, particularly near ghats and religious places.
               </p>              
-              <h3 className="mt-5 font-bold">
+             <h2 className="mt-5 font-bold">
                 Conclusion – Your Most Trusted Tour Organiser in Varanasi
-              </h3>
+              </h2>
               <p>
                Varanasi isn't a destination, it's an odyssey. Your Sweet Trip odyssey will be planned so that you can feel comfortable, spiritual, and adventurous. We are the finest tour organizer in Varanasi and guarantee a rewarding experience with expertise, local knowledge, and personal care.
               </p>
               <p className="mt-5">
                 Let Sweet Trip be your tour guide in experiencing the mystic and boon of this holy city. Book your personalized Varanasi tour and enjoy an experience that will remain in your memory forever.
               </p>
-              <h3 className="mt-5 font-bold">
+              <h2 className="mt-5 font-bold">
                 Reach out to Sweet Trip – The Best Tour Operator in Varanasi
-              </h3>
+              </h2>
               <p>
                 Location: Varanasi, Uttar Pradesh, India<br/>
                 Call Us: <a href="tel:+91-7488736844">+91-7488736844</a><br/>
