@@ -32,7 +32,7 @@ const SectionHeader = ({
         >
           <div className="w-full pl-4 pr-4">
             <h1>{title}</h1>
-            {para ? <h1 className="m-auto">{para}</h1> : ""}
+            {para ? <p className="m-auto">{para}</p> : ""}
             {homeData && <BookingForm />}
             {carBannerClass && <BookingForm />}
           </div>
