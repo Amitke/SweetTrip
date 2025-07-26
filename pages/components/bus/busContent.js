@@ -41,9 +41,9 @@ const BusContent = () => {
             Our 30-seater and 40-seater buses have ample capacity for everyone
             to travel in one vehicle, so your trip is cosy and unforgettable
           </p>
-          <h2 className="mt-5 font-bold">
+          <h3 className="mt-5 font-bold">
             Why Sweet Trip for Bus Rental Service in Varanasi?
-          </h2>
+          </h3>
           <p>
             We provide incomparable service and quality at reasonable prices.
             Here's why Sweet Trip is always a step ahead:

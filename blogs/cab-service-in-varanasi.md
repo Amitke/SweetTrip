@@ -66,9 +66,9 @@ para: "Varanasi, which is among the most ancient cities of the globe, has become
                 <strong>Assi Ghat - </strong> A peaceful Ghat that is perfect for yoga in the morning or sipping tea by the river.
               </p>
               <p className="mt-5">By using the most reliable cab service from Varanasi, you can visit the entire area on one day, or spread them over several days according to your timetable.</p>
-              <h2 className="mt-5 font-bold">
+              <h3 className="mt-5 font-bold">
                 Choosing the Right Taxi Service in Varanasi
-              </h2>
+              </h3>
               <p>
                If you are looking for a taxi company within Varanasi, be sure to look for these:
               </p>
@@ -82,9 +82,9 @@ para: "Varanasi, which is among the most ancient cities of the globe, has become
               </p>
               <p>●	Assistance for local as well as outstation travel</p>
               <p className="mt-5">Find a couple of companies to check their ratings, then pick the one that is best suited to your style of travel and budget.</p>
-              <h2 className="mt-5 font-bold">
+              <h4 className="mt-5 font-bold">
                 Conclusion
-              </h2>
+              </h4>
               <p>
                 The journey to Varanasi is an unforgettable adventure, brimming with culture, religion, as well as history. However, if you want to fully enjoy Varanasi without the stress of dealing with traffic and bargaining to get a ride, pick an experienced taxi service that is reliable within Varanasi. It doesn't matter whether you need it for a few hours or a couple of days, the best <a href="https://sweettrip.in/cab-services">taxi service within Varanasi</a> can make your travel easier, more secure and enjoyable.
               </p>
