@@ -11,8 +11,15 @@
   <url><loc>https://sweettrip.in/bus-rental</loc></url>
   <url><loc>https://sweettrip.in/contact</loc></url>
   <url><loc>https://sweettrip.in/policy</loc></url>
+  <url><loc>https://sweettrip.in/terms-and-conditions</loc></url>
+  <url><loc>https://sweettrip.in/refund-policy</loc></url>
+  <url><loc>https://sweettrip.in/varanasi-tour-package</loc></url>
+  <url><loc>https://sweettrip.in/ayodhya-tour-package</loc></url>
+  <url><loc>https://sweettrip.in/prayagraj-tour-package</loc></url>
+  <url><loc>https://sweettrip.in/bodhgaya-tour-package</loc></url>
 
   <!-- Blog post detail pages -->
+  <url><loc>https://sweettrip.in/blog</loc></url>
   <url><loc>https://sweettrip.in/blog/tour-operator-in-varanasi</loc></url>
   <url><loc>https://sweettrip.in/blog/cab-service-in-varanasi</loc></url>
 </urlset>
