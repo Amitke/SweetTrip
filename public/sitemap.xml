@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main site pages -->
+  <url><loc>https://sweettrip.in/</loc></url>
+  <url><loc>https://sweettrip.in/about</loc></url>
+  <url><loc>https://sweettrip.in/faq</loc></url>
+  <url><loc>https://sweettrip.in/blog</loc></url>
+  <url><loc>https://sweettrip.in/tour-package</loc></url>
+  <url><loc>https://sweettrip.in/hotel-booking</loc></url>
+  <url><loc>https://sweettrip.in/cab-services</loc></url>
+  <url><loc>https://sweettrip.in/bus-rental</loc></url>
+  <url><loc>https://sweettrip.in/contact</loc></url>
+  <url><loc>https://sweettrip.in/policy</loc></url>
+
+  <!-- Blog post detail pages -->
+  <url><loc>https://sweettrip.in/blog/tour-operator-in-varanasi</loc></url>
+  <url><loc>https://sweettrip.in/blog/cab-service-in-varanasi</loc></url>
+</urlset>
