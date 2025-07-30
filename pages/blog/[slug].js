@@ -20,8 +20,6 @@ export default function BlogPage({ blog }) {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
   const getFaq = useSelector((state) => state.faq);
-  console.log("the blog returned is", blog)
-  console.log("the sectionheader is", blog.meta.url == 'cab-service-in-varanasi')
 
   useEffect(() => {
     dispatch(getSectionHeaderData());
@@ -47,7 +45,7 @@ export default function BlogPage({ blog }) {
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
         
-        {blog?.meta?.url === "cab-service-in-varanasi" ? (
+        {blog?.meta?.url === "cab-service-in-varanasi" && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -77,7 +75,8 @@ export default function BlogPage({ blog }) {
               }),
             }}
           />
-        ) : (
+        )}
+        {blog?.meta?.url === "tour-operator-in-varanasi" && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
