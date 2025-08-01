@@ -50,15 +50,15 @@ export default function cabServices() {
     <>
       <Head>
         <title>
-          Sweet Trip- Cab Booking & Taxi Rental Services in Varanasi
+          Car Rental & Cab Hire in Varanasi | Sweet Trip
         </title>
         <meta
           name="description"
-          content="Swee Trip brings online booking for the best cab service in Varanasi, hygienic and spacious Varanasi local cabs, Varanasi airport cab booking, and one-way cabs for you."
+          content="Book reliable cab hire in Varanasi with Sweet Trip. Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time service."
         />
         <meta
           name="keywords"
-          content="cab hire in varanasi, cab in varanasi, varanasi cab booking, Best Cab Service in Varanasi, varanasi local cab, varanasi airport cab booking, book cab varanasi, best one way taxi service in Varanasi, one way taxi service in Varanasi contact number"
+          content="Car rental agency in Varanasi, Cab hire in Varanasi"
         />
       </Head>
       <>

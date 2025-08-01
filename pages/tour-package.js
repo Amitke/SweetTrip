@@ -44,14 +44,14 @@ export default function HotelBooking() {
   return (
     <>
       <Head>
-        <title>Sweet Trip- Tour Packages from Varanasi with 1000 Off!</title>
+        <title>Top Tour and Travel Agency in Varanasi | SweetTrip</title>
         <meta
           name="description"
-          content="Explore the best deals on Varanasi to Ayodhya tour packages, Varanasi Ayodhya Allahabad tour packages and Varanasi to Bodhgaya tour packages. Get 1000 off on all packages."
+          content="Discover trusted Varanasi tour and travel services with SweetTrip. Explore spiritual journeys, custom packages, and expert local guides. Book your trip today!"
         />
         <meta
           name="keywords"
-          content="Varanasi to Ayodhya tour package, Varanasi Ayodhya tour package, Varanasi Ayodhya Allahabad tour package, Varanasi Ayodhya Gaya tour package, Varanasi Allahabad Ayodhya tour package, Varanasi Ayodhya Prayagraj, Varanasi Ayodhya Prayagraj tour, Varanasi Ayodhya tour"
+          content="tour and travel agency in Varanasi"
         />
         <link rel="canonical" href="https://sweettrip.in/tour-package" />
       </Head>

@@ -75,15 +75,57 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sweet Trip- Book Hotel, Bus & Car Rental in Varanasi</title>
+        <title>Top Tour Operator in Varanasi | Sweet Trip India</title>
         <meta
           name="description"
-          content="Sweet Trip is a platform where you can make cab booking in Varanasi, get Varanasi cab booking, bus hire in Varanasi, and book the best places to stay in Varanasi."
+          content="Discover Varanasi with the best tour operator in Varanasi. Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys. Book your trip today!"
         />
         <meta
           name="keywords"
-          content="Best Cab Service in Varanasi, Varanasi local cab, Varanasi airport cab booking, one-way taxi service in Varanasi contact number, luxury bus on rental, bus booking for marriage, private bus booking, tourist bus booking, mini bus on rent, best places to stay in Varanasi, best hotel in Varanasi for family, hotels for couples in Varanasi, hotels in Ayodhya near Ram Mandir, and hotels near Ram Mandir Ayodhya."
+          content="Tour operator in Varanasi"
         />
+        <script type="application/ld+json" 
+            dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sweet Trip",
+            "url": "https://sweettrip.in/",
+            "logo": "https://sweettrip.in/images/logo.svg",
+            "sameAs": [
+              "https://www.instagram.com/sweettrip.in/",
+              "https://www.facebook.com/sweettrip.inn",
+              "https://www.linkedin.com/company/sweettrip/"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-7488736844",
+                "contactType": "customer service",
+                "email": "info@sweettrip.in",
+                "areaServed": "IN",
+                "availableLanguage": [
+                  "en",
+                  "hi"
+                ]
+              }
+            ]
+          })
+        }} />
+        <script type="application/ld+json" 
+            dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+            "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "sweettrip",
+              "url": "https://sweettrip.in/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://sweettrip.in/{search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+          })
+        }} />
       </Head>
       <>
         <SectionHeader
