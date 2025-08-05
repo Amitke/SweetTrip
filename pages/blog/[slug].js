@@ -84,23 +84,23 @@ export default function BlogPage({ blog }) {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
                 },
                 "headline": "Best Tour Operator in Varanasi – Sweet Trip",
-                "image": "https://sweettrip.in/images/logo.svg",
+                "description": "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!",
+                "image": "https://sweettrip.in/images/logo.svg",  
                 "author": {
-                "@type": "Organization",
-                "name": "sweettrip",
-                "url": "https://sweettrip.in/"
-                },
+                  "@type": "Organization",
+                  "name": "sweettrip"
+                },  
                 "publisher": {
-                "@type": "Organization",
-                "name": "sweettrip",
-                "logo": {
-                "@type": "ImageObject",
-                "url": "https://sweettrip.in/images/logo.svg"
-                }
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
                 },
                 "datePublished": "2025-07-01"
               }),
@@ -108,6 +108,135 @@ export default function BlogPage({ blog }) {
           />
         )}
 
+        {blog?.meta?.url === "places-to-visit-in-varanasi" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/places-to-visit-in-varanasi"
+                },
+                "headline": "Top 10 Places to Visit in Varanasi for First-Time Travellers",
+                "description": "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide.",
+                "image": "https://sweettrip.in/images/logo.svg",  
+                "author": {
+                  "@type": "Organization",
+                  "name": "sweettrip"
+                },  
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
+                },
+                "datePublished": "2025-07-28"
+              }),
+            }}
+          />
+        )}
+        {blog?.meta?.url === "car-rental-in-varanasi" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/car-rental-in-varanasi"
+                },
+                "headline": "How to Choose the Right Car Rental in Varanasi: Tips & Best Options",
+                "description": "Affordable car rental in Varanasi by Sweettrip. Book a taxi or rent a cab in Varanasi for local sightseeing, airport transfers, or outstation travel.",
+                "image": "https://sweettrip.in/images/logo.svg",  
+                "author": {
+                  "@type": "Organization",
+                  "name": "sweettrip"
+                },  
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "sweettrip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
+                },
+                "datePublished": "2025-07-30"
+
+              }),
+            }}
+          />
+        )}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                  "@type": "Question",
+                  "name": "Why should I need to hire Sweet Trip as my tour operator in Varanasi?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sweet Trip is one of the seasoned tour operators of Varanasi with years of experience. We are offering customized tour packages, local guides per person, clean cars, and 24/7 customer service, making us one of the safest tour operators in Varanasi for travelers of all kinds."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What are the different types of Varanasi tour packages you offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer various types of tour packages like 1-day spiritual trips, 2 to 5-day culture and heritage tours Pilgrimage tours, Buddhist pilgrimage tours (including Sarnath) Family and group packages as per your requirements. As Sweet Trip is among the leading tour operators of Varanasi it makes every visit as per your choice and desire."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Do your packages offer facilities for staying?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Sweet Trip offers complete Varanasi tour packages with stays ranging from luxury hotels to budget-friendly dharamshalas, as per your choice."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Does transportation come in your Varanasi tour packages?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our packages ensure safe travel like private cabs, airport transfers, and tempo travellers (9 seater to 26 seater). Our trained drivers take care of safe and comfortable travels within Varanasi and surrounding areas."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Can a boat ride or experience of Ganga Aarti be booked separately?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, morning boat tours, Ganga Aarti sightseeing, temple visit, or generic guided sightseeing can be booked separately as individual services. We are a flexible tour organizer in Varanasi and offer full package and standalone services."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Does the Ganga Aarti come in the tour package?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, as part of our standard Varanasi tours, we usually arrange the sacred Ganga Aarti at Dashashwamedh Ghat as an evening tour or optionally as an add-on activity. We reserve front-row seats or boat-facing views based on your choice."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Is it possible to personalize the Varanasi tour as per our interests?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We provide customized Varanasi tour packages. If you have a desire for religious sites, cultural tours, or culinary tours, Sweet Trip will craft a customized tour itinerary just for you."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What tourist safety features do you provide?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sweet Trip offers secure travel in clean vehicles, skilled drivers, local emergency assistance, and frequent updates on surrounding regulations and laws. You are in safe hands with us as a certified tour operator in Varanasi."
+                  }
+                }]
+              }),
+            }}
+          />
         {blog.meta.canonicalUrl && (
           <link
             rel="canonical"

@@ -206,6 +206,46 @@ export default function Home() {
             }),
           }}
         />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Sweet Trip Tours and Travels",
+              "image": "https://sweettrip.in/images/logo.svg",
+              "@id": "",
+              "url": "https://share.google/1zZOsnM6hglqIFGUC",
+              "telephone": "074887 36844",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "C, 21/30 B-3, Maldahiya Rd, Lohamandi, Chetganj, Varanasi, Uttar Pradesh 221001",
+                "addressLocality": "Varanasi",
+                "postalCode": "221001",
+                "addressCountry": ""
+              },
+              "sameAs": [
+                "https://www.instagram.com/sweettrip.in/",
+                "https://www.facebook.com/sweettrip.inn",
+                "https://www.linkedin.com/company/sweettrip/"
+              ],
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            }),
+          }}
+        />
       </Head>
       <>
         <SectionHeader

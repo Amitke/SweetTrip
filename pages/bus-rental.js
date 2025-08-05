@@ -62,6 +62,105 @@ export default function BusRental() {
           content="bus hire in varanasi, bus on rent in varanasi, luxury bus on rental, bus booking for marriage, private bus booking, tourist bus booking, mini bus on rent"
         />
         <link rel="canonical" href="https://sweettrip.in/bus-rental" />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Bus Rental Service in Varanasi",
+                "url": "https://sweettrip.in/bus-rental",
+                "description": "Sweet Trip is a one-stop destination for bus booking for marriage, tourist bus booking, private bus booking, minibus booking and bus hire in Varanasi.",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Sweet Trip",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                  }
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/bus-rental"
+                },
+                "inLanguage": "en",
+                "datePublished": "2025-05-01",
+                "dateModified": "2025-07-07",
+                "about": {
+                  "@type": "Thing",
+                  "name": "https://sweettrip.in/bus-rental"
+                }
+            }),
+          }}
+        />
+        <link rel="canonical" href="https://sweettrip.in/bus-rental" />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How can I reserve a bus in Varanasi with Sweet Trip?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Book online or call our customer support. Just provide your travel details, date, time, number of passengers, and destination, and we will send you a customised quote."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What are your different bus rental options in Varanasi?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer a wide range of buses including luxury coaches, deluxe buses, mini buses, and 40-seaters for group travel in and around Varanasi."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you provide bus booking for a wedding in Varanasi?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer bus bookings for weddings. Buses can be decorated and scheduled as per your wedding events and preferences."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are the buses convenient for senior citizens and children?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our buses are spacious and comfortable. Our experienced drivers ensure smooth and safe rides for all passengers, including senior citizens and children."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Am I able to pick up and drop off from different points?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we allow multiple pickup and drop-off points. Just share your route, and we’ll include it in the final quotation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is there a minimum distance or a minimum rental period?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We generally offer full-day packages or bookings based on a minimum distance (in kilometers). Custom quotes are available on request."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are you offering outstation bus hiring service from Varanasi?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer both local and outstation bus rentals from Varanasi. Just let us know your destination, and we will arrange the right bus for your trip."
+                  }
+                }
+              ]
+            }),
+          }}
+        />
       </Head>
       <>
         <SectionHeader
