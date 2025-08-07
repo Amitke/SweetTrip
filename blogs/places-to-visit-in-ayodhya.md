@@ -1,6 +1,6 @@
 ---
-title: "Top 10 Tourist Places to Visit in Ayodhya"
-description: ""
+title: "Top Places to Visit in Ayodhya | Best Things to Do in Ayodhya"
+description: "Discover the top places to visit in Ayodhya and explore the best things to do in this sacred city. From Ram Janmabhoomi to serene ghats, plan your perfect Ayodhya trip today!"
 keywords: "Places to Visit in Ayodhya, Things to Do in Ayodhya"
 canonicalUrl: false
 openGraphTags: false
