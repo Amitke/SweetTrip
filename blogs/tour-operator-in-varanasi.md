@@ -141,7 +141,7 @@ Why Sweet Trip – Varanasi's Best Tour Operator?
               </p>
              <h2 className="mt-5 font-bold">
                 Guided Sightseeing & Cultural Tours
-              </h4>
+              </h2>
               <p>
                 Dive into the rich heritage and the rich culture of Varanasi on
                 our city tour. Don't just observe what is before your eyes but
