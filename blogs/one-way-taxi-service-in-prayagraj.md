@@ -1,10 +1,10 @@
 ---
-title: ""
-description: ""
+title: "One-Way Taxi Service in Prayagraj | Affordable & Reliable Cabs"
+description: "Book a one-way taxi in Prayagraj for a safe, comfortable, and affordable ride. Enjoy reliable cab service with professional drivers and hassle-free travel across major routes."
 keywords: "One-way taxi service in Prayagraj, One-way cab booking in Prayagraj, Drop Taxi Service in Prayagraj, sweet Trip"
-canonicalUrl: false
+canonicalUrl: true
 faq: false
-openGraphTags: false
+openGraphTags: true
 twitterCard: false
 url: "one-way-taxi-service-in-prayagraj"
 script: true

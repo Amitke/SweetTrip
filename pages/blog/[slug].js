@@ -44,7 +44,7 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
-        
+
         {blog?.meta?.url === "cab-service-in-varanasi" && (
           <script
             type="application/ld+json"
@@ -52,26 +52,26 @@ export default function BlogPage({ blog }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://sweettrip.in/blog/cab-service-in-varanasi"
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/cab-service-in-varanasi",
                 },
-                "headline": "The Ultimate Cab Service in Varanasi",
-                "image": "https://sweettrip.in/images/logo.svg",
-                "author": {
-                "@type": "Organization",
-                "name": "sweettrip",
-                "url": "https://sweettrip.in/"
+                headline: "The Ultimate Cab Service in Varanasi",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
+                  "@type": "Organization",
+                  name: "sweettrip",
+                  url: "https://sweettrip.in/",
                 },
-                "publisher": {
-                "@type": "Organization",
-                "name": "sweettrip",
-                "logo": {
-                "@type": "ImageObject",
-                "url": "https://sweettrip.in/images/logo.svg"
-                }
+                publisher: {
+                  "@type": "Organization",
+                  name: "sweettrip",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
                 },
-                "datePublished": "2025-07-07"
+                datePublished: "2025-07-07",
               }),
             }}
           />
@@ -83,26 +83,27 @@ export default function BlogPage({ blog }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "mainEntityOfPage": {
+                mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi"
+                  "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi",
                 },
-                "headline": "Best Tour Operator in Varanasi – Sweet Trip",
-                "description": "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!",
-                "image": "https://sweettrip.in/images/logo.svg",  
-                "author": {
+                headline: "Best Tour Operator in Varanasi – Sweet Trip",
+                description:
+                  "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
                   "@type": "Organization",
-                  "name": "sweettrip"
-                },  
-                "publisher": {
+                  name: "sweettrip",
+                },
+                publisher: {
                   "@type": "Organization",
-                  "name": "sweettrip",
-                  "logo": {
+                  name: "sweettrip",
+                  logo: {
                     "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
                 },
-                "datePublished": "2025-07-01"
+                datePublished: "2025-07-01",
               }),
             }}
           />
@@ -115,26 +116,29 @@ export default function BlogPage({ blog }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "mainEntityOfPage": {
+                mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/places-to-visit-in-varanasi"
+                  "@id":
+                    "https://sweettrip.in/blog/places-to-visit-in-varanasi",
                 },
-                "headline": "Top 10 Places to Visit in Varanasi for First-Time Travellers",
-                "description": "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide.",
-                "image": "https://sweettrip.in/images/logo.svg",  
-                "author": {
+                headline:
+                  "Top 10 Places to Visit in Varanasi for First-Time Travellers",
+                description:
+                  "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide.",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
                   "@type": "Organization",
-                  "name": "sweettrip"
-                },  
-                "publisher": {
+                  name: "sweettrip",
+                },
+                publisher: {
                   "@type": "Organization",
-                  "name": "sweettrip",
-                  "logo": {
+                  name: "sweettrip",
+                  logo: {
                     "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
                 },
-                "datePublished": "2025-07-28"
+                datePublished: "2025-07-28",
               }),
             }}
           />
@@ -146,27 +150,28 @@ export default function BlogPage({ blog }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "mainEntityOfPage": {
+                mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/car-rental-in-varanasi"
+                  "@id": "https://sweettrip.in/blog/car-rental-in-varanasi",
                 },
-                "headline": "How to Choose the Right Car Rental in Varanasi: Tips & Best Options",
-                "description": "Affordable car rental in Varanasi by Sweettrip. Book a taxi or rent a cab in Varanasi for local sightseeing, airport transfers, or outstation travel.",
-                "image": "https://sweettrip.in/images/logo.svg",  
-                "author": {
+                headline:
+                  "How to Choose the Right Car Rental in Varanasi: Tips & Best Options",
+                description:
+                  "Affordable car rental in Varanasi by Sweettrip. Book a taxi or rent a cab in Varanasi for local sightseeing, airport transfers, or outstation travel.",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
                   "@type": "Organization",
-                  "name": "sweettrip"
-                },  
-                "publisher": {
+                  name: "sweettrip",
+                },
+                publisher: {
                   "@type": "Organization",
-                  "name": "sweettrip",
-                  "logo": {
+                  name: "sweettrip",
+                  logo: {
                     "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
                 },
-                "datePublished": "2025-07-30"
-
+                datePublished: "2025-07-30",
               }),
             }}
           />
@@ -178,63 +183,65 @@ export default function BlogPage({ blog }) {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
-                "mainEntityOfPage": {
+                mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://sweettrip.in/blog/places-to-visit-in-ayodhya"
+                  "@id": "https://sweettrip.in/blog/places-to-visit-in-ayodhya",
                 },
-                "headline": "Top 10 Tourist Places to Visit in Ayodhya",
-                "description": "Discover the top places to visit in Ayodhya and explore the best things to do in this sacred city. From Ram Janmabhoomi to serene ghats, plan your perfect Ayodhya trip today!",
-                "image": "https://sweettrip.in/images/logo.svg",  
-                "author": {
+                headline: "Top 10 Tourist Places to Visit in Ayodhya",
+                description:
+                  "Discover the top places to visit in Ayodhya and explore the best things to do in this sacred city. From Ram Janmabhoomi to serene ghats, plan your perfect Ayodhya trip today!",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
                   "@type": "Organization",
-                  "name": "Sweet Trip"
-                },  
-                "publisher": {
+                  name: "Sweet Trip",
+                },
+                publisher: {
                   "@type": "Organization",
-                  "name": "Sweet Trip",
-                  "logo": {
+                  name: "Sweet Trip",
+                  logo: {
                     "@type": "ImageObject",
-                    "url": "https://sweettrip.in/images/logo.svg"
-                  }
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
                 },
-                "datePublished": "2025-08-05",
-                "dateModified": "2025-08-05"
+                datePublished: "2025-08-05",
+                dateModified: "2025-08-05",
               }),
             }}
           />
         )}
-        {blog.meta.canonicalUrl && (
-          <link
-            rel="canonical"
-            href={`https://sweettrip.in/blog/${blog.meta.url}`}
-          />
-        )}
-        {blog.meta.openGraphTags && (
-          <>
-            <meta property="og:title" content={blog.meta.title} />
-            <meta property="og:description" content={blog.meta.description} />
-            <meta property="og:type" content="website" />
-            <meta
-              property="og:url"
-              content={`https://sweettrip.in/blog/${blog.meta.url}`}
+        {blog.meta.canonicalUrl &&
+          blog.meta.url === "cab-service-in-varanasi" && (
+            <link
+              rel="canonical"
+              href={`https://sweettrip.in/blog/${blog.meta.url}`}
             />
-            <meta
-              property="og:image"
-              content="https://sweettrip.in/images/logo.svg"
-            />
-          </>
-        )}
-        {blog.meta.twitterCard && (
-          <>
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={blog.meta.title} />
-            <meta name="twitter:description" content={blog.meta.description} />
-            <meta
-              name="twitter:image"
-              content="https://sweettrip.in/images/logo.svg"
-            />
-          </>
-        )}
+          )}
+        {blog.meta.openGraphTags &&
+          blog.meta.url === "cab-service-in-varanasi" && (
+            <>
+              <meta property="og:title" content={blog.meta.title} />
+              <meta property="og:description" content={blog.meta.description} />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content={`https://sweettrip.in/blog/${blog.meta.url}`}
+              />
+              <meta
+                property="og:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content={blog.meta.title} />
+              <meta
+                name="twitter:description"
+                content={blog.meta.description}
+              />
+              <meta
+                name="twitter:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+            </>
+          )}
         {blog.meta.script && (
           <script
             type="application/ld+json"
@@ -244,19 +251,90 @@ export default function BlogPage({ blog }) {
                 "@type": "WebPage",
                 name: blog.meta.title,
                 url: `https://sweettrip.in/${blog.meta.parentUrl}`,
-                description:
-                  blog.meta.description
+                description: blog.meta.description,
               }),
             }}
           />
         )}
-
-
+        {blog.meta.canonicalUrl &&
+          blog.meta.url === "one-way-taxi-service-in-prayagraj" && (
+            <link
+              rel="canonical"
+              href={`https://sweettrip.in/blog/${blog.meta.url}`}
+            />
+          )}
+        {blog.meta.openGraphTags &&
+          blog.meta.url === "one-way-taxi-service-in-prayagraj" && (
+            <>
+              <meta
+                property="og:title"
+                content="One-Way Taxi Service in Prayagraj | Affordable & Reliable Cabs"
+              />
+              <meta
+                property="og:description"
+                content="Book a one-way taxi in Prayagraj for a safe, comfortable, and affordable ride. Enjoy reliable cab service with professional drivers and hassle-free travel across major routes."
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/one-way-taxi-service-in-prayagraj"
+              />
+              <meta
+                property="og:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="One-Way Taxi Service in Prayagraj | Affordable & Reliable Cabs"
+              />
+              <meta
+                name="twitter:description"
+                content="Book a one-way taxi in Prayagraj for a safe, comfortable, and affordable ride. Enjoy reliable cab service with professional drivers and hassle-free travel across major routes."
+              />
+              <meta
+                name="twitter:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />{" "}
+            </>
+          )}
+        {blog.meta.script &&
+          blog.meta.url === "one-way-taxi-service-in-prayagraj" && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id":
+                      "https://sweettrip.in/blog/one-way-taxi-service-in-prayagraj",
+                  },
+                  headline:
+                    "Reliable & Affordable one-way taxi service in Prayagraj",
+                  description:
+                    "Book a one-way taxi in Prayagraj for a safe, comfortable, and affordable ride. Enjoy reliable cab service with professional drivers and hassle-free travel across major routes.",
+                  image: "https://sweettrip.in/images/logo.svg",
+                  author: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://sweettrip.in/images/logo.svg",
+                    },
+                  },
+                  datePublished: "2025-08-12",
+                }),
+              }}
+            />
+          )}
       </Head>
-      <SectionHeader
-        title={blog.meta.heading}
-        para={sectionHeader.para}
-      />
+      <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">
         <div className="container mx-auto">
           <div className="flex-col justify-center flex pl-4 pr-4">
