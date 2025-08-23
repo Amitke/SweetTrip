@@ -16,7 +16,7 @@ para: "Ayodhya, the sacred city of Lord Ram, is one of the favourite religious d
 
 <p>Ayodhya, the sacred city of Lord Ram, is one of the favourite religious destinations to visit in India. Because of the recent completion of Ram Mandir and cultural tradition of the city, thousands of travelers and devotees travel every day. For making their journey easy, taxi service in Ayodhya becomes an essential requirement. While sightseeing temples, exploring local spots, or planning a family sweet journey, having an available cab makes your travel hassle-free.
 </p>
-<p className="m-2">Here, all that has been cab hiring in Ayodhya, the advantages of hiring professional services, common routes, and why it is the most convenient method of travel for both pilgrims and tourists will be discussed.</p>
+<p className="mt-2">Here, all that has been cab hiring in Ayodhya, the advantages of hiring professional services, common routes, and why it is the most convenient method of travel for both pilgrims and tourists will be discussed.</p>
 <h2 className="mt-5 font-bold">
 Why Use Taxi Service in Ayodhya?
 </h2>
