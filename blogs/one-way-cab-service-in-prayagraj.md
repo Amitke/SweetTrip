@@ -1,13 +1,13 @@
 ---
-title: ""
-description: ""
+title: "One Way Cab Service in Prayagraj | Affordable Taxi Service"
+description: "Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7"
 keywords: "One-way Cab Service in Prayagraj"
 canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
 url: "one-way-cab-service-in-prayagraj"
-script: false
+script: true
 parentUrl: "cab-services"
 heading: "Convenient Travel with Sweet Trip: One-Way Cab Service in Prayagraj"
 date: "2025-08-27"

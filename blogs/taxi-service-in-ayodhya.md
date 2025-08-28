@@ -1,13 +1,13 @@
 ---
-title: ""
-description: ""
+title: "Taxi Service in Ayodhya | Book One Way & Local Cab Services"
+description: "Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
 keywords: "taxi service in Ayodhya, Cab hire in Ayodhya"
 canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
 url: "taxi-service-in-ayodhya"
-script: false
+script: true
 parentUrl: "cab-services"
 heading: "Taxi Service in Ayodhya: Your Comfortable Travel Partner"
 date: "2025-08-23"
