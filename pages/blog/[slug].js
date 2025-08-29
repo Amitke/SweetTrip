@@ -333,93 +333,212 @@ export default function BlogPage({ blog }) {
               }}
             />
           )}
-             {blog.meta.script &&
-          blog.meta.url === "taxi-service-in-ayodhya" && (
+        {blog.meta.script && blog.meta.url === "taxi-service-in-ayodhya" && (
           <>
-          <link rel="canonical" href="https://sweettrip.in/blog/taxi-service-in-ayodhya" />
-          <meta property="og:title" content="Taxi Service in Ayodhya | Book One Way & Local Cab Services"/>
-  <meta property="og:description" content="Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sweettrip.in/blog/taxi-service-in-ayodhya" />
-  <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Taxi Service in Ayodhya | Book One Way & Local Cab Services"/>
-  <meta name="twitter:description" content="Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7." />
-  <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+            <link
+              rel="canonical"
+              href="https://sweettrip.in/blog/taxi-service-in-ayodhya"
+            />
+            <meta
+              property="og:title"
+              content="Taxi Service in Ayodhya | Book One Way & Local Cab Services"
+            />
+            <meta
+              property="og:description"
+              content="Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+            />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:url"
+              content="https://sweettrip.in/blog/taxi-service-in-ayodhya"
+            />
+            <meta
+              property="og:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:title"
+              content="Taxi Service in Ayodhya | Book One Way & Local Cab Services"
+            />
+            <meta
+              name="twitter:description"
+              content="Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+            />
+            <meta
+              name="twitter:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "BlogPosting",
-                  "mainEntityOfPage": {
+                  mainEntityOfPage: {
                     "@type": "WebPage",
-                    "@id": "https://sweettrip.in/blog/taxi-service-in-ayodhya"
+                    "@id": "https://sweettrip.in/blog/taxi-service-in-ayodhya",
                   },
-                  "headline": "Taxi Service in Ayodhya: Your Comfortable Travel Partner",
-                  "description": "Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7.",
-                  "image": "https://sweettrip.in/images/logo.svg",  
-                  "author": {
+                  headline:
+                    "Taxi Service in Ayodhya: Your Comfortable Travel Partner",
+                  description:
+                    "Hire reliable taxi service in Ayodhya for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7.",
+                  image: "https://sweettrip.in/images/logo.svg",
+                  author: {
                     "@type": "Organization",
-                    "name": "Sweet Trip"
-                  },  
-                  "publisher": {
+                    name: "Sweet Trip",
+                  },
+                  publisher: {
                     "@type": "Organization",
-                    "name": "Sweet Trip",
-                    "logo": {
+                    name: "Sweet Trip",
+                    logo: {
                       "@type": "ImageObject",
-                      "url": "https://sweettrip.in/images/logo.svg"
-                    }
+                      url: "https://sweettrip.in/images/logo.svg",
+                    },
                   },
-                  "datePublished": "2025-08-23"
+                  datePublished: "2025-08-23",
                 }),
               }}
             />
+          </>
+        )}
+        {blog.meta.script &&
+          blog.meta.url === "one-way-cab-service-in-prayagraj" && (
+            <>
+              <meta
+                property="og:title"
+                content="One Way Cab Service in Prayagraj | Affordable Taxi Service"
+              />
+              <meta
+                property="og:description"
+                content="Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/one-way-cab-service-in-prayagraj"
+              />
+              <meta
+                property="og:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="One Way Cab Service in Prayagraj | Affordable Taxi Service"
+              />
+              <meta
+                name="twitter:description"
+                content="Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+              />
+              <meta
+                name="twitter:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    mainEntityOfPage: {
+                      "@type": "WebPage",
+                      "@id":
+                        "https://sweettrip.in/blog/one-way-cab-service-in-prayagraj",
+                    },
+                    headline:
+                      "Convenient Travel with Sweet Trip: One-Way Cab Service in Prayagraj",
+                    description:
+                      "Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7.",
+                    image: "https://sweettrip.in/images/logo.svg",
+                    author: {
+                      "@type": "Organization",
+                      name: "Sweet Trip",
+                    },
+                    publisher: {
+                      "@type": "Organization",
+                      name: "Sweet Trip",
+                      logo: {
+                        "@type": "ImageObject",
+                        url: "https://sweettrip.in/images/logo.svg",
+                      },
+                    },
+                    datePublished: "2025-08-27",
+                  }),
+                }}
+              />
             </>
           )}
-            {blog.meta.script &&
-          blog.meta.url === "one-way-cab-service-in-prayagraj" && (
+        {blog.meta.script && blog.meta.url === "taxi-services-in-varanasi" && (
           <>
-          <meta property="og:title" content="One Way Cab Service in Prayagraj | Affordable Taxi Service"/>
-  <meta property="og:description" content="Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sweettrip.in/blog/one-way-cab-service-in-prayagraj" />
-  <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="One Way Cab Service in Prayagraj | Affordable Taxi Service"/>
-  <meta name="twitter:description" content="Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7." />
-  <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+            <link
+              rel="canonical"
+              href="https://sweettrip.in/blog/taxi-services-in-varanasi"
+            />
+            <meta
+              property="og:title"
+              content="Taxi Services in Varanasi | Book One Way & Local Cab Services"
+            />
+            <meta
+              property="og:description"
+              content="Hire reliable taxi services in Varanasi for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+            />
+            <meta property="og:type" content="website" />
+            <meta
+              property="og:url"
+              content="https://sweettrip.in/blog/taxi-services-in-varanasi"
+            />
+            <meta
+              property="og:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:title"
+              content="Taxi Services in Varanasi | Book One Way & Local Cab Services"
+            />
+            <meta
+              name="twitter:description"
+              content="Hire reliable taxi services in Varanasi for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
+            />
+            <meta
+              name="twitter:image"
+              content="https://sweettrip.in/images/logo.svg"
+            />
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BlogPosting",
-                    "mainEntityOfPage": {
-                      "@type": "WebPage",
-                      "@id": "https://sweettrip.in/blog/one-way-cab-service-in-prayagraj"
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id":
+                      "https://sweettrip.in/blog/taxi-services-in-varanasi",
+                  },
+                  headline:
+                    "Reliable Taxi Services in Varanasi for Comfortable Travel",
+                  description:
+                    "Hire reliable taxi services in Varanasi for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7.",
+                  image: "https://sweettrip.in/images/logo.svg",
+                  author: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://sweettrip.in/images/logo.svg",
                     },
-                    "headline": "Convenient Travel with Sweet Trip: One-Way Cab Service in Prayagraj",
-                    "description": "Hire reliable one way cab service in Prayagraj for local travel, airport transfers, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7.",
-                    "image": "https://sweettrip.in/images/logo.svg",  
-                    "author": {
-                      "@type": "Organization",
-                      "name": "Sweet Trip"
-                    },  
-                    "publisher": {
-                      "@type": "Organization",
-                      "name": "Sweet Trip",
-                      "logo": {
-                        "@type": "ImageObject",
-                        "url": "https://sweettrip.in/images/logo.svg"
-                      }
-                    },
-                    "datePublished": "2025-08-27"
+                  },
+                  datePublished: "2025-08-28",
                 }),
               }}
             />
-            </>
-          )}
+          </>
+        )}
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">

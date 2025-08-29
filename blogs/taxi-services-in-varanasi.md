@@ -1,13 +1,13 @@
 ---
-title: ""
-description: ""
+title: "Taxi Services in Varanasi | Book One Way & Local Cab Services"
+description: "Hire reliable taxi services in Varanasi for local sightseeing, one way cabs, and outstation trips. Affordable fares, safe rides, and professional drivers available 24/7."
 keywords: "one-way taxi service in Varanasi, Taxi Services in Varanasi, sweet Trip"
 canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
 url: "taxi-services-in-varanasi"
-script: false
+script: true
 parentUrl: "cab-services"
 heading: "Reliable Taxi Services in Varanasi for Comfortable Travel"
 date: "2025-08-28"
