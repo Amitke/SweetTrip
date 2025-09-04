@@ -1,13 +1,13 @@
 ---
-title: ""
-description: ""
+title: "Uttar Pradesh 7 Day Spiritual Tour"
+description: "Explore Varanasi, Ayodhya & more on a 7 day spiritual tour in Uttar Pradesh. Perfect for seekers of peace, devotion & cultural heritage."
 keywords: "7-day spiritual tour, Uttar Pradesh, sweet Trip"
 canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
 url: "spiritual-tour-covering-varanasi-ayodhya-and-prayagraj"
-script: false
+script: true
 parentUrl: "tour-package"
 heading: "How to Plan a 7-Day Spiritual Tour Covering Varanasi, Ayodhya, and Prayagraj"
 date: "2025-09-02"

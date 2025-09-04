@@ -1,13 +1,13 @@
 ---
-title: ""
-description: ""
+title: "Varanasi to Ayodhya Cab Service | Lowest Fare Guarantee"
+description: "Enjoy a smooth ride with our Varanasi to Ayodhya cab service. Clean cars, professional drivers, and on-time pickups. Book online today!"
 keywords: "Varanasi to Ayodhya taxi service, Sweet trip "
 canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
 url: "varanasi-to-ayodhya-taxi-service"
-script: false
+script: true
 parentUrl: "cab-services"
 heading: "Varanasi to Ayodhya Taxi Service: Routes, Fares, and Travel Tips"
 date: "2025-08-29"

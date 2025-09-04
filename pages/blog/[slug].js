@@ -539,6 +539,147 @@ export default function BlogPage({ blog }) {
             />
           </>
         )}
+        {blog.meta.script &&
+          blog.meta.url === "varanasi-to-ayodhya-taxi-service" && (
+            <>
+              <link rel="https://sweettrip.in/blog/varanasi-to-ayodhya-taxi-service" />
+              <meta
+                property="og:title"
+                content="Varanasi to Ayodhya Cab Service | Lowest Fare
+            Guarantee"
+              />
+              <meta
+                property="og:description"
+                content="Enjoy a smooth ride with our Varanasi to Ayodhya
+            cab service. Clean cars, professional drivers, and on-time pickups. Book online today!"
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/varanasi-to-ayodhya-taxi-service"
+              />
+              <meta
+                property="og:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Varanasi to Ayodhya Cab Service | Lowest Fare
+            Guarantee"
+              />
+              <meta
+                name="twitter:description"
+                content="Enjoy a smooth ride with our Varanasi to Ayodhya
+            cab service. Clean cars, professional drivers, and on-time pickups. Book online today!"
+              />
+              <meta
+                name="twitter:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    mainEntityOfPage: {
+                      "@type": "WebPage",
+                      "@id":
+                        "https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj",
+                    },
+                    headline:
+                      "How to Plan a 7-Day Spiritual Tour Covering Varanasi, Ayodhya,and Prayagraj",
+                    description:
+                      "Explore Varanasi, Ayodhya & more on a 7 day spiritual tour in Uttar Pradesh. Perfect for seekers of peace, devotion & cultural heritage.",
+                    image: "https://sweettrip.in/images/logo.svg",
+                    author: {
+                      "@type": "Organization",
+                      name: "",
+                    },
+                    publisher: {
+                      "@type": "Organization",
+                      name: "Sweet Trip",
+                      logo: {
+                        "@type": "ImageObject",
+                        url: "https://sweettrip.in/images/logo.svg",
+                      },
+                    },
+                    datePublished: "2025-09-02",
+                  }),
+                }}
+              />
+            </>
+          )}
+        {blog.meta.script &&
+          blog.meta.url ===
+            "spiritual-tour-covering-varanasi-ayodhya-and-prayagraj" && (
+            <>
+              <link rel="https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj" />
+              <meta
+                property="og:title"
+                content="Uttar Pradesh 7 Day Spiritual Tour"
+              />
+              <meta
+                property="og:description"
+                content="Explore Varanasi, Ayodhya & more on a 7 day
+            spiritual tour in Uttar Pradesh. Perfect for seekers of peace, devotion & cultural heritage."
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj"
+              />
+              <meta
+                property="og:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Uttar Pradesh 7 Day Spiritual Tour"
+              />
+              <meta
+                name="twitter:description"
+                content="Explore Varanasi, Ayodhya & more on a 7 day
+            spiritual tour in Uttar Pradesh. Perfect for seekers of peace, devotion & cultural heritage."
+              />
+              <meta
+                name="twitter:image"
+                content="https://sweettrip.in/images/logo.svg"
+              />
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id":
+                    "https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj"
+                    },
+                    "headline": "How to Plan a 7-Day Spiritual Tour Covering Varanasi, Ayodhya,and Prayagraj",
+                    "description": "Explore Varanasi, Ayodhya & more on a 7 day spiritual tour in Uttar Pradesh. Perfect for seekers of peace, devotion & cultural heritage.",
+                    "image": "https://sweettrip.in/images/logo.svg",
+                    "author": {
+                    "@type": "Organization",
+                    "name": ""
+                    },
+                    "publisher": {
+                    "@type": "Organization",
+                    "name": "Sweet Trip",
+                    "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://sweettrip.in/images/logo.svg"
+                    }
+                    },
+                    "datePublished": "2025-09-02"
+                  }),
+                }}
+              />
+            </>
+          )}
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">
