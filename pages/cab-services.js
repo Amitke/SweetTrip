@@ -58,7 +58,7 @@ export default function cabServices() {
         />
         <meta
           name="keywords"
-          content="Car rental agency in Varanasi, Cab hire in Varanasi "
+          content="Car rental agency in Varanasi, Cab hire in Varanasi"
         />
         <script
           type="application/ld+json"
