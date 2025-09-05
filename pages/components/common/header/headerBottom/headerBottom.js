@@ -8,7 +8,7 @@ import {
   faHome,
   faInfo,
   faCar,
-  faBus,
+  faShip,
   faHotel,
   faBlog,
 } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +19,7 @@ const icons = {
   faHome,
   faInfo,
   faCar,
-  faBus,
+  faShip,
   faHotel,
   faPhone,
   faBlog,

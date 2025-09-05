@@ -19,9 +19,9 @@
     },
     {
         "id":4,
-        "link":"/bus-rental",
-        "linkText":"Bus Rental",
-        "icon":"faBus"
+        "link":"/boat-ride",
+        "linkText":"Boat Ride",
+        "icon":"faShip"
     },
     {
         "id":5,

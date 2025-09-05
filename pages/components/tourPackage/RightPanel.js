@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCutlery,
-  faBus,
+  faShip,
   faCar,
   faBuilding,
   faLeaf,
@@ -21,8 +21,8 @@ const RightPanel = () => {
             Meals
           </li>
           <li className="flex flex-col mr-3">
-            <FontAwesomeIcon icon={faBus} />
-            Transfer
+            <FontAwesomeIcon icon={faShip} />
+            Boat
           </li>
           <li className="flex flex-col mr-3">
             <FontAwesomeIcon icon={faCar} />

@@ -51,41 +51,31 @@
       "para": "No. Sweet Trip is upfront. What you book and what you enjoy is what you pay. No additional cost with our Varanasi cab rentals."
     }
   ],
-  "busBooking": [
+  "boatRide": [
     {
       "id": 1,
-      "heading": "How can I reserve a bus in Varanasi with Sweet Trip?",
-      "para": "Book online or call our customer support. All you have to do is provide us with your travel details, date, time, passengers, and destination, and we'll respond with a customised quote."
+      "heading": "How much does a Varanasi and Prayagraj boat ride cost?",
+      "para": "The cost of a boat ride also varies with the type of boat and journey time. Shared rowboat for ₹700–₹800 per person and private boat and motorboat for ₹5000. In Prayagraj, a boat ride at the Triveni Sangam typically ranges from ₹500–₹600 per individual, with special rides at festival and Kumbh Mela times costing more."
     },
     {
       "id": 2,
-      "heading": "What are your different bus rental options in Varanasi?",
-      "para": "We provide an ample selection of luxury buses, deluxe coaches, mini buses, and 40-seaters for groups."
+      "heading": "Is Ganga Aarti in Varanasi viewable from a boat?",
+      "para": "Yes. Evening boat rides at Dashashwamedh Ghat are popular for watching the Ganga Aarti. You’ll get a clear, peaceful view of the ceremony from the river, away from the crowded ghats."
     },
     {
       "id": 3,
-      "heading": "Do you provide bus booking for a wedding in Varanasi?",
-      "para": "Yes, we provide wedding transport. Our buses can be booked and decorated as per your event schedules."
+      "heading": "When will the Varanasi and Prayagraj boat tour be?",
+      "para": "Varanasi: Morning and evening time (5:00 AM – 7:30 AM) is suitable for sunrise and sunset, and evening time (5:30 PM – 7:30 PM) is much in demand for Ganga Aarti. Prayagraj: It can be reserved in a day boat tour, but morning and evening at Sangam is in high demand."
     },
     {
       "id": 4,
-      "heading": "Are the buses convenient for senior citizens and children?",
-      "para": "Yes. Our vehicles are spacious, comfortable, and in the hands of experienced drivers who give a smooth and safe ride for all ages."
+      "heading": "How long is the boat ride?",
+      "para": "The boat rides are 45 minutes to 1.5 hours long. The shorter one is taken on local ghats or the Sangam, whereas the longer one can involve sightseeing on more than one ghat and temple."
     },
     {
       "id": 5,
-      "heading": "Am I able to pick up and drop off from different points?",
-      "para": "Yes, our system does permit you to specify more than one pickup and drop point, and we quote the final amount accordingly."
-    },
-    {
-      "id": 6,
-      "heading": "Is there a minimum distance or a minimum rental period?",
-      "para": "We mostly offer full-day hiring or packages by minimum kilometres. Quotes can be given on demand."
-    },
-    {
-      "id": 7,
-      "heading": "Are you offering outstation bus hiring service from Varanasi?",
-      "para": "Yes. We also offer local and outstation trips. Just inform us where you want to proceed, and we will arrange the most appropriate bus for you."
+      "heading": "Do I need to book my boat ride in advance?",
+      "para": "Reservation is always preferable on off-season tourist tours, festive, and most importantly on Ganga Aarti at Varanasi or Kumbh Mela at Prayagraj. Booking makes you at ease both in seating as well as saves you from sudden price surge."
     }
   ],
   "hotelBooking": [

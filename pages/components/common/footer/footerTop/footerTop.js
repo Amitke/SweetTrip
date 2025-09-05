@@ -36,7 +36,7 @@ const FooterTop = () => {
               />
             </Link>
             <p>
-            Sweet Trip started as a car rental service in Varanasi and now provides tour packages, bus rental service, hotel booking and more from one destination.
+            We are a leading Tour Operator in Varanasi, providing reliable travel services in Prayagraj, Ayodhya, and nearby destinations. From cabs to hotels and boat rides, we make every trip seamless.
             </p>
           </div>
           <div className={`w-1/3 pl-4 pr-4 ${footerTopStyles.mobileFullWidth}`}>

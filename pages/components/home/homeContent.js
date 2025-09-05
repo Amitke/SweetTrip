@@ -27,7 +27,7 @@ const HomeContent = () => {
           <ol className="mt-1">
             <li>● Car rentals</li>
             <li>● Hotel booking</li>
-            <li>● Bus rental</li>
+            <li>● Boat ride</li>
             <li>● Personalised tour packages</li>
           </ol>
           <p className="mt-1">

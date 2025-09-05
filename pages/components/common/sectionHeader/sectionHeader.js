@@ -5,7 +5,7 @@ import sectionHeaderStyles from "./sectionHeader.module.scss";
 const SectionHeader = ({
   title,
   para,
-  busBannerClass,
+  boatBannerClass,
   homeData,
   hotelBannerClass,
   carBannerClass,
@@ -13,7 +13,7 @@ const SectionHeader = ({
   aboutClass,
   contactClass,
 }) => {
-  let busBannerClassName = busBannerClass ? sectionHeaderStyles.busBanner : "";
+  let boatBannerClassName = boatBannerClass ? sectionHeaderStyles.boatBanner : "";
   let hotelBannerClassName = hotelBannerClass
     ? sectionHeaderStyles.hotelBanner
     : "";
@@ -24,7 +24,7 @@ const SectionHeader = ({
   let contactClassName = contactClass && sectionHeaderStyles.contactBanner;
   return (
     <section
-      className={`${sectionHeaderStyles.sectionHeader} ${busBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName} ${tourPackageClassName} ${aboutClassName} ${contactClassName}`}
+      className={`${sectionHeaderStyles.sectionHeader} ${boatBannerClassName} ${hotelBannerClassName} ${homeBannerClassName} ${carBannerClassName} ${tourPackageClassName} ${aboutClassName} ${contactClassName}`}
     >
       <div className="container mx-auto">
         <div
