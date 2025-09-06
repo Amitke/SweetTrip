@@ -11,9 +11,6 @@
       @include JustifyContent(center);
       @include flexDirection(row);
       min-height: 100px;
-      @include breakPoints(767px) {
-        @include Display(none);
-      }
       .content {
         @include Padding(20px);
         h3 {
