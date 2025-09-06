@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import { openWhatsApp } from "./../../../utils/openWhatsApp";
 import whyChooseStyles from "@/pages/components/about/whyChoose/whyChoose.module.scss";
 import hotelBookingStyles from "./hotel.module.scss";
 
 const HotelContent = () => {
   return (
     <>
-      <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
+      <section className={`${whyChooseStyles.policy} pt-10`}>
         <div className="container mx-auto">
           <div
             className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
@@ -30,7 +30,10 @@ const HotelContent = () => {
               get a platform that streamlines your hotel hunt.
             </p>
             <p className="mt-5">
-              Whether you are looking for <strong> family hotels in Varanasi or hotels for couples in Varanasi
+              Whether you are looking for{" "}
+              <strong>
+                {" "}
+                family hotels in Varanasi or hotels for couples in Varanasi
               </strong>
               , we get you both. Our hotels in Varanasi provide a family
               environment and make visitors feel safe and warm inside the
@@ -69,40 +72,8 @@ const HotelContent = () => {
                     </p>
                     <a
                       rel="nofollow"
-                      href="tel:+91 7488736844"
-                      className={hotelBookingStyles.secondaryButton}
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                  <div className="hotel-image">
-                    <Image
-                      src="/images/hotel-1.webp"
-                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
-                      width={271}
-                      height={481}
-                    />
-                  </div>
-                </div>
-                <div className={hotelBookingStyles.backPart}>
-                  <div className={hotelBookingStyles.hotelImage}>
-                    <Image
-                      src="/images/hotel-1.webp"
-                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
-                      width={271}
-                      height={481}
-                    />
-                  </div>
-                  <div className={hotelBookingStyles.content}>
-                    <h3>Amber Palace</h3>
-                    <p>
-                      Welcome to Amber Palace! Our luxury rooms are at your
-                      service. Stay in comfort and enjoy the vibrance of
-                      Ayodhya.
-                    </p>
-                    <a
-                      rel="nofollow"
-                      href="tel:+91 7488736844"
+                      onClick={openWhatsApp}
+                      href="javascript:void(0)"
                       className={hotelBookingStyles.primaryButton}
                     >
                       Book Now
@@ -124,39 +95,8 @@ const HotelContent = () => {
                     </p>
                     <a
                       rel="nofollow"
-                      href="tel:+91 7488736844"
-                      className={hotelBookingStyles.secondaryButton}
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                  <div className={hotelBookingStyles.hotelImage}>
-                    <Image
-                      src="/images/hotel-2.webp"
-                      alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
-                      width={271}
-                      height={481}
-                    />
-                  </div>
-                </div>
-                <div className={hotelBookingStyles.backPart}>
-                  <div className={hotelBookingStyles.hotelImage}>
-                    <Image
-                      src="/images/hotel-2.webp"
-                     alt="On the right, there are buildings, and a man walking with his luggage on the road. On the left, there is a building with the word  hotel written on it. In the background, there is a mountain and the sun. "
-                      width={271}
-                      height={481}
-                    />
-                  </div>
-                  <div className={hotelBookingStyles.content}>
-                    <h3>R.K. Guest House</h3>
-                    <p>
-                      R.K. Guest House serves you with accommodation with
-                      seating areas. Luxury Rooms near Varanasi Ghats!
-                    </p>
-                    <a
-                      rel="nofollow"
-                      href="tel:+91 7488736844"
+                      onClick={openWhatsApp}
+                      href="javascript:void(0)"
                       className={hotelBookingStyles.primaryButton}
                     >
                       Book Now

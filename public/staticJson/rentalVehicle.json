@@ -10,7 +10,7 @@
           "id": 1,
           "heading": "Book Your",
           "image": "small-hotel.webp",
-          "alt": "Hotel",
+          "alt": "A hotel with 7 windows and a gate. Two plants are located at the entrance.",
           "type": "Hotel",
           "link": "/hotel-booking"
         },
@@ -18,7 +18,7 @@
           "id": 2,
           "heading": "Book Your",
           "image": "small-car.webp",
-          "alt": "Rental Car",
+          "alt": "A yellow car on the road with four black tyres.",
           "type": "Rental Car",
           "link": "/cab-services"
         },
@@ -26,9 +26,9 @@
           "id": 3,
           "heading": "Book Your",
           "image": "small-boat.webp",
-          "alt": "Rental Boat",
+          "alt": "A boat navigating in the river.",
           "type": "Rental Boat",
-          "link": "/"
+          "link": "/boat-ride"
         }
       ]
     }

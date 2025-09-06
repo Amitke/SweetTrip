@@ -3,30 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import FooterTop from "./footerTop/footerTop";
 import FooterBottom from "./footerBottom/footerBottom";
+import { openWhatsApp } from "./../../../../utils/openWhatsApp";
 const Footer = () => {
-  const openWhatsApp = () => {
-    const phoneNumber = "7488736844";
-    const message = `Hello Sweet Trip,
-
-        I'm interested in booking a trip with Sweet Trip.
-        
-        Could you please help me with:
-        - My preferred destination
-        - Travel dates
-        - Any special requirements (e.g., hotels, cars, boats etc.)
-
-        Looking forward to hearing from you! 😊
-        
-        `;
-
-    // Construct the WhatsApp URL
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, "_blank");
-  };
   return (
     <footer>
       <FooterTop />

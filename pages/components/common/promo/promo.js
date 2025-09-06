@@ -1,7 +1,7 @@
 // Import in your component
 import React from "react";
-import Image from "next/image";
 import promoStyles from "./promo.module.scss";
+import { openWhatsApp } from "./../../../../utils/openWhatsApp";
 
 const Promo = ({ promoData }) => {
   return (
@@ -13,7 +13,8 @@ const Promo = ({ promoData }) => {
               <h2>{promoData?.heading}</h2>
               <p className="mt-5">{promoData?.para}</p>
               <a
-                href="tel:+91 7488736844"
+                onClick={openWhatsApp}
+                href="javascript:void(0)"
                 className={`${promoStyles.secondaryButton} mt-8`}
               >
                 Book Now
