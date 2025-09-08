@@ -98,6 +98,7 @@ export default function BoatRide() {
         <SectionHeader
           title={sectionHeader.title}
           para={sectionHeader.para}
+          boatBannerClass={sectionHeader}
         />
         <BoatHireContent />
         <div className="container mx-auto">

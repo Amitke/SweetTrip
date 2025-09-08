@@ -57,8 +57,8 @@
       }
     }
   }
-  &.busBanner {
-    background-image: url("./../../../../public/images/bus-banner.webp");
+  &.boatBanner {
+    background-image: url("./../../../../public/images/boat-banner.webp");
     background-position: top center;
     @include breakPoints(767px) {
       background:#ceecf4;
