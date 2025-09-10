@@ -10,8 +10,6 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
         <link rel="canonical" href="https://sweettrip.in/" />
-                <meta name="google-site-verification" content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
-
         <meta name="robots" content="index,follow" />
         <meta name="robots" content="All" />
         <meta
@@ -72,10 +70,6 @@ export default function Document() {
           name="twitter:image"
           content="https://sweettrip.in/images/logo.svg"
         />
-        <meta
-          name="google-site-verification"
-          content="fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE"
-        />
 
         <link rel="shortcut icon" href="./../images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -91,6 +85,20 @@ export default function Document() {
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id=%27+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','UA-254967999-1');
+            `,
+          }}
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11187529762"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-11187529762');
             `,
           }}
         />
