@@ -5,3 +5,4 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // Add the brand icons to the library
 library.add(fab);
+/** */
