@@ -6,7 +6,7 @@ canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
-url: "spiritual-tour-covering-varanasi-ayodhya-and-prayagraj"
+url: "top-8-best-things-to-do-in-prayagraj"
 script: false
 parentUrl: "tour-package"
 heading: "Top 8 Best Things to Do in Prayagraj"
