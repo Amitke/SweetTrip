@@ -44,6 +44,161 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
+         {blog?.meta?.url === "top-8-best-things-to-do-in-prayagraj" && (
+            <>
+              {/* Canonical URL */}
+              <link
+                rel="canonical"
+                href="https://sweettrip.in/blog/top-8-best-things-to-do-in-prayagraj"
+              />
+
+              {/* Open Graph (OG) Tags */}
+              <meta
+                property="og:title"
+                content="Top 8 Best Things to Do in Prayagraj"
+              />
+              <meta
+                property="og:description"
+                content="Discover the top 8 best things to do in Prayagraj. 1. Allahabad Fort, 2. Anand Bhavan, 3. Kumbh Mela, 4. Triveni Sangam. Plan your perfect trip with our must-visit guide."
+              />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/top-8-best-things-to-do-in-prayagraj"
+              />
+              <meta
+                property="og:image"
+                content="https://amythyogshala.com/public/frontend/assets/images/logo/logo-2.png"
+              />
+
+              {/* Twitter Card Tags */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Top 8 Best Things to Do in Prayagraj"
+              />
+              <meta
+                name="twitter:description"
+                content="Discover the top 8 best things to do in Prayagraj. 1. Allahabad Fort, 2. Anand Bhavan, 3. Kumbh Mela, 4. Triveni Sangam. Plan your perfect trip with our must-visit guide."
+              />
+              <meta
+                name="twitter:image"
+                content="https://amythyogshala.com/public/frontend/assets/images/logo/logo-2.png"
+              />
+
+               < script
+               type = "application/ld+json"
+               dangerouslySetInnerHTML = {
+                 {
+                   __html: JSON.stringify({
+                     "@context": "https://schema.org",
+                     "@type": "BlogPosting",
+                     mainEntityOfPage: {
+                       "@type": "WebPage",
+                       "@id": "https://sweettrip.in/blog/top-8-best-things-to-do-in-prayagraj",
+                     },
+                     headline: "Top 8 Best Things to Do in Prayagraj",
+                     description: "Discover the top 8 best things to do in Prayagraj. 1. Allahabad Fort, 2. Anand Bhavan, 3. Kumbh Mela, 4. Triveni Sangam. Plan your perfect trip with our must-visit guide.",
+                     image: "https://sweettrip.in/images/logo.svg",
+                     author: {
+                       "@type": "Organization",
+                       name: "Sweet Trip",
+                       url: "https://sweettrip.in/",
+                     },
+                     publisher: {
+                       "@type": "Organization",
+                       name: "Sweet Trip",
+                       logo: {
+                         "@type": "ImageObject",
+                         url: "https://sweettrip.in/images/logo.svg",
+                       },
+                     },
+                     datePublished: "2025-09-15",
+                   }),
+                 }
+               }
+               />
+            </>
+          )}
+        {blog?.meta?.url === "complete-travel-guide-for-first-time-visitors" && (
+            <>
+              {/* Canonical URL */}
+              <link
+                rel="canonical"
+                href="https://sweettrip.in/blog/complete-travel-guide-for-first-time-visitors"
+              />
+
+              {/* Open Graph (OG) Tags */}
+              <meta
+                property="og:title"
+                content="Prayagraj Triveni Sangam – Complete Travel Guide & Tips"
+              />
+              <meta
+                property="og:description"
+                content="Discover Prayagraj Triveni Sangam, the sacred confluence of three rivers. Explore history, rituals, attractions, and travel tips for an unforgettable visit."
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/complete-travel-guide-for-first-time-visitors"
+              />
+              <meta
+                property="og:image"
+                content="https://amythyogshala.com/public/frontend/assets/images/logo/logo-2.png"
+              />
+
+              {/* Twitter Card Tags */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Prayagraj Triveni Sangam – Complete Travel Guide & Tips"
+              />
+              <meta
+                name="twitter:description"
+                content="Discover Prayagraj Triveni Sangam, the sacred confluence of three rivers. Explore history, rituals, attractions, and travel tips for an unforgettable visit."
+              />
+              <meta
+                name="twitter:image"
+                content="https://amythyogshala.com/public/frontend/assets/images/logo/logo-2.png"
+              />
+
+              {/* JSON-LD Structured Data */}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    mainEntityOfPage: {
+                      "@type": "WebPage",
+                      "@id":
+                        "https://sweettrip.in/blog/complete-travel-guide-for-first-time-visitors",
+                    },
+                    headline:
+                      "Prayagraj Triveni Sangam: A Complete Travel Guide for First-Time Visitors",
+                    description:
+                      "Discover Prayagraj Triveni Sangam, the sacred confluence of three rivers. Explore history, rituals, attractions, and travel tips for an unforgettable visit.",
+                    image: "https://sweettrip.in/images/logo.svg",
+                    author: {
+                      "@type": "Organization",
+                      name: "Sweet Trip",
+                      url: "https://sweettrip.in/",
+                    },
+                    publisher: {
+                      "@type": "Organization",
+                      name: "Sweet Trip",
+                      logo: {
+                        "@type": "ImageObject",
+                        url: "https://sweettrip.in/images/logo.svg",
+                      },
+                    },
+                    datePublished: "2025-09-16",
+                  }),
+                }}
+              />
+            </>
+        )}
+
 
         {blog?.meta?.url === "cab-service-in-varanasi" && (
           <script

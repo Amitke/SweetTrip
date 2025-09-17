@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "Things to do in Prayagraj, sweet trip"
+title: "Top 8 Best Things to Do in Prayagraj"
+description: "Discover the top 8 best things to do in Prayagraj. 1. Allahabad Fort, 2. Anand Bhavan, 3. Kumbh Mela, 4. Triveni Sangam. Plan your perfect trip with our must-visit guide."
+keywords: "Best Things to Do in Prayagraj, Allahabad Fort, Anand Bhavan, Kumbh Mela, Triveni Sangam"
 canonicalUrl: false
 faq: false
 openGraphTags: false
