@@ -1,6 +1,6 @@
 ---
-title: ""
-description: ""
+title: "Prayagraj Triveni Sangam – Complete Travel Guide & Tips"
+description: "Discover Prayagraj Triveni Sangam, the sacred confluence of three rivers. Explore history, rituals, attractions, and travel tips for an unforgettable visit."
 keywords: "Prayagraj Triveni Sangam, Triveni Sangam Prayagraj"
 canonicalUrl: false
 faq: false
