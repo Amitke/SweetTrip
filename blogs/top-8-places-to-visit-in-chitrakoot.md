@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "Top 8 places to visit in Chitrakoot"
+title: "Explore Top Tourist Places to Visit in Chitrakoot"
+description: "Find the best tourist destinations in Chitrakoot. From natural beauty to sacred shrines, plan your journey with our expert travel tips."
+keywords: "Places to Visit in Chitrakoot, Chitrakoot tourist destinations, Chitrakoot travel guide"
 canonicalUrl: false
 faq: false
 openGraphTags: false
