@@ -835,6 +835,45 @@ export default function BlogPage({ blog }) {
               />
             </>
           )}
+
+         {blog.meta.url ==="top-8-places-to-visit-in-chitrakoot" && (
+          <>
+ 
+              {/* Meta Description */}
+              <meta name="description" content="Find the best tourist destinations in Chitrakoot. From natural beauty to sacred shrines, plan your journey with our expert travel tips." />
+
+              {/* Canonical URL */}
+              <link rel="canonical" href="https://sweettrip.in/blog/top-8-places-to-visit-in-chitrakoot" />
+
+              {/* Open Graph (OG) Tags */}
+              <meta property="og:title" content="Explore Top Tourist Places to Visit in Chitrakoot"/>
+              <meta property="og:description" content="Find the best tourist destinations in Chitrakoot. From natural beauty to sacred shrines, plan your journey with our expert travel tips." />
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://sweettrip.in/blog/top-8-places-to-visit-in-chitrakoot" />
+              <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+              {/* Twitter Card Tags */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Explore Top Tourist Places to Visit in Chitrakoot"/>
+              <meta name="twitter:description" content="Find the best tourist destinations in Chitrakoot. From natural beauty to sacred shrines, plan your journey with our expert travel tips." />
+              <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
+              {/* Optional Keywords Meta Tag */}
+              <meta name="keywords" content="Places to Visit in Chitrakoot, Chitrakoot tourist destinations, Chitrakoot travel guide" />
+
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "WebPage",
+                  "name": "Places to Visit in Chitrakoot",
+                  "url": "https://sweettrip.in/blog/top-8-places-to-visit-in-chitrakoot",
+                  "description": "Find the best tourist destinations in Chitrakoot. From natural beauty to sacred shrines, plan your journey with our expert travel tips."
+                }) }}
+              />
+          </>
+         )} 
+
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">
