@@ -6,7 +6,7 @@ canonicalUrl: false
 faq: false
 openGraphTags: false
 twitterCard: false
-url: "Places-to-Visit-in-Gaya"
+url: "places-to-visit-in-gaya"
 script: false
 parentUrl: "tour-package"
 heading: "Sweet Trip: Explore the Best Places to Visit in Gaya"
