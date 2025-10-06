@@ -1,6 +1,6 @@
 ---
-title: ""
-description: ""
+title: "Best Time to Visit Varanasi to Gaya for a Perfect Trip"
+description: "Discover the ideal months to travel from Varanasi to Gaya. Explore weather, festivals, and travel tips to plan your spiritual journey perfectly."
 keywords: "Varanasi to Gaya, Sweet Trip"
 canonicalUrl: false
 faq: false
