@@ -766,7 +766,7 @@ export default function BlogPage({ blog }) {
               />
             </>
           )}
-        {blog.meta.script &&
+         {blog.meta.script &&
           blog.meta.url ===
             "spiritual-tour-covering-varanasi-ayodhya-and-prayagraj" && (
             <>
@@ -873,7 +873,159 @@ export default function BlogPage({ blog }) {
               />
           </>
          )} 
+         
+          {
+            blog?.meta?.url === "best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya" && (
+              <>
+                {/* Canonical URL */}
+                <link
+                  rel="canonical"
+                  href="https://sweettrip.in/blog/best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya"
+                />
 
+                {/* Open Graph (OG) Tags */}
+                <meta
+                  property="og:title"
+                  content="Best Time to Visit Varanasi to Gaya for a Perfect Trip"
+                />
+                <meta
+                  property="og:description"
+                  content="Discover the ideal months to travel from Varanasi to Gaya. Explore weather, festivals, and travel tips to plan your spiritual journey perfectly."
+                />
+                <meta property="og:type" content="article" />
+                <meta
+                  property="og:url"
+                  content="https://sweettrip.in/blog/best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya"
+                />
+                <meta
+                  property="og:image"
+                  content="https://sweettrip.in/images/logo.svg"
+                />
+
+                {/* Twitter Card Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                  name="twitter:title"
+                  content="Best Time to Visit Varanasi to Gaya for a Perfect Trip"
+                />
+                <meta
+                  name="twitter:description"
+                  content="Discover the ideal months to travel from Varanasi to Gaya. Explore weather, festivals, and travel tips to plan your spiritual journey perfectly."
+                />
+                <meta
+                  name="twitter:image"
+                  content="https://sweettrip.in/images/logo.svg"
+                />
+
+                {/* JSON-LD Structured Data */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://sweettrip.in/blog/best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya",
+                      },
+                      "headline":
+                        "Best Time, Tips & Travel Hacks for Visiting Varanasi to Gaya",
+                      "description":
+                        "Discover the ideal months to travel from Varanasi to Gaya. Explore weather, festivals, and travel tips to plan your spiritual journey perfectly.",
+                      "image": "https://sweettrip.in/images/logo.svg",
+                      "author": {
+                        "@type": "Organization",
+                        "name": "Sweet Trip",
+                        "url": "https://sweettrip.in/",
+                      },
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "",
+                        },
+                      },
+                      "datePublished": "2025-09-28",
+                    }),
+                  }}
+                />
+              </>
+            )
+          }
+           {
+          blog?.meta?.url === "best-tour-operators-in-varanasi" && (
+            <>
+              {/* Canonical URL */}
+              <link
+                rel="canonical"
+                href="https://sweettrip.in/blog/best-tour-operators-in-varanasi"
+              />
+
+              {/* Open Graph (OG) Tags */}
+              <meta
+                property="og:title"
+                content="Best Tour Operators in Varanasi for Spiritual Travel"
+              />
+              <meta
+                property="og:description"
+                content="Explore Varanasi with the best tour operators. Get affordable packages, guided tours, and authentic local experiences tailored just for you."
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://sweettrip.in/blog/best-tour-operators-in-varanasi"
+              />
+              <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+              {/* Twitter Card Tags */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Best Tour Operators in Varanasi for Spiritual Travel"
+              />
+              <meta
+                name="twitter:description"
+                content="Explore Varanasi with the best tour operators. Get affordable packages, guided tours, and authentic local experiences tailored just for you."
+              />
+              <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
+              {/* JSON-LD Structured Data */}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                      "@type": "WebPage",
+                      "@id": "https://sweettrip.in/blog/best-tour-operators-in-varanasi",
+                    },
+                    "headline":
+                      "Best Tour Operators in Varanasi: Your Guide to Exploring the Spiritual Capital",
+                    "description":
+                      "Explore Varanasi with the best tour operators. Get affordable packages, guided tours, and authentic local experiences tailored just for you.",
+                    "image": "https://sweettrip.in/images/logo.svg",
+                    "author": {
+                      "@type": "Organization",
+                      "name": "Sweet Trip",
+                      "url": "https://sweettrip.in/",
+                    },
+                    "publisher": {
+                      "@type": "Organization",
+                      "name": "",
+                      "logo": {
+                        "@type": "ImageObject",
+                        "url": "",
+                      },
+                    },
+                    "datePublished": "2025-10-01",
+                  }),
+                }}
+              />
+            </>
+          )
+        }
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">
