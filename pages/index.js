@@ -80,6 +80,8 @@ export default function Home() {
           content="Discover Varanasi with the best tour operator in Varanasi. Sweet Trip offers custom tours, local guides, and unforgettable spiritual journeys. Book your trip today!"
         />
         <meta name="keywords" content="Tour operator in Varanasi" />
+        <meta name = "google-site-verification"
+         content = "fcUOmzceSLsyc6xVf1nSrjrbYtA5zj-luczBmLL9ffE" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

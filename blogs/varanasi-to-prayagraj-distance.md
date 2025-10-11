@@ -1,6 +1,6 @@
 ---
-title: ""
-description: ""
+title: "Varanasi to Prayagraj Cab Fare & Distance | One Way Taxi Service"
+description: "Get the best Varanasi to Prayagraj cab fare with reliable taxi services. Check route distance, travel time & book one-way or round-trip rides online."
 keywords: "Varanasi to Prayagraj Distance and Taxi Fare, Sweet Trip"
 canonicalUrl: false
 faq: false

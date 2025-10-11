@@ -60,6 +60,19 @@ export default function cabServices() {
           name="keywords"
           content="Car rental agency in Varanasi, Cab hire in Varanasi"
         />
+          <link rel="canonical" href="https://sweettrip.in/cab-services" />
+
+          <meta property="og:title" content="Car Rental & Cab Hire in Varanasi | Sweet Trip"/>
+          <meta property="og:description" content="Book reliable cab hire in Varanasi with Sweet Trip. Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time service." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://sweettrip.in/cab-services" />
+          <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Car Rental & Cab Hire in Varanasi | Sweet Trip"/>
+          <meta name="twitter:description" content="Book reliable cab hire in Varanasi with Sweet Trip. Affordable car rental agency for local, outstation, and airport transfers. Safe, clean & on-time service." />
+          <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
