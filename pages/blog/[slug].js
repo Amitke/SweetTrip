@@ -44,6 +44,56 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
+        {
+          blog?.meta?.url =="varanasi-to-prayagraj-distance" && (
+          <>
+          <meta property="og:title" content="Varanasi to Prayagraj Cab Fare & Distance | One Way Taxi Service" />
+          <meta property="og:description" content="Get the best Varanasi to Prayagraj cab fare with reliable taxi services. Check route distance, travel time & book one-way or round-trip rides online." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://sweettrip.in/blog/varanasi-to-prayagraj-distance" />
+          <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Varanasi to Prayagraj Cab Fare & Distance | One Way Taxi Service" />
+          <meta name="twitter:description" content="Get the best Varanasi to Prayagraj cab fare with reliable taxi services. Check route distance, travel time & book one-way or round-trip rides online." />
+          <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+          <script
+            type = "application/ld+json"
+            dangerouslySetInnerHTML = {
+              {
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": "https://sweettrip.in/blog/varanasi-to-prayagraj-distance",
+                  },
+                  headline: "Varanasi to Prayagraj Distance and Taxi Fare",
+                  description: "Get the best Varanasi to Prayagraj cab fare with reliable taxi services. Check route distance, travel time & book one-way or round-trip rides online.",
+                  image: "https://sweettrip.in/images/logo.svg",
+                  author: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    url: "https://sweettrip.in/",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://sweettrip.in/images/logo.svg",
+                    },
+                  },
+                  datePublished: "2025-10-11",
+                }),
+              }
+            }
+            />
+
+          </>
+        )}
+
+
          {blog?.meta?.url === "top-8-best-things-to-do-in-prayagraj" && (
             <>
               {/* Canonical URL */}
@@ -86,7 +136,7 @@ export default function BlogPage({ blog }) {
                 content="https://amythyogshala.com/public/frontend/assets/images/logo/logo-2.png"
               />
 
-               < script
+               <script
                type = "application/ld+json"
                dangerouslySetInnerHTML = {
                  {
@@ -232,9 +282,24 @@ export default function BlogPage({ blog }) {
           />
         )}
         {blog?.meta?.url === "tour-operator-in-varanasi" && (
+         <>
+            <meta name = "description"
+            content = "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!" />
+              <link rel="canonical" href="https://sweettrip.in/blog/tour-operator-in-varanasi" />
+          <meta property="og:title" content="Best Tour Operator in Varanasi | Affordable City Tours"/>
+          <meta property="og:description" content="Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://sweettrip.in/blog/tour-operator-in-varanasi" />
+          <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Best Tour Operator in Varanasi | Affordable City Tours"/>
+          <meta name="twitter:description" content="Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!" />
+          <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
           <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
+          type = "application/ld+json"
+          dangerouslySetInnerHTML = {
+            {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
@@ -243,8 +308,7 @@ export default function BlogPage({ blog }) {
                   "@id": "https://sweettrip.in/blog/tour-operator-in-varanasi",
                 },
                 headline: "Best Tour Operator in Varanasi – Sweet Trip",
-                description:
-                  "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!",
+                description: "Looking for the best tour operator in Varanasi? Get budget-friendly, hassle-free tours with local insights and 24/7 support. Reserve your spot now!",
                 image: "https://sweettrip.in/images/logo.svg",
                 author: {
                   "@type": "Organization",
@@ -260,43 +324,63 @@ export default function BlogPage({ blog }) {
                 },
                 datePublished: "2025-07-01",
               }),
-            }}
+            }
+          }
           />
+         </>
+
+          
         )}
 
         {blog?.meta?.url === "places-to-visit-in-varanasi" && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BlogPosting",
-                mainEntityOfPage: {
-                  "@type": "WebPage",
-                  "@id":
-                    "https://sweettrip.in/blog/places-to-visit-in-varanasi",
-                },
-                headline:
-                  "Top 10 Places to Visit in Varanasi for First-Time Travellers",
-                description:
-                  "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide.",
-                image: "https://sweettrip.in/images/logo.svg",
-                author: {
-                  "@type": "Organization",
-                  name: "sweettrip",
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "sweettrip",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://sweettrip.in/images/logo.svg",
-                  },
-                },
-                datePublished: "2025-07-28",
-              }),
-            }}
-          />
+          <>
+            <meta name = "description"
+            content = "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide." />
+
+              <link rel="canonical" href="https://sweettrip.in/blog/places-to-visit-in-varanasi" />
+              <meta property="og:title" content="Top 10 Places to Visit in Varanasi | Travel Guide"/>
+              <meta property="og:description" content="Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide." />
+              <meta property="og:type" content="article" />
+              <meta property="og:url" content="https://sweettrip.in/blog/places-to-visit-in-varanasi" />
+              <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Top 10 Places to Visit in Varanasi | Travel Guide"/>
+              <meta name="twitter:description" content="Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide." />
+              <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
+           <script
+           type = "application/ld+json"
+           dangerouslySetInnerHTML = {
+             {
+               __html: JSON.stringify({
+                 "@context": "https://schema.org",
+                 "@type": "BlogPosting",
+                 mainEntityOfPage: {
+                   "@type": "WebPage",
+                   "@id": "https://sweettrip.in/blog/places-to-visit-in-varanasi",
+                 },
+                 headline: "Top 10 Places to Visit in Varanasi for First-Time Travellers",
+                 description: "Discover the best places to visit in Varanasi, from sacred ghats and temples to hidden gems. Explore spiritual, cultural, and historic sites with our guide.",
+                 image: "https://sweettrip.in/images/logo.svg",
+                 author: {
+                   "@type": "Organization",
+                   name: "sweettrip",
+                 },
+                 publisher: {
+                   "@type": "Organization",
+                   name: "sweettrip",
+                   logo: {
+                     "@type": "ImageObject",
+                     url: "https://sweettrip.in/images/logo.svg",
+                   },
+                 },
+                 datePublished: "2025-07-28",
+               }),
+             }
+           }
+           />
+          </>
         )}
         {blog?.meta?.url === "car-rental-in-varanasi" && (
           <script
@@ -1026,6 +1110,8 @@ export default function BlogPage({ blog }) {
             </>
           )
         }
+
+        
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
       <section className="pt-10 pb-10">
