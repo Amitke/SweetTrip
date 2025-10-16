@@ -49,6 +49,10 @@ export default function BlogPage({ blog }) {
           <>
           <meta property="og:title" content="Varanasi to Prayagraj Cab Fare & Distance | One Way Taxi Service" />
           <meta property="og:description" content="Get the best Varanasi to Prayagraj cab fare with reliable taxi services. Check route distance, travel time & book one-way or round-trip rides online." />
+
+          <link rel="canonical"
+          href = "https://sweettrip.in/blog/varanasi-to-prayagraj-distance" />
+          
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://sweettrip.in/blog/varanasi-to-prayagraj-distance" />
           <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
