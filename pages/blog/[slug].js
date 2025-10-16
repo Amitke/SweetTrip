@@ -1115,6 +1115,56 @@ export default function BlogPage({ blog }) {
           )
         }
 
+        {
+          blog?.meta?.url ==="tour-operators-in-varanasi" &&(
+            <>
+              <link rel="canonical" href="https://sweettrip.in/blog/tour-operators-in-varanasi" />
+
+              <meta property="og:title" content="Varanasi Travel Experts | Best Tour Operator Services"/>
+              <meta property="og:description" content="Make your Varanasi trip unforgettable. Local guides, curated tours, and hassle-free travel with our trusted tour operators." />
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://sweettrip.in/blog/tour-operators-in-varanasi" />
+              <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+              <meta name="twitter:card" content="summary_large_image" />
+
+               < script
+               type = "application/ld+json"
+               dangerouslySetInnerHTML = {
+                 {
+                   __html: JSON.stringify({
+                     "@context": "https://schema.org",
+                     "@type": "BlogPosting",
+                     "mainEntityOfPage": {
+                       "@type": "WebPage",
+                       "@id": "https://sweettrip.in/blog/tour-operators-in-varanasi",
+                     },
+                     "headline": "How a Tour Operator in Varanasi Helps You Choose the Perfect Hotel Near Ghats and Temples",
+                     "description": "Make your Varanasi trip unforgettable. Local guides, curated tours, and hassle-free travel with our trusted tour operators.",
+                     "image": "https://sweettrip.in/images/logo.svg",
+                     "author": {
+                       "@type": "Organization",
+                       "name": "Sweet Trip",
+                     },
+                     "publisher": {
+                       "@type": "Organization",
+                       "name": "",
+                       "logo": {
+                         "@type": "ImageObject",
+                         "url": "",
+                       },
+                     },
+                     "datePublished": "",
+                   }),
+                 }
+               }
+               />
+
+            </>
+          )
+        }
+
+
         
       </Head>
       <SectionHeader title={blog.meta.heading} para={sectionHeader.para} />
