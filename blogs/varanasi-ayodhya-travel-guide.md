@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "tour operator in Varanasi, Varanasi tour and travel services, hotels in Varanasi, sightseeing in Varanasi, must-visit places in Ayodhya, Varanasi Ghats hotels, Ayodhya tourist attractions, hotel booking in Varanasi, travel itinerary Varanasi Ayodhya"
+title: "Varanasi & Ayodhya Travel Guide | Top Things To Do"
+description: "Find peace and heritage in India’s holiest cities. Explore famous temples, ghats, festivals, and travel tips for Varanasi & Ayodhya"
+keywords: "Varanasi travel guide, Ayodhya travel guide, Things to do in Varanasi, Things to do in Ayodhya, Varanasi sightseeing, Ayodhya temples, Varanasi ghats, Ayodhya Ram Mandir, Varanasi Ayodhya tour, Travel tips for Varanasi and Ayodhya"
 canonicalUrl: false
 faq: false
 openGraphTags: false
