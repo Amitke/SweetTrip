@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "tour and travel agency in Varanasi, tour operator in Varanasi, hotels in Varanasi, Sweet Trip"
+title: "Trusted Tour & Travel Agency in Varanasi | Affordable Trips"
+description: "From Ganga Aarti to temple tours, explore Varanasi hassle-free. Get customized packages & local experiences with expert travel support."
+keywords: "Tour and Travel Agency in Varanasi, Varanasi travel packages, Varanasi sightseeing, Varanasi tours, travel agency Varanasi"
 canonicalUrl: false
 faq: false
 openGraphTags: false

@@ -44,6 +44,203 @@ export default function BlogPage({ blog }) {
         <title>{blog.meta.title}</title>
         <meta name="description" content={blog.meta.description} />
         <meta name="keywords" content={blog.meta.keywords} />
+        {blog?.meta?.url=="budget-friendly-travel-tips" && (<>
+          <link rel="canonical" href="https://sweettrip.in/blog/budget-friendly-travel-tips" />
+
+            <meta property="og:title" content="Best Hotels & Tours in Varanasi | Stay & Explore Holy City"/>
+            <meta property="og:description" content="Find top hotels and guided tours in Varanasi. Enjoy spiritual stays, riverfront views, and Ganga Aarti experiences. Book your perfect Varanasi trip today!" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://sweettrip.in/blog/budget-friendly-travel-tips" />
+            <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Best Hotels & Tours in Varanasi | Stay & Explore Holy City"/>
+            <meta name="twitter:description" content="Find top hotels and guided tours in Varanasi. Enjoy spiritual stays, riverfront views, and Ganga Aarti experiences. Book your perfect Varanasi trip today!" />
+            <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+            <script
+            type = "application/ld+json"
+            dangerouslySetInnerHTML = {
+              {
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": "https://sweettrip.in/blog/budget-friendly-travel-tips",
+                  },
+                  headline: "Budget-Friendly Travel Tips: How to Save on Hotels and Tours in Varanasi",
+                  description: "Find top hotels and guided tours in Varanasi. Enjoy spiritual stays, riverfront views, and Ganga Aarti experiences. Book your perfect Varanasi trip today.",
+                  image: "https://sweettrip.in/images/logo.svg",
+                  author: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    url: "https://sweettrip.in/",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Sweet Trip",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://sweettrip.in/images/logo.svg",
+                    },
+                  },
+                  datePublished: "2025-10-11",
+                }),
+              }
+            }
+            />
+
+
+
+        </>)}
+        
+        
+        {
+          blog?.meta?.url == "varanasi-ayodhya-travel-guide" && (<>
+            <link rel="canonical" href="https://sweettrip.in/blog/varanasi-ayodhya-travel-guide" />
+          <meta property="og:title" content="Varanasi & Ayodhya Travel Guide | Top Things To Do"/>
+          <meta property="og:description" content="Find peace and heritage in India’s holiest cities. Explore famous temples, ghats, festivals, and travel tips for Varanasi & Ayodhya." />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content="https://sweettrip.in/blog/varanasi-ayodhya-travel-guide" />
+          <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Varanasi & Ayodhya Travel Guide | Top Things To Do"/>
+          <meta name="twitter:description" content="Find peace and heritage in India’s holiest cities. Explore famous temples, ghats, festivals, and travel tips for Varanasi & Ayodhya." />
+          <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <script
+          type = "application/ld+json"
+          dangerouslySetInnerHTML = {
+            {
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/varanasi-ayodhya-travel-guide",
+                },
+                headline: "Varanasi & Ayodhya Travel Guide: Top Hotels, Tourist Spots, and Travel Services",
+                description: "Find peace and heritage in India’s holiest cities. Explore famous temples, ghats, festivals, and travel tips for Varanasi & Ayodhya.",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
+                  "@type": "Organization",
+                  name: "Sweet Trip",
+                  url: "https://sweettrip.in/",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Sweet Trip",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
+                },
+                datePublished: "2025-10-11",
+              }),
+            }
+          }
+          />
+
+          </>)
+        }
+        {blog?.meta?.url =="tour-and-travel-agency-in-varanasi" && (<>
+        
+        <link rel="canonical" href="https://sweettrip.in/blog/tour-and-travel-agency-in-varanasi" />
+
+        <meta property="og:title" content="Trusted Tour & Travel Agency in Varanasi | Affordable Trips"/>
+        <meta property="og:description" content="From Ganga Aarti to temple tours, explore Varanasi hassle-free. Get customized packages & local experiences with expert travel support." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sweettrip.in/blog/tour-and-travel-agency-in-varanasi" />
+        <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trusted Tour & Travel Agency in Varanasi | Affordable Trips"/>
+        <meta name="twitter:description" content="From Ganga Aarti to temple tours, explore Varanasi hassle-free. Get customized packages & local experiences with expert travel support." />
+        <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+         <script
+         type = "application/ld+json"
+         dangerouslySetInnerHTML = {
+           {
+             __html: JSON.stringify({
+               "@context": "https://schema.org",
+               "@type": "BlogPosting",
+               mainEntityOfPage: {
+                 "@type": "WebPage",
+                 "@id": "https://sweettrip.in/blog/tour-and-travel-agency-in-varanasi",
+               },
+               headline: "Why Booking Hotels Through a Trusted Tour and Travel Agency in Varanasi Makes Your Trip Stress-Free",
+               description: "From Ganga Aarti to temple tours, explore Varanasi hassle-free. Get customized packages & local experiences with expert travel support.",
+               image: "https://sweettrip.in/images/logo.svg",
+               author: {
+                 "@type": "Organization",
+                 name: "Sweet Trip",
+                 url: "https://sweettrip.in/",
+               },
+               publisher: {
+                 "@type": "Organization",
+                 name: "Sweet Trip",
+                 logo: {
+                   "@type": "ImageObject",
+                   url: "https://sweettrip.in/images/logo.svg",
+                 },
+               },
+               datePublished: "2025-10-11",
+             }),
+           }
+         }
+         />
+        </>)}
+        {blog?.meta?.url =="5-best-hotels-to-stay-in-varanasi" && (<>
+        <link rel="canonical" href="https://sweettrip.in/blog/5-best-hotels-to-stay-in-varanasi" />
+
+        <meta property="og:title" content="Top Hotels to Stay in Varanasi for Every Budget"/>
+        <meta property="og:description" content="Find budget to luxury hotels in Varanasi. Stay near Kashi Vishwanath Temple and Ganga Ghats for a truly spiritual experience." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://sweettrip.in/blog/5-best-hotels-to-stay-in-varanasi" />
+        <meta property="og:image" content="https://sweettrip.in/images/logo.svg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top Hotels to Stay in Varanasi for Every Budget"/>
+        <meta name="twitter:description" content="Find budget to luxury hotels in Varanasi. Stay near Kashi Vishwanath Temple and Ganga Ghats for a truly spiritual experience." />
+        <meta name="twitter:image" content="https://sweettrip.in/images/logo.svg" />
+
+          <script
+          type = "application/ld+json"
+          dangerouslySetInnerHTML = {
+            {
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": "https://sweettrip.in/blog/5-best-hotels-to-stay-in-varanasi",
+                },
+                headline: "5 Best Hotels to Stay in Varanasi",
+                description: "Find budget to luxury hotels in Varanasi. Stay near Kashi Vishwanath Temple and Ganga Ghats for a truly spiritual experience.",
+                image: "https://sweettrip.in/images/logo.svg",
+                author: {
+                  "@type": "Organization",
+                  name: "Sweet Trip",
+                  url: "https://sweettrip.in/",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Sweet Trip",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://sweettrip.in/images/logo.svg",
+                  },
+                },
+                datePublished: "2025-10-11",
+              }),
+            }
+          }
+          />
+
+        </>)}
+
+
         {
           blog?.meta?.url =="varanasi-to-prayagraj-distance" && (
           <>

@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "5 Best Hotels to Stay in Varanasi, sweet Trip"
+title: "Top Hotels to Stay in Varanasi for Every Budget"
+description: "Find budget to luxury hotels in Varanasi. Stay near Kashi Vishwanath Temple and Ganga Ghats for a truly spiritual experience"
+keywords: "Hotels to Stay in Varanasi, best hotels in Varanasi, budget hotels in Varanasi, luxury hotels in Varanasi, places to stay in Varanasi"
 canonicalUrl: false
 faq: false
 openGraphTags: false

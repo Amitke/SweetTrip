@@ -1,7 +1,7 @@
 ---
-title: ""
-description: ""
-keywords: "tour and travel agency in Varanasi, budget hotels in Varanasi, Varanasi tour packages, affordable Varanasi stays, cheap hotels near Ghats, travel deals in Varanasi, hotel discounts, low-cost travel planning"
+title: "Best Hotels & Tours in Varanasi | Stay & Explore Holy City"
+description: "Find top hotels and guided tours in Varanasi. Enjoy spiritual stays, riverfront views, and Ganga Aarti experiences. Book your perfect Varanasi trip today!"
+keywords: "Hotels in Varanasi, Varanasi tours, budget travel Varanasi, Ganga Aarti experience, riverfront stay Varanasi, best tour packages Varanasi, affordable hotels Varanasi"
 canonicalUrl: false
 faq: false
 openGraphTags: false
