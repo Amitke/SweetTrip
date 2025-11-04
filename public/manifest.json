@@ -4,18 +4,13 @@
   "description": "We are a leading Tour Operator in Varanasi, providing reliable travel services in Prayagraj, Ayodhya, and nearby destinations. From cabs to hotels and boat rides, we make every trip seamless.",
   "icons": [
     {
-      "src": "./images/favicon.png",
+      "src": "./images/logo-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
        "purpose": "any maskable"
     },
-     {
-      "src": "./images/favicon.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
     {
-      "src": "./images/favicon.png",
+      "src": "./images/logo-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
