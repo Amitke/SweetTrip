@@ -1,0 +1,29 @@
+{
+  "short_name": "Sweet Trip App",
+  "name": "Sweet Trip",
+  "description": "We are a leading Tour Operator in Varanasi, providing reliable travel services in Prayagraj, Ayodhya, and nearby destinations. From cabs to hotels and boat rides, we make every trip seamless.",
+  "icons": [
+    {
+      "src": "./images/logo-mobile-app.png",
+      "sizes": "192x192",
+      "type": "image/png",
+       "purpose": "any maskable"
+    },
+     {
+      "src": "./images/logo-mobile-app.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo-mobile-app.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "./",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#00d231",
+  "background_color": "#201e53",
+  "orientation": "portrait"
+}
