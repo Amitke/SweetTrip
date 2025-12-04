@@ -1,6 +1,7 @@
 ---
-title: "Car Rental in Varanasi | Sweettrip Taxi Services"
-description: "Affordable car rental in Varanasi by Sweettrip. Book a taxi or rent a cab in Varanasi for local sightseeing, airport transfers, or outstation travel."
+title: "Car Rental in Varanasi | Safe, Comfortable and Budget-Friendly"
+description: "Hire a car in Varanasi for spiritual tours, city rides, and
+airport travel. Experienced drivers, clean cars, and flexible rental packages. Book now."
 keywords: "Car Rental in Varanasi, Varanasi taxi service, Rent a cab in Varanasi, Sweet trip"
 canonicalUrl: false
 openGraphTags: false
