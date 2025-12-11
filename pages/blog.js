@@ -25,6 +25,7 @@ export default function Blog({ blogs }) {
       ? getSectionHeader.sectionHeader[0].blog
       : getSectionHeader?.error;
   const faqsData = getFaq && getFaq.status ? getFaq?.faq?.blog : getFaq?.error;
+  
   const faqsError = getFaq?.error;
   return (
     <>
