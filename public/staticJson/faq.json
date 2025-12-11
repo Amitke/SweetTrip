@@ -15,7 +15,7 @@
       "heading": "Are your drivers experienced and reliable?",
       "para": "Yes, they are all good, experienced, and courteous drivers. As a reliable car rental agency in Varanasi, we ensure each driver knows the routes within the city, tourist destinations, and traffic rules so your trip is hitch-free and secure."
     },
-     {
+    {
       "id": 4,
       "heading": "Do you offer outstation cab booking from Varanasi?",
       "para": "Yes. We have local and outstation taxi bookings in Varanasi. If you are visiting Sarnath, Allahabad, Bodh Gaya, or anywhere else nearby, we have packages customised for you."
@@ -147,7 +147,7 @@
       "para": "Sweet Trip is a locally owned and professionally managed Varanasi tour and travel agency that is popularly known for offering safe, cosy, and spiritually rewarding travel experiences. Our client focus, attention to detail, and flexible touring schedule are among the factors that make us a Varanasi tour and travel service provider of choice."
     }
   ],
-   "tourOperatorInVaranasi": [
+  "tourOperatorInVaranasi": [
     {
       "id": 1,
       "heading": "Why should I need to hire Sweet Trip as my tour operator in Varanasi?",
@@ -190,40 +190,67 @@
     }
   ],
   "home": [
-     {
+    {
       "id": 1,
       "heading": "What does Sweet Trip offer?",
       "para": "We provide car reservations, boat cruises, lodging reservations, and complete travel reservations for Ayodhya, Varanasi, Prayagraj, and Bodhgaya."
     },
-     {
+    {
       "id": 2,
       "heading": "Is Sweet Trip a local tour operating company in Varanasi?",
       "para": "Yes, we are a professionally managed, local travel and tour company with trained staff and licensed transport."
     },
-     {
+    {
       "id": 3,
       "heading": "Can I have a customised package?",
       "para": "Yes, we have customised packages as per your convenience, plan, and budget."
     },
-     {
+    {
       "id": 4,
       "heading": "What does the 2-day package include?",
       "para": "Our 2-day package includes Varanasi transport, hotel stay, local sightseeing, boat ride (if Varanasi), and other activities as per preference."
     },
-     {
+    {
       "id": 5,
       "heading": "Is it possible to have a pickup from the airport or the railway station?",
       "para": "Yes, we are arranging pickup and drop from Varanasi railway station, airport, or hotel."
     },
-     {
+    {
       "id": 6,
       "heading": "Is it for senior citizens or single travellers?",
       "para": "Yes. They are mannered and specially trained in safety, comfort, and service to all ages and categories of travel."
     },
-     {
+    {
       "id": 7,
       "heading": "How to Book My Tour?",
       "para": "Call us on the phone or WhatsApp directly, or fill out our website form to have a callback and a quoted price."
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "heading": "Why should I choose Sweet Trip as my Travel Agency in Varanasi?",
+      "para": "Sweet Trip offers reliable cab services, personalized packages, local expertise, and transparent pricing. The team ensures a comfortable and memorable travel experience tailored to your needs."
+    },
+    {
+      "id": 2,
+      "heading": "Do you provide customized Varanasi tourism packages?",
+      "para": "Yes. Sweet Trip creates personalized itineraries based on your preferences, whether you want spiritual tours, cultural experiences, or sightseeing."
+    },
+    {
+      "id": 3,
+      "heading": "Can I book a morning boat ride or a Ganga Aarti boat ride through Sweet Trip?",
+      "para": "Absolutely. Sweet Trip organizes safe and well-timed boat rides for both sunrise views and evening Aarti experiences."
+    },
+    {
+      "id": 4,
+      "heading": "Do you offer tours beyond Varanasi?",
+      "para": "Yes. Sweet Trip provides tour packages for Ayodhya, Prayagraj, and Bodhgaya, including transportation and hotel arrangements."
+    },
+    {
+      "id": 5,
+      "heading": "Are your cab services safe for solo travellers and families?",
+      "para": "Yes. Sweet Trip offers well-maintained vehicles with experienced drivers, ensuring complete safety and comfort for all types of travellers."
     }
   ]
 }
