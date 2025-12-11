@@ -85,7 +85,7 @@ function ExpandableText() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className=" leading-relaxed text-sm sm:text-base md:text-[17px] space-y-6 mb-12 px-4 sm:px-8 lg:px-16 xl:px-28 max-w-6xl mx-auto  bg-white">
+    <div className="text-sm sm:text-base space-y-6 mb-12 px-4 sm:px-8 max-w-6xl mx-auto">
       {/* --- Always Visible Content --- */}
       <h2 className="text-center text-2xl sm:text-3xl md:text-4xl   mb-6">
         Your Trusted Travel Agency in Varanasi
