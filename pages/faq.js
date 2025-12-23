@@ -34,6 +34,7 @@ export default function Faq() {
         <section className={`${faqStyles.faq} pb-10`}>
           <div className="container mx-auto">
             <div className="flex-col flex pl-4 pr-4 md:w-3/4 w-full mx-auto">
+			<a hre="/one-way-taxi">One Way Taxi</a>
               <h3>
                 <div className={faqStyles.icon}><FontAwesomeIcon icon={faQuestion} /></div> What is included in the Varanasi 2-Day Tour Package?
               </h3>
