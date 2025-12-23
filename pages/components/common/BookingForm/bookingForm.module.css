@@ -1,0 +1,227 @@
+.btn, .primaryButton,
+.secondaryButton {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  transition: all 1s;
+  background-color: #00D231;
+  min-width: 120px;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .btn, .primaryButton,
+  .secondaryButton {
+    min-width: 100px;
+  }
+}
+.btn:disabled, .primaryButton:disabled,
+.secondaryButton:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  color: #ffffff;
+  background-color: #201e53;
+  transition: all 1s;
+}
+
+.secondaryButton:hover {
+  border-color: #00D231;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}
+
+.formControl {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #dce0e0;
+  padding: 6px 12px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  height: 45px;
+}
+
+textarea.formControl {
+  height: auto;
+}
+
+.formControl:focus {
+  outline: none;
+}
+
+.bookingForm {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .bookingForm {
+    margin-bottom: 20px;
+  }
+}
+@keyframes animationH2 {
+  0% {
+    left: -20px;
+    opacity: 0.5;
+  }
+  100% {
+    left: 40px;
+    opacity: 1;
+  }
+}
+.bookingForm .buttonGroupWrapper {
+  margin-top: -40px;
+}
+.bookingForm .buttonGroupWrapper button {
+  background-color: #00D231;
+  color: #ffffff;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .bookingForm .buttonGroupWrapper button {
+    font-size: 12px;
+    padding: 8px;
+    margin-right: 5px;
+  }
+}
+.bookingForm .buttonGroupWrapper button.selected {
+  background: linear-gradient(127deg, #e5eaff, #e6fcfc 39.23%, #e6fcf7 74.34%, #f5fce6 99.12%);
+  color: #201e53;
+}
+.bookingForm h2 {
+  color: #00D231;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: animationH2;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+.bookingForm h2 span {
+  color: #ffffff;
+}
+.bookingForm .formWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 767px) {
+  .bookingForm .formWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bookingForm .formWrapper .formGroup {
+  width: 20%;
+}
+@media (max-width: 767px) {
+  .bookingForm .formWrapper .formGroup {
+    width: 100%;
+  }
+}
+.bookingForm .primaryButton {
+  border-radius: 5px;
+  min-height: 45px;
+}
+.bookingForm .primaryButton:hover {
+  background-color: #00D231;
+}
+
+.bookingOneWayForm {
+  background: linear-gradient(127deg, #e5eaff, #e6fcfc 39.23%, #e6fcf7 74.34%, #f5fce6 99.12%);
+  padding: 20px;
+}
+.bookingOneWayForm h3 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: animationH2;
+}
+.bookingOneWayForm h3 span {
+  color: #00D231;
+}
+.bookingOneWayForm .formWrapper {
+  max-width: 700px;
+  min-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 767px) {
+  .bookingOneWayForm .formWrapper {
+    display: block;
+    min-width: auto;
+  }
+}
+.bookingOneWayForm .formWrapper .formGroup {
+  width: 100%;
+  padding: 0 10px;
+}
+@media (max-width: 767px) {
+  .bookingOneWayForm .primaryButton {
+    width: 100%;
+  }
+}
+
+.bookingOneWaySearchResult {
+  background: #dce0e0;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .bookingOneWaySearchResult {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
+.bookingOneWaySearchResult .secondaryButton {
+  display: flex;
+  background-color: #201e53;
+  justify-content: center;
+  align-items: center;
+}
+.bookingOneWaySearchResult .secondaryButton .icon {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.bookingOneWaySearchResult .secondaryButton svg {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  margin-top: 5px;
+}/*# sourceMappingURL=bookingForm.module.css.map */

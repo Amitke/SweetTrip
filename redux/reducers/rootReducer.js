@@ -13,6 +13,7 @@ import peopleLikeReducer from './peopleLike';
 import faqReducer from "./faq";
 import popularRoutesReducer from "./popularRoutes";
 import topSightSeeingReducer from "./topSightSeeing";
+import oneWayReducer from "./oneWay";
 
 const rootReducer = combineReducers({
   headerMenu: headerMenuReducer,
@@ -28,6 +29,7 @@ const rootReducer = combineReducers({
   faq:faqReducer,
   popularRoutes:popularRoutesReducer,
   topSightSeeing: topSightSeeingReducer,
+  oneWay:oneWayReducer,
 });
 
 export default rootReducer;
