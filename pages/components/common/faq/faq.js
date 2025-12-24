@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import faqStyles from "./faq.module.scss";
 
 const Faq = ({ faqsData,faqsError }) => {
   const [open, setOpen] = useState(1);
+  const [url, setUrl] = useState("");
+
+   useEffect(() => {
+    if (typeof window !== "undefined") {
+      setUrl(window.location.pathname);
+    }
+  }, []);
+
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
@@ -12,7 +20,7 @@ const Faq = ({ faqsData,faqsError }) => {
     <section className={`${faqStyles.faq} pt-10 pb-10`}>
       <div className="container mx-auto">
         <div className="flex-col justify-center items-center flex pl-4 pr-4">
-          <h2>FAQs – Sweet Trip Tour Operator in Varanasi Asked Questions</h2>
+          <h2>{url === "/one-way-taxi" ? "FAQs – One Way Taxi Service by Sweet Trip" :"FAQs – Sweet Trip Tour Operator in Varanasi Asked Questions"}</h2>
         </div>
         <div className={`flex-col flex`}>
           {faqsData &&

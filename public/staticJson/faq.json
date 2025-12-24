@@ -252,5 +252,37 @@
       "heading": "Are your cab services safe for solo travellers and families?",
       "para": "Yes. Sweet Trip offers well-maintained vehicles with experienced drivers, ensuring complete safety and comfort for all types of travellers."
     }
+  ],
+  "oneWayTaxi": [
+    {
+      "id": 1,
+      "heading": "What is Sweet Trip One Way Taxi Service?",
+      "para": "Sweet Trip is an information platform through which clients are able to connect directly with drivers in one-way taxi services without any commission costs."
+    },
+    {
+      "id": 2,
+      "heading": "What sets Sweet Trip apart from other taxi services?",
+      "para": "Sweet Trip provides 0% commission fees, connectivity with drivers, and free booking fees, making it less costly compared to conventional taxi agencies."
+    },
+    {
+      "id": 3,
+      "heading": "Do I have to pay for the Sweet Trip online?",
+      "para": "No. Sweet Trip does not process payments. All payment is received directly by the driver."
+    },
+    {
+      "id": 4,
+      "heading": "Is Sweet Trip good for long-distance travel?",
+      "para": "Yes, Sweet Trip is most appropriate for long-distance travel and city-to-city, one-way drop taxis, which help you cut down on return fare charges."
+    },
+    {
+      "id": 5,
+      "heading": "Is it possible to speak to the driver before making the booking?",
+      "para": "Yes, you can contact the driver directly either through a call or a whatsApp."
+    },
+    {
+      "id": 6,
+      "heading": "Are there any additional costs?",
+      "para": "No. Sweet Trip has a completely transparent business model with no hidden fees."
+    }
   ]
 }

@@ -15,7 +15,68 @@ const RentalCommunity = dynamic(
   { ssr: false }
 );
 
-const cityArray = ["Varanasi", "Prayagraj", "Ayodhya"];
+const cityArray = [
+  "Varanasi",
+  "Prayagraj",
+  "Ayodhya",
+  "Lucknow",
+  "Kanpur",
+  "Agra",
+  "Gorakhpur",
+  "Jhansi",
+  "Chitrakoot",
+  "Mathura",
+  "Aligarh",
+  "Bareilly",
+  "Firozabad",
+  "Moradabad",
+  "Saharanpur",
+  "Rampur",
+  "Shahjahanpur",
+  "Budaun",
+  "Etawah",
+  "Amroha",
+  "Bulandshahr",
+  "Muzaffarnagar",
+  "Hathras",
+  "Kasganj",
+  "Mainpuri",
+  "Farrukhabad",
+  "Lakhimpur Kheri",
+  "Gaya",
+  "Patna",
+  "Bhagalpur",
+  "Muzaffarpur",
+  "Purnia",
+  "Darbhanga",
+  "Bihar Sharif",
+  "Arrah",
+  "Begusarai",
+  "Chhapra",
+  "Munger",
+  "Saharsa",
+  "Sitamarhi",
+  "Siwan",
+  "Jamalpur",
+  "Katihar",
+  "Dehri-on-Sone",
+  "Delhi",
+  "Noida",
+  "Gurgaon",
+  "Faridabad",
+  "Ghaziabad",
+  "Greater Noida",
+  "Bahadurgarh",
+  "Palwal",
+  "Sonipat",
+  "Yamunanagar",
+  "Rewari",
+  "Rohtak",
+  "Bhiwani",
+  "Panchkula",
+  "Ambala",
+  "Karnal",
+];
 
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
@@ -36,7 +97,8 @@ export default function oneWayTaxi() {
       ? getOneWay?.oneWayData
       : getOneWay?.error;
 
-  const faqsData = getFaq && getFaq.status ? getFaq?.faq?.home : getFaq?.error;
+  const faqsData =
+    getFaq && getFaq.status ? getFaq?.faq?.oneWayTaxi : getFaq?.error;
   const faqsError = getFaq?.error;
 
   useEffect(() => {
@@ -63,32 +125,93 @@ export default function oneWayTaxi() {
   };
   const handleBack = () => {
     setStatus(false);
+    setFromCity("");
+    setToCity("");
   };
   return (
     <>
       <Head>
-        <title>One-Way Taxi Service | Affordable & Reliable Cabs</title>
+        <title>Book One Way Taxi Online | One Way Drop Taxi</title>
         <meta
           name="description"
-          content="Book a one-way taxi for a safe, comfortable, and affordable ride. Enjoy reliable cab service with professional drivers and hassle-free travel across major routes."
+          content="Book a one way taxi service with zero commission. Get direct driver number for instant booking, fair pricing, and reliable one way drop taxi travel."
         />
         <meta
           name="keywords"
-          content="One-way taxi service, One-way cab booking, Drop Taxi Service, sweet Trip"
+          content="One Way Taxi, one way drop taxi, One Way Taxi Service, Sweet Trip"
         />
         <link rel="canonical" href="https://sweettrip.in/one-way-taxi" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Book One Way Taxi Online | One Way Drop Taxi"
+        />
+        <meta
+          property="og:description"
+          content="Book a one way taxi service with zero commission. Get direct driver number for instant booking, fair pricing, and reliable one way drop taxi travel."
+        />
+        <meta property="og:url" content="https://sweettrip.in/one-way-taxi" />
+        <meta
+          property="og:image"
+          content="https://sweettrip.in/images/logo.svg"
+        />
+        <meta property="og:site_name" content="SweetTrip" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Book One Way Taxi Online | One Way Drop Taxi"
+        />
+        <meta
+          name="twitter:description"
+          content="Book a one way taxi service with zero commission. Get direct driver number for instant booking, fair pricing, and reliable one way drop taxi travel."
+        />
+        <meta
+          name="twitter:image"
+          content="https://sweettrip.in/images/logo.svg"
+        />
+        <meta name="twitter:url" content="https://sweettrip.in/one-way-taxi" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "One Way Taxi Service",
+              description:
+                "Book a one way taxi service with zero commission. Get direct driver number for instant booking, fair pricing, and reliable one way drop taxi travel.",
+              url: "https://sweettrip.in/one-way-taxi",
+              provider: {
+                "@type": "Organization",
+                name: "SweetTrip",
+                url: "https://sweettrip.in",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://sweettrip.in/images/logo.svg",
+                },
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "India",
+              },
+              serviceType: "One Way Drop Taxi",
+            }),
+          }}
+        />
       </Head>
       {status && (
-        <div className="container mx-auto mt-5 pl-4 pr-4">
+        <div
+          className="container mx-auto"
+          style={{ backgroundColor: "#201e53" }}
+        >
           {" "}
-          <p>
+          <div className="flex-row flex flex-wrap p-4">
             <button
               onClick={handleBack}
-              className={bookingFormStyles.primaryButton}
+              className={bookingFormStyles.secondaryButton}
             >
               Back
             </button>
-          </p>
+          </div>
         </div>
       )}
       {status === false && (
@@ -141,21 +264,21 @@ export default function oneWayTaxi() {
                 Find Drivers
               </button>
             </div>
-            <p>
-              Disclaimer: Sweet Trip sirf ek information platform hai. Payment,
-              booking aur journey driver aur customer ke beech directly hoti
-              hai.
-            </p>
           </div>
         </div>
       )}
       <div className="container mx-auto">
+        {status && (
+          <div className="pl-4 pr-4 mt-5">
+            {fromCity} - {toCity}
+          </div>
+        )}
         <div className="flex-row flex flex-wrap">
           {status
             ? results?.map((car, index) => (
                 <div
                   key={index}
-                  className={`w-1/4 pl-4 pr-4 mt-10 text-center ${bookingFormStyles.bookingOneWaySearchResult}`}
+                  className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.bookingOneWaySearchResult}`}
                 >
                   <Image
                     src="/images/small-car.webp"
@@ -196,10 +319,59 @@ export default function oneWayTaxi() {
             : ""}
         </div>
       </div>
-      <section className={`${whyChooseStyles.whyChoose} pt-10 pb-10`}>
+      <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
+        <div className="container mx-auto">
+          <div
+            className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
+          >
+            <h2 className="text-center mb-5">
+              One Way Taxi Service by Sweet Trip – Simple, Affordable & Direct
+            </h2>
+            <p className="text-center">
+              Sweet Trip offers you a better way to travel with our dependable
+              one-way taxi service that is aimed at removing the unnecessary
+              expenses, mediators, and planning of booking a taxi. Whether you
+              want to visit for business or with your family members, drop off
+              at the airport, or initiate an inter-city trip with taxi booking.
+            </p>
+            <p className="mt-2">
+              It differs from a conventional taxi service, where high commission
+              costs and booking charges are involved. Sweet Trip is a platform
+              for information where travellers meet drivers. It provides
+              fairness in costs, good communication, and flexibility. If you are
+              looking for one-way drop taxi services at low costs that involve
+              direct communication with the driver, Sweet Trip is ideal.
+            </p>
+            <h3 className="font-bold mt-3">What Is A One Way Taxi?</h3>
+            <p>
+              One-way taxi enables you to go from your pick-up point to your
+              destination point without having to pay additional fees for
+              returning. In normal taxis, you will need to pay fees associated
+              with coming back home, making your journey very costly. One-way
+              drop taxis offered by Sweet Trips charge you nothing but the
+              distance you travelled.
+            </p>
+            <p className="mt-2">
+              This makes Sweet Trip's One Way Taxi Service particularly useful
+              to:
+            </p>
+            <p>● Intercity travel</p>
+            <p>● Airport Transfers</p>
+            <p>● Relocations</p>
+            <p>● Business trips</p>
+            <p>● Family visits</p>
+            <p>● Emergency Travel</p>
+          </div>
+        </div>
+      </section>
+      <section className={`${whyChooseStyles.whyChoose} pb-10`}>
         <div className="container mx-auto text-center">
           <div className="flex-col justify-center items-center flex pl-4 pr-4">
             <h2>How Does It Work?</h2>
+            <p>
+              Sweet Trip has a very straightforward and transparent process that
+              gives you control over your experience.
+            </p>
           </div>
           <div className="flex-row flex flex-wrap">
             <div
@@ -212,8 +384,13 @@ export default function oneWayTaxi() {
                 height={70}
                 className="mx-auto mb-5"
               />
-              <h3 className="font-bold">Search your route </h3>
-              <p className="text-sm">Lorem</p>
+              <h3 className="font-bold">Search Your Route </h3>
+              <p className="text-sm">
+                You start by inputting your pickup and drop-off points on the
+                Sweet Trip website. When you search for your route, the system
+                displays drivers who are operating on that route. This makes it
+                easy for you to find a one-way taxi quickly.
+              </p>
             </div>
             <div
               className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
@@ -225,8 +402,13 @@ export default function oneWayTaxi() {
                 height={70}
                 className="mx-auto mb-5"
               />
-              <h3 className="font-bold">Choose your driver</h3>
-              <p className="text-sm">Lorem</p>
+              <h3 className="font-bold">Choose Your Driver</h3>
+              <p className="text-sm">
+                After analyzing the routes, you can browse through the available
+                drivers. This provides you with different options that you can
+                choose based on your needs. The benefits include accessing the
+                cheapest one-way taxi services.
+              </p>
             </div>
             <div
               className={`w-1/3 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
@@ -238,9 +420,26 @@ export default function oneWayTaxi() {
                 height={70}
                 className="mx-auto mb-5"
               />
-              <h3 className="font-bold">Call or WhatsApp directly </h3>
-              <p className="text-sm">Lorem</p>
+              <h3 className="font-bold">Call or WhatsApp Directly</h3>
+              <p className="text-sm">
+                Sweet Trip permits direct contact with the driver, and you can
+                telephone or WhatsApp the driver directly to communicate
+                regarding the cost, pickup time, car, and requirements. There is
+                no intermediary in this regard.
+              </p>
             </div>
+            <p className="mt-5 pl-4 pr-4">
+              Disclaimer: Sweet Trip is an information platform that brings
+              customers and independent drivers together for the provision of
+              one-way taxi transport. Sweet Trip does not render transport
+              services and therefore does not operate as an intermediary in the
+              booking or payment processes. Communication, the process of
+              determining the cost, booking, payment, and all activities
+              pertaining to the transport process are conducted directly between
+              the customer and the driver. Sweet Trip does not take any
+              liability for the cost, performance, delay, cancellation, or
+              disputes that may arise from the journey.
+            </p>
           </div>
         </div>
       </section>
@@ -249,35 +448,98 @@ export default function oneWayTaxi() {
         <div className="container mx-auto text-center">
           <div className="flex-col justify-center items-center flex pl-4 pr-4">
             <h2>Why Sweet Trip Provide One Way Taxi Service</h2>
+            <p>
+              Sweet Trip came into existence to address the largest problems
+              associated with travelling, such as high commissions, fees, and a
+              lack of effective communication. The reasons why many customers
+              choose Sweet Trip for the “One Way Taxi Service” are as follows:
+            </p>
           </div>
           <div className="flex-row flex flex-wrap">
             <div
               className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
             >
               <h3 className="font-bold">0% Commission</h3>
-              <p className="text-sm">Lorem</p>
+              <p className="text-sm">
+                Sweet Trip doesn't charge any commission to either drivers or
+                clients. Compared to other platforms, Sweet Trip ensures that
+                there are no higher costs involved because of commission fees.
+                So whatever you negotiate from the driver is exactly what you
+                pay, and Sweet Trip is actually the cheapest way to go via
+                one-way drop taxis.
+              </p>
             </div>
             <div
               className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
             >
               <h3 className="font-bold">Direct driver contact</h3>
-              <p className="text-sm">Lorem</p>
+              <p className="text-sm">
+                With Sweet Trip, you meet the drivers personally. There is no
+                miscommunication and delay in the coordination of the trip. By
+                personally getting in touch with the drivers, you can be better
+                catered to in your travel requirements.
+              </p>
             </div>
             <div
               className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
             >
               <h3 className="font-bold">Cheapest one-way options</h3>
-              <p className="text-sm">Lorem</p>
+              <p className="text-sm">
+                Sweet Trip has no commission fees, making it offer the lowest
+                one-way taxi services. This is because drivers can enjoy 100% of
+                the money they receive because there are no commission fees.
+              </p>
             </div>
             <div
               className={`w-1/4 pl-4 pr-4 mt-10 ${whyChooseStyles.fullWidthMobile}`}
             >
               <h3 className="font-bold">No booking fees</h3>
-              <p className="text-sm">Lorem</p>
+              <p className="text-sm">
+                Sweet Trip does not charge any fees to book. You can search
+                routes, communicate with drivers, and confirm your journey
+                without incurring any fees. Thus, Sweet Trip emerges as a
+                trustworthy one-way taxi service provider.
+              </p>
             </div>
           </div>
         </div>
       </section>
+      <section className={`${whyChooseStyles.policy}`}>
+        <div className="container mx-auto">
+          <div
+            className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
+          >
+            <h2 className="text-center mb-5">
+              Advantages of Selecting Sweet Trip One-Way Taxi
+            </h2>
+            <p>● Reimbursed only for one-way journey</p>
+            <p>● There are no extra fees </p>
+            <p>● Quick driver pairing</p>
+            <p>● Suitable for long-distance routes as well as urban routes</p>
+            <p>● Simple and user-friendly platform</p>
+            <p>● Flexible payment directly to the driver</p>
+            <p className="mt-2">
+              Whether it is a short journey from one city to another or a longer
+              one, Sweet Trip makes sure you have a comfortable, economical, and
+              worry-free experience.
+            </p>
+            <h3 className="font-bold mt-3">
+              Who Can Use Sweet Trip One-Way Taxi?
+            </h3>
+            <p>Sweet Trip's one-way taxi service is ideal for:</p>
+            <p className="mt-2">● Business travelers</p>
+            <p>● Families and groups</p>
+            <p>● Visitors</p>
+            <p>● Students</p>
+            <p>● Elderly citizens</p>
+            <p>● Travelers alone</p>
+            <p className="mt-2">All those requiring an efficient and effective one-way taxi drop without having to incur return fees can greatly benefit from Sweet Trip.</p>
+            <h3 className="font-bold mt-3">Book Your One-Way Taxi From Sweet Trip Now</h3>
+            <p>If you need a trusted, inexpensive, and transparent one-way taxi service, Sweet Trip is here with you as your trusted travel companion. No middlemen, save your hard-earned money, and experience a tension-free journey with direct contact with your driver. Search your route, select your driver, and travel with Sweet Trip.</p>
+          </div>
+        </div>
+      </section>
+
       <Faq faqsData={faqsData} faqsError={faqsError} />
     </>
   );
