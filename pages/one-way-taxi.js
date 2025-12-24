@@ -251,7 +251,7 @@ export default function oneWayTaxi() {
         <div className="flex-row flex flex-wrap">
           {status ? (
             results?.map((car, index) => (
-              <div key={index} className="w-1/4 pl-4 pr-4 mt-5 text-center">
+              <div key={index} className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.mobileWidth}`}>
                 <div className={bookingFormStyles.bookingOneWaySearchResult}>
                   <Image
                     src="/images/small-car.webp"
