@@ -137,8 +137,6 @@
   background: $borderColor;
   @include Padding(20px);
   @include borderRadius(20px);
-  margin-left: 10px;
-  margin-right: 10px;
   @include breakPoints(767px) {
     margin:10px auto;
     @include Width(90%);

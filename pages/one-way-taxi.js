@@ -90,9 +90,7 @@ export default function oneWayTaxi() {
             toCity.trim().toLowerCase()
       );
       if (filtered?.length === 0) {
-        setNoData(
-          "No drivers found for the selected route"
-        );
+        setNoData("No drivers found for the selected route");
       } else {
         setStatus(true);
         setResults(filtered);
@@ -251,12 +249,10 @@ export default function oneWayTaxi() {
           </div>
         )}
         <div className="flex-row flex flex-wrap">
-          {status
-            ? results?.map((car, index) => (
-                <div
-                  key={index}
-                  className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.bookingOneWaySearchResult}`}
-                >
+          {status ? (
+            results?.map((car, index) => (
+              <div key={index} className="w-1/4 pl-4 pr-4 mt-5 text-center">
+                <div className={bookingFormStyles.bookingOneWaySearchResult}>
                   <Image
                     src="/images/small-car.webp"
                     alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
@@ -292,8 +288,11 @@ export default function oneWayTaxi() {
                     whatsApp
                   </a>
                 </div>
-              ))
-            : <div className="w-full pl-4 pr-4 text-center mt-3">{noData}</div>}
+              </div>
+            ))
+          ) : (
+            <div className="w-full pl-4 pr-4 text-center mt-3">{noData}</div>
+          )}
         </div>
       </div>
       <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
