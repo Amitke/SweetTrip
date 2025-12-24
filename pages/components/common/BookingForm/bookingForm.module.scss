@@ -96,13 +96,20 @@
     #f5fce6 99.12%
   );
   @include Padding(20px);
-  h3 {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: animationH2;
+  h2 {
+    font-size: 1.5rem;
+    background: transparent;
+    background-clip: text;
+    color: $secondaryColor;
     span {
-      color: $secondaryColor;
+      background: linear-gradient(90deg, #05b9f8 24.32%, #201e53 84.3%);
+      background-clip: text;
+      color: $transparent;
+      font-size: 2rem;
     }
+  }
+  h3{
+    font-size: 1.5rem;
   }
   .formWrapper {
     max-width: 700px;

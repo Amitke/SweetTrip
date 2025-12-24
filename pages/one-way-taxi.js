@@ -44,7 +44,7 @@ export default function oneWayTaxi() {
   }, [oneWayData]);
 
   const handleFindDrivers = () => {
-    if(cars.length > 0)setCars(oneWayData);
+    if (cars.length > 0) setCars(oneWayData);
     if (!fromCity || !toCity) {
       alert("Please select pickup and drop location");
       return;
@@ -63,7 +63,7 @@ export default function oneWayTaxi() {
   };
   const handleBack = () => {
     setStatus(false);
-  }
+  };
   return (
     <>
       <Head>
@@ -78,19 +78,28 @@ export default function oneWayTaxi() {
         />
         <link rel="canonical" href="https://sweettrip.in/one-way-taxi" />
       </Head>
-      {status &&<div className="container mx-auto mt-5 pl-4 pr-4"> <p><button onClick={handleBack} className={bookingFormStyles.primaryButton}>Back</button></p></div>}
+      {status && (
+        <div className="container mx-auto mt-5 pl-4 pr-4">
+          {" "}
+          <p>
+            <button
+              onClick={handleBack}
+              className={bookingFormStyles.primaryButton}
+            >
+              Back
+            </button>
+          </p>
+        </div>
+      )}
       {status === false && (
         <div className={bookingFormStyles.bookingOneWayForm}>
           <div className="container mx-auto">
-            <h3 className="text-center">
-              <strong>
-                No Middleman | Direct Driver Contact |{" "}
-                <span>0% Commission</span>
-              </strong>
-            </h3>
-            <h2 className="mt-1 mb-1 text-center">
-              One Way Taxi <span>Service</span>
+            <h2 className="text-center">
+              No Middleman | Direct Driver Contact | <span>0% Commission</span>
             </h2>
+            <h3 className="mt-1 mb-1 text-center">
+              <strong>One Way Taxi Service</strong>
+            </h3>
             <div className={bookingFormStyles.formWrapper}>
               <div className={`${bookingFormStyles.formGroup}`}>
                 <select
@@ -115,11 +124,13 @@ export default function oneWayTaxi() {
                   onChange={(e) => setToCity(e.target.value)}
                 >
                   <option>Enter drop location*</option>
-                  {cityArray.filter(city => city !== fromCity).map((location, index) => (
-                    <option key={index} value={location}>
-                      {location}
-                    </option>
-                  ))}
+                  {cityArray
+                    .filter((city) => city !== fromCity)
+                    .map((location, index) => (
+                      <option key={index} value={location}>
+                        {location}
+                      </option>
+                    ))}
                 </select>
               </div>
               <button
@@ -130,6 +141,11 @@ export default function oneWayTaxi() {
                 Find Drivers
               </button>
             </div>
+            <p>
+              Disclaimer: Sweet Trip sirf ek information platform hai. Payment,
+              booking aur journey driver aur customer ke beech directly hoti
+              hai.
+            </p>
           </div>
         </div>
       )}
@@ -183,7 +199,7 @@ export default function oneWayTaxi() {
       <section className={`${whyChooseStyles.whyChoose} pt-10 pb-10`}>
         <div className="container mx-auto text-center">
           <div className="flex-col justify-center items-center flex pl-4 pr-4">
-            <h2>How It Works</h2>
+            <h2>How Does It Work?</h2>
           </div>
           <div className="flex-row flex flex-wrap">
             <div
@@ -209,7 +225,7 @@ export default function oneWayTaxi() {
                 height={70}
                 className="mx-auto mb-5"
               />
-              <h3 className="font-bold">Choose a driver</h3>
+              <h3 className="font-bold">Choose your driver</h3>
               <p className="text-sm">Lorem</p>
             </div>
             <div
@@ -260,10 +276,6 @@ export default function oneWayTaxi() {
               <p className="text-sm">Lorem</p>
             </div>
           </div>
-          <p className="mt-5">
-            Disclaimer: Sweet Trip sirf ek information platform hai. Payment,
-            booking aur journey driver aur customer ke beech directly hoti hai.
-          </p>
         </div>
       </section>
       <Faq faqsData={faqsData} faqsError={faqsError} />
