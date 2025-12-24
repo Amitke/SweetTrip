@@ -324,9 +324,9 @@ export default function oneWayTaxi() {
           <div
             className={`flex-col justify-center flex pl-4 pr-4 ${whyChooseStyles.flex}`}
           >
-            <h2 className="text-center mb-5">
+            <h1 className="text-3xl text-center mb-5">
               One Way Taxi Service by Sweet Trip – Simple, Affordable & Direct
-            </h2>
+            </h1>
             <p className="text-center">
               Sweet Trip offers you a better way to travel with our dependable
               one-way taxi service that is aimed at removing the unnecessary
