@@ -23,59 +23,28 @@ const cityArray = [
   "Kanpur",
   "Agra",
   "Gorakhpur",
-  "Jhansi",
   "Chitrakoot",
   "Mathura",
   "Aligarh",
   "Bareilly",
-  "Firozabad",
   "Moradabad",
   "Saharanpur",
-  "Rampur",
-  "Shahjahanpur",
-  "Budaun",
-  "Etawah",
   "Amroha",
-  "Bulandshahr",
-  "Muzaffarnagar",
-  "Hathras",
-  "Kasganj",
-  "Mainpuri",
-  "Farrukhabad",
-  "Lakhimpur Kheri",
   "Gaya",
   "Patna",
   "Bhagalpur",
   "Muzaffarpur",
   "Purnia",
   "Darbhanga",
-  "Bihar Sharif",
   "Arrah",
-  "Begusarai",
   "Chhapra",
-  "Munger",
-  "Saharsa",
-  "Sitamarhi",
   "Siwan",
-  "Jamalpur",
   "Katihar",
-  "Dehri-on-Sone",
   "Delhi",
   "Noida",
   "Gurgaon",
   "Faridabad",
   "Ghaziabad",
-  "Greater Noida",
-  "Bahadurgarh",
-  "Palwal",
-  "Sonipat",
-  "Yamunanagar",
-  "Rewari",
-  "Rohtak",
-  "Bhiwani",
-  "Panchkula",
-  "Ambala",
-  "Karnal",
 ];
 
 export default function oneWayTaxi() {
@@ -84,6 +53,7 @@ export default function oneWayTaxi() {
   const [cars, setCars] = useState([]);
   const [results, setResults] = useState([]);
   const [status, setStatus] = useState(false);
+  const [noData, setNoData] = useState("");
   const dispatch = useDispatch();
   const getOneWay = useSelector((state) => state.oneWay);
   const getFaq = useSelector((state) => state.faq);
@@ -106,13 +76,12 @@ export default function oneWayTaxi() {
   }, [oneWayData]);
 
   const handleFindDrivers = () => {
-    if (cars.length > 0) setCars(oneWayData);
     if (!fromCity || !toCity) {
       alert("Please select pickup and drop location");
       return;
     }
     if (cars.length > 0) {
-      setStatus(true);
+      setCars(oneWayData);
       const filtered = cars?.filter(
         (car) =>
           car?.from?.toString().trim().toLowerCase() ===
@@ -120,13 +89,21 @@ export default function oneWayTaxi() {
           car?.to?.toString().trim().toLowerCase() ===
             toCity.trim().toLowerCase()
       );
-      setResults(filtered);
+      if (filtered?.length === 0) {
+        setNoData(
+          "No drivers found for the selected route"
+        );
+      } else {
+        setStatus(true);
+        setResults(filtered);
+      }
     }
   };
   const handleBack = () => {
     setStatus(false);
     setFromCity("");
     setToCity("");
+    setNoData("");
   };
   return (
     <>
@@ -316,7 +293,7 @@ export default function oneWayTaxi() {
                   </a>
                 </div>
               ))
-            : ""}
+            : <div className="w-full pl-4 pr-4 text-center mt-3">{noData}</div>}
         </div>
       </div>
       <section className={`${whyChooseStyles.policy} pt-10 pb-10`}>
@@ -533,9 +510,22 @@ export default function oneWayTaxi() {
             <p>● Students</p>
             <p>● Elderly citizens</p>
             <p>● Travelers alone</p>
-            <p className="mt-2">All those requiring an efficient and effective one-way taxi drop without having to incur return fees can greatly benefit from Sweet Trip.</p>
-            <h3 className="font-bold mt-3">Book Your One-Way Taxi From Sweet Trip Now</h3>
-            <p>If you need a trusted, inexpensive, and transparent one-way taxi service, Sweet Trip is here with you as your trusted travel companion. No middlemen, save your hard-earned money, and experience a tension-free journey with direct contact with your driver. Search your route, select your driver, and travel with Sweet Trip.</p>
+            <p className="mt-2">
+              All those requiring an efficient and effective one-way taxi drop
+              without having to incur return fees can greatly benefit from Sweet
+              Trip.
+            </p>
+            <h3 className="font-bold mt-3">
+              Book Your One-Way Taxi From Sweet Trip Now
+            </h3>
+            <p>
+              If you need a trusted, inexpensive, and transparent one-way taxi
+              service, Sweet Trip is here with you as your trusted travel
+              companion. No middlemen, save your hard-earned money, and
+              experience a tension-free journey with direct contact with your
+              driver. Search your route, select your driver, and travel with
+              Sweet Trip.
+            </p>
           </div>
         </div>
       </section>
