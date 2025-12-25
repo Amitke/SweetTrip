@@ -14,38 +14,7 @@ const RentalCommunity = dynamic(
   () => import("./components/common/rentalCommunity/rentalCommunity"),
   { ssr: false }
 );
-
-const cityArray = [
-  "Varanasi",
-  "Prayagraj",
-  "Ayodhya",
-  "Lucknow",
-  "Kanpur",
-  "Agra",
-  "Gorakhpur",
-  "Chitrakoot",
-  "Mathura",
-  "Aligarh",
-  "Bareilly",
-  "Moradabad",
-  "Saharanpur",
-  "Amroha",
-  "Gaya",
-  "Patna",
-  "Bhagalpur",
-  "Muzaffarpur",
-  "Purnia",
-  "Darbhanga",
-  "Arrah",
-  "Chhapra",
-  "Siwan",
-  "Katihar",
-  "Delhi",
-  "Noida",
-  "Gurgaon",
-  "Faridabad",
-  "Ghaziabad",
-];
+import cityArray from "./../public/staticJson/cities.json";
 
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
@@ -87,7 +56,7 @@ export default function oneWayTaxi() {
           car?.from?.toString().trim().toLowerCase() ===
             fromCity.trim().toLowerCase() &&
           car?.to?.toString().trim().toLowerCase() ===
-            toCity.trim().toLowerCase()
+            toCity.trim().toLowerCase() && car?.status === "Active"
       );
       if (filtered?.length === 0) {
         setNoData("No drivers found for the selected route");

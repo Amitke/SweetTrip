@@ -167,3 +167,28 @@
     }
   }
 }
+.postYourCarForm {
+  background: $blackColor;
+  @include Padding(20px);
+  @include borderRadius(20px);
+  max-width: 650px;
+  min-width: 650px;
+  margin: 0 auto;
+  @include breakPoints(767px) {
+    min-width: auto;
+  }
+  h3 {
+    color: $whiteColor;
+  }
+  .formWrapper {
+    @include Display(block);
+    max-width: none;
+    min-width: auto;
+    .formGroup {
+      @include Padding(0);
+    }
+  }
+  p{
+    color: $whiteColor;
+  }
+}
