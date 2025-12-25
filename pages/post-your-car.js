@@ -65,8 +65,88 @@ export default function postYourCar() {
         }}
       >
         <div className="container mx-auto">
-          <div className="flex-row flex flex-wrap text-center">
-            <div className="w-full p-4">
+          <div className="flex-row flex flex-wrap justify-center items-center pt-5 pb-5">
+            <div className={`w-1/2 p-4 ${bookingFormStyles.mobileWidth}`}>
+              <div className={bookingFormStyles.postYourCarForm}>
+                <h3 className="mt-1 mb-1">
+                  <strong>Enter Your Details</strong>
+                </h3>
+                <div className={bookingFormStyles.formWrapper}>
+                  <div className={`${bookingFormStyles.formGroup}`}>
+                    <select
+                      name="pickupLocation"
+                      className={bookingFormStyles.formControl}
+                      style={{ "-webkit-appearance": "auto" }}
+                      onChange={(e) => setFromCity(e.target.value)}
+                    >
+                      <option>Enter pick up location*</option>
+                      {cityArray.map((location, index) => (
+                        <option key={index} value={location}>
+                          {location}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className={`${bookingFormStyles.formGroup}`}>
+                    <select
+                      name="dropLocation"
+                      className={bookingFormStyles.formControl}
+                      style={{ "-webkit-appearance": "auto" }}
+                      onChange={(e) => setToCity(e.target.value)}
+                    >
+                      <option>Enter drop location*</option>
+                      {cityArray
+                        .filter((city) => city !== fromCity)
+                        .map((location, index) => (
+                          <option key={index} value={location}>
+                            {location}
+                          </option>
+                        ))}
+                    </select>
+                  </div>
+                  <div className={`${bookingFormStyles.formGroup}`}>
+                    <input
+                      type="text"
+                      name="mobile"
+                      className={bookingFormStyles.formControl}
+                      placeholder="Enter mobile number*"
+                      onChange={(e) => handlePhone(e)}
+                      value={phone}
+                      autoComplete="off"
+                    />
+                    {phoneError && (
+                      <div className="error text-left">{phoneError}</div>
+                    )}
+                  </div>
+                  <div className={`${bookingFormStyles.formGroup}`}>
+                    <select
+                      name="carType"
+                      className={bookingFormStyles.formControl}
+                      style={{ "-webkit-appearance": "auto" }}
+                      onChange={(e) => setCarType(e.target.value)}
+                    >
+                      <option>Enter car type*</option>
+                      {carTypeArray.map((car, index) => (
+                        <option key={index} value={car}>
+                          {car}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <button
+                    name="submit"
+                    className={bookingFormStyles.primaryButton}
+                    onClick={submitDriverPost}
+                  >
+                    Submit
+                  </button>
+                  <p className="mt-3">
+                    Note: Your listing will be visible after verification
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={`w-1/2 p-4 ${bookingFormStyles.mobileWidth}`}>
               <h1 className="text-3xl">
                 Post Your One-Way Car Availability – Free
               </h1>
@@ -81,93 +161,8 @@ export default function postYourCar() {
           </div>
         </div>
       </div>
-      <div
-        style={{ background: "#fff" }}
-        className={bookingFormStyles.bookingOneWayForm}
-      >
-        <div className="container mx-auto mt-5 mb-5">
-          <div className={bookingFormStyles.postYourCarForm}>
-            <h3 className="mt-1 mb-1">
-              <strong>Enter Your Details</strong>
-            </h3>
-            <div className={bookingFormStyles.formWrapper}>
-              <div className={`${bookingFormStyles.formGroup}`}>
-                <select
-                  name="pickupLocation"
-                  className={bookingFormStyles.formControl}
-                  style={{ "-webkit-appearance": "auto" }}
-                  onChange={(e) => setFromCity(e.target.value)}
-                >
-                  <option>Enter pick up location*</option>
-                  {cityArray.map((location, index) => (
-                    <option key={index} value={location}>
-                      {location}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className={`${bookingFormStyles.formGroup}`}>
-                <select
-                  name="dropLocation"
-                  className={bookingFormStyles.formControl}
-                  style={{ "-webkit-appearance": "auto" }}
-                  onChange={(e) => setToCity(e.target.value)}
-                >
-                  <option>Enter drop location*</option>
-                  {cityArray
-                    .filter((city) => city !== fromCity)
-                    .map((location, index) => (
-                      <option key={index} value={location}>
-                        {location}
-                      </option>
-                    ))}
-                </select>
-              </div>
-              <div className={`${bookingFormStyles.formGroup}`}>
-                <input
-                  type="text"
-                  name="mobile"
-                  className={bookingFormStyles.formControl}
-                  placeholder="Enter mobile number*"
-                  onChange={(e) => handlePhone(e)}
-                  value={phone}
-                  autoComplete="off"
-                />
-                {phoneError && (
-                  <div className="error text-left">{phoneError}</div>
-                )}
-              </div>
-              <div className={`${bookingFormStyles.formGroup}`}>
-                <select
-                  name="carType"
-                  className={bookingFormStyles.formControl}
-                  style={{ "-webkit-appearance": "auto" }}
-                  onChange={(e) => setCarType(e.target.value)}
-                >
-                  <option>Enter car type*</option>
-                  {carTypeArray.map((car, index) => (
-                    <option key={index} value={car}>
-                      {car}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <button
-                name="submit"
-                className={bookingFormStyles.primaryButton}
-                onClick={submitDriverPost}
-              >
-                Submit
-              </button>
-              <p className="mt-3">
-                Note: Your listing will be visible after verification
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="container mx-auto">
-        <div className="flex-row flex flex-wrap mb-5">
+        <div className="flex-row flex flex-wrap mt-5 mb-5">
           <div className="w-full pl-4 pr-4">
             <h3 className="font-bold">Important Information</h3>
             <p>• Listing is free of cost</p>
