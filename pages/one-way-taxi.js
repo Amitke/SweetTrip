@@ -273,8 +273,8 @@ export default function oneWayTaxi() {
               One Way Taxi Service by Sweet Trip – Simple, Affordable & Direct
             </h1>
             <p className="text-center">
-              Sweet Trip offers you a better way to travel with our dependable
-              one-way taxi service that is aimed at removing the unnecessary
+              <a href="https://sweettrip.in/">Sweet Trip</a> offers you a better way to travel with our dependable
+              <a href="https://sweettrip.in/one-way-taxi"> one-way taxi service</a> that is aimed at removing the unnecessary
               expenses, mediators, and planning of booking a taxi. Whether you
               want to visit for business or with your family members, drop off
               at the airport, or initiate an inter-city trip with taxi booking.
@@ -287,7 +287,7 @@ export default function oneWayTaxi() {
               looking for one-way drop taxi services at low costs that involve
               direct communication with the driver, Sweet Trip is ideal.
             </p>
-            <h3 className="font-bold mt-3">What Is A One Way Taxi?</h3>
+            <h2 className="font-bold mt-3">What Is A One Way Taxi?</h2>
             <p>
               One-way taxi enables you to go from your pick-up point to your
               destination point without having to pay additional fees for
@@ -468,9 +468,9 @@ export default function oneWayTaxi() {
               one, Sweet Trip makes sure you have a comfortable, economical, and
               worry-free experience.
             </p>
-            <h3 className="font-bold mt-3">
+            <h2 className="mt-3">
               Who Can Use Sweet Trip One-Way Taxi?
-            </h3>
+            </h2>
             <p>Sweet Trip's one-way taxi service is ideal for:</p>
             <p className="mt-2">● Business travelers</p>
             <p>● Families and groups</p>
@@ -483,9 +483,9 @@ export default function oneWayTaxi() {
               without having to incur return fees can greatly benefit from Sweet
               Trip.
             </p>
-            <h3 className="font-bold mt-3">
+            <h2 className="mt-3">
               Book Your One-Way Taxi From Sweet Trip Now
-            </h3>
+            </h2>
             <p>
               If you need a trusted, inexpensive, and transparent one-way taxi
               service, Sweet Trip is here with you as your trusted travel

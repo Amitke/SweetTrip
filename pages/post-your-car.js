@@ -54,9 +54,54 @@ export default function postYourCar() {
   return (
     <>
       <Head>
-        <title>Post Your Car</title>
-        <meta name="description" content="" />
+        <title>Free Car Listings – Connect with Customers | SweetTrip</title>
+        <meta
+          name="description"
+          content="List your car for free on SweetTrip and get direct bookings via phone/WhatsApp. No middlemen, no commission — reach travellers seeking rides now."
+        />
         <meta name="keywords" content="" />
+        <link rel="canonical" href="https://sweettrip.in/post-your-car" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Free Car Listings – Connect with Customers | SweetTrip"
+        />
+        <meta
+          property="og:description"
+          content="List your car for free on SweetTrip and get direct bookings via phone/WhatsApp. No middlemen, no commission — reach travellers seeking rides now."
+        />
+        <meta property="og:url" content="https://sweettrip.in/post-your-car" />
+        <meta
+          property="og:image"
+          content="https://sweettrip.in/images/logo.svg"
+        />
+        <meta property="og:site_name" content="SweetTrip" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Free Car Listings – Connect with Customers | SweetTrip"
+        />
+        <meta
+          name="twitter:description"
+          content="List your car for free on SweetTrip and get direct bookings via phone/WhatsApp. No middlemen, no commission — reach travellers seeking rides now."
+        />
+        <meta
+          name="twitter:image"
+          content="https://sweettrip.in/images/logo.svg"
+        />
+        <meta name="twitter:url" content="https://sweettrip.in/post-your-car" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebPage",
+              "@id": "#WebPage",
+              url: "https://sweettrip.in/post-your-car",
+              name: "Free Car Listings – Connect with Customers",
+            }),
+          }}
+        />
       </Head>
       <div
         style={{
