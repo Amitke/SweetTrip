@@ -5,7 +5,7 @@
 .bookingForm {
   @include Position(relative);
   z-index: 1;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   @include Padding(20px);
   @include borderRadius(20px);
   margin-top: 30px;
@@ -36,7 +36,7 @@
       @include breakPoints(640px) {
         font-size: 12px;
         @include Padding(8px);
-        margin-right:5px; 
+        margin-right: 5px;
       }
     }
     button.selected {
@@ -58,7 +58,7 @@
     animation-name: animationH2;
     opacity: 0;
     font-size: 1.5rem;
-    span{
+    span {
       color: $whiteColor;
     }
   }
@@ -84,5 +84,109 @@
     &:hover {
       background-color: $secondaryColor;
     }
+  }
+}
+
+.bookingOneWayForm {
+  background: linear-gradient(
+    127deg,
+    #e5eaff,
+    #e6fcfc 39.23%,
+    #e6fcf7 74.34%,
+    #f5fce6 99.12%
+  );
+  @include Padding(20px);
+  h2 {
+    font-size: 1.5rem;
+    background: transparent;
+    background-clip: text;
+    color: $secondaryColor;
+    span {
+      background: linear-gradient(90deg, #05b9f8 24.32%, #201e53 84.3%);
+      background-clip: text;
+      color: $transparent;
+      font-size: 2rem;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .formWrapper {
+    max-width: 700px;
+    min-width: 700px;
+    @include Margin(0 auto);
+    @include Display(flex);
+    @include JustifyContent(space-between);
+    @include alignItem(baseline);
+    @include breakPoints(767px) {
+      @include Display(block);
+      min-width: auto;
+    }
+    .formGroup {
+      @include Width(100%);
+      padding: 0 10px;
+    }
+  }
+  .primaryButton {
+    @include breakPoints(767px) {
+      @include Width(100%);
+    }
+  }
+}
+
+.mobileWidth {
+  @include breakPoints(767px) {
+    @include Width(100%);
+  }
+}
+.bookingOneWaySearchResult {
+  background: $borderColor;
+  @include Padding(20px);
+  @include borderRadius(20px);
+  @include breakPoints(767px) {
+    margin: 10px auto;
+    @include Width(90%);
+  }
+  .secondaryButton {
+    @include Display(flex);
+    background-color: $primaryColor;
+    @include JustifyContent(center);
+    @include alignItem(center);
+    .icon {
+      background-color: $whiteColor;
+      @include Width(30px);
+      @include Height(30px);
+      @include borderRadius(50%);
+      margin-right: 10px;
+    }
+    svg {
+      @include Width(20px);
+      @include Height(20px);
+      @include Margin(auto);
+      margin-top: 5px;
+    }
+  }
+}
+.postYourCarForm {
+  background: $blackColor;
+  @include Padding(20px);
+  @include borderRadius(20px);
+  margin: 0 auto;
+  @include breakPoints(767px) {
+    min-width: auto;
+  }
+  h3 {
+    color: $whiteColor;
+  }
+  .formWrapper {
+    @include Display(block);
+    max-width: none;
+    min-width: auto;
+    .formGroup {
+      @include Padding(0);
+    }
+  }
+  p{
+    color: $whiteColor;
   }
 }

@@ -35,6 +35,14 @@ const HeaderBottom = () => {
     body = document.getElementsByTagName("body")[0];
   }
 
+  const closeMobileMenu = (id = null) => {
+    if (id) setMenuActiveClass(id);
+
+    body?.classList.remove("openMenu");
+    setMobileMenu(false);
+  };
+
+
   useEffect(() => {
     dispatch(getHeaderMenu());
   }, []);
@@ -74,10 +82,10 @@ const HeaderBottom = () => {
           >
             <div className={headerBottomStyles.headerGroup}>
               <Link
-                href="/tour-package"
+                href="/one-way-taxi"
                 className={`${headerBottomStyles.primaryButton} ${headerBottomStyles.tourPackage}`}
               >
-                Book Tour Package
+                One-way taxi
               </Link>
               <Link
                 href="tel:+91 7488736844"
@@ -109,8 +117,8 @@ const HeaderBottom = () => {
                   return (
                     <li key={item.id}>
                       <Link
-                        onClick={() => handleMenuItem(item.id)}
                         href={item.link}
+                        onClick={() => closeMobileMenu(item.id)}
                         className={
                           menuActiveClass === item.id
                             ? headerBottomStyles.active
@@ -132,17 +140,18 @@ const HeaderBottom = () => {
                 className={`${headerBottomStyles.headerGroup} ${headerBottomStyles.headerMenuGroup}`}
               >
                 <Link
-                  href="/tour-package"
+                  href="/one-way-taxi"
                   className={`${headerBottomStyles.primaryButton} ${headerBottomStyles.tourPackage}`}
+                  onClick={() => closeMobileMenu()}
                 >
-                  Book Tour Package
+                  One-way taxi
                 </Link>
                 <Link
-                  href="tel:+91 7488736844"
+                  href="/tour-package"
                   className={`${headerBottomStyles.secondaryButton} ${headerBottomStyles.headerPhone}`}
+                  onClick={() => closeMobileMenu()}
                 >
-                  <FontAwesomeIcon className="mr-1" icon={faPhone} /> +91
-                  7488736844
+                  Book Tour Package
                 </Link>
               </div>
             </ul>
