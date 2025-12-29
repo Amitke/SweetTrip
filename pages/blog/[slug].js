@@ -20,7 +20,8 @@ export default function BlogPage({ blog }) {
   const dispatch = useDispatch();
   const getSectionHeader = useSelector((state) => state.sectionHeader);
   const getFaq = useSelector((state) => state.faq);
-
+  const faqName = blog?.meta?.url;
+  
   useEffect(() => {
     dispatch(getSectionHeaderData());
     dispatch(getFaqData());
@@ -34,9 +35,8 @@ export default function BlogPage({ blog }) {
       : getSectionHeader?.error;
 
   const faqsData =
-    getFaq && getFaq.status
-      ? getFaq?.faq?.tourOperatorInVaranasi
-      : getFaq?.error;
+    getFaq && getFaq.status ? getFaq?.faq[faqName] : getFaq?.error;
+ 
   const faqsError = getFaq?.error;
   return (
     <>
@@ -751,7 +751,7 @@ export default function BlogPage({ blog }) {
             />
           </>
         )}
-       
+
         {blog?.meta?.url === "places-to-visit-in-ayodhya" && (
           <script
             type="application/ld+json"

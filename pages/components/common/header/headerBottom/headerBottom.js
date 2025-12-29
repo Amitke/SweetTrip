@@ -35,6 +35,14 @@ const HeaderBottom = () => {
     body = document.getElementsByTagName("body")[0];
   }
 
+  const closeMobileMenu = (id = null) => {
+    if (id) setMenuActiveClass(id);
+
+    body?.classList.remove("openMenu");
+    setMobileMenu(false);
+  };
+
+
   useEffect(() => {
     dispatch(getHeaderMenu());
   }, []);
@@ -109,8 +117,8 @@ const HeaderBottom = () => {
                   return (
                     <li key={item.id}>
                       <Link
-                        onClick={() => handleMenuItem(item.id)}
                         href={item.link}
+                        onClick={() => closeMobileMenu(item.id)}
                         className={
                           menuActiveClass === item.id
                             ? headerBottomStyles.active
@@ -134,12 +142,14 @@ const HeaderBottom = () => {
                 <Link
                   href="/one-way-taxi"
                   className={`${headerBottomStyles.primaryButton} ${headerBottomStyles.tourPackage}`}
+                  onClick={() => closeMobileMenu()}
                 >
                   One-way taxi
                 </Link>
                 <Link
                   href="/tour-package"
                   className={`${headerBottomStyles.secondaryButton} ${headerBottomStyles.headerPhone}`}
+                  onClick={() => closeMobileMenu()}
                 >
                   Book Tour Package
                 </Link>
