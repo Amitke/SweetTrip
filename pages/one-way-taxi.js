@@ -214,6 +214,7 @@ export default function oneWayTaxi() {
               </button>
             </div>
           </div>
+		  <p className="text-center"><strong>For reference, please inform the driver that their contact was shared through Sweet Trip.</strong></p>
         </div>
       )}
       <div className="container mx-auto">
