@@ -5,6 +5,10 @@ import bookingFormStyles from "./components/common/BookingForm/bookingForm.modul
 import cityArray from "./../public/staticJson/cities.json";
 import carTypeArray from "./../public/staticJson/carTypes.json";
 
+const sortedCities = [...cityArray].sort((a, b) =>
+  a.localeCompare(b)
+);
+
 export default function postYourCar() {
   const [fromCity, setFromCity] = useState("");
   const [toCity, setToCity] = useState("");
@@ -125,7 +129,7 @@ export default function postYourCar() {
                       onChange={(e) => setFromCity(e.target.value)}
                     >
                       <option>Enter pick up location*</option>
-                      {cityArray.map((location, index) => (
+                      {sortedCities.map((location, index) => (
                         <option key={index} value={location}>
                           {location}
                         </option>

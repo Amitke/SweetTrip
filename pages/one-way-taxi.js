@@ -16,6 +16,11 @@ const RentalCommunity = dynamic(
 );
 import cityArray from "./../public/staticJson/cities.json";
 
+
+const sortedCities = [...cityArray].sort((a, b) =>
+  a.localeCompare(b)
+);
+
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
   const [toCity, setToCity] = useState("");
@@ -176,7 +181,7 @@ export default function oneWayTaxi() {
                   onChange={(e) => setFromCity(e.target.value)}
                 >
                   <option>Enter pick up location*</option>
-                  {cityArray.map((location, index) => (
+                  {sortedCities.map((location, index) => (
                     <option key={index} value={location}>
                       {location}
                     </option>
@@ -191,7 +196,7 @@ export default function oneWayTaxi() {
                   onChange={(e) => setToCity(e.target.value)}
                 >
                   <option>Enter drop location*</option>
-                  {cityArray
+                  {sortedCities
                     .filter((city) => city !== fromCity)
                     .map((location, index) => (
                       <option key={index} value={location}>
