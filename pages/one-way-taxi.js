@@ -228,6 +228,9 @@ export default function oneWayTaxi() {
             results?.map((car, index) => (
               <div key={index} className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.mobileWidth}`}>
                 <div className={bookingFormStyles.bookingOneWaySearchResult}>
+                  <h3 className="font-bold">
+                    {car.carType}
+                  </h3>
                   <Image
                     src="/images/small-car.webp"
                     alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
@@ -235,9 +238,6 @@ export default function oneWayTaxi() {
                     height={200}
                     className="mx-auto"
                   />
-                  <h3 className="mb-3">
-                    <strong>{car.carType}</strong>
-                  </h3>
                   <div
                     className={`${bookingFormStyles.icon} mb-3 d-inline-block`}
                   >
