@@ -140,14 +140,16 @@
   }
 }
 .bookingOneWaySearchResult {
-  background: $borderColor;
+  background: $whiteColor;
   @include Padding(20px);
-  @include borderRadius(20px);
+  @include borderRadius(10px);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,.07);
   @include breakPoints(767px) {
     margin: 10px auto;
     @include Width(90%);
   }
-  .secondaryButton {
+  .secondaryButton,
+  .primaryButton {
     @include Display(flex);
     background-color: $primaryColor;
     @include JustifyContent(center);
@@ -165,6 +167,10 @@
       @include Margin(auto);
       margin-top: 5px;
     }
+  }
+  .primaryButton{
+    background-color: $secondaryColor;
+      @include borderRadius(4px);
   }
 }
 .postYourCarForm {

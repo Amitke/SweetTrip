@@ -250,7 +250,7 @@ export default function oneWayTaxi() {
                     href={`https://wa.me/91${car.phone}`}
                     target="_blank"
                     rel="noreferrer"
-                    className={bookingFormStyles.secondaryButton}
+                    className={bookingFormStyles.primaryButton}
                   >
                     <div className={bookingFormStyles.icon}>
                       <svg
