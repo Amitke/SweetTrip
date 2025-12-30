@@ -214,7 +214,7 @@ export default function oneWayTaxi() {
               </button>
             </div>
           </div>
-		  <p className="text-center"><strong>For reference, please inform the driver that their contact was shared through Sweet Trip.</strong></p>
+          <p className="text-center"><strong>For reference, please inform the driver that their contact was shared through Sweet Trip.</strong></p>
         </div>
       )}
       <div className="container mx-auto">
@@ -266,7 +266,7 @@ export default function oneWayTaxi() {
               </div>
             ))
           ) : (
-            <div className="w-full pl-4 pr-4 text-center mt-3">{noData}</div>
+            <div className="w-full pl-4 pr-4 text-center mt-3 error">{noData}</div>
           )}
         </div>
       </div>
