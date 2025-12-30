@@ -234,8 +234,8 @@ export default function oneWayTaxi() {
                   <Image
                     src="/images/small-car.webp"
                     alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
-                    width={200}
-                    height={200}
+                    width={150}
+                    height={150}
                     className="mx-auto"
                   />
                   <div
