@@ -4,6 +4,7 @@ import Header from "./components/common/header/header";
 import Footer from "./components/common/footer/footer";
 import {wrapper} from "./../redux/store";
 import './../utils/utils';
+import GetLocation from "./components/common/getLocation/getLocation";
 import "@/styles/globals.scss";
 
 ReactGA.initialize("G-GGF5QDQRRK"); 
@@ -16,6 +17,9 @@ function App({ Component, pageProps }) {
       page: window.location.pathname,
     });
   }, []);
+  useEffect(()=>{
+    <GetLocation/>
+  })
   return (
     <div>
       <Header />
