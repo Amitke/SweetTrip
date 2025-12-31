@@ -33,21 +33,21 @@ const GetLocation = () => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
         console.log("Latitude:", lat, "Longitude:", lng);
+
+        fetch(
+          `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            setAddress(data.display_name);
+          });
         setLocation({ lat, lng });
+        sendLocationToSheet(lat, lng, address);
       },
       (err) => {
         setError("Location permission denied");
       }
     );
-    fetch(
-      `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setAddress(data.display_name);
-      });
-    // 👉 send to sheet immediately
-    sendLocationToSheet(lat, lng, address);
     console.log("address:", address);
   }, []);
   return <div>{error && <p>{error}</p>}</div>;
