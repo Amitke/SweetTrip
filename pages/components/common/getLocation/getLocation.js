@@ -32,7 +32,7 @@ const GetLocation = () => {
       (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-
+        console.log("Latitude:", lat, "Longitude:", lng);
         setLocation({ lat, lng });
       },
       (err) => {
@@ -48,6 +48,7 @@ const GetLocation = () => {
       });
     // 👉 send to sheet immediately
     sendLocationToSheet(lat, lng, address);
+    console.log("address:", address);
   }, []);
   return <div>{error && <p>{error}</p>}</div>;
 };
