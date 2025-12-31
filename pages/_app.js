@@ -1,13 +1,13 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 import Header from "./components/common/header/header";
 import Footer from "./components/common/footer/footer";
-import {wrapper} from "./../redux/store";
-import './../utils/utils';
+import { wrapper } from "./../redux/store";
+import "./../utils/utils";
 import GetLocation from "./components/common/getLocation/getLocation";
 import "@/styles/globals.scss";
 
-ReactGA.initialize("G-GGF5QDQRRK"); 
+ReactGA.initialize("G-GGF5QDQRRK");
 ReactGA.send("pageview");
 
 function App({ Component, pageProps }) {
@@ -19,7 +19,7 @@ function App({ Component, pageProps }) {
   }, []);
   return (
     <div>
-    <GetLocation/>
+      <GetLocation />
       <Header />
       <Component {...pageProps} />
       <Footer />

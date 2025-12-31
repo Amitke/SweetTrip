@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 
-const sendLocationToSheet = async (lat, lng, address) => {
+const sendLocationToSheet = (dataParam) => {
+  if (!dataParam || !dataParam.display_name) {
+    console.error("display_name missing:", dataParam);
+    return;
+  }
   const data = new URLSearchParams();
-  data.append("latitude", lat);
-  data.append("longitude", lng);
-  data.append("address", address);
+  data.append("address", dataParam.display_name);
+  data.append("addresstype", dataParam.addresstype);
 
-  await fetch(
+  fetch(
     "https://script.google.com/macros/s/AKfycbyy437y39szJ4-oaM5W2eUeVLkpvQbOHDVeOnbAPRGUXYZ_25ibZ13gr2IQ2xgEv9U8/exec",
     {
       method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
       body: data,
     }
   );
@@ -20,11 +26,10 @@ const GetLocation = () => {
     lat: "",
     lng: "",
   });
-  const [address, setAddress] = useState("");
-  const [error, setError] = useState("");
+  const [data, setData] = useState({});
   useEffect(() => {
     if (!navigator.geolocation) {
-      setError("Geolocation not supported");
+      console.log("Geolocation not supported");
       return;
     }
 
@@ -32,24 +37,25 @@ const GetLocation = () => {
       (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-        console.log("Latitude:", lat, "Longitude:", lng);
-
-        fetch(
-          `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
-        )
-          .then((res) => res.json())
-          .then((data) => {
-            setAddress(data.display_name);
-          });
         setLocation({ lat, lng });
-        sendLocationToSheet(lat, lng, address);
       },
       (err) => {
-        setError("Location permission denied");
+        console.log("Location permission denied");
       }
     );
-    console.log("address:", address);
   }, []);
+  useEffect(() => {
+    if (location.lat && location.lng) {
+      fetch(
+        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`,
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          setData(data);
+        });
+    }
+  }, [location.lat, location.lng]);
+  if (data) sendLocationToSheet(data);
   return <></>;
 };
 export default GetLocation;
