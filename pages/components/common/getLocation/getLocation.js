@@ -50,6 +50,6 @@ const GetLocation = () => {
     );
     console.log("address:", address);
   }, []);
-  return <div>{error && <p>{error}</p>}</div>;
+  return <></>;
 };
 export default GetLocation;
