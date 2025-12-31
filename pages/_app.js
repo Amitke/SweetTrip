@@ -17,11 +17,9 @@ function App({ Component, pageProps }) {
       page: window.location.pathname,
     });
   }, []);
-  useEffect(()=>{
-    <GetLocation/>
-  })
   return (
     <div>
+    <GetLocation/>
       <Header />
       <Component {...pageProps} />
       <Footer />
