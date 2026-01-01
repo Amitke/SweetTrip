@@ -11,7 +11,7 @@ const sendLocationToSheet = (dataParam, pageName) => {
   data.append("pagename", pageName);
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbwIZ6C5hZQKq5E03d5y17av1plkgMrvIZ2PNP6J-bKP2LZW12gbOzrYFYF3rGv4IC6cwQ/exec",
+    "https://script.google.com/macros/s/AKfycbwg3-YFFGh-LR4AKHLdolevhPS8PSfYG770aSWO1zvJtcbsAPU46z_ZxP891_C_DUXuKA/exec",
     {
       method: "POST",
       headers: {
