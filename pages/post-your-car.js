@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { validatePhoneNumber } from "@/utils/validatePhoneNumber";
+import GetLocation from "./components/common/getLocation/getLocation";
 import bookingFormStyles from "./components/common/BookingForm/bookingForm.module.scss";
 import cityArray from "./../public/staticJson/cities.json";
 import carTypeArray from "./../public/staticJson/carTypes.json";
@@ -37,6 +38,7 @@ export default function postYourCar() {
     data.append("to", toCity);
     data.append("phone", phone);
     data.append("carType", carType);
+    console.log("customer data2:", data);
     fetch(
       "https://script.google.com/macros/s/AKfycbxR7oyVxoOTxxAFfJDPcSv4AXPDrR0yI8qoaHG94at2mIbn6hr9jnqDj7vZtkyI-pbKeQ/exec",
       {
@@ -107,6 +109,7 @@ export default function postYourCar() {
           }}
         />
       </Head>
+      <GetLocation pageName="postYourCar"/>
       <div
         style={{
           background:

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 
-const sendLocationToSheet = (dataParam) => {
+const sendLocationToSheet = (dataParam, pageName) => {
   if (!dataParam || !dataParam.display_name) {
-    console.error("display_name missing:", dataParam);
+    console.log("display_name missing:", dataParam);
     return;
   }
   const data = new URLSearchParams();
   data.append("address", dataParam.display_name);
   data.append("addresstype", dataParam.addresstype);
+  data.append("pagename", pageName);
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbyy437y39szJ4-oaM5W2eUeVLkpvQbOHDVeOnbAPRGUXYZ_25ibZ13gr2IQ2xgEv9U8/exec",
+    "https://script.google.com/macros/s/AKfycbwIZ6C5hZQKq5E03d5y17av1plkgMrvIZ2PNP6J-bKP2LZW12gbOzrYFYF3rGv4IC6cwQ/exec",
     {
       method: "POST",
       headers: {
@@ -21,7 +22,7 @@ const sendLocationToSheet = (dataParam) => {
   );
 };
 
-const GetLocation = () => {
+const GetLocation = (props) => {
   const [location, setLocation] = useState({
     lat: "",
     lng: "",
@@ -47,15 +48,17 @@ const GetLocation = () => {
   useEffect(() => {
     if (location.lat && location.lng) {
       fetch(
-        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`,
+        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
       )
         .then((res) => res.json())
         .then((data) => {
           setData(data);
         });
     }
-  }, [location.lat, location.lng]);
-  if (data) sendLocationToSheet(data);
+  }, []);
+  useEffect(() => {
+    if (data) sendLocationToSheet(data, props.pageName);
+  }, [data]);
   return <></>;
 };
 export default GetLocation;

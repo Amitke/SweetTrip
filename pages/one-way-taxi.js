@@ -14,6 +14,7 @@ const RentalCommunity = dynamic(
   () => import("./components/common/rentalCommunity/rentalCommunity"),
   { ssr: false }
 );
+import GetLocation from "./components/common/getLocation/getLocation";
 import cityArray from "./../public/staticJson/cities.json";
 
 
@@ -147,6 +148,7 @@ export default function oneWayTaxi() {
           }}
         />
       </Head>
+      <GetLocation pageName="oneWayTaxi"/>
       {status && (
         <div
           className="container mx-auto"

@@ -4,7 +4,6 @@ import Header from "./components/common/header/header";
 import Footer from "./components/common/footer/footer";
 import { wrapper } from "./../redux/store";
 import "./../utils/utils";
-import GetLocation from "./components/common/getLocation/getLocation";
 import "@/styles/globals.scss";
 
 ReactGA.initialize("G-GGF5QDQRRK");
@@ -19,7 +18,6 @@ function App({ Component, pageProps }) {
   }, []);
   return (
     <div>
-      <GetLocation />
       <Header />
       <Component {...pageProps} />
       <Footer />
