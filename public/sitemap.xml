@@ -1,203 +1,159 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--  Homepage  -->
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sweettrip.in/</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>1.00</priority>
-</url>
-<!--  Main Pages  -->
-<url>
-<loc>https://sweettrip.in/tour-package</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.90</priority>
+	<loc>https://sweettrip.in/</loc>
+	<lastmod>2026-01-01T11:10:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/hotel-booking</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
+	<loc>https://sweettrip.in/one-way-taxi</loc>
+	<lastmod>2026-01-01T11:10:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/cab-services</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
+	<loc>https://sweettrip.in/tour-package</loc>
+	<lastmod>2026-01-01T11:10:33+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/bus-rental</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
+	<loc>https://sweettrip.in/blog/tour-operator-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:35+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/boat-ride</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
+	<loc>https://sweettrip.in/blog/budget-friendly-travel-tips</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/contact</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
+	<loc>https://sweettrip.in/blog/varanasi-ayodhya-travel-guide</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/faq</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.80</priority>
-</url>
-<!--  Tour Packages  -->
-<url>
-<loc>https://sweettrip.in/ayodhya-tour-package</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.85</priority>
+	<loc>https://sweettrip.in/blog/tour-and-travel-agency-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/varanasi-tour-package</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.85</priority>
+	<loc>https://sweettrip.in/blog/5-best-hotels-to-stay-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/prayagraj-tour-package</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.85</priority>
+	<loc>https://sweettrip.in/blog/varanasi-to-prayagraj-distance</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/bodhgaya-tour-package</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.85</priority>
-</url>
-<!--  Blog Listing  -->
-<url>
-<loc>https://sweettrip.in/blog</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
-</url>
-<!--  Blog Posts  -->
-<url>
-<loc>https://sweettrip.in/blog/cab-service-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/top-8-best-things-to-do-in-prayagraj</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/taxi-service-in-ayodhya</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/complete-travel-guide-for-first-time-visitors</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/taxi-services-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/cab-service-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/varanasi-to-ayodhya-taxi-service</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/places-to-visit-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/places-to-visit-in-ayodhya</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/one-way-taxi-service-in-prayagraj</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/car-rental-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/places-to-visit-in-ayodhya</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/one-way-taxi-service-in-prayagraj</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/tour-operator-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/taxi-service-in-ayodhya</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/car-rental-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
+	<loc>https://sweettrip.in/blog/one-way-cab-service-in-prayagraj</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/places-to-visit-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.70</priority>
-</url>
-<!--  Info Pages  -->
-<url>
-<loc>https://sweettrip.in/about</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/taxi-services-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/policy</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/varanasi-to-ayodhya-taxi-service</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/refund-policy</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/spiritual-tour-covering-varanasi-ayodhya-and-prayagraj</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/terms-and-conditions</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/top-8-places-to-visit-in-chitrakoot</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/best-time-Tips-and-travel-hacks-for-visiting-varanasi-to-gaya</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/best-tour-operators-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/best-tour-operators-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/varanasi-to-prayagraj-distance</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/tour-operators-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/tour-operators-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/cab-services</loc>
+	<lastmod>2026-01-01T11:10:40+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/5-best-hotels-to-stay-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog</loc>
+	<lastmod>2026-01-01T11:10:41+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/tour-and-travel-agency-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/trusted-travel-agency-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:42+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/varanasi-ayodhya-travel-guide</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/best-budget-tour-packages-in-varanasi</loc>
+	<lastmod>2026-01-01T11:10:42+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/budget-friendly-travel-tips</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/top-tour-and-travel-agencies-for-varanasi-and-ayodhya</loc>
+	<lastmod>2026-01-01T11:10:42+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://sweettrip.in/blog/top-tour-and-travel-agencies-for-varanasi-and-ayodhya</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://sweettrip.in/blog/best-budget-tour-packages-in-varanasi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://sweettrip.in/one-way-taxi</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
-</url>
-<url>
-<loc>https://sweettrip.in/post-your-car</loc>
-<lastmod>2025-09-05</lastmod>
-<priority>0.50</priority>
+	<loc>https://sweettrip.in/blog/places-to-visit-in-gaya</loc>
+	<lastmod>2026-01-01T11:10:42+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 </urlset>
