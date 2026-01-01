@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const sendLocationToSheet = (dataParam, pageName) => {
-  if (!dataParam || !dataParam.display_name) {
-    console.log("display_name missing:", dataParam);
+  let formData;
+  if (!dataParam?.display_name && !pageName) {
+    console.log("display_name missing:", dataParam, pageName);
     return;
   }
-  const data = new URLSearchParams();
-  data.append("address", dataParam.display_name);
-  data.append("addresstype", dataParam.addresstype);
-  data.append("pagename", pageName);
+  if (dataParam && pageName) {
+    formData = new URLSearchParams();
+    formData.append("address", dataParam.display_name);
+    formData.append("addresstype", dataParam.addresstype || "");
+    formData.append("pageName", pageName);
+  }
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbwg3-YFFGh-LR4AKHLdolevhPS8PSfYG770aSWO1zvJtcbsAPU46z_ZxP891_C_DUXuKA/exec",
+    "https://script.google.com/macros/s/AKfycbwIZ6C5hZQKq5E03d5y17av1plkgMrvIZ2PNP6J-bKP2LZW12gbOzrYFYF3rGv4IC6cwQ/exec",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: data,
+      body: formData,
     }
   );
 };
 
-const GetLocation = (props) => {
-  const [location, setLocation] = useState({
-    lat: "",
-    lng: "",
-  });
-  const [data, setData] = useState({});
+const GetLocation = ({ pageName }) => {
+  const sentRef = useRef(false); // ⛔ prevent duplicates
+
   useEffect(() => {
     if (!navigator.geolocation) {
       console.log("Geolocation not supported");
@@ -35,30 +35,30 @@ const GetLocation = (props) => {
     }
 
     navigator.geolocation.getCurrentPosition(
-      (position) => {
+      async (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
-        setLocation({ lat, lng });
+
+        // Reverse geocode
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`
+        );
+        const data = await res.json();
+
+        // Send ONLY ONCE
+        if (!sentRef.current) {
+          sentRef.current = true;
+          sendLocationToSheet(data, pageName);
+        }
       },
       (err) => {
-        console.log("Location permission denied");
-      }
+        console.log("Location permission denied", err);
+      },
+      { enableHighAccuracy: true }
     );
-  }, []);
-  useEffect(() => {
-    if (location.lat && location.lng) {
-      fetch(
-        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.lat}&lon=${location.lng}`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          setData(data);
-        });
-    }
-  }, []);
-  useEffect(() => {
-    if (data) sendLocationToSheet(data, props.pageName);
-  }, [data]);
-  return <></>;
+  }, [pageName]);
+
+  return null; // no UI needed
 };
+
 export default GetLocation;
