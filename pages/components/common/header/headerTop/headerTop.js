@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faCar } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faTwitter,
@@ -60,6 +61,12 @@ const HeaderTop = () => {
             >
               <li className="mr-4">Need Help ?</li>
               <li className="mr-5">
+                <Link href="/one-way-taxi">
+                  <FontAwesomeIcon className="mr-2" icon={faCar} />
+                  One-way taxi
+                </Link>
+              </li>
+              <li className="mr-5 hidden">
                 <a href="mailto:info@sweettrip.in">
                   <FontAwesomeIcon className="mr-1" icon={faEnvelope} />
                   info@sweettrip.in
