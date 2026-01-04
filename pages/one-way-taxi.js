@@ -233,13 +233,66 @@ export default function oneWayTaxi() {
                   <h3 className="font-bold">
                     {car.carType}
                   </h3>
-                  <Image
-                    src="/images/small-car.webp"
-                    alt="On the left, A girl carrying a backpack. In the right, trolleys are available."
+                  {
+                    ["Innova Crysta", "Ertiga"].includes(car.carType) &&
+                    <Image
+                    src="/images/innova.webp"
+                    alt="Ertiga"
                     width={150}
                     height={150}
                     className="mx-auto"
                   />
+                  }
+                  {
+                    ["Swift Dzire", "Honda Amaze", "Aura"].includes(car.carType) && 
+                    <Image
+                    src="/images/dzire.webp"
+                    alt="Swift Dzire"
+                    width={150}
+                    height={150}
+                    className="mx-auto"
+                  />
+                  }
+                  {
+                    car.carType === "Tempo Traveller" && 
+                    <Image
+                    src="/images/tempo.webp"
+                    alt="tempo"
+                    width={150}
+                    height={150}
+                    className="mx-auto"
+                  />
+                  }
+                  {
+                    car.carType === "Urbania" && 
+                    <Image
+                    src="/images/urbania.webp"
+                    alt="urbania"
+                    width={150}
+                    height={150}
+                    className="mx-auto"
+                  />
+                  }
+                  {
+                    ["Kia Carens", "Nexon"].includes(car.carType) &&
+                    <Image
+                    src="/images/creta.webp"
+                    alt="Kia Carens"
+                    width={150}
+                    height={150}
+                    className="mx-auto"
+                  />
+                  }
+                   {
+                    car.carType === "Wagon R" &&
+                    <Image
+                    src="/images/wagnor.webp"
+                    alt="Wagon R"
+                    width={150}
+                    height={150}
+                    className="mx-auto"
+                  />
+                  }
                   <div
                     className={`${bookingFormStyles.icon} mb-3 d-inline-block`}
                   >
