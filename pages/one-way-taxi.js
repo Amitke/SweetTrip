@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
@@ -17,11 +17,6 @@ const RentalCommunity = dynamic(
 import GetLocation from "./components/common/getLocation/getLocation";
 import cityArray from "./../public/staticJson/cities.json";
 
-
-const sortedCities = [...cityArray].sort((a, b) =>
-  a.localeCompare(b)
-);
-
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
   const [toCity, setToCity] = useState("");
@@ -32,6 +27,10 @@ export default function oneWayTaxi() {
   const dispatch = useDispatch();
   const getOneWay = useSelector((state) => state.oneWay);
   const getFaq = useSelector((state) => state.faq);
+
+  const sortedCities = useMemo(() => {
+    return [...cityArray].sort((a, b) => a.localeCompare(b));
+  }, [cityArray]);
 
   useEffect(() => {
     dispatch(getOneWayData());
@@ -62,7 +61,8 @@ export default function oneWayTaxi() {
           car?.from?.toString().trim().toLowerCase() ===
             fromCity.trim().toLowerCase() &&
           car?.to?.toString().trim().toLowerCase() ===
-            toCity.trim().toLowerCase() && car?.status === "Active"
+            toCity.trim().toLowerCase() &&
+          car?.status === "Active"
       );
       if (filtered?.length === 0) {
         setNoData("No drivers found for the selected route");
@@ -148,7 +148,7 @@ export default function oneWayTaxi() {
           }}
         />
       </Head>
-      <GetLocation pageName="oneWayTaxi"/>
+      <GetLocation pageName="oneWayTaxi" />
       {status && (
         <div
           className="container mx-auto"
@@ -216,7 +216,12 @@ export default function oneWayTaxi() {
               </button>
             </div>
           </div>
-          <p className="text-center"><strong>For reference, please inform the driver that their contact was shared through Sweet Trip.</strong></p>
+          <p className="text-center">
+            <strong>
+              For reference, please inform the driver that their contact was
+              shared through Sweet Trip.
+            </strong>
+          </p>
         </div>
       )}
       <div className="container mx-auto">
@@ -228,71 +233,68 @@ export default function oneWayTaxi() {
         <div className="flex-row flex flex-wrap">
           {status ? (
             results?.map((car, index) => (
-              <div key={index} className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.mobileWidth}`}>
+              <div
+                key={index}
+                className={`w-1/4 pl-4 pr-4 mt-5 text-center ${bookingFormStyles.mobileWidth}`}
+              >
                 <div className={bookingFormStyles.bookingOneWaySearchResult}>
-                  <h3 className="font-bold">
-                    {car.carType}
-                  </h3>
-                  {
-                    ["Innova Crysta", "Ertiga"].includes(car.carType) &&
+                  <h3 className="font-bold">{car.carType}</h3>
+                  {["Innova Crysta", "Ertiga"].includes(car.carType) && (
                     <Image
-                    src="/images/innova.webp"
-                    alt="Ertiga"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
-                  {
-                    ["Swift Dzire", "Honda Amaze", "Aura"].includes(car.carType) && 
+                      src="/images/innova.webp"
+                      alt="Ertiga"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
+                  {["Swift Dzire", "Honda Amaze", "Aura"].includes(
+                    car.carType
+                  ) && (
                     <Image
-                    src="/images/dzire.webp"
-                    alt="Swift Dzire"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
-                  {
-                    car.carType === "Tempo Traveller" && 
+                      src="/images/dzire.webp"
+                      alt="Swift Dzire"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
+                  {car.carType === "Tempo Traveller" && (
                     <Image
-                    src="/images/tempo.webp"
-                    alt="tempo"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
-                  {
-                    car.carType === "Urbania" && 
+                      src="/images/tempo.webp"
+                      alt="tempo"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
+                  {car.carType === "Urbania" && (
                     <Image
-                    src="/images/urbania.webp"
-                    alt="urbania"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
-                  {
-                    ["Kia Carens", "Nexon"].includes(car.carType) &&
+                      src="/images/urbania.webp"
+                      alt="urbania"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
+                  {["Kia Carens", "Nexon"].includes(car.carType) && (
                     <Image
-                    src="/images/creta.webp"
-                    alt="Kia Carens"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
-                   {
-                    car.carType === "Wagon R" &&
+                      src="/images/creta.webp"
+                      alt="Kia Carens"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
+                  {car.carType === "Wagon R" && (
                     <Image
-                    src="/images/wagnor.webp"
-                    alt="Wagon R"
-                    width={150}
-                    height={150}
-                    className="mx-auto"
-                  />
-                  }
+                      src="/images/wagnor.webp"
+                      alt="Wagon R"
+                      width={150}
+                      height={150}
+                      className="mx-auto"
+                    />
+                  )}
                   <div
                     className={`${bookingFormStyles.icon} mb-3 d-inline-block`}
                   >
@@ -321,7 +323,9 @@ export default function oneWayTaxi() {
               </div>
             ))
           ) : (
-            <div className="w-full pl-4 pr-4 text-center mt-3 error">{noData}</div>
+            <div className="w-full pl-4 pr-4 text-center mt-3 error">
+              {noData}
+            </div>
           )}
         </div>
       </div>
@@ -334,11 +338,16 @@ export default function oneWayTaxi() {
               One Way Taxi Service by Sweet Trip – Simple, Affordable & Direct
             </h1>
             <p className="text-center">
-              <a href="https://sweettrip.in/">Sweet Trip</a> offers you a better way to travel with our dependable
-              <a href="https://sweettrip.in/one-way-taxi"> one-way taxi service</a> that is aimed at removing the unnecessary
-              expenses, mediators, and planning of booking a taxi. Whether you
-              want to visit for business or with your family members, drop off
-              at the airport, or initiate an inter-city trip with taxi booking.
+              <a href="https://sweettrip.in/">Sweet Trip</a> offers you a better
+              way to travel with our dependable
+              <a href="https://sweettrip.in/one-way-taxi">
+                {" "}
+                one-way taxi service
+              </a>{" "}
+              that is aimed at removing the unnecessary expenses, mediators, and
+              planning of booking a taxi. Whether you want to visit for business
+              or with your family members, drop off at the airport, or initiate
+              an inter-city trip with taxi booking.
             </p>
             <p className="mt-2">
               It differs from a conventional taxi service, where high commission
@@ -529,9 +538,7 @@ export default function oneWayTaxi() {
               one, Sweet Trip makes sure you have a comfortable, economical, and
               worry-free experience.
             </p>
-            <h2 className="mt-3">
-              Who Can Use Sweet Trip One-Way Taxi?
-            </h2>
+            <h2 className="mt-3">Who Can Use Sweet Trip One-Way Taxi?</h2>
             <p>Sweet Trip's one-way taxi service is ideal for:</p>
             <p className="mt-2">● Business travelers</p>
             <p>● Families and groups</p>
@@ -544,9 +551,7 @@ export default function oneWayTaxi() {
               without having to incur return fees can greatly benefit from Sweet
               Trip.
             </p>
-            <h2 className="mt-3">
-              Book Your One-Way Taxi From Sweet Trip Now
-            </h2>
+            <h2 className="mt-3">Book Your One-Way Taxi From Sweet Trip Now</h2>
             <p>
               If you need a trusted, inexpensive, and transparent one-way taxi
               service, Sweet Trip is here with you as your trusted travel
