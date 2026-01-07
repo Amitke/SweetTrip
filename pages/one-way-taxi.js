@@ -72,19 +72,21 @@ export default function oneWayTaxi() {
       }
     }
   };
-
-  const handleBack = () => {
-    setStatus(false);
-    setFromCity("");
-    setToCity("");
-    setNoData("");
-  };
   const dropSearch = useCitySearch(
     cityArray.filter(
       (c) =>
         !fromCity || !(c.City === fromCity.City && c.State === fromCity.State)
     )
   );
+
+  const handleBack = () => {
+    setStatus(false);
+    setQuery("");
+    dropSearch.setQuery("");
+    setFromCity("");
+    setToCity("");
+    setNoData("");
+  };
   return (
     <>
       <Head>
