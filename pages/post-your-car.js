@@ -5,7 +5,7 @@ import GetLocation from "./components/common/getLocation/getLocation";
 import bookingFormStyles from "./components/common/BookingForm/bookingForm.module.scss";
 import cityArray from "./../public/staticJson/cities.json";
 import carTypeArray from "./../public/staticJson/carTypes.json";
-import useUniqueSortedCities from "./components/common/useUniqueSortedCities";
+import useCitySearch from "./components/common/customHook/useCitySearch";
 
 export default function postYourCar() {
   const [fromCity, setFromCity] = useState("");
@@ -13,7 +13,7 @@ export default function postYourCar() {
   const [phone, setPhone] = useState("");
   const [carType, setCarType] = useState("");
   const [phoneError, setPhoneError] = useState("");
-  const sortedCities = useUniqueSortedCities(cityArray);
+  const { query, setQuery, filteredCities } = useCitySearch(cityArray);
 
   const handlePhone = (e) => {
     const { value } = e.target;
@@ -32,11 +32,10 @@ export default function postYourCar() {
       return;
     }
     const data = new URLSearchParams();
-    data.append("from", fromCity);
-    data.append("to", toCity);
+    data.append("from", fromCity.City);
+    data.append("to", toCity.City);
     data.append("phone", phone);
     data.append("carType", carType);
-    console.log("customer data2:", data);
     fetch(
       "https://script.google.com/macros/s/AKfycbxR7oyVxoOTxxAFfJDPcSv4AXPDrR0yI8qoaHG94at2mIbn6hr9jnqDj7vZtkyI-pbKeQ/exec",
       {
@@ -54,7 +53,12 @@ export default function postYourCar() {
     );
     window.location.reload();
   };
-
+  const dropSearch = useCitySearch(
+    cityArray.filter(
+      (c) =>
+        !fromCity || !(c.City === fromCity.City && c.State === fromCity.State)
+    )
+  );
   return (
     <>
       <Head>
@@ -123,36 +127,62 @@ export default function postYourCar() {
                 </h3>
                 <div className={bookingFormStyles.formWrapper}>
                   <div className={`${bookingFormStyles.formGroup}`}>
-                    <select
+                    <input
                       name="pickupLocation"
+                      type="text"
                       className={bookingFormStyles.formControl}
-                      style={{ "-webkit-appearance": "auto" }}
-                      onChange={(e) => setFromCity(e.target.value)}
-                    >
-                      <option>Enter pick up location*</option>
-                      {sortedCities.map((location, index) => (
-                        <option key={index} value={location.City}>
-                          {location.City} - {location.State}
-                        </option>
-                      ))}
-                    </select>
+                      onChange={(e) => setQuery(e.target.value)}
+                      placeholder="Enter pick up location*"
+                      value={query}
+                      autoFocus
+                      autoComplete="off"
+                    />
+
+                    {filteredCities.length > 0 && (
+                      <ul className={bookingFormStyles.postYourCarForm.ul}>
+                        {filteredCities.map((city) => (
+                          <li
+                            key={`${city.City}-${city.State}`}
+                            onClick={() => {
+                              setFromCity(city);
+                              setQuery(`${city.City}, ${city.State}`);
+                            }}
+                          >
+                            {city.City} - {city.State}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                   <div className={`${bookingFormStyles.formGroup}`}>
-                    <select
+                    <input
                       name="dropLocation"
+                      type="text"
                       className={bookingFormStyles.formControl}
-                      style={{ "-webkit-appearance": "auto" }}
-                      onChange={(e) => setToCity(e.target.value)}
-                    >
-                      <option>Enter drop location*</option>
-                      {cityArray
-                        .filter((city) => city.City !== fromCity)
-                        .map((location, index) => (
-                          <option key={index} value={location.City}>
-                            {location.City} - {location.State}
-                          </option>
+                      onChange={(e) => dropSearch.setQuery(e.target.value)}
+                      placeholder="Enter drop location*"
+                      value={dropSearch.query}
+                      autoFocus
+                      autoComplete="off"
+                    />
+
+                    {dropSearch.filteredCities.length > 0 && (
+                      <ul className={bookingFormStyles.postYourCarForm.ul}>
+                        {dropSearch.filteredCities.map((city) => (
+                          <li
+                            key={`${city.City}-${city.State}`}
+                            onClick={() => {
+                              setToCity(city);
+                              dropSearch.setQuery(
+                                `${city.City}, ${city.State}`
+                              );
+                            }}
+                          >
+                            {city.City} - {city.State}
+                          </li>
                         ))}
-                    </select>
+                      </ul>
+                    )}
                   </div>
                   <div className={`${bookingFormStyles.formGroup}`}>
                     <input

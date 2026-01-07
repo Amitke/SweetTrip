@@ -16,8 +16,7 @@ const RentalCommunity = dynamic(
 );
 import GetLocation from "./components/common/getLocation/getLocation";
 import cityArray from "./../public/staticJson/cities.json";
-import useUniqueSortedCities from "./components/common/useUniqueSortedCities";
-
+import useCitySearch from "./components/common/customHook/useCitySearch";
 
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
@@ -29,7 +28,7 @@ export default function oneWayTaxi() {
   const dispatch = useDispatch();
   const getOneWay = useSelector((state) => state.oneWay);
   const getFaq = useSelector((state) => state.faq);
-  const sortedCities = useUniqueSortedCities(cityArray);
+  const { query, setQuery, filteredCities } = useCitySearch(cityArray);
 
   useEffect(() => {
     dispatch(getOneWayData());
@@ -53,14 +52,16 @@ export default function oneWayTaxi() {
       alert("Please select pickup and drop location");
       return;
     }
+    const from = fromCity.City.toLowerCase().trim();
+    const to = toCity.City.toLowerCase().trim();
     if (cars.length > 0) {
       setCars(oneWayData);
       const filtered = cars?.filter(
         (car) =>
           car?.from?.toString().trim().toLowerCase() ===
-            fromCity.trim().toLowerCase() &&
+            from &&
           car?.to?.toString().trim().toLowerCase() ===
-            toCity.trim().toLowerCase() &&
+            to &&
           car?.status === "Active"
       );
       if (filtered?.length === 0) {
@@ -71,13 +72,19 @@ export default function oneWayTaxi() {
       }
     }
   };
+
   const handleBack = () => {
     setStatus(false);
     setFromCity("");
     setToCity("");
     setNoData("");
   };
-  console.log("oneWayData", results,fromCity,toCity);
+  const dropSearch = useCitySearch(
+    cityArray.filter(
+      (c) =>
+        !fromCity || !(c.City === fromCity.City && c.State === fromCity.State)
+    )
+  );
   return (
     <>
       <Head>
@@ -176,36 +183,60 @@ export default function oneWayTaxi() {
             </h3>
             <div className={bookingFormStyles.formWrapper}>
               <div className={`${bookingFormStyles.formGroup}`}>
-                <select
+                <input
                   name="pickupLocation"
+                  type="text"
                   className={bookingFormStyles.formControl}
-                  style={{ "-webkit-appearance": "auto" }}
-                  onChange={(e) => setFromCity(e.target.value)}
-                >
-                  <option>Enter pick up location*</option>
-                  {sortedCities.map((location, index) => (
-                    <option key={index} value={location.City}>
-                      {location.City} - {location.State}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Enter pick up location*"
+                  value={query}
+                  autoFocus
+                  autoComplete="off"
+                />
+
+                {filteredCities.length > 0 && (
+                  <ul className={bookingFormStyles.bookingOneWayForm.ul}>
+                    {filteredCities.map((city) => (
+                      <li
+                        key={`${city.City}-${city.State}`}
+                        onClick={() => {
+                          setFromCity(city);
+                          setQuery(`${city.City}, ${city.State}`);
+                        }}
+                      >
+                        {city.City} - {city.State}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               <div className={`${bookingFormStyles.formGroup}`}>
-                <select
+                <input
                   name="dropLocation"
+                  type="text"
                   className={bookingFormStyles.formControl}
-                  style={{ "-webkit-appearance": "auto" }}
-                  onChange={(e) => setToCity(e.target.value)}
-                >
-                  <option>Enter drop location*</option>
-                  {sortedCities
-                    .filter((city) => city.City !== fromCity)
-                    .map((location, index) => (
-                      <option key={index} value={location.City}>
-                        {location.City} - {location.State}
-                      </option>
+                  onChange={(e) => dropSearch.setQuery(e.target.value)}
+                  placeholder="Enter drop location*"
+                  value={dropSearch.query}
+                  autoFocus
+                  autoComplete="off"
+                />
+
+                {dropSearch.filteredCities.length > 0 && (
+                  <ul className={bookingFormStyles.bookingOneWayForm.ul}>
+                    {dropSearch.filteredCities.map((city) => (
+                      <li
+                        key={`${city.City}-${city.State}`}
+                        onClick={() => {
+                          setToCity(city);
+                          dropSearch.setQuery(`${city.City}, ${city.State}`);
+                        }}
+                      >
+                        {city.City} - {city.State}
+                      </li>
                     ))}
-                </select>
+                  </ul>
+                )}
               </div>
               <button
                 name="submit"
@@ -227,7 +258,7 @@ export default function oneWayTaxi() {
       <div className="container mx-auto">
         {status && (
           <div className="pl-4 pr-4 mt-5">
-            {fromCity} - {toCity}
+            {fromCity.City} - {toCity.City}
           </div>
         )}
         <div className="flex-row flex flex-wrap">

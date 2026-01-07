@@ -132,6 +132,17 @@
       @include Width(100%);
     }
   }
+  ul{
+    background-color: $whiteColor;
+    li{
+      cursor: pointer;
+      padding: 6px 12px;
+      &:hover{
+        background-color: $primaryColor;
+        color: $whiteColor;
+      }
+    }
+  }
 }
 
 .mobileWidth {
@@ -194,5 +205,16 @@
   }
   p{
     color: $whiteColor;
+  }
+  ul{
+    background-color: $whiteColor;
+    li{
+      cursor: pointer;
+      padding: 6px 12px;
+      &:hover{
+        background-color: $secondaryColor;
+        color: $whiteColor;
+      }
+    }
   }
 }
