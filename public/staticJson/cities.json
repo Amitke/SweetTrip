@@ -5955,7 +5955,7 @@
    "District": "Pune"
  },
  {
-   "City": "Delhi Cantt.",
+   "City": "Delhi",
    "State": "Delhi *",
    "District": "South West"
  },
@@ -8205,9 +8205,14 @@
    "District": "Rewa"
  },
  {
-   "City": "Greater Mumbai",
+   "City": "Mumbai",
    "State": "Maharashtra",
    "District": "Mumbai (Suburban) and Mumbai"
+ },
+ {
+   "City": "Nashik",
+   "State": "Maharashtra",
+   "District": "Nashik"
  },
  {
    "City": "GSFC Complex INA",
@@ -18945,7 +18950,7 @@
    "District": "Pune"
  },
  {
-   "City": "Pinahat",
+   "City": "Agra",
    "State": "Uttar Pradesh",
    "District": "Agra"
  },
@@ -20473,6 +20478,16 @@
    "City": "Rishikesh",
    "State": "Uttaranchal",
    "District": "Dehradun"
+ },
+ {
+   "City": "Haridwar",
+   "State": "Uttarakhand",
+   "District": "Uttarakhand"
+ },
+ {
+   "City": "Haldwani",
+   "State": "Uttarakhand",
+   "District": "Nainital"
  },
  {
    "City": "Rishra",
