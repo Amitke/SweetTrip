@@ -5,10 +5,7 @@ import GetLocation from "./components/common/getLocation/getLocation";
 import bookingFormStyles from "./components/common/BookingForm/bookingForm.module.scss";
 import cityArray from "./../public/staticJson/cities.json";
 import carTypeArray from "./../public/staticJson/carTypes.json";
-
-const sortedCities = [...cityArray].sort((a, b) =>
-  a.localeCompare(b)
-);
+import useUniqueSortedCities from "./components/common/useUniqueSortedCities";
 
 export default function postYourCar() {
   const [fromCity, setFromCity] = useState("");
@@ -16,6 +13,7 @@ export default function postYourCar() {
   const [phone, setPhone] = useState("");
   const [carType, setCarType] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const sortedCities = useUniqueSortedCities(cityArray);
 
   const handlePhone = (e) => {
     const { value } = e.target;
@@ -109,7 +107,7 @@ export default function postYourCar() {
           }}
         />
       </Head>
-      <GetLocation pageName="postYourCar"/>
+      <GetLocation pageName="postYourCar" />
       <div
         style={{
           background:
@@ -133,8 +131,8 @@ export default function postYourCar() {
                     >
                       <option>Enter pick up location*</option>
                       {sortedCities.map((location, index) => (
-                        <option key={index} value={location}>
-                          {location}
+                        <option key={index} value={location.City}>
+                          {location.City} - {location.State}
                         </option>
                       ))}
                     </select>
@@ -148,10 +146,10 @@ export default function postYourCar() {
                     >
                       <option>Enter drop location*</option>
                       {cityArray
-                        .filter((city) => city !== fromCity)
+                        .filter((city) => city.City !== fromCity)
                         .map((location, index) => (
-                          <option key={index} value={location}>
-                            {location}
+                          <option key={index} value={location.City}>
+                            {location.City} - {location.State}
                           </option>
                         ))}
                     </select>

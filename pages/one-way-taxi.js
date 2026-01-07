@@ -16,6 +16,8 @@ const RentalCommunity = dynamic(
 );
 import GetLocation from "./components/common/getLocation/getLocation";
 import cityArray from "./../public/staticJson/cities.json";
+import useUniqueSortedCities from "./components/common/useUniqueSortedCities";
+
 
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");
@@ -27,10 +29,7 @@ export default function oneWayTaxi() {
   const dispatch = useDispatch();
   const getOneWay = useSelector((state) => state.oneWay);
   const getFaq = useSelector((state) => state.faq);
-
-  const sortedCities = useMemo(() => {
-    return [...cityArray].sort((a, b) => a.localeCompare(b));
-  }, [cityArray]);
+  const sortedCities = useUniqueSortedCities(cityArray);
 
   useEffect(() => {
     dispatch(getOneWayData());
@@ -78,6 +77,7 @@ export default function oneWayTaxi() {
     setToCity("");
     setNoData("");
   };
+  console.log("oneWayData", results,fromCity,toCity);
   return (
     <>
       <Head>
@@ -184,8 +184,8 @@ export default function oneWayTaxi() {
                 >
                   <option>Enter pick up location*</option>
                   {sortedCities.map((location, index) => (
-                    <option key={index} value={location}>
-                      {location}
+                    <option key={index} value={location.City}>
+                      {location.City} - {location.State}
                     </option>
                   ))}
                 </select>
@@ -199,10 +199,10 @@ export default function oneWayTaxi() {
                 >
                   <option>Enter drop location*</option>
                   {sortedCities
-                    .filter((city) => city !== fromCity)
+                    .filter((city) => city.City !== fromCity)
                     .map((location, index) => (
-                      <option key={index} value={location}>
-                        {location}
+                      <option key={index} value={location.City}>
+                        {location.City} - {location.State}
                       </option>
                     ))}
                 </select>
