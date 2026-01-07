@@ -5,7 +5,7 @@ import GetLocation from "./components/common/getLocation/getLocation";
 import bookingFormStyles from "./components/common/BookingForm/bookingForm.module.scss";
 import cityArray from "./../public/staticJson/cities.json";
 import carTypeArray from "./../public/staticJson/carTypes.json";
-import {useCitySearch} from "./components/customHook/useCitySearch";
+import {useCitySearch} from "./../customHook/useCitySearch";
 
 export default function postYourCar() {
   const [fromCity, setFromCity] = useState("");
