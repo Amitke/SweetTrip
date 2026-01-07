@@ -16,7 +16,7 @@ const RentalCommunity = dynamic(
 );
 import GetLocation from "./components/common/getLocation/getLocation";
 import cityArray from "./../public/staticJson/cities.json";
-import useCitySearch from "./components/common/customHook/useCitySearch";
+import {useCitySearch} from "./components/customHook/useCitySearch";
 
 export default function oneWayTaxi() {
   const [fromCity, setFromCity] = useState("");

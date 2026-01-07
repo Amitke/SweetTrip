@@ -1,6 +1,6 @@
 import React,{ useMemo,useState } from "react";
 
-const useCitySearch = (cityArray) => {
+export const useCitySearch = (cityArray) => {
   const [query, setQuery] = useState("");
 
   // 1️⃣ Duplicate remove (City + State) + Sort
@@ -39,4 +39,3 @@ const useCitySearch = (cityArray) => {
     filteredCities
   };
 };
-export default useCitySearch;
