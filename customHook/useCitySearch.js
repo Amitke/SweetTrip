@@ -30,7 +30,6 @@ export const useCitySearch = (cityArray) => {
           .toLowerCase()
           .includes(query.toLowerCase())
       )
-      .slice(0, 50);
   }, [query, uniqueSortedCities]);
 
   return {
