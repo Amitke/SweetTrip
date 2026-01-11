@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to Hostinger
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST }} << 'EOF'
-            cd /path/to/your/project/SweetTrip
+            cd /SweetTrip
             git pull origin main
             npm install --production
             pm2 restart nextjs-app
