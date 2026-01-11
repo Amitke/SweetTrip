@@ -37,6 +37,6 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST }} << 'EOF'
             cd /SweetTrip
             git pull origin main
-            npm install --production
-            pm2 restart nextjs-app
+            npm install
+            pm2 restart all
           EOF
