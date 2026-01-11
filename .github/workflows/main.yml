@@ -3,37 +3,40 @@ name: Deploy Next.js to Hostinger
 on:
   push:
     branches:
-      - main  # You can change this to your default branch if different
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v4
+
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Adjust to the version you want
+          node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build the Next.js app
+      - name: Build Next.js app
         run: npm run build
 
-      - name: Deploy to Hostinger using SSH
-        uses: appleboy/ssh-action@v0.1.5
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          privateKey: ${{ secrets.PRIVATE_KEY}}
-          script: |
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to Hostinger
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST }} << 'EOF'
             cd /path/to/your/project/SweetTrip
-            git pull origin main  # Pull latest code from GitHub
-            npm install  # Install dependencies
-            npm run build  # Build the application
-            pm2 restart nextjs-app  # Restart the app using PM2 (adjust if using other tools)
+            git pull origin main
+            npm install --production
+            pm2 restart nextjs-app
+          EOF
