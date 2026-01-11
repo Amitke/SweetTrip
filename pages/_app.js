@@ -24,7 +24,7 @@ function App({ Component, pageProps }) {
       visitorId = Date.now() + Math.random().toString(36);
       Cookies.set("visitorId", visitorId, { expires: 30 });
     }
-    if (visitorId) {
+    if (visitorId && typeof window !== "undefined") {
       fetch(
         "https://script.google.com/macros/s/AKfycbx2xJM6_l_NhIqwUbqlMS4eER8Gn9-JGRnuLsb9QNEH3Inkeq4HhM3s26z_Bp14hDnRsw/exec",
         {
